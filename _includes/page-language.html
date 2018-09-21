@@ -1,0 +1,1 @@
+{% capture page_language %}{% if page._language %}{{ page._language }}{% elsif page.url contains '/fi/' %}fi{% elsif page.url contains '/en/' %}en{% elsif page.display_on_site %}{{ page.display_on_site }}{% else %}fi{% endif %}{% endcapture %}
