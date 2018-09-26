@@ -50,6 +50,11 @@ defaults:
     values:
       layout: "default"
       language: en
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: blog
   
 # https://github.com/jekyll/jekyll-sitemap
 

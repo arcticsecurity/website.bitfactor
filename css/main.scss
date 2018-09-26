@@ -1,5 +1,9 @@
 ---
 ---
-main {
-  display: block;
-}
+/* General imports */
+@import "variables";
+@import "normalize";
+@import "grid";
+@import "functions";
+@import "mixins";
+@import "general";

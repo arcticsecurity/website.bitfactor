@@ -1,0 +1,168 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+	$extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_") );
+	$formats: ( otf: "opentype", ttf: "truetype" );
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+@mixin grid-media($grid) {
+	$_media: _retrieve-setting($grid, media);
+	$_query: _parse-media($_media);
+	@media #{$_query} {
+		$_default-grid: $default-grid;
+		$default-grid: map-merge($default-grid, $grid) !global;
+		@content;
+		$default-grid: $_default-grid !global;
+	}
+}
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+@mixin display-flex() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin display-flex() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin flex($value) {
+	-webkit-box-flex: $value;
+	-moz-box-flex: $value;
+	-webkit-flex: $value;
+	-ms-flex: $value;
+	flex: $value;
+}
+@mixin flex-direction($direction) {
+	-ms-flex-direction: #{nth($direction, 1)};
+	flex-direction: #{nth($direction, 1)};
+}
+@mixin flex-wrap($wrap) {
+	-ms-flex-wrap: #{nth($wrap, 1)};
+	flex-wrap: #{nth($wrap, 1)};
+}
+@mixin flex-align($position) {
+	-ms-flex-align: #{nth($position, 1)};
+	align-items: #{nth($position, 1)};
+}
+@mixin flex-justify($position) {
+	@if $position == 'justify' {
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	@else if $position == 'end' {
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+	}
+
+	@else if $position == 'start' {
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+	@else {
+		-ms-flex-pack: #{nth($position, 1)};
+		justify-content: #{nth($position, 1)};
+	}
+}
+@mixin margin($size, $side) {
+	@if $side == 'top' {
+		margin-top: calculateRem($size);
+	}
+
+	@else if $side == 'right' {
+		margin-right: calculateRem($size);
+	}
+
+	@else if $side == 'bottom' {
+		margin-bottom: calculateRem($size);
+	}
+
+	@else if $side == 'left' {
+		margin-left: calculateRem($size);
+	}
+}
+@mixin padding($size, $side) {
+	@if $side == 'top' {
+		padding-top: calculateRem($size);
+	}
+
+	@else if $side == 'right' {
+		padding-right: calculateRem($size);
+	}
+
+	@else if $side == 'bottom' {
+		padding-bottom: calculateRem($size);
+	}
+
+	@else if $side == 'left' {
+		padding-left: calculateRem($size);
+	}
+}
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+@mixin transition-delay($args...) {
+	-webkit-transition-delay: $args;
+	-moz-transition-delay: $args;
+	-ms-transition-delay: $args;
+	-o-transition-delay: $args;
+	transition-delay: $args;
+}
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-ms-transform: $args;
+	-o-transform: $args;
+	transform: $args;
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName}{
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
