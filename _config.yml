@@ -5,7 +5,7 @@ description: Leveling the playing field
 #baseurl: "https://arcticsecurity.com"
 url: ""
 
-timezone: "Europe/London"
+timezone: "Europe/Helsinki"
 strict_front_matter: true
 include: [".htaccess"]
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
@@ -39,17 +39,6 @@ defaults:
       type: pages
     values:
       layout: "default"
-  - scope:
-      path: "_pages/fi/index.html"
-      type: pages
-    values:
-      layout: "default"
-  - scope:
-      path: "_pages/en/index.html"
-      type: pages
-    values:
-      layout: "default"
-      language: en
   - scope:
       path: "_posts"
       type: posts
