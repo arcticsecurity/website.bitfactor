@@ -1,0 +1,10 @@
+{% assign pages = site.pages | sort:'navigation.nav_order' %}
+
+<nav class="navigation">
+  <a href="/">{{ site.homepage_nav_title }}</a>
+  {% for navitem in pages %}
+    {% if navitem.navigation.show_in_navigation == true %}
+      <a href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
