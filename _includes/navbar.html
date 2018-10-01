@@ -1,4 +1,4 @@
-{% assign pages = site.pages | sort:'navigation.nav_order' %}
+{% assign pages = site.pages | sort:'navigation.nav_order' | plus:0 %}
 
 <nav class="navigation">
   <a href="/">{{ site.homepage_nav_title }}</a>
