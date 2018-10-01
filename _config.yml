@@ -12,9 +12,6 @@ exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/c
 keep_files: [".git", ".svn"]
 uploads_dir: "images/content"
 
-language_shorthand_finnish: "FI"
-language_shorthand_english: "EN"
-
 markdown: kramdown
 theme: minima
 sass:
