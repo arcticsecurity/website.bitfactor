@@ -1,9 +1,9 @@
 
 title: Arctic Security
-email: your-email@example.com
+email: contact@arcticsecurity.com
 description: Leveling the playing field
-#baseurl: "https://arcticsecurity.com"
-url: ""
+baseurl: ""
+url: "https://arcticsecurity.com"
 
 timezone: "Europe/Helsinki"
 strict_front_matter: true
