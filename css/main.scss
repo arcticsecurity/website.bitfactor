@@ -1,9 +1,14 @@
 ---
+color: red
 ---
 /* General imports */
-@import "variables";
 @import "normalize";
+@import "variables";
 @import "grid";
 @import "functions";
 @import "mixins";
 @import "general";
+
+#main-content {
+  color: {{page.color}};
+}

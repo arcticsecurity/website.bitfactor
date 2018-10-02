@@ -35,13 +35,6 @@
 	display: -webkit-flex;
 	display: flex;
 }
-@mixin display-flex() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
 @mixin flex($value) {
 	-webkit-box-flex: $value;
 	-moz-box-flex: $value;
