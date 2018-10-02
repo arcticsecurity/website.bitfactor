@@ -17,11 +17,18 @@ theme: minima
 sass:
   sass_dir: _sass
 collections:
-  #products:
-  #posts:
-  #news:
-  #events:
-  #partners:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:slug/
+  products:
+    output: true
+    permalink: /products/:slug/
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:slug/
+  events:
+    output: true
+    permalink: /events/:year/:month/:day/:slug/
   pages:
     output: true
     permalink: /:path/
@@ -41,6 +48,21 @@ defaults:
       type: posts
     values:
       layout: blog
+  - scope:
+      path: "_products"
+      type: products
+    values:
+      layout: product
+  - scope:
+      path: "_news"
+      type: news
+    values:
+      layout: news-article
+  - scope:
+      path: "_events"
+      type: events
+    values:
+      layout: event
   
 # https://github.com/jekyll/jekyll-sitemap
 
