@@ -1,11 +1,12 @@
 .footer {
   width: 100%;
-  position: fixed;
-  
-  bottom: 0;
+  position: absolute;
+
+  bottom: -$footer-height-mobile;
   min-height: $footer-height-mobile;
   @include grid-media($medium-grid) {
     min-height: $footer-height;
+    bottom: -$footer-height;
   }
 
   border-top: 1px solid $color-border-gray;
