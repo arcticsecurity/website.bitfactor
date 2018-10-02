@@ -70,10 +70,8 @@ plugins:
   - jekyll-sitemap
 
 # Misc
-homepage_nav_title: Home
 
 _comments:
   show_in_navigation: Is the page displayed in navigation?
   nav_order: Order of the page in navigation
   nav_title: Title shown in navigation
-  homepage_nav_title: Title for homepage in navigation

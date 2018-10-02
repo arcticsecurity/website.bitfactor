@@ -1,5 +1,4 @@
 ---
-color: red
 ---
 /* General imports */
 @import "normalize";
@@ -9,6 +8,6 @@ color: red
 @import "mixins";
 @import "general";
 
-#main-content {
-  color: {{page.color}};
-}
+/* Components */
+@import "navigation";
+@import "footer";
