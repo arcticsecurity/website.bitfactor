@@ -71,7 +71,7 @@
     position: absolute;
     bottom: 25px;
     right: 50%;
-    transform: translateX(50%);
+    @include transform(translateX(50%));
     @include font-size(16px);
     line-height: 24px;
 
@@ -81,7 +81,7 @@
     @include grid-media($medium-grid) {
       right: 50px;
       bottom: 25px;
-      transform: translateX(0);
+      @include transform(translateX(0));
     }
 
     .fa-linkedin {
