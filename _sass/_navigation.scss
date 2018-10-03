@@ -37,6 +37,7 @@
     min-height: 40px;
     text-align: center;
     background: white;
+    color: $color-light-gray;
 
 
     @include transition(background 100ms ease-in-out, color 100ms ease-in-out);
@@ -51,21 +52,6 @@
       color: $color-dark-gray;
       background: $color-light-blue;
       cursor: pointer;
-    }
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 57px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-    pointer-events: none;
-
-    @include grid-media($large-grid) {
-      display: none;
     }
   }
 

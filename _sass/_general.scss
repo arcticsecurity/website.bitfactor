@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600');
 
 html {
   box-sizing: border-box;
@@ -15,14 +15,13 @@ html {
 a {
   text-decoration: none;
   outline: none;
-  color: $color-light-gray;
+  color: $color-dark-gray;
 
-  &:link,
-  &:visited {
-  }
+  @include transition(color 100ms ease-in-out);
 
   &:active,
   &:hover {
+    color: $color-light-gray;
   }
 }
 
@@ -33,4 +32,8 @@ body {
   @include grid-media($medium-grid) {
     min-height: calc(100vh - #{$footer-height});
   }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-title;
 }

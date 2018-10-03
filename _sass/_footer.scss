@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   position: absolute;
+  font-family: $font-nav;
 
   bottom: -$footer-height-mobile;
   min-height: $footer-height-mobile;
@@ -10,4 +11,83 @@
   }
 
   border-top: 1px solid $color-border-gray;
+  padding: 0 30px;
+
+  .footer__content-wrapper {
+    @include display-flex();
+    @include flex-justify(flex-start);
+    @include flex-align(center);
+    width: 100%;
+    min-height: $footer-height;
+  }
+
+  .footer__logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .footer__address {
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(flex-start);
+    @include font-size(16px);
+    
+    font-weight: normal;
+    line-height: 1.44;
+    font-style: normal;
+    
+    margin-left: 20px;
+    @include grid-media($medium-grid) {
+      margin-left: 27px;
+    }
+
+    .footer__address-name {
+      font-weight: 600;
+    }
+  }
+
+  .footer__pages {
+    display: none;
+    @include flex-direction(column);
+    @include flex-align(flex-start);
+    @include font-size(16px);
+
+    font-weight: normal;
+    line-height: 1.44;
+    font-style: normal;
+    font-family: $font-nav;
+    margin-left: 77px;
+
+    .footer__page {
+      color: $color-gray;
+    }
+
+    @include grid-media($medium-grid) {
+      @include display-flex();
+    }
+  }
+
+  .footer__linkedin-link {
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+    @include font-size(16px);
+    line-height: 24px;
+
+    @include display-flex();
+
+
+    @include grid-media($medium-grid) {
+      right: 50px;
+      bottom: 25px;
+      transform: translateX(0);
+    }
+
+    .fa-linkedin {
+      color: $color-linkedin-blue;
+      margin-left: 15px;
+      @include font-size(24px);
+    }
+  }
 }

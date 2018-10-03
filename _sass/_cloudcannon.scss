@@ -1,0 +1,29 @@
+a.cloudcannon-edit-link {
+    display: none;
+    background-color: $color-light-blue;
+    border: 2px solid $color-light-gray;
+    padding: 5px 10px;
+    color: $color-dark-gray;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    z-index: 999;
+
+    &.second {
+        bottom: 95px;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+.cms-editor-active {
+  .cloudcannon-edit-link {
+    display: inline-block;
+
+    &.hide {
+        display: none;
+    }
+  }
+}
