@@ -188,6 +188,7 @@
         @include flex-direction(column);
         @include font-size(18px);
 
+        z-index: 10;
         position: absolute;
         top: calc(100% + 25px);
         margin-left: 14px;
