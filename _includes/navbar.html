@@ -5,12 +5,18 @@
   <a class="navigation__home-link" href="/">
     <img class="navigation__home-logo" src="/images/site/logo_text2_blue.svg" alt="logo_text2_blue"/>
   </a>
-  <div class="navigation__pages">
-  {% for navitem in pages %}
-    {% if navitem.navigation.show_in_navigation == true %}
-      <a class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</a>
-    {% endif %}
-  {% endfor %}
+  <div class="navigation__wrapper">
+    <div id="navigation-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navigation__pages">
+    {% for navitem in pages %}
+      {% if navitem.navigation.show_in_navigation == true %}
+        <a class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</a>
+      {% endif %}
+    {% endfor %}
+    </div>
   </div>
-  {% include language-select.html %}
 </nav>

@@ -3,15 +3,20 @@ $font-title: 'IBM Plex Serif', serif;
 $font-general: 'IBM Plex Sans', sans-serif;
 
 $color-dark-blue: rgb(0, 200, 255);
-$color-blue: rgba($color-dark-blue, 0.4);
-$color-light-blue: rgba($color-dark-blue, 0.1);
+$color-burger-blue: rgb(40, 40, 80);
+$color-blue: mix($color-dark-blue, white, 40);
+$color-light-blue: mix($color-dark-blue, white, 10);
 $color-linkedin-blue: #0073a4;
 
 $color-dark-gray: rgb(34, 34, 34);
-$color-light-gray: rgba($color-dark-gray, .4);
-$color-gray: rgba($color-dark-gray, .6);
-
-$color-border-gray: rgba(216, 216, 216, 0.6);
+$color-light-gray: mix($color-dark-gray, white, 40);
+$color-gray: mix($color-dark-gray, white, 60);
+$color-border-gray: mix(rgb(216, 216, 216), white, 60);
 
 $footer-height: 144px;
 $footer-height-mobile: 190px;
+
+$screen-width-xl: 1280px;
+$screen-width-l: 1024px;
+$screen-width-m: 768px;
+$screen-width-s: 576px;

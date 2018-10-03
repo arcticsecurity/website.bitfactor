@@ -1,29 +1,3 @@
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-	$src: null;
-	$extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_") );
-	$formats: ( otf: "opentype", ttf: "truetype" );
-	@each $ext in $exts {
-		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-	}
-	@font-face {
-		font-family: quote($name);
-		font-style: $style;
-		font-weight: $weight;
-		src: $src;
-	}
-}
-@mixin grid-media($grid) {
-	$_media: _retrieve-setting($grid, media);
-	$_query: _parse-media($_media);
-	@media #{$_query} {
-		$_default-grid: $default-grid;
-		$default-grid: map-merge($default-grid, $grid) !global;
-		@content;
-		$default-grid: $_default-grid !global;
-	}
-}
 @mixin font-size($size) {
 	font-size: $size;
 	font-size: calculateRem($size);
@@ -72,40 +46,6 @@
 	@else {
 		-ms-flex-pack: #{nth($position, 1)};
 		justify-content: #{nth($position, 1)};
-	}
-}
-@mixin margin($size, $side) {
-	@if $side == 'top' {
-		margin-top: calculateRem($size);
-	}
-
-	@else if $side == 'right' {
-		margin-right: calculateRem($size);
-	}
-
-	@else if $side == 'bottom' {
-		margin-bottom: calculateRem($size);
-	}
-
-	@else if $side == 'left' {
-		margin-left: calculateRem($size);
-	}
-}
-@mixin padding($size, $side) {
-	@if $side == 'top' {
-		padding-top: calculateRem($size);
-	}
-
-	@else if $side == 'right' {
-		padding-right: calculateRem($size);
-	}
-
-	@else if $side == 'bottom' {
-		padding-bottom: calculateRem($size);
-	}
-
-	@else if $side == 'left' {
-		padding-left: calculateRem($size);
 	}
 }
 @mixin transition($args...) {

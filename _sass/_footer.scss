@@ -5,7 +5,7 @@
 
   bottom: -$footer-height-mobile;
   min-height: $footer-height-mobile;
-  @include grid-media($medium-grid) {
+  @media only screen and (min-width: $screen-width-m) {
     min-height: $footer-height;
     bottom: -$footer-height;
   }
@@ -37,7 +37,7 @@
     font-style: normal;
     
     margin-left: 20px;
-    @include grid-media($medium-grid) {
+    @media only screen and (min-width: $screen-width-m) {
       margin-left: 27px;
     }
 
@@ -62,7 +62,7 @@
       color: $color-gray;
     }
 
-    @include grid-media($medium-grid) {
+    @media only screen and (min-width: $screen-width-m) {
       @include display-flex();
     }
   }
@@ -78,7 +78,7 @@
     @include display-flex();
 
 
-    @include grid-media($medium-grid) {
+    @media only screen and (min-width: $screen-width-m) {
       right: 50px;
       bottom: 25px;
       @include transform(translateX(0));
@@ -86,8 +86,15 @@
 
     .fa-linkedin {
       color: $color-linkedin-blue;
+      @include transition(color 100ms ease-in-out);
       margin-left: 15px;
       @include font-size(24px);
+    }
+
+    &:hover {
+      .fa-linkedin {
+        color: mix($color-linkedin-blue, white, 60);
+      }
     }
   }
 }
