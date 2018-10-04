@@ -67,7 +67,7 @@
       color: $color-gray;
     }
 
-    @media only screen and (min-width: $screen-width-m) {
+    @media only screen and (min-width: $screen-width-s) {
       @include display-flex();
     }
   }

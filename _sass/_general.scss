@@ -12,19 +12,6 @@ html {
   box-sizing: inherit;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
-  color: $color-dark-gray;
-
-  @include transition(color 100ms ease-in-out);
-
-  &:active,
-  &:hover {
-    color: $color-light-gray;
-  }
-}
-
 body {
   position: relative;
   min-width: 100vw;
@@ -36,4 +23,17 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: $font-title;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: $color-dark-gray;
+
+  @include transition(color 100ms ease-in-out);
+
+  &:active,
+  &:hover {
+    color: $color-light-gray;
+  }
 }
