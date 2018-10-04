@@ -5,8 +5,8 @@
     <img class="footer__logo" src="/images/site/logo_blue.svg" alt="logo_blue" />
     <address class="footer__address">
       <div class="footer__address-name">{{ site.data.company.name }}</div>
-      <a href="mailto:{{site.data.company.email}}">{{ site.data.company.email }}</a>
-      <a href="tel:{{ site.data.company.phone | remove: ' ' }}">{{ site.data.company.phone }}</a href="tel:{{site.data.company.phone | remove: ' ' }}">
+      <a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
+      <a href="tel:{{ site.data.company.phone | remove: ' ' }}">{{ site.data.company.phone }}</a href="tel:{{ site.data.company.phone | remove: ' ' }}">
       <div>Business ID: {{ site.data.company.business_id }}</div>
       <a class="cloudcannon-edit-link" href="cloudcannon:collections/_data/company.yml">Edit company information</a>
     </address>
@@ -18,5 +18,5 @@
     {% endfor %}
     </div>
   </div>
-  <a href="{{site.data.company.linkedin_url}}" class="footer__linkedin-link" target="_blank" rel="noopener noreferrer">Find us on LinkedIn<i class="fab fa-linkedin"></i></a>
+  <a href="{{ site.data.company.linkedin_url }}" class="footer__linkedin-link" target="_blank" rel="noopener noreferrer">Find us on LinkedIn<i class="fab fa-linkedin"></i></a>
 </footer>
