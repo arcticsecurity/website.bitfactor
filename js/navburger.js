@@ -16,4 +16,3 @@ $navPages.on('click', function(e) {e.stopPropagation()})
 $(document).click(function() {
   if ($navWrapper.hasClass(menuOpen)) $navWrapper.removeClass(menuOpen).addClass(menuClosed)
 })
-

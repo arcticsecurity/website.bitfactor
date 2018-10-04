@@ -15,9 +15,13 @@ html {
 body {
   position: relative;
   min-width: 100vw;
-  min-height: calc(100vh - #{$footer-height-mobile});
-  @media only screen and (min-width: $screen-width-m) {
-    min-height: calc(100vh - #{$footer-height});
+  min-height: 100vh;
+
+  &.default {
+    min-height: calc(100vh - #{$footer-height-mobile});
+    @media only screen and (min-width: $screen-width-m) {
+      min-height: calc(100vh - #{$footer-height});
+    }
   }
 }
 
