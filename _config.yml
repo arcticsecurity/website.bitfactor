@@ -75,7 +75,5 @@ _comments:
   show_in_navigation: Is the page displayed in navigation?
   nav_order: Order of the page in navigation
   nav_title: Title shown in navigation
-  og_image_path: "This image is displayed when link is shared in social media."
-  twitter_image_path: >-
-    (Optional to show different image in twitter share.)
-    This image is displayed when link is shared in twitter.
+  og_image_path: Displayed when link is shared in social media.
+  twitter_image_path: (Optional) Display different image in twitter share.
