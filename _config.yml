@@ -32,6 +32,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  employees:
+    output: false
 
 defaults:
   - scope:
