@@ -1,16 +1,14 @@
 ---
 blog_title:
-short_description:
+blog_description:
 date:
-blog_category:
 tags:
 writer:
+  employees:
 og_image_path: '/images/site/logo_text2_blue.svg'
 twitter_image_path:
 _comments:
-  short_description: "Description"
   date: "Mark the date the blog post is added. Will show on a list of blog posts above as the date"
-  blog_category: "Select blog category (also correct language). First one will be used to decide category on a list of blog posts"
   tags: 'Tags of content of the blog post for example "Google Analytics", "GitHub" etc'
-  writer: "Select the writers"
+  writer: "Select the writers, max 3"
 ---
