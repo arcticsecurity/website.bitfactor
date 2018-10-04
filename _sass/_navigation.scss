@@ -46,7 +46,7 @@
       @include transition(background 100ms ease-in-out, color 100ms ease-in-out);
 
       &.current {
-        font-weight: 600;
+        font-weight: $font-weight-bold;
         color: $color-dark-gray;
         background: $color-blue;
         &:hover {

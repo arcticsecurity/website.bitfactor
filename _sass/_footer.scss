@@ -40,7 +40,7 @@
     @include flex-align(flex-start);
     @include font-size(16px);
     
-    font-weight: normal;
+    font-weight: $font-weight-normal;
     line-height: 1.69;
     font-style: normal;
     
@@ -60,13 +60,13 @@
     @include flex-align(flex-start);
     @include font-size(16px);
 
-    font-weight: normal;
+    font-weight: $font-weight-normal;
     line-height: 1.69;
     font-style: normal;
     font-family: $font-nav;
     margin-left: 57px;
 
-    @media only screen and (min-width: $screen-width-m) {
+    @media only screen and (min-width: $screen-width-s) {
       @include display-flex();
     }
   }
@@ -100,8 +100,8 @@
     bottom: 36px;
 
     @media only screen and (max-width: $screen-width-s - 1) {
-      right: 130px;
-      max-width: calc(100% - 180px);
+      right: 110px;
+      max-width: calc(100% - 160px);
     }
   }
 }

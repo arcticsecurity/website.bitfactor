@@ -26,7 +26,23 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: $font-title;
+  font-family: $font-serif;
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 1.3;
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  @include font-size(56px);
+}
+
+h2 {
+
+}
+
+h3 {
+  @include font-size(32px);
 }
 
 a {
