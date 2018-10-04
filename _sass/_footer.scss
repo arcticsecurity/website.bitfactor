@@ -2,21 +2,24 @@
   width: 100%;
   position: absolute;
   font-family: $font-nav;
+  color: $color-gray;
+
+  a {
+    color: $color-gray;
+
+    &:hover {
+      color: $color-dark-gray;
+    }
+  }
 
   bottom: -$footer-height-mobile;
   min-height: $footer-height-mobile;
-  @media only screen and (min-width: $screen-width-m) {
+  @media only screen and (min-width: $screen-width-l) {
     min-height: $footer-height;
     bottom: -$footer-height;
   }
-
   border-top: 1px solid $color-border-gray;
   padding: 0 30px;
-
-  @media only screen and (max-width: $screen-width-m - 1) {
-    @include display-flex();
-    @include flex-direction(column);
-  }
 
   .footer__content-wrapper {
     @include display-flex();
@@ -38,7 +41,7 @@
     @include font-size(16px);
     
     font-weight: normal;
-    line-height: 1.44;
+    line-height: 1.69;
     font-style: normal;
     
     margin-left: 20px;
@@ -58,34 +61,22 @@
     @include font-size(16px);
 
     font-weight: normal;
-    line-height: 1.44;
+    line-height: 1.69;
     font-style: normal;
     font-family: $font-nav;
-    margin-left: 77px;
+    margin-left: 57px;
 
-    .footer__page {
-      color: $color-gray;
-    }
-
-    @media only screen and (min-width: $screen-width-s) {
+    @media only screen and (min-width: $screen-width-m) {
       @include display-flex();
     }
   }
 
   .footer__linkedin-link {
-    position: relative;
-    line-height: 24px;
-    align-self: center;
-    @include display-flex();
-    @media only screen and (min-width: $screen-width-m) {
-      position: absolute;
-      right: 50px;
-      bottom: 25px;
-      @include transform(translateX(0));
-    }
+    position: absolute;
+    right: 50px;
+    bottom: 88px;
 
     .fa-linkedin {
-      color: $color-linkedin-blue;
       @include transition(color 100ms ease-in-out);
       margin-left: 15px;
       @include font-size(24px);
@@ -93,8 +84,24 @@
 
     &:hover {
       .fa-linkedin {
-        color: mix($color-linkedin-blue, white, 60);
+        color: $color-linkedin-blue;
       }
+    }
+
+    @media only screen and (max-width: $screen-width-s - 1) {
+      bottom: 36px;
+    }
+  }
+
+  .footer__copyright {
+    color: $color-light-gray;
+    position: absolute;
+    right: 50px;
+    bottom: 36px;
+
+    @media only screen and (max-width: $screen-width-s - 1) {
+      right: 130px;
+      max-width: calc(100% - 180px);
     }
   }
 }

@@ -19,7 +19,7 @@ body {
 
   &.default {
     min-height: calc(100vh - #{$footer-height-mobile});
-    @media only screen and (min-width: $screen-width-m) {
+    @media only screen and (min-width: $screen-width-l) {
       min-height: calc(100vh - #{$footer-height});
     }
   }
