@@ -1,7 +1,7 @@
 ---
-blog_title: Testing
-blog_description: Blog Description
-date: 2018-10-10 00:00:00 +0300
+blog_title: Foo bar story of my life
+blog_description: Description of my life
+date: 2018-06-10 00:00:00 +0300
 tags:
   - Testing
 writer:

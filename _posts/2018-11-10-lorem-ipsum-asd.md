@@ -1,7 +1,7 @@
 ---
-blog_title: Testing
-blog_description: Blog Description
-date: 2018-10-10 00:00:00 +0300
+blog_title: Lorem ipsum asd
+blog_description: Lorem ipsum dolor foo bar
+date: 2018-11-10 00:00:00 +0300
 tags:
   - Testing
 writer:
