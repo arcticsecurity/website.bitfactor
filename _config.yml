@@ -29,7 +29,7 @@ collections:
   events:
     output: true
     permalink: /events/:year/:month/:day/:slug/
-  careers:
+  jobs:
     output: true
     permalink: /careers/:slug/
   pages:

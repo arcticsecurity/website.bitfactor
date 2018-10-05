@@ -1,0 +1,8 @@
+<section class="jobs__wrapper">
+  {% assign sortedJobs = (site.jobs | sort: 'date') | reverse %}
+  {% for job in sortedJobs | limit: 3 %}
+    <a class="jobs__job" href="{{job.url}}">
+      {{job.title}}
+    </a>
+  {% endfor %}
+</section>
