@@ -20,7 +20,7 @@
 
   @media only screen and (min-width: $screen-width-l) {
     position: relative;
-    font-family: $font-nav;
+    font-family: $font-general;
     @include display-flex();
     @include flex-justify(flex-start);
     @include font-size(18px);

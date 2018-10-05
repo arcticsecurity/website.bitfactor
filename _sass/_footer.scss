@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   position: absolute;
-  font-family: $font-nav;
+  font-family: $font-general;
   color: $color-gray;
 
   a {
@@ -63,7 +63,7 @@
     font-weight: $font-weight-normal;
     line-height: 1.69;
     font-style: normal;
-    font-family: $font-nav;
+    font-family: $font-general;
     margin-left: 57px;
 
     @media only screen and (min-width: $screen-width-s) {

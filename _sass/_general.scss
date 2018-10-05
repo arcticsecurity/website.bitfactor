@@ -4,7 +4,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: $font-general;
+  font-family: $font-condensed;
   font-weight: normal;
   line-height: 1.45;
   overflow-x: hidden;
@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  font-family: $font-general;
+  font-family: $font-condensed;
   margin-top: 0;
   margin-bottom: 10px;
 }
