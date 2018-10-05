@@ -29,6 +29,9 @@ collections:
   events:
     output: true
     permalink: /events/:year/:month/:day/:slug/
+  careers:
+    output: true
+    permalink: /careers/:slug/
   pages:
     output: true
     permalink: /:path/
