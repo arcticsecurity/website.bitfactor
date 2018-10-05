@@ -6,6 +6,7 @@ $section-width: calc(100% - 245px);
   @include display-flex();
   @include flex-direction(column);
   @include flex-align(center);
+  margin-bottom: 120px;
 
   .posts__title-row {
     width: $section-width;
