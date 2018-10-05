@@ -1,0 +1,11 @@
+.jobs__wrapper {
+  width: 100%;
+  @include display-flex();
+  @include flex-justify(center);
+
+  padding-bottom: 50px;
+
+  .jobs__flex-container {
+    width: 90%;
+  }
+}

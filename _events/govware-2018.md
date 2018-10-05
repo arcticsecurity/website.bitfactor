@@ -8,6 +8,7 @@ event_description: >-
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 date: 2018-11-05 00:00:00 +0200
+end_date:
 tags:
   - Geeks
 writer:

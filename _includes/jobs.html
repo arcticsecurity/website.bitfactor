@@ -1,8 +1,18 @@
 <section class="jobs__wrapper">
-  {% assign sortedJobs = (site.jobs | sort: 'date') | reverse %}
-  {% for job in sortedJobs | limit: 3 %}
-    <a class="jobs__job" href="{{job.url}}">
-      {{job.title}}
-    </a>
-  {% endfor %}
+  <div class="jobs__flex-container">
+    <div class="jobs__content">
+      <h3>Careers</h3>
+      <p>Join our team and help us build the next generation of Cyber Defense!</p>
+      <a href="/careers/">See all open positions</a>
+    </div>
+    <div class="jobs__list">
+      {% assign sortedJobs = (site.jobs | sort: 'date') | reverse %}
+      {% for job in sortedJobs | limit: 3 %}
+        <a class="jobs__job" href="{{job.url}}">
+          <div class="job__title">{{job.job_title}}</div>
+          <div class="job__date">{{job.date}}</div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
 </section>

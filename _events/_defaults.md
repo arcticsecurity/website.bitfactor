@@ -2,6 +2,7 @@
 event_title:
 event_description:
 date:
+end_date:
 tags:
 writer:
   employees:
