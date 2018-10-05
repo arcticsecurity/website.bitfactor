@@ -10,7 +10,8 @@
       </a>
   </div>
   <div class="posts__flex-container">
-  {% for post in site.posts | limit: 6 %}
+  {% assign sortedPosts = (site.posts | sort: 'date') | reverse %}
+  {% for post in sortedPosts | limit: 6 %}
     <a class="post__card" href="{{ post.url }}">
       <div class="post__card-image">
         <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />

@@ -1,14 +1,17 @@
 <section class="news__wrapper">
   <div class="news__title-row">
     <h3 class="news__title">
-      <i class="arcsec-checkbox_empty"></i>News
+      <i class="arcsec-news"></i>News
     </h3>
-    <p class="news__discover-more">
-      Discover more<i class="arcsec-circle_remove"></i>
-    </p>
+    <a href="/news">
+      <span class="news__discover-more">
+        Discover more<i class="arcsec-circle_remove"></i>
+      </span>
+    </a>
   </div>
   <div class="news__flex-container">
-  {% for news_article in site.news | limit: 6 %}
+  {% assign sortedNews = (site.news | sort: 'date') | reverse %}
+  {% for news_article in sortedNews | limit: 6 %}
     <a class="news_article__card" href="{{ news_article.url }}">
       <div class="news_article__card-content">
         <p class="news_article__card-date">

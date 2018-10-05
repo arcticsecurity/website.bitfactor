@@ -1,6 +1,5 @@
 ---
 event_title:
-event_image_path:
 event_description:
 date:
 tags:

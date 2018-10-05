@@ -42,6 +42,15 @@ $section-width-mobile: 95%;
       margin-left: 12px;
       @include font-size(32px);
     }
+
+    &:hover {
+      color: $color-blue;
+      @include transition(color 100ms ease-in-out);
+      i {
+        color: $color-blue;
+        @include transition(color 100ms ease-in-out);
+      }
+    }
   }
 
   .posts__flex-container {
@@ -56,7 +65,7 @@ $section-width-mobile: 95%;
   @media only screen and (max-width: $screen-width-l - 1) {
     .posts__flex-container {
       width: $section-width-mobile;
-      @include flex-justify(center);
+      @include flex-justify(flex-start);
     }
     .posts__title-row {
       width: $section-width-mobile;
