@@ -1,0 +1,8 @@
+<section class="events__wrapper">
+  {% assign sortedEvents = (site.events | sort: 'date') | reverse %}
+  {% for event in sortedEvents | limit: 3 %}
+    <a class="events__event" href="{{event.url}}">
+      {{event.title}}
+    </a>
+  {% endfor %}
+</section>
