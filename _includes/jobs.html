@@ -3,7 +3,7 @@
     <div class="jobs__content">
       <h3>Careers</h3>
       <p>Join our team and help us build the next generation of Cyber Defense!</p>
-      <a href="/careers/">See all open positions</a>
+      <a class="hide_on_mobile jobs__see-more" href="/careers/">See all open positions</a>
     </div>
     <div class="jobs__list">
       {% assign sortedJobs = (site.jobs | sort: 'date') | reverse %}
@@ -13,6 +13,7 @@
           <div class="job__date">{{job.date}}</div>
         </a>
       {% endfor %}
+      <a class="visible_on_mobile jobs__see-more" href="/careers/"><br>See all open positions</a>
     </div>
   </div>
 </section>

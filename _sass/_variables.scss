@@ -10,19 +10,22 @@ $color-blue: mix($color-arctic-blue, white, 40);
 $color-light-blue: mix($color-arctic-blue, white, 10);
 $color-linkedin-blue: #0073a4;
 $color-gray-blue: mix($color-dark-blue, white, 60);
+$color-light-green: mix(rgb(93, 216, 193), white, 20);
+$color-green: rgb(61, 155, 138);
 
 $color-dark-gray: rgb(34, 34, 34);
 $color-light-gray: mix($color-dark-gray, white, 40);
 $color-gray: mix($color-dark-gray, white, 60);
 $color-border-gray: mix(rgb(216, 216, 216), white, 60);
+$color-border-blue: mix($color-dark-blue, white, 20);
 
 $footer-height: 180px;
 $footer-height-mobile: 260px;
 
-$screen-width-xxl: 1560px;
+$screen-width-xxl: 1488px;
 $screen-width-xl: 1280px;
 $screen-width-l: 1024px;
-$screen-width-m: 768px;
+$screen-width-m: 844px;
 $screen-width-s: 576px;
 
 $font-weight-bold: 600;
