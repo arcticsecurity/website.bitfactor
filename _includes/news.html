@@ -1,23 +1,20 @@
 <section class="news__wrapper">
   <div class="news__title-row">
     <h3 class="news__title">
-      <i class="arcsec-checkbox_empty"></i>From Our Blog
+      <i class="arcsec-checkbox_empty"></i>News
     </h3>
     <p class="news__discover-more">
       Discover more<i class="arcsec-circle_remove"></i>
     </p>
   </div>
   <div class="news__flex-container">
-  {% for news_article in site.news %}
+  {% for news_article in site.news | limit: 6 %}
     <a class="news_article__card" href="{{ news_article.url }}">
-      <div class="news_article__card-image">
-        <img src="{{ news_article.blog_image_path }}" alt="{{ news_article.blog_title }}" />
-      </div>
       <div class="news_article__card-content">
         <p class="news_article__card-date">
           <span class="uppercase">{{ news_article.date | date: "%B" }} </span>{% assign day = news_article.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ news_article.date | date: "%Y" }}
         </p>
-        <h5 class="news_article__card-title">{{ news_article.blog_title }}</h5>
+        <h5 class="news_article__card-title">{{ news_article.news_article_title }}</h5>
         <p class="news_article__card-writer">{{ news_article.writer }}</p>
       </div>
     </a>

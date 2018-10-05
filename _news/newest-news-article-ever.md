@@ -8,7 +8,7 @@ news_article_description: >-
   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-date: 2018-10-09 00:00:00 +0300
+date: 2018-10-02 00:00:00 +0300
 tags:
   - News
 writer:

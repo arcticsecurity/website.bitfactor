@@ -1,6 +1,5 @@
 ---
 news_article_title:
-news_article_image_path:
 news_article_description:
 date:
 tags:

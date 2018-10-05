@@ -3,12 +3,14 @@
     <h3 class="posts__title">
       <i class="arcsec-checkbox_empty"></i>From Our Blog
     </h3>
-    <p class="posts__discover-more">
-      Discover more<i class="arcsec-circle_remove"></i>
-    </p>
+      <a href="/blog">
+        <span class="posts__discover-more">
+          Discover more<i class="arcsec-circle_remove"></i>
+        </span>
+      </a>
   </div>
   <div class="posts__flex-container">
-  {% for post in site.posts %}
+  {% for post in site.posts | limit: 6 %}
     <a class="post__card" href="{{ post.url }}">
       <div class="post__card-image">
         <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />

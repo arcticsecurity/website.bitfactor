@@ -16,7 +16,7 @@ news_article_description: >-
   holds in these matters to this principle of selection: he rejects pleasures to
   secure other greater pleasures, or else he endures pains to avoid worse
   pains."
-date: 2018-10-07 00:00:00 +0300
+date: 2018-10-03 00:00:00 +0300
 tags:
   - LOL
 writer:

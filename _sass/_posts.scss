@@ -1,12 +1,12 @@
 /* Posts section */
 
-$section-width: calc(100% - 245px);
+$section-width: 80%;
 .posts__wrapper {
   width: 100%;
   @include display-flex();
   @include flex-direction(column);
   @include flex-align(center);
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 
   .posts__title-row {
     width: $section-width;
@@ -46,7 +46,10 @@ $section-width: calc(100% - 245px);
   .posts__flex-container {
     width: $section-width;
     @include display-flex();
-    @include flex-justify(space-between);
+    @include flex-justify(flex-start);
+    @include flex-wrap(wrap);
+    max-height: 390px;
+    overflow: hidden;
   }
 }
 
@@ -54,14 +57,20 @@ $section-width: calc(100% - 245px);
 
 .post__card {
   @include flex(0 1 auto);
+  @include transition(background-color 100ms ease-in-out);
   cursor: pointer;
   background-color: $color-light-blue;
   min-width: 370px;
   width: 370px;
+  max-width: 90vw;
   min-height: 390px;
   max-height: 390px;
   border-radius: 10px;
   overflow: hidden;
+
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
 
   .post__card-image {
     min-height: 180px;
@@ -99,5 +108,25 @@ $section-width: calc(100% - 245px);
     letter-spacing: 1px;
     text-transform: uppercase;
     @include font-size(14px);
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+  @media only screen and (max-width: $screen-width-xxl - 1) {
+    &:nth-child(n+4) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: $screen-width-l - 1) {
+    &:nth-child(n+3) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: $screen-width-m - 1) {
+    &:nth-child(n+2) {
+      display: none;
+    }
   }
 }
