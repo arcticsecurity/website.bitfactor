@@ -1,7 +1,26 @@
-<div class="posts__wrapper">
+<section class="posts__wrapper">
+  <div class="posts__title-row">
+    <h3 class="posts__title">
+      <i class="arcsec-checkbox_empty"></i>From Our Blog
+    </h3>
+    <p class="posts__discover-more">
+      Discover more<i class="arcsec-circle_remove"></i>
+    </p>
+  </div>
+  <div class="posts__flex-container">
   {% for post in site.posts %}
-    <div class="post__wrapper">
-      {{ post.blog_title }}
-    </div>
+    <a class="post__card" href="{{ post.url }}">
+      <div class="post__card-image">
+        <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
+      </div>
+      <div class="post__card-content">
+        <p class="post__card-date">
+          <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+        </p>
+        <h5 class="post__card-title">{{ post.blog_title }}</h5>
+        <p class="post__card-writer">{{ post.writer }}</p>
+      </div>
+    </a>
   {% endfor %}
-</div>
+  </div>
+</section>

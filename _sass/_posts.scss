@@ -1,0 +1,102 @@
+/* Posts section */
+
+$section-width: calc(100% - 245px);
+.posts__wrapper {
+  width: 100%;
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
+
+  .posts__title-row {
+    width: $section-width;
+    @include display-flex();
+    @include flex-justify(space-between);
+    @include flex-align(center);
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  .posts__title {
+    font-family: $font-title;
+    @include display-flex();
+    @include flex-align(center);
+    color: $color-dark-blue;
+    margin-bottom: 0;
+
+    i {
+      color: $color-arctic-blue;
+      margin-right: 10px;
+      @include font-size(25px);
+    }
+  }
+  .posts__discover-more {
+    margin-bottom: 0;
+    @include font-size(14px);
+    @include display-flex();
+    @include flex-align(center);
+    color: $color-arctic-blue;
+
+    i {
+      color: $color-arctic-blue;
+      margin-left: 12px;
+      @include font-size(32px);
+    }
+  }
+
+  .posts__flex-container {
+    width: $section-width;
+    @include display-flex();
+    @include flex-justify(space-between);
+  }
+}
+
+/* One post */
+
+.post__card {
+  @include flex(0 1 auto);
+  cursor: pointer;
+  background-color: $color-light-blue;
+  min-width: 370px;
+  width: 370px;
+  min-height: 390px;
+  max-height: 390px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .post__card-image {
+    min-height: 180px;
+    @include display-flex();
+    @include flex-justify(center);
+    background-color: $color-blue;
+
+    img {
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+    }
+  }
+
+  .post__card-content {
+    padding: 30px 35px;
+  }
+
+  .post__card-date {
+    @include font-size(14px);
+    color: mix($color-dark-blue, $color-light-blue, 40);
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+
+  .post__card-title {
+    line-height: 1.25;
+    color: $color-dark-blue;
+  }
+
+  .post__card-writer {
+    color: mix($color-dark-blue, $color-light-blue, 60);
+    font-weight: $font-weight-bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include font-size(14px);
+  }
+}

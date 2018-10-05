@@ -1,5 +1,6 @@
 ---
 blog_title:
+blog_image_path: '/images/site/logo_text2_blue.svg'
 blog_description:
 date:
 tags:

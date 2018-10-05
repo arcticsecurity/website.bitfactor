@@ -3,10 +3,11 @@ $font-title: 'IBM Plex Sans Condensed', sans-serif;
 $font-serif: 'IBM Plex Serif', serif;
 $font-nav: 'IBM Plex Sans', sans-serif;
 
-$color-dark-blue: rgb(0, 200, 255);
-$color-burger-blue: rgb(40, 40, 80);
-$color-blue: mix($color-dark-blue, white, 40);
-$color-light-blue: mix($color-dark-blue, white, 10);
+$color-dark-blue: rgb(40, 40, 80);
+$color-arctic-blue: rgb(0, 200, 255);
+$color-burger-blue: $color-dark-blue;
+$color-blue: mix($color-arctic-blue, white, 40);
+$color-light-blue: mix($color-arctic-blue, white, 10);
 $color-linkedin-blue: #0073a4;
 
 $color-dark-gray: rgb(34, 34, 34);

@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   font-family: $font-general;
   font-weight: normal;
+  line-height: 1.45;
 }
 
 *, *:before, *:after {
@@ -33,16 +34,34 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: $font-weight-bold;
 }
 
+p {
+  font-family: $font-general;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 h1 {
   @include font-size(56px);
 }
 
 h2 {
-
+  @include font-size(44px);
 }
 
 h3 {
   @include font-size(32px);
+}
+
+h4 {
+  @include font-size(28px);
+}
+
+h5 {
+  @include font-size(24px);
+}
+
+h6 {
+  @include font-size(20px);
 }
 
 a {
@@ -56,4 +75,8 @@ a {
   &:hover {
     color: $color-light-gray;
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
