@@ -1,6 +1,7 @@
 /* News section */
 
 $section-width: 80%;
+$section-width-mobile: 95%;
 .news__wrapper {
   width: 100%;
   @include display-flex();
@@ -50,6 +51,17 @@ $section-width: 80%;
     @include flex-wrap(wrap);
     max-height: 390px;
     overflow: hidden;
+  }
+
+  @media only screen and (max-width: $screen-width-l - 1) {
+    .news__flex-container {
+      width: $section-width-mobile;
+      @include flex-justify(center);
+    }
+    .news__title-row {
+      width: $section-width-mobile;
+      @include flex-justify(space-between);
+    }
   }
 }
 
