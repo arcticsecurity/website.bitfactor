@@ -50,9 +50,10 @@
       min-width: 370px;
       @include font-size(24px);
     }
-    .job__date {
+    .job__team {
       margin-left: 40px;
       min-width: 370px;
+      color: $color-gray-blue;
     }
 
     &:not(:first-child):after {
@@ -63,6 +64,15 @@
       width: 100%;
       height: 100%;
       border-top: 1px solid $color-border-blue;
+    }
+
+    i {
+      @include transform(rotate(180deg) translateY(50%));
+      @include font-size(20px);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      color: $color-gray-blue;
     }
   }
 
@@ -126,11 +136,19 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
-      .job__date {
+      .job__team {
         min-width: 0;
         margin-left: 0;
         align-self: flex-end;
-         margin-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      i {
+        @include transform(rotate(180deg));
+        @include font-size(20px);
+        position: absolute;
+        right: 0;
+        top: 10px;
+        color: $color-gray-blue;
       }
     }
   }

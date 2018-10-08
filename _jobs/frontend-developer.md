@@ -11,6 +11,7 @@ date: 2018-10-03 00:00:00 +0300
 tags:
   - Developer
   - Software
+team: R&D TEAM
 writer:
   employees:
     - tiina-testaaja

@@ -53,6 +53,7 @@
     .event__date {
       margin-left: 40px;
       min-width: 370px;
+      color: $color-gray-blue;
     }
 
     &:not(:first-child):after {

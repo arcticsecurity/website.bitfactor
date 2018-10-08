@@ -1,13 +1,14 @@
 /* News section */
 
 $section-width: 80%;
-$section-width-mobile: 95%;
+$section-width-mobile: 90%;
 .news__wrapper {
   width: 100%;
   @include display-flex();
   @include flex-direction(column);
   @include flex-align(center);
   padding-bottom: 120px;
+  max-width: 97.5vw;
 
   .news__title-row {
     width: $section-width;
@@ -80,10 +81,10 @@ $section-width-mobile: 95%;
   @include flex(0 1 auto);
   cursor: pointer;
   background-color: $color-light-blue;
-  min-width: 370px;
   width: 370px;
   min-height: 390px;
   max-height: 390px;
+  max-width: 90vw;
   border-radius: 10px;
   overflow: hidden;
 

@@ -8,6 +8,7 @@ $section-width-mobile: 95%;
   @include flex-direction(column);
   @include flex-align(center);
   padding-bottom: 120px;
+  max-width: 97.5vw;
 
   .posts__title-row {
     width: $section-width;
@@ -81,7 +82,6 @@ $section-width-mobile: 95%;
   @include transition(background-color 100ms ease-in-out);
   cursor: pointer;
   background-color: $color-light-blue;
-  min-width: 370px;
   width: 370px;
   max-width: 90vw;
   min-height: 390px;
