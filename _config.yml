@@ -31,7 +31,7 @@ collections:
     permalink: /events/:year/:month/:day/:slug/
   jobs:
     output: true
-    permalink: /careers/:slug/
+    permalink: /about/careers/:slug/
   pages:
     output: true
     permalink: /:path/

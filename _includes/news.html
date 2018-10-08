@@ -3,6 +3,11 @@
     <h3 class="news__title">
       <i class="arcsec-news"></i>News
     </h3>
+    <a href="/news" class="hide-on-mobile">
+      <span class="news__discover-more">
+        Discover more<i class="arcsec-circle_remove"></i>
+      </span>
+    </a>
   </div>
   <div class="news__flex-container">
   {% assign sortedNews = (site.news | sort: 'date') | reverse %}
@@ -24,5 +29,10 @@
       </div>
     </a>
   {% endfor %}
+  <a href="/news" class="show-on-mobile">
+    <span class="news__discover-more">
+      Discover more<i class="arcsec-circle_remove"></i>
+    </span>
+  </a>
   </div>
 </section>

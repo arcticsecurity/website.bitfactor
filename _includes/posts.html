@@ -14,14 +14,18 @@
   {% assign includeCategory = include.filter_category | first %}
 {% endif %}
 
-      {% unless include.no_blog_link %}
-      {% endunless %}
-
 <section class="posts__wrapper">
   <div class="posts__title-row">
     <h3 class="posts__title">
       <i class="arcsec-checkbox_empty"></i>{{title}}
     </h3>
+      {% unless include.no_blog_link %}
+      <a class="hide-on-mobile" href="/blog">
+        <span class="posts__discover-more">
+          Discover more<i class="arcsec-circle_remove"></i>
+        </span>
+      </a>
+      {% endunless %}
   </div>
   <div class="posts__flex-container">
 
@@ -63,5 +67,12 @@
       </div>
     </a>
   {% endfor %}
+  {% unless include.no_blog_link %}
+  <a class="show-on-mobile" href="/blog">
+    <span class="posts__discover-more">
+      Discover more<i class="arcsec-circle_remove"></i>
+    </span>
+  </a>
+  {% endunless %}
   </div>
 </section>
