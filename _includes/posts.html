@@ -1,17 +1,51 @@
+{% if include.title %}
+  {% assign title=include.title %}
+{% else %}
+  {% assign title="From Our Blog" %}
+{% endif %}
+
+{% if include.limit %}
+  {% assign limit=include.limit %}
+{% else %}
+  {% assign limit=6 %}
+{% endif %}
+
+{% if include.filter_category %}
+  {% assign includeCategory = include.filter_category | first %}
+{% endif %}
+
 <section class="posts__wrapper">
   <div class="posts__title-row">
     <h3 class="posts__title">
-      <i class="arcsec-checkbox_empty"></i>From Our Blog
+      <i class="arcsec-checkbox_empty"></i>{{title}}
     </h3>
+      {% unless include.no_blog_link %}
       <a href="/blog">
         <span class="posts__discover-more">
           Discover more<i class="arcsec-circle_remove"></i>
         </span>
       </a>
+      {% endunless %}
   </div>
   <div class="posts__flex-container">
-  {% assign sortedPosts = (site.posts | sort: 'date') | reverse %}
-  {% for post in sortedPosts | limit: 6 %}
+
+  {% assign blogposts = "" | split: ',' %}
+  {% for post in site.posts %}
+    {% if post.url != page.url %}
+        {% if includeCategory %}
+            {% for category in post.blog_category %}
+                {% if category == includeCategory %}
+                    {% assign blogposts = blogposts | push: post %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% assign blogposts = blogposts | push: post %}
+        {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign sortedPosts = (blogposts | sort: 'date') | reverse %}
+  {% for post in sortedPosts | limit: limit %}
     <a class="post__card" href="{{ post.url }}">
       <div class="post__card-image">
         <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />

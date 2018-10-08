@@ -7,7 +7,6 @@ $color-arctic-blue: rgb(0, 200, 255);
 $color-burger-blue: $color-dark-blue;
 $color-blue: mix($color-arctic-blue, white, 40);
 $color-light-blue: mix($color-arctic-blue, white, 10);
-$color-linkedin-blue: #0073a4;
 $color-gray-blue: mix($color-dark-blue, white, 60);
 $color-text-gray: mix($color-dark-blue, white, 80);
 $color-light-green: mix(rgb(93, 216, 193), white, 20);
@@ -19,8 +18,12 @@ $color-gray: mix($color-dark-gray, white, 60);
 $color-border-gray: mix(rgb(216, 216, 216), white, 60);
 $color-border-blue: mix($color-dark-blue, white, 20);
 
+$color-linkedin-blue: #0073a4;
+$color-twitter-blue: #00aced;
+$color-facebook-blue: #3d5b99;
+
 $footer-height: 180px;
-$footer-height-mobile: 260px;
+$footer-height-mobile: 265px;
 
 $screen-width-xxl: 1488px;
 $screen-width-xl: 1280px;

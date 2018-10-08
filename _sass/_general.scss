@@ -81,6 +81,30 @@ p>img {
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 10px;
+  max-width: 100%;
+}
+
+blockquote {
+  position: relative;
+  margin: 30px 0;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: calc(100% - 12px);
+    width: 6px;
+    background-color: $color-arctic-blue;
+    border-radius: 3px;
+  }
+
+  p {
+    color: $color-dark-blue;
+    @include font-size(24px);
+    font-style: italic;
+    margin-left: 36px;
+    line-height: 1.46;
+  }
 }
 
 a {

@@ -8,7 +8,7 @@ tags:
   - Story
   - Life
 blog_category:
-  - articles
+  - events
 writer:
   employees:
     - roope-testaa

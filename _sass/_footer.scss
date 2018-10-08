@@ -27,6 +27,10 @@
     @include flex-align(center);
     width: 100%;
     min-height: $footer-height;
+
+    @media only screen and (max-width: $screen-width-s - 1) {
+      @include flex-justify(center);
+    }
   }
 
   .footer__logo {
@@ -89,7 +93,12 @@
     }
 
     @media only screen and (max-width: $screen-width-s - 1) {
-      bottom: 36px;
+      position: relative;
+      right: 0;
+      bottom: 0;
+      .fa-linkedin {
+        margin-left: 0;
+      }
     }
   }
 
@@ -100,8 +109,35 @@
     bottom: 36px;
 
     @media only screen and (max-width: $screen-width-s - 1) {
-      right: 110px;
-      max-width: calc(100% - 160px);
+      position: relative;
+      max-width: 50%;
+      text-align: center;
+      right: 0;
+      bottom: 0;
+      @include font-size(14px);
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-s - 1) {
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(center);
+
+    .footer__address {
+      @include font-size(14px);
+    }
+
+    .footer__content-wrapper {
+      min-height: 0;
+      margin-top: 30px;
+    }
+
+    .footer__linkedin-link {
+      margin-top: 25px;
+    }
+
+    .footer__copyright {
+      margin-top: 25px;
     }
   }
 }
