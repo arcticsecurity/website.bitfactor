@@ -1,5 +1,6 @@
 /* Posts section */
 
+$row-height: 370px + 40px;
 $section-width: 80%;
 $section-width-mobile: 95%;
 .posts__wrapper {
@@ -90,7 +91,7 @@ $section-width-mobile: 95%;
 
   @media only screen and (max-width: $screen-width-m - 1) {
     .posts__flex-container {
-      max-height: 886px;
+      max-height: 780px;
       width: 410px;
       max-width: $section-width-mobile;
     }
@@ -172,16 +173,7 @@ $section-width-mobile: 95%;
     background-color: white;
   }
 
-  @media only screen and (max-width: $screen-width-xxl - 1) {
-    &:nth-child(n+4) {
-      display: none;
-    }
-  }
-  @media only screen and (max-width: $screen-width-l - 1) {
-    &:nth-child(n+3) {
-      display: none;
-    }
-  }
+
   @media only screen and (max-width: $screen-width-m - 1) {
     min-height: 0;
     margin-bottom: 40px;
@@ -192,5 +184,40 @@ $section-width-mobile: 95%;
     @media only screen and (min-width: $screen-width-s) {
       margin-right: 40px;
     }
+  }
+
+  &.post__filter-hide {
+    @include animation(filter-hide .6s ease-in-out);
+    &.post__filter-invisible {
+      display: none;
+    }
+  }
+}
+
+/* Multirow posts */
+.posts__flex-container.multirow {
+  max-height: initial;
+  width: 90%;
+  margin-left: 2.5vw;
+  @include flex-justify(flex-start);
+  .post__card {
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+  @media only screen and (max-width: $screen-width-m - 1) {
+    width: 370px;
+    .post__card {
+      margin-right: 0;
+    }
+  }
+}
+
+@include keyframes(filter-hide) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

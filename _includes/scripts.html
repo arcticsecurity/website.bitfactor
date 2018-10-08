@@ -5,3 +5,7 @@
 {% assign randomNumber=site.time | date: "%m%y%M%H%d%S" | plus:9562 %}
 <script type="text/javascript" src="/js/script.js?{{randomNumber}}"></script>
 <script type="text/javascript" src="/js/navburger.js?{{randomNumber}}"></script>
+
+{% if page.blog_filter %}
+<script type="text/javascript" src="/js/blog-filter.js?{{randomNumber}}"></script>
+{% endif %}

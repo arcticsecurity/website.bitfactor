@@ -15,6 +15,7 @@
 {% endif %}
 
 <section class="posts__wrapper">
+  {% unless include.no_title %}
   <div class="posts__title-row">
     <h3 class="posts__title">
       <i class="arcsec-checkbox_empty"></i>{{title}}
@@ -27,7 +28,12 @@
       </a>
       {% endunless %}
   </div>
+  {% endunless %}
+  {% if include.rows %}
+  <div class="posts__flex-container multirow flex-rows-{{include.rows}}">
+  {% else %}
   <div class="posts__flex-container">
+  {% endif %}
 
   {% assign blogposts = "" | split: ',' %}
   {% for post in site.posts %}
@@ -46,7 +52,7 @@
 
   {% assign sortedPosts = (blogposts | sort: 'date') | reverse %}
   {% for post in sortedPosts | limit: limit %}
-    <a class="post__card" href="{{ post.url }}">
+    <a class="post__card" href="{{ post.url }}" data-category="{{post.blog_category}}">
       <div class="post__card-image">
         <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
       </div>

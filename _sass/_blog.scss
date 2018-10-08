@@ -1,180 +1,53 @@
-#main-content.blog {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 140px;
-  .blog__flex-container {
-    @include display-flex();
-    max-width: 90%;
-    margin: 0 auto 140px auto;
-  }
+.blog-header {
+  width: calc(90% - 2.5vw);
+  margin: 0 auto;
+  @include display-flex();
+  @include flex-justify(space-between);
+  @include flex-align(flex-end);
+  margin-bottom: 65px;
+  margin-top: 140px;
 
-  .blog__article {
-    @include display-flex();
-    @include flex-direction(column);
-  }
-
-  .blog__article-meta {
-    @include display-flex();
-    @include font-size(14px);
-    font-family: $font-condensed;
-    color: mix($color-dark-blue, $color-light-blue, 40);
-    line-height: 1.5;
-    letter-spacing: 1px;
-  }
-
-  .blog__article-category {
-    color: $color-gray-blue;
-    font-weight: $font-weight-bold;
-  }
-
-  .blog__article {
-    max-width: 50%;
-    overflow: hidden;
-  }
-  .blog__contact {
-    min-width: 25%;
-    @include display-flex();
-    @include flex-direction(column);
-    @include flex-align(center);
-
-    .blog__articles-link {
-      @include font-size(14px);
-      @include display-flex();
-      @include flex-align(center);
+  .blog-page__title {
+    width: 50%;
+    h1 {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 50%;
+      font-family: $font-general;
+      @include font-size(22px);
+      line-height: 1.45;
       color: $color-gray-blue;
-      margin-bottom: 200px;
-
-      i {
-        margin-right: 12px;
-        @include font-size(28px);
-        color: $color-arctic-blue;
-      }
-
-      &:hover {
-        color: $color-dark-blue;
-      }
-    }
-
-    .blog__contact-writer {
-      max-width: 100%;
-      text-align: center;
-      @include display-flex();
-      @include flex-direction(column);
-      @include flex-align(center);
-      margin-bottom: 50px;
-
-      .blog__contact-image {
-        max-width: 80px;
-        width: 80px;
-        border-radius: 40px;
-        margin-bottom: 30px;
-      }
-
-      .blog__contact-name {
-        font-family: $font-serif;
-        color: $color-dark-blue;
-        font-weight: $font-weight-bold;
-        @include font-size(18px);
-        line-height: 1.44;
-        margin-bottom: 5px;
-      }
-
-      .blog__contact-title {
-        font-weight: $font-weight-bold;
-        @include font-size(14px);
-        color: $color-gray-blue;
-        letter-spacing: 1px;
-      }
     }
   }
-
-  .blog__share-title {
-    display: none;
-    @include font-size(14px);
-    font-weight: $font-weight-bold;
-    color: $color-gray-blue;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
-  }
-
-  .blog__share-social-medias {
-    display: none;
-    @include font-size(22px);
-
-    &>a {
-      color: $color-gray-blue;
-      @include transition(color 100ms ease-in-out);
-    }
-
-    *:not(:first-child) {
-      margin-left: 20px;
-    }
-
-    .blog__share-li:hover {
-      color: $color-linkedin-blue;
-    }
-    .blog__share-tw:hover {
-      color: $color-twitter-blue;
-    }
-    .blog__share-fb:hover {
-      color: $color-facebook-blue;
-    }
-  }
-
-  .blog__share-mobile {
+  .blog-page__filter {
+    width: 50%;
+    text-align: right;
     @include display-flex();
-    @include flex-direction(column);
+    @include flex-justify(flex-end);
     @include flex-align(center);
-    margin-top: 10px;
   }
 
-  @media only screen and (min-width: $screen-width-l) {
-    .blog__share-title, .blog__share-social-medias {
-      &.hide-on-mobile {
-        display: block;
-      }
-    }
+  .blog-filter__label {
+    @include font-size(14px);
+    color: mix($color-dark-blue, white, 40);
+    margin-right: 10px; 
   }
-
-  @media only screen and (max-width: $screen-width-xl - 1) {
-    .blog__article {
-      max-width: 60%;
-    }
-  }
-
-  @media only screen and (max-width: $screen-width-l - 1) {
-    margin-top: 0;
-
-    .blog__article {
-      max-width: 80%;
-    }
-    .blog__flex-container {
-      @include flex-direction(column);
-      @include flex-align(center);
-    }
-
-    .blog__share-title, .blog__share-social-medias {
-      &.show-on-mobile {
-        display: block;
-      }
-    }
-
-    .blog__contact {
-      min-width: 100%;
-      .blog__articles-link {
-        margin-bottom: 20px;
-        align-self: flex-start;
-      }
-    }
-
-    .blog__article-meta {
-      @include flex-justify(center)
-    }
-  }
-
-  @media only screen and (max-width: $screen-width-m - 1) {
-    .blog__article {
-      max-width: 90%;
+  .blog-filter__button {
+    @include font-size(12px);
+    @include transition(background-color 100ms ease-in-out);
+    margin-right: 10px;
+    padding: 8px 20px;
+    background-color: $color-dark-blue;
+    color: white;
+    letter-spacing: 0.9px;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover, &.blog-page__filter-active {
+      background-color: $color-gray-blue;
     }
   }
 }

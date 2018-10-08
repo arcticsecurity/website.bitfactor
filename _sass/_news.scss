@@ -164,6 +164,7 @@ $section-width-mobile: 95%;
     max-height: 154px;
     line-height: 1.63;
     overflow: hidden;
+    color: $color-gray-blue;
   }
 
   @media only screen and (max-width: $screen-width-xxl - 1) {
@@ -191,7 +192,10 @@ $section-width-mobile: 95%;
 
   &:hover {
     .news_article__card-title {
-      color: $color-gray-blue;
+      color: $color-border-blue;
+    }
+    .news_article__card-description {
+      color: $color-border-blue;
     }
   }
 }
