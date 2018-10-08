@@ -1,6 +1,6 @@
 ---
 blog_title: Story of my life
-blog_image_path: /images/site/logo_text2_blue.svg
+blog_image_path: '/images/site/logo_text2_blue.svg'
 blog_description: Description of my life
 date: 2018-10-01 00:00:00 +0300
 tags:
@@ -11,7 +11,7 @@ blog_category:
   - articles
 writer:
   employees:
-    - roope-testaa
+    - tiina-testaaja
 og_image_path: /images/site/logo_text2_blue.svg
 twitter_image_path:
 _comments:
@@ -24,7 +24,7 @@ _comments:
 
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-![Bifactor description, lorem ipsum](/images/content/bifactor.jpg "Bifactor...")
+![Bifactor description, lorem ipsum](/images/content/bifactor-1.jpg "Bifactor...")
 
 #### Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
