@@ -7,6 +7,8 @@ tags:
   - Testing
   - Story
   - Life
+blog_category:
+  - articles
 writer:
   employees:
     - tiina-testaaja

@@ -3,6 +3,8 @@ news_article_title:
 news_article_description:
 date:
 tags:
+news_category:
+  - press_release
 writer:
   employees:
 og_image_path: '/images/site/logo_text2_blue.svg'

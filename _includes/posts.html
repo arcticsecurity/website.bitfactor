@@ -21,7 +21,15 @@
           <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
         </p>
         <h5 class="post__card-title">{{ post.blog_title }}</h5>
-        <p class="post__card-writer">{{ post.writer }}</p>
+        <p class="post__card-writers">
+          {% for employee in site.employees %}
+            {% for writer in post.writer.employees | limit:3 %}
+              {% if employee.path contains writer %}
+              <span class="post__writer">{{employee.first_name}} {{employee.last_name}}</span><br>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </p>
       </div>
     </a>
   {% endfor %}

@@ -19,6 +19,8 @@ news_article_description: >-
 date: 2018-10-03 00:00:00 +0300
 tags:
   - LOL
+news_category:
+  - press_release
 writer:
   employees:
     - tiina-testaaja

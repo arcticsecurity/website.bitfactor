@@ -7,9 +7,12 @@ tags:
   - Testing
   - Story
   - Life
+blog_category:
+  - articles
 writer:
   employees:
     - tiina-testaaja
+    - roope-testaa
 og_image_path: /images/site/logo_text2_blue.svg
 twitter_image_path:
 _comments:

@@ -68,7 +68,16 @@ defaults:
       type: events
     values:
       layout: event
-  
+
+news_category:
+  - press_release
+  - news
+
+blog_category:
+  - events
+  - articles
+  - resources
+
 # https://github.com/jekyll/jekyll-sitemap
 
 plugins:

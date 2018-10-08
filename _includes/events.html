@@ -10,7 +10,13 @@
       {% for event in sortedEvents | limit: 3 %}
         <a class="events__event" href="{{event.url}}">
           <div class="event__title">{{event.event_title}}</div>
-          <div class="event__date">{{event.date}}</div>
+
+          {% if event.end_date %}
+
+            <div class="event__date">{{event.date | date: "%-d"}} - {{ event.end_date | date: "%-d %B, %Y"}}</div>
+          {% else %}
+            <div class="event__date">{{ event.date | date: "%-d %B, %Y"}}</div>
+          {% endif %}
         </a>
       {% endfor %}
       <a class="visible_on_mobile events__see-more" href="/news/#events"><br>See all events</a>

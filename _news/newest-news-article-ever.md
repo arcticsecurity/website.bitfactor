@@ -11,6 +11,8 @@ news_article_description: >-
 date: 2018-10-02 00:00:00 +0300
 tags:
   - News
+news_category:
+  - press_release
 writer:
   employees:
     - tiina-testaaja

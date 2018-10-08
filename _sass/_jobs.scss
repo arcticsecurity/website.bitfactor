@@ -54,6 +54,7 @@
       margin-left: 40px;
       min-width: 370px;
       color: $color-gray-blue;
+      @include font-size(18px);
     }
 
     &:not(:first-child):after {
