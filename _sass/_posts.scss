@@ -112,6 +112,7 @@ $section-width-mobile: 95%;
 
   .post__card-date {
     @include font-size(14px);
+    font-family: $font-condensed;
     color: mix($color-dark-blue, $color-light-blue, 40);
     line-height: 1.5;
     letter-spacing: 1px;
@@ -125,6 +126,7 @@ $section-width-mobile: 95%;
   .post__card-writers {
     color: mix($color-dark-blue, $color-light-blue, 60);
     font-weight: $font-weight-bold;
+    font-family: $font-condensed;
     line-height: 1.5;
     letter-spacing: 1px;
     text-transform: uppercase;

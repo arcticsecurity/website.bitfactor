@@ -1,0 +1,25 @@
+#main-content.blog {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 140px;
+  .blog__flex-container {
+    @include display-flex();
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .blog__contact {
+    min-width: 25%;
+  }
+  .blog__article {
+    min-width: 50%;
+    overflow: hidden;
+  }
+  .blog__flex-spacing{
+    min-width: 25%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
