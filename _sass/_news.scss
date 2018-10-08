@@ -1,7 +1,7 @@
 /* News section */
 
 $section-width: 80%;
-$section-width-mobile: 90%;
+$section-width-mobile: 95%;
 .news__wrapper {
   width: 100%;
   @include display-flex();
@@ -73,6 +73,18 @@ $section-width-mobile: 90%;
       @include flex-justify(space-between);
     }
   }
+
+  @media only screen and (max-width: $screen-width-m - 1) {
+    .news__flex-container {
+      max-height: 780px;
+      width: 410px;
+      max-width: $section-width-mobile;
+    }
+    .news__title-row {
+      width: 410px;
+      max-width: $section-width-mobile;
+    }
+  }
 }
 
 /* One news article */
@@ -141,9 +153,16 @@ $section-width-mobile: 90%;
       display: none;
     }
   }
+
   @media only screen and (max-width: $screen-width-m - 1) {
-    &:nth-child(n+2) {
-      display: none;
+    min-height: 0;
+    margin-bottom: 40px;
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    @media only screen and (min-width: $screen-width-s) {
+      margin-right: 40px;
     }
   }
 

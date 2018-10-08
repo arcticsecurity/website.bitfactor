@@ -88,12 +88,6 @@
     }
   }
 
-  @media only screen and (min-width: $screen-width-xxl) {
-    a.jobs__see-more.visible_on_mobile {
-      display: none;
-    }
-  }
-
   @media only screen and (max-width: $screen-width-xxl - 1) {
     .jobs__flex-container {
       @include flex-direction(column);
@@ -104,9 +98,6 @@
     .jobs__job {
       @include flex-justify(flex-start);
     }
-    a.jobs__see-more.hide_on_mobile {
-      display: none;
-    }
   }
 
   @media only screen and (max-width: $screen-width-l - 1) {
@@ -115,7 +106,7 @@
     max-width: 780px;
 
     .jobs__list {
-      padding: 0 35px;
+      padding: 0 25px;
       margin-left: 0;
       margin-right: 0;
     }
@@ -123,7 +114,7 @@
     .jobs__content {
       min-width: 0;
       margin-left: 0;
-      padding: 0 35px;
+      padding: 0 25px;
     }
   }
 
@@ -135,22 +126,22 @@
       .job__title {
         min-width: 0;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        @include font-size(18px);
       }
       .job__team {
         min-width: 0;
         margin-left: 0;
-        align-self: flex-end;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+        @include font-size(16px);
       }
       i {
-        @include transform(rotate(180deg));
-        @include font-size(20px);
-        position: absolute;
-        right: 0;
-        top: 10px;
-        color: $color-gray-blue;
+        display: none;
       }
+    }
+
+    .jobs__content {
+      margin-bottom: 25px;
     }
   }
 }
