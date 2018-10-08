@@ -1,6 +1,6 @@
 ---
 blog_title: Story of my life
-blog_image_path: '/images/site/logo_text2_blue.svg'
+blog_image_path: /images/site/logo_text2_blue.svg
 blog_description: Description of my life
 date: 2018-10-01 00:00:00 +0300
 tags:
@@ -11,7 +11,6 @@ blog_category:
   - articles
 writer:
   employees:
-    - tiina-testaaja
     - roope-testaa
 og_image_path: /images/site/logo_text2_blue.svg
 twitter_image_path:
