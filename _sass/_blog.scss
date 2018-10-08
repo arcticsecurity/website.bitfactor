@@ -29,6 +29,7 @@
     @include display-flex();
     @include flex-justify(flex-end);
     @include flex-align(center);
+    @include flex-wrap(wrap);
   }
 
   .blog-filter__label {
@@ -48,6 +49,23 @@
     cursor: pointer;
     &:hover, &.blog-page__filter-active {
       background-color: $color-gray-blue;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-l - 1) {
+    @include flex-direction(column);
+    .blog-page__title {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+      margin-bottom: 40px;
+    }
+    
+    .blog-page__filter {
+      width: 100%;
+      @include flex-justify(flex-start);
+      align-self: center;
     }
   }
 }
