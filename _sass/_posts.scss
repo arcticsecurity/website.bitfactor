@@ -15,12 +15,11 @@ $section-width-mobile: 95%;
     width: $section-width;
     @include display-flex();
     @include flex-justify(space-between);
-    @include flex-align(center);
+    @include flex-align(flex-end);
     line-height: 1;
     margin-bottom: 40px;
   }
   .posts__title {
-    font-family: $font-condensed;
     @include display-flex();
     @include flex-align(center);
     color: $color-dark-blue;
@@ -34,11 +33,9 @@ $section-width-mobile: 95%;
   }
   .posts__discover-more {
     margin-bottom: 0;
-    @include font-size(14px);
     @include display-flex();
     @include flex-align(center);
     color: $color-arctic-blue;
-
     i {
       color: $color-arctic-blue;
       margin-left: 12px;
@@ -120,8 +117,9 @@ $section-width-mobile: 95%;
   background-color: $color-light-blue;
   width: 370px;
   max-width: 90vw;
-  min-height: 390px;
-  max-height: 390px;
+  min-height: 370px;
+  max-height: 370px;
+  margin-bottom: 40px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -147,26 +145,21 @@ $section-width-mobile: 95%;
   }
 
   .post__card-date {
-    @include font-size(14px);
-    font-family: $font-condensed;
     color: mix($color-dark-blue, $color-light-blue, 40);
-    line-height: 1.5;
-    letter-spacing: 1px;
   }
 
   .post__card-title {
-    line-height: 1.25;
     color: $color-dark-blue;
   }
 
   .post__card-writers {
-    color: mix($color-dark-blue, $color-light-blue, 60);
-    font-weight: $font-weight-bold;
-    font-family: $font-condensed;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    @include font-size(14px);
+    .post__writer.caption {
+      color: mix($color-dark-blue, $color-light-blue, 60);
+      font-weight: $font-weight-bold;
+      font-family: $font-condensed;
+      letter-spacing: 1px;
+      @include font-size(14px);
+    }
   }
 
   &:hover {
@@ -175,7 +168,6 @@ $section-width-mobile: 95%;
 
 
   @media only screen and (max-width: $screen-width-m - 1) {
-    min-height: 0;
     margin-bottom: 40px;
     &:not(:first-child) {
       margin-left: 0;
@@ -201,7 +193,6 @@ $section-width-mobile: 95%;
     margin-left: 0;
     margin-right: 40px;
     margin-bottom: 40px;
-    min-height: 370px;
   }
   @media only screen and (max-width: $screen-width-m - 1) {
     width: 370px;

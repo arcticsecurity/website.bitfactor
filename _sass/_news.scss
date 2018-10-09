@@ -14,15 +14,13 @@ $section-width-mobile: 95%;
     width: $section-width;
     @include display-flex();
     @include flex-justify(space-between);
-    @include flex-align(center);
+    @include flex-align(flex-end);
     line-height: 1;
     margin-bottom: 40px;
   }
   .news__title {
-    font-family: $font-condensed;
     @include display-flex();
     @include flex-align(center);
-    color: $color-dark-blue;
     margin-bottom: 0;
 
     i {
@@ -33,7 +31,6 @@ $section-width-mobile: 95%;
   }
   .news__discover-more {
     margin-bottom: 0;
-    @include font-size(14px);
     @include display-flex();
     @include flex-align(center);
     color: $color-arctic-blue;
@@ -130,12 +127,9 @@ $section-width-mobile: 95%;
   .news_article__card-date {
     @include font-size(14px);
     color: mix($color-dark-blue, $color-light-blue, 40);
-    line-height: 1.5;
-    letter-spacing: 1px;
     margin-bottom: 15px;
     padding-bottom: 20px;
     position: relative;
-    font-family: $font-condensed;
 
     &:after {
       position: absolute;
@@ -154,15 +148,11 @@ $section-width-mobile: 95%;
 
   .news_article__card-title {
     line-height: 1.44;
-    color: $color-dark-blue;
-    @include font-size(18px);
     @include transition(color 100ms ease-in-out);
   }
 
   .news_article__card-description {
     @include transition(color 100ms ease-in-out);
-    max-height: 154px;
-    line-height: 1.63;
     overflow: hidden;
     color: $color-gray-blue;
   }

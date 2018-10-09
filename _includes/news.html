@@ -1,10 +1,10 @@
 <section class="news__wrapper">
   <div class="news__title-row">
-    <h3 class="news__title">
+    <h2 class="news__title">
       <i class="arcsec-news"></i>News
-    </h3>
+    </h2>
     <a href="/news" class="hide-on-mobile">
-      <span class="news__discover-more">
+      <span class="news__discover-more caption-light">
         Discover more<i class="arcsec-circle_remove"></i>
       </span>
     </a>
@@ -14,16 +14,16 @@
   {% for news_article in sortedNews | limit: 6 %}
     <a class="news_article__card" href="{{ news_article.url }}">
       <div class="news_article__card-content">
-        <p class="news_article__card-date">
+        <p class="news_article__card-date caption-light">
           {% if news_article.news_category == "news" %}
-          <span class="news_article__category">NEWS&nbsp;&nbsp;&nbsp;</span>
+          <span class="news_article__category caption">NEWS&nbsp;&nbsp;&nbsp;</span>
           {% else if news_article.news_category == "press_release" %}
-          <span class="news_article__category">PRESS RELEASE&nbsp;&nbsp;&nbsp;</span>
+          <span class="news_article__category caption">PRESS RELEASE&nbsp;&nbsp;&nbsp;</span>
           {% endif %}
           <span class="uppercase">{{ news_article.date | date: "%B" }} </span>{% assign day = news_article.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ news_article.date | date: "%Y" }}
         </p>
-        <h5 class="news_article__card-title">{{ news_article.news_article_title }}</h5>
-        <p class="news_article__card-description">
+        <p class="news_article__card-title news-title">{{ news_article.news_article_title }}</p>
+        <p class="news_article__card-description news-description">
           {{ news_article.news_article_description }}
         </p>
       </div>

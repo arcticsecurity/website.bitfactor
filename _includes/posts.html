@@ -17,12 +17,12 @@
 <section class="posts__wrapper">
   {% unless include.no_title %}
   <div class="posts__title-row">
-    <h3 class="posts__title">
+    <h2 class="posts__title">
       <i class="arcsec-checkbox_empty"></i>{{title}}
-    </h3>
+    </h2>
       {% unless include.no_blog_link %}
       <a class="hide-on-mobile" href="/blog">
-        <span class="posts__discover-more">
+        <span class="posts__discover-more caption-light">
           Discover more<i class="arcsec-circle_remove"></i>
         </span>
       </a>
@@ -57,15 +57,15 @@
         <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
       </div>
       <div class="post__card-content">
-        <p class="post__card-date">
+        <p class="post__card-date caption-light">
           <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
         </p>
-        <h5 class="post__card-title">{{ post.blog_title }}</h5>
+        <h3 class="post__card-title">{{ post.blog_title }}</h3>
         <p class="post__card-writers">
           {% for employee in site.employees %}
             {% for writer in post.writer.employees | limit:3 %}
               {% if employee.path contains writer %}
-              <span class="post__writer">{{employee.first_name}} {{employee.last_name}}</span><br>
+              <span class="post__writer caption uppercase">{{employee.first_name}} {{employee.last_name}}</span><br>
               {% endif %}
             {% endfor %}
           {% endfor %}
@@ -73,12 +73,13 @@
       </div>
     </a>
   {% endfor %}
+  </div>
+
   {% unless include.no_blog_link %}
   <a class="show-on-mobile" href="/blog">
-    <span class="posts__discover-more">
+    <span class="posts__discover-more caption-light">
       Discover more<i class="arcsec-circle_remove"></i>
     </span>
   </a>
   {% endunless %}
-  </div>
 </section>
