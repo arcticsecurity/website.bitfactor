@@ -1,6 +1,6 @@
 .blog-header {
-  width: calc(90% - 2.5vw);
-  margin: 0 auto;
+  width: 0.975 * 95%;
+  margin-left: calc(5vw - 20px);
   @include display-flex();
   @include flex-justify(space-between);
   @include flex-align(flex-end);
@@ -67,5 +67,9 @@
       @include flex-justify(flex-start);
       align-self: center;
     }
+  }
+
+  @media only screen and (max-width: $screen-width-m - 1) {
+    margin-left: 5vw;
   }
 }

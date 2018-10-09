@@ -194,8 +194,8 @@ $section-width-mobile: 95%;
 /* Multirow posts */
 .posts__flex-container.multirow {
   max-height: initial;
-  width: 90%;
-  margin-left: 2.5vw;
+  width: calc(95% + 40px);
+  margin-left: 5vw;
   @include flex-justify(flex-start);
   .post__card {
     margin-left: 0;
