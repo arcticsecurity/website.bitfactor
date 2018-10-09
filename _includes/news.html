@@ -11,7 +11,7 @@
   </div>
   <div class="news__flex-container">
   {% assign sortedNews = (site.news | sort: 'date') | reverse %}
-  {% for news_article in sortedNews | limit: 6 %}
+  {% for news_article in sortedNews | limit: 3 %}
     <a class="news_article__card" href="{{ news_article.url }}">
       <div class="news_article__card-content">
         <p class="news_article__card-date caption-light">

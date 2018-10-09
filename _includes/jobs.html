@@ -1,7 +1,7 @@
 <section class="jobs__wrapper">
   <div class="jobs__flex-container">
     <div class="jobs__content">
-      <h3>Careers</h3>
+      <h2>Careers</h2>
       <p>Join our team and help us build the next generation of Cyber Defense!</p>
       <a class="jobs__see-more" href="/about/#jobs">See all open positions</a>
     </div>
@@ -9,8 +9,8 @@
       {% assign sortedJobs = (site.jobs | sort: 'date') | reverse %}
       {% for job in sortedJobs | limit: 3 %}
         <a class="jobs__job" href="{{job.url}}">
-          <div class="job__title">{{job.job_title}}</div>
-          <div class="job__team">{{job.team}}</div>
+          <h3 class="job__title">{{job.job_title}}</h3>
+          <p class="job__team caption-light">{{job.team}}</p>
           <i class="arcsec-arrow_back"></i>
         </a>
       {% endfor %}

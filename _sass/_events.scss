@@ -37,6 +37,7 @@
 
     .event__title {
       min-width: 370px;
+      line-height: 1;
     }
     .event__date {
       margin-left: 40px;
@@ -107,6 +108,7 @@
     .events__event {
       @include flex-direction(column);
       @include flex-align(flex-start);
+      padding-top: 25px;
 
       .event__title {
         min-width: 0;
