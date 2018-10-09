@@ -73,3 +73,32 @@
     margin-left: 5vw;
   }
 }
+
+.blog-page__loadmore-wrapper {
+  width: 100%;
+  @include display-flex();
+  @include flex-justify(center);
+}
+
+.blog-page__loadmore {
+  @include font-size(14px);
+  @include display-flex();
+  @include flex-align(center);
+  color: $color-arctic-blue;
+  cursor: pointer;
+
+  i {
+    color: $color-arctic-blue;
+    margin-left: 12px;
+    @include font-size(32px);
+  }
+
+  &:hover {
+    color: $color-blue;
+    @include transition(color 100ms ease-in-out);
+    i {
+      color: $color-blue;
+      @include transition(color 100ms ease-in-out);
+    }
+  }
+}
