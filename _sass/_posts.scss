@@ -146,15 +146,22 @@ $section-width-mobile: 95%;
 
   .post__card-date {
     color: mix($color-dark-blue, $color-light-blue, 40);
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .post__card-title {
     color: $color-dark-blue;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .post__card-writers {
+    margin: 0;
+    line-height: 1;
     .post__writer.caption {
       color: mix($color-dark-blue, $color-light-blue, 60);
+      line-height: 1;
       font-weight: $font-weight-bold;
       font-family: $font-condensed;
       letter-spacing: 1px;
