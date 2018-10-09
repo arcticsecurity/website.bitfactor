@@ -3,15 +3,17 @@
 $row-height: 370px + 40px;
 $section-width: 80%;
 $section-width-mobile: 95%;
+$section-max-width: 1195px;
 .posts__wrapper {
   width: 100%;
   @include display-flex();
   @include flex-direction(column);
   @include flex-align(center);
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   max-width: 97.5vw;
 
   .posts__title-row {
+    max-width: $section-max-width;
     width: $section-width;
     @include display-flex();
     @include flex-justify(space-between);
@@ -67,6 +69,7 @@ $section-width-mobile: 95%;
   }
 
   .posts__flex-container {
+    max-width: $section-max-width;
     width: $section-width;
     @include display-flex();
     @include flex-justify(flex-start);

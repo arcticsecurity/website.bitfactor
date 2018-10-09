@@ -1,148 +1,87 @@
 .jobs__wrapper {
-  width: 90vw;
-  max-width: calc(1190px + 10vw);
-  background-color: $color-light-green;
-  border-radius: 10px;
-  margin-left: 5vw;
+  @include display-flex();
+  @include flex-justify(center);
+  width: 100%;
+  max-width: 97.5vw;
   margin-bottom: 50px;
 
-  .jobs__flex-container {
-    width: 100%;
+  .jobs {
+    background-color: $color-light-blue;
+    border-radius: 10px;
     @include display-flex();
-    padding: 70px 0;
+    padding: 50px 75px;
+  }
+
+  .jobs__flex-container {
+    @include display-flex();
+    max-width: 1195px;
+    width: 97.5vw * 0.8;
   }
 
   .jobs__content {
-    margin-left: 5vw;
-    max-width: 370px;
+    height: 100%;
+    width: 370px;
     min-width: 370px;
-    p {
-      color: $color-gray-blue;
-    }
-  }
-
-  .jobs__list {
-    margin-left: 40px;
-    @include flex(1 0 auto);
-    margin-right: 5vw;
+    margin-right: 40px;
   }
 
   .jobs__job {
-    position: relative;
     @include display-flex();
     @include flex-align(center);
-    @include flex-justify(space-between);
-    min-height: 60px;
-    width: 100%;
+    position: relative;
 
-    .job__title {
-      font-family: $font-serif;
-      font-weight: $font-weight-bold;
-      min-width: 370px;
-      line-height: 1;
-      @include font-size(24px);
-    }
-    .job__team {
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 40px;
-      min-width: 370px;
-      color: $color-gray-blue;
-      @include font-size(18px);
-    }
-
-    &:not(:first-child):after {
-      content: '';
+    &:not(:last-child):after {
       position: absolute;
-      top: 0;
-      left: 0;
+      content: '';
       width: 100%;
       height: 100%;
-      border-top: 1px solid $color-border-blue;
-    }
-
-    i {
-      @include transform(rotate(180deg) translateY(50%));
-      @include font-size(20px);
-      position: absolute;
-      top: 50%;
-      right: 0;
-      color: $color-gray-blue;
-    }
-
-    &:hover {
-      .job__title {
-        color: $color-light-gray;
-      }
+      border-bottom: 1px solid $color-border-blue;
+      top: 0;
+      left: 0;
     }
   }
 
-  a.jobs__see-more {
-    color: $color-green;
-    font-weight: $font-weight-bold;
-    line-height: 1.56;
-    font-family: $font-condensed;
-
-    &:hover {
-      color: mix($color-green, white, 60);
-    }
+  .job__title {
+    min-width: 370px;
+    max-width: 370px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
-  @media only screen and (max-width: $screen-width-xxl - 1) {
-    .jobs__flex-container {
-      @include flex-direction(column);
-    }
-    .jobs__list {
-      margin-left: 5vw;
-    }
-    .jobs__job {
-      @include flex-justify(flex-start);
-    }
+  .job__team {
+    min-width: 370px;
+    max-width: 370px;
   }
 
   @media only screen and (max-width: $screen-width-l - 1) {
-    width: 92.5vw;
-    margin-left: 2.5vw;
-    max-width: 780px;
+    .jobs {
+      padding: 0 26px 40px 26px;
+    }
 
-    .jobs__list {
-      padding: 0 25px;
-      margin-left: 0;
-      margin-right: 0;
+    .jobs__flex-container {
+      @include flex-direction(column);
     }
 
     .jobs__content {
       min-width: 0;
-      margin-left: 0;
-      padding: 0 25px;
+      max-width: 100%;
+    }
+
+    .job__title {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    .job__team {
+      max-width: 100%;
     }
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-xxl - 1) {
     .jobs__job {
       @include flex-direction(column);
       @include flex-align(flex-start);
-      padding-top: 25px;
-
-      .job__title {
-        min-width: 0;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        @include font-size(18px);
-      }
-      .job__team {
-        min-width: 0;
-        margin-left: 0;
-        margin-bottom: 25px;
-        @include font-size(16px);
-      }
-      i {
-        display: none;
-      }
-    }
-
-    .jobs__content {
-      margin-bottom: 25px;
     }
   }
 }
