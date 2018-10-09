@@ -187,10 +187,7 @@ $section-width-mobile: 95%;
   }
 
   &.post__filter-hide {
-    @include animation(filter-hide .8s ease-in-out);
-    &.post__filter-invisible {
-      display: none;
-    }
+    display: none;
   }
 }
 
@@ -210,17 +207,5 @@ $section-width-mobile: 95%;
     .post__card {
       margin-right: 0;
     }
-  }
-}
-
-@include keyframes(filter-hide) {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
   }
 }
