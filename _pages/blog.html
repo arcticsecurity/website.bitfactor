@@ -12,9 +12,9 @@ blog_filter: true
     <p>Access our latest resources on Cyber Security Issues</p>
   </div>
   <div class="blog-page__filter">
-    <span class="uppercase blog-filter__label">Filter:</span>
+    <span class="uppercase blog-filter__label caption-light">Filter:</span>
     {% for category in site.blog_category %}
-      <span data-category="{{category}}" class="uppercase blog-filter__button">{{category}}</span>
+      <span data-category="{{category}}" class="uppercase blog-filter__button caption-light">{{category}}</span>
     {% endfor %}
   </div>
 </div>

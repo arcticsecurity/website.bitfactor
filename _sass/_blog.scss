@@ -1,6 +1,15 @@
+main.blog-page {
+  max-width: 97.5vw;
+  width: 97.5vw;
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
+}
+
+$section-max-width: 1195px;
 .blog-header {
-  width: 0.975 * 95%;
-  margin-left: calc(5vw - 20px);
+  width: 95%;
+  max-width: $section-max-width;
   @include display-flex();
   @include flex-justify(space-between);
   @include flex-align(flex-end);
@@ -34,7 +43,7 @@
 
   .blog-filter__label {
     @include font-size(14px);
-    color: mix($color-dark-blue, white, 40);
+    color: $color-text-light-gray;
     margin-right: 10px; 
   }
   .blog-filter__button {
@@ -42,17 +51,22 @@
     @include transition(background-color 100ms ease-in-out);
     margin-right: 10px;
     padding: 8px 20px;
-    background-color: $color-dark-blue;
-    color: white;
+    background-color: white;
     letter-spacing: 0.9px;
     border-radius: 20px;
+    color: $color-text-light-gray;
     cursor: pointer;
-    &:hover, &.blog-page__filter-active {
+    &:hover {
       background-color: $color-gray-blue;
+    }
+
+    &.blog-page__filter-active {
+      background-color: $color-dark-blue;
     }
   }
 
   @media only screen and (max-width: $screen-width-l - 1) {
+    width: 95%;
     @include flex-direction(column);
     .blog-page__title {
       width: 100%;
@@ -68,9 +82,8 @@
       align-self: center;
     }
   }
-
-  @media only screen and (max-width: $screen-width-m - 1) {
-    margin-left: 5vw;
+  @media only screen and (min-width: $screen-width-xl) {
+    margin-left: -35px;
   }
 }
 

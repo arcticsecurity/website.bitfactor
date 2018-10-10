@@ -196,16 +196,17 @@ $section-max-width: 1195px;
 /* Multirow posts */
 .posts__flex-container.multirow {
   max-height: 4*$row-height;
-  width: calc(95% + 40px);
-  margin-left: 5vw;
-  @include flex-justify(flex-start);
+  width: 95%;
+  max-width: $section-max-width + 40px;
   .post__card {
     margin-left: 0;
     margin-right: 40px;
     margin-bottom: 40px;
   }
+
   @media only screen and (max-width: $screen-width-m - 1) {
     width: 370px;
+    max-width: 95%;
     .post__card {
       margin-right: 0;
     }
