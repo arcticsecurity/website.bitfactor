@@ -118,10 +118,5 @@ main.news-page {
 
   &:hover {
     color: $color-blue;
-    @include transition(color 100ms ease-in-out);
-    i {
-      color: $color-blue;
-      @include transition(color 100ms ease-in-out);
-    }
   }
 }

@@ -9,12 +9,13 @@
 @import "cloudcannon";
 
 /* Components */
-@import "navigation";
-@import "footer";
-@import "posts";
-@import "news";
-@import "jobs";
-@import "events";
-@import "blog-post";
-@import "blog";
-@import "news-page";
+@import "navigation"; // include
+@import "footer"; // include
+@import "posts"; // include
+@import "news"; // include
+@import "jobs"; // include
+@import "events"; // include
+@import "blog-post"; // blog article
+@import "blog"; // blog page
+@import "news-page"; // news & events page
+@import "news-article"; // news article
