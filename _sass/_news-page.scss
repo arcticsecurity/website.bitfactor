@@ -52,7 +52,7 @@ main.news-page {
     max-width: $section-max-width + 40px;
     width: 95%;
     margin: 0 auto;
-    margin-top: 140px;
+    margin-top: 100px;
     @include display-flex();
     @include flex-direction(row);
 
@@ -65,7 +65,7 @@ main.news-page {
     }
 
     @media only screen and (max-width: $screen-width-l - 1) {
-      margin-top: 60px;
+      margin-top: 30px;
       @include flex-direction(column);
       @include flex-align(flex-start);
       .news-page__title {
