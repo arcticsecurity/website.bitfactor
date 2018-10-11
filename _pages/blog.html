@@ -13,12 +13,14 @@ blog_filter: true
   </div>
   <div class="blog-page__filter">
     <span class="uppercase blog-filter__label caption-light">Filter:</span>
+    <div class="blog-page__filter-buttons">
     {% for category in site.blog_category %}
       <span data-category="{{category}}" class="uppercase blog-filter__button caption-light">{{category}}</span>
     {% endfor %}
+    </div>
   </div>
 </div>
 {% include posts.html multirow=true limit=1000 no_title=true no_blog_link=true %}
 <div class="blog-page__loadmore-wrapper">
-  <span class="blog-page__loadmore" id="blog-page__loadmore">Load More<i class="arcsec-circle_remove"></i></i></span>
+  <span class="blog-page__loadmore" id="blog-page__loadmore">Load More<img class="site-icon" src="/images/icons/arrow_down.svg" /></span>
 </div>

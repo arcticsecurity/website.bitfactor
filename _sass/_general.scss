@@ -92,6 +92,10 @@ body {
   .large {
     @include font-size(22px);
     line-height: 1.45;
+
+    @media only screen and (max-width: $screen-width-l - 1) {
+      @include font-size(18px);
+    }
   }
   .news-title {
     font-family: $font-serif;
@@ -172,4 +176,9 @@ a {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.site-icon {
+  width: 32px;
+  height: 32px;
 }

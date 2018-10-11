@@ -1,38 +1,47 @@
-<section class="news__wrapper">
+<section class="news__wrapper{% if include.multirow %} multirow{% endif %}">
   <div class="news__title-row">
     <h2 class="news__title">
-      <i class="arcsec-news"></i>News
+      <img class="site-icon" src="/images/icons/news.svg" />News
     </h2>
+    {% unless !include.hide_discover_more %}
     <a href="/news" class="hide-on-mobile">
       <span class="news__discover-more caption-light">
-        Discover more<i class="arcsec-circle_remove"></i>
+        Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
       </span>
     </a>
+    {% endunless %}
   </div>
   <div class="news__flex-container">
+  {% if include.limit %}
+  {% assign limit = include.limit%}
+  {% else %}
+  {% assign limit = 3 %}
+  {% endif %}
+
   {% assign sortedNews = (site.news | sort: 'date') | reverse %}
-  {% for news_article in sortedNews | limit: 3 %}
-    <a class="news_article__card" href="{{ news_article.url }}">
-      <div class="news_article__card-content">
-        <p class="news_article__card-date caption-light">
-          {% if news_article.news_category == "news" %}
-          <span class="news_article__category caption">NEWS&nbsp;&nbsp;&nbsp;</span>
-          {% else if news_article.news_category == "press_release" %}
-          <span class="news_article__category caption">PRESS RELEASE&nbsp;&nbsp;&nbsp;</span>
-          {% endif %}
+  {% for news_article in sortedNews | limit: limit %}
+    <a class="news-article__card" href="{{ news_article.url }}" data-category="{{news_article.news_category}}">
+      <div class="news-article__card-content">
+        <p class="news-article__card-date caption-light">
+            <span class="news-article__category caption">
+              {% capture category %}{{news_article.news_category}}{% endcapture %}
+              {% if category == 'press_release' %}PRESS RELEASE{% else %}NEWS{% endif %}
+            &nbsp;&nbsp;&nbsp;</span>
           <span class="uppercase">{{ news_article.date | date: "%B" }} </span>{% assign day = news_article.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ news_article.date | date: "%Y" }}
         </p>
-        <p class="news_article__card-title news-title">{{ news_article.news_article_title }}</p>
-        <p class="news_article__card-description news-description">
+        <p class="news-article__card-title news-title">{{ news_article.news_article_title }}</p>
+        <p class="news-article__card-description news-description">
           {{ news_article.news_article_description }}
         </p>
       </div>
     </a>
   {% endfor %}
+  </div>
+  {% unless !include.hide_discover_more %}
   <a href="/news" class="show-on-mobile">
-    <span class="news__discover-more">
-      Discover more<i class="arcsec-circle_remove"></i>
+    <span class="news__discover-more caption-light">
+      Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
     </span>
   </a>
-  </div>
+  {% endunless %}
 </section>

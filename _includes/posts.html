@@ -7,7 +7,7 @@
 {% if include.limit %}
   {% assign limit=include.limit %}
 {% else %}
-  {% assign limit=6 %}
+  {% assign limit=3 %}
 {% endif %}
 
 {% if include.filter_category %}
@@ -18,12 +18,12 @@
   {% unless include.no_title %}
   <div class="posts__title-row">
     <h2 class="posts__title">
-      <i class="arcsec-checkbox_empty"></i>{{title}}
+      <img class="site-icon" src="/images/icons/blog.svg" />{{title}}
     </h2>
       {% unless include.no_blog_link %}
       <a class="hide-on-mobile" href="/blog">
         <span class="posts__discover-more caption-light">
-          Discover more<i class="arcsec-circle_remove"></i>
+          Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
         </span>
       </a>
       {% endunless %}
@@ -78,7 +78,7 @@
   {% unless include.no_blog_link %}
   <a class="show-on-mobile" href="/blog">
     <span class="posts__discover-more caption-light">
-      Discover more<i class="arcsec-circle_remove"></i>
+      Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
     </span>
   </a>
   {% endunless %}

@@ -1,3 +1,5 @@
+$side-padding-mobile: 26px;
+
 .events__wrapper {
   @include display-flex();
   @include flex-justify(center);
@@ -23,6 +25,15 @@
     width: 370px;
     min-width: 370px;
     margin-right: 40px;
+
+
+    h2 {
+      @include display-flex();
+      @include flex-align(center);
+      img {
+        margin-right: 12px;
+      }
+    }
   }
 
   .events__event {
@@ -75,7 +86,7 @@
 
   @media only screen and (max-width: $screen-width-l - 1) {
     .events {
-      padding: 0 26px 40px 26px;
+      padding: 0 $side-padding-mobile 40px $side-padding-mobile;
     }
 
     .events__flex-container {
@@ -109,13 +120,79 @@
 
   @media only screen and (max-width: $screen-width-m - 1) {
     .events__flex-container {
-      width: 410px - 26px - 26px;
+      width: 410px - $side-padding-mobile - $side-padding-mobile;
     }
   }
 
   @media only screen and (max-width: $screen-width-s - 1) {
     .events__flex-container {
-      width: 370px - 26px - 26px;
+      width: 370px - $side-padding-mobile - $side-padding-mobile;
+    }
+  }
+}
+
+.news-events-page.events__wrapper {
+  .events {
+    padding: 0;
+    background: white;
+  
+    max-width: 1235px;
+    width: 95%;
+  }
+
+  .events__event {
+    @include flex-align(flex-start);
+
+    .event__title {
+      line-height: 1.25;
+    }
+    .event__date p {
+      line-height: 1.56;
+      &:first-child {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-l - 1) {
+    .events__flex-container {
+      @include flex-direction(row);
+      width: 95%;
+      @include flex-justify(center);
+    }
+
+    .events__list {
+      max-width: 370px;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-m - 1) {
+    .events {
+      @include flex-justify(center);
+    }
+
+    .events__content {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid $color-border-blue;
+        top: 0;
+        left: 0;
+      }
+      max-width: 370px;
+    }
+
+    .events__flex-container {
+      @include flex-direction(column);
+      @include flex-align(center);
+      margin-left: 40px;
+    }
+
+    .events__list {
+      margin-left: -40px;
     }
   }
 }

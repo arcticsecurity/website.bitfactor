@@ -1,3 +1,5 @@
+$side-padding-mobile: 26px;
+
 .jobs__wrapper {
   @include display-flex();
   @include flex-justify(center);
@@ -23,6 +25,14 @@
     width: 370px;
     min-width: 370px;
     margin-right: 40px;
+
+    h2 {
+      @include display-flex();
+      @include flex-align(center);
+      img {
+        margin-right: 12px;
+      }
+    }
   }
 
   .jobs__job {
@@ -74,7 +84,7 @@
 
   @media only screen and (max-width: $screen-width-l - 1) {
     .jobs {
-      padding: 0 26px 40px 26px;
+      padding: 0 $side-padding-mobile 40px $side-padding-mobile;
     }
 
     .jobs__flex-container {
@@ -100,16 +110,23 @@
     .jobs__job {
       @include flex-direction(column);
       @include flex-align(flex-start);
-    }
 
-    i.arcsec-arrow_back {
-      display: none;
+      img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
     }
 
     .job__title {
       margin-bottom: 0;
       line-height: 1.67;
       margin-top: 25px;
+      min-width: 100%;
+    }
+
+    .jobs__list {
+      flex-grow: 2;
     }
 
     .job__team {
@@ -121,13 +138,13 @@
 
   @media only screen and (max-width: $screen-width-m - 1) {
     .jobs__flex-container {
-      width: 410px - 26px - 26px;
+      width: 410px - $side-padding-mobile - $side-padding-mobile;
     }
   }
 
   @media only screen and (max-width: $screen-width-s - 1) {
     .jobs__flex-container {
-      width: 370px - 26px - 26px;
+      width: 370px - $side-padding-mobile - $side-padding-mobile;
     }
   }
 }
