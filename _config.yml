@@ -27,8 +27,7 @@ collections:
     output: true
     permalink: /news/:year/:month/:day/:slug/
   events:
-    output: true
-    permalink: /events/:year/:month/:day/:slug/
+    output: false
   jobs:
     output: true
     permalink: /about/careers/:slug/
@@ -63,11 +62,6 @@ defaults:
       type: news
     values:
       layout: news-article
-  - scope:
-      path: "_events"
-      type: events
-    values:
-      layout: event
 
 news_category:
   - press_release
