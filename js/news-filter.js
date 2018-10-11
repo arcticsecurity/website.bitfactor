@@ -29,5 +29,5 @@ function filterNewsArticleCards() {
     $('.news-article__card').removeClass(filterHide)
   }
   
-  $('#news-page__loadmore').css('display', 'block')
+  $('#news-page__loadmore').css('opacity', 1)
 }

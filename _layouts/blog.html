@@ -46,6 +46,7 @@
           <span class="uppercase"><span class="blog__article-category">{{ page.blog_category }}</span><span style="margin-left: 30px;">{{ page.date | date: "%B" }} &nbsp;</span></span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}
         </div>
         <div class="blog__article-text editable">
+          <h1>{{page.blog_title}}</h1>
           {{ content }}
         </div>
         <div class="blog__share-mobile">
