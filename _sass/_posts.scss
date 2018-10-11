@@ -1,7 +1,7 @@
 /* Posts section */
 
 $row-height: 370px + 40px;
-$section-width: 80%;
+$section-width: 96%;
 $section-width-mobile: 95%;
 $section-max-width: 1195px;
 .posts__wrapper {
@@ -190,7 +190,7 @@ $section-max-width: 1195px;
 /* Multirow posts */
 .posts__flex-container.multirow {
   max-height: 4*$row-height;
-  width: 95%;
+  width: 96%;
   max-width: $section-max-width + 40px;
   .post__card {
     margin-left: 0;
