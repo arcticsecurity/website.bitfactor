@@ -34,7 +34,7 @@ h1 {
   letter-spacing: normal;
   color: $color-dark-blue;
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     @include font-size(42px);
     line-height: 1.14;
   }
@@ -49,7 +49,7 @@ h2 {
   letter-spacing: normal;
   color: $color-dark-blue;
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     @include font-size(24px);
   }
 }
@@ -63,7 +63,7 @@ h3 {
   letter-spacing: normal;
   color: $color-dark-blue;
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     @include font-size(18px);
     line-height: 1.67;
   }
@@ -80,7 +80,7 @@ body {
   color: $color-dark-blue;
   .blog {
     font-family: $font-serif;
-    @media only screen and (max-width: $screen-width-l - 1) {
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
       @include font-size(16px);
       line-height: 1.63;
     }
@@ -93,7 +93,7 @@ body {
     @include font-size(22px);
     line-height: 1.45;
 
-    @media only screen and (max-width: $screen-width-l - 1) {
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
       @include font-size(18px);
     }
   }
@@ -102,7 +102,7 @@ body {
     font-weight: $font-weight-bold;
   }
   .news-description {
-    @media only screen and (max-width: $screen-width-l - 1) {
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
       @include font-size(16px);
       line-height: 1.63;
     }
@@ -181,4 +181,11 @@ a {
 .site-icon {
   width: 32px;
   height: 32px;
+}
+
+#main-content {
+  width: 97.5vw;
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
 }

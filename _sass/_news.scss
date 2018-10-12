@@ -3,6 +3,7 @@
 $section-width: 96%;
 $section-width-mobile: 95%;
 $section-max-width: 1195px;
+$section-max-width-tablet: 780px;
 $row-height: 410px;
 .news__wrapper {
   width: 100%;
@@ -58,7 +59,7 @@ $row-height: 410px;
     display: none;
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     a.hide-on-mobile {
       display: none;
     }
@@ -78,21 +79,23 @@ $row-height: 410px;
     overflow: hidden;
   }
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     .news__flex-container {
+      max-width: $section-max-width-tablet;
       width: $section-width-mobile;
       @include flex-justify(center);
     }
     .news__title-row {
+      max-width: $section-max-width-tablet;
       width: $section-width-mobile;
       @include flex-justify(space-between);
     }
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     .news__flex-container {
-      max-height: 886px;
-      width: 410px;
+      max-height: 820px;
+      width: 370px;
       max-width: $section-width-mobile;
     }
     .news__title-row {
@@ -101,7 +104,7 @@ $row-height: 410px;
     }
   }
 
-  @media only screen and (max-width: $screen-width-s - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     .news__title-row {
       width: 370px;
     }
@@ -116,7 +119,7 @@ $row-height: 410px;
 .news-article__card {
   @include flex(0 1 auto);
   cursor: pointer;
-  width: 370px;
+  width: calc(33.3% - 30px);
   min-height: 370px;
   max-height: 370px;
   max-width: 90vw;
@@ -162,26 +165,20 @@ $row-height: 410px;
     color: $color-gray-blue;
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    width: calc(50% - 20px);
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    width: 100%;
     min-height: 0;
     margin-bottom: 40px;
     &:not(:first-child) {
       margin-left: 0;
     }
 
-    @media only screen and (min-width: $screen-width-s) {
+    @media only screen and (min-width: $screen-width-tablet-min) {
       margin-right: 40px;
-    }
-  }
-
-  @media only screen and (max-width: $screen-width-xxl - 1) {
-    &:nth-child(n+4) {
-      display: none;
-    }
-  }
-  @media only screen and (max-width: $screen-width-l - 1) {
-    &:nth-child(n+3) {
-      display: none;
     }
   }
 
@@ -216,7 +213,7 @@ $row-height: 410px;
     max-width: $section-max-width + 40px;
     width: 95%;
 
-    @media only screen and (max-width: $screen-width-m - 1) {
+    @media only screen and (max-width: $screen-width-tablet-min - 1) {
       max-width: 370px;
     }
   }
@@ -233,7 +230,7 @@ $row-height: 410px;
       display: block;
     }
 
-    @media only screen and (max-width: $screen-width-m - 1) {
+    @media only screen and (max-width: $screen-width-tablet-min - 1) {
       width: 370px;
       max-width: 95%;
       .news-article__card {

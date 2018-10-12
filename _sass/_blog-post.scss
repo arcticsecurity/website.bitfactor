@@ -149,10 +149,6 @@
     .blog__article {
       max-width: 80%;
     }
-    .blog__article-title {
-      text-align: center;
-    }
-
     .blog__flex-container {
       @include flex-direction(column);
       @include flex-align(center);

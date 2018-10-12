@@ -4,6 +4,7 @@ $row-height: 370px + 40px;
 $section-width: 96%;
 $section-width-mobile: 95%;
 $section-max-width: 1195px;
+$section-max-width-tablet: 780px;
 .posts__wrapper {
   width: 100%;
   @include display-flex();
@@ -51,7 +52,7 @@ $section-max-width: 1195px;
     display: none;
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     a.hide-on-mobile {
       display: none;
     }
@@ -66,36 +67,36 @@ $section-max-width: 1195px;
     max-width: $section-max-width;
     width: $section-width;
     @include display-flex();
-    @include flex-justify(flex-start);
+    @include flex-justify(space-between);
     @include flex-wrap(wrap);
     max-height: 390px;
     overflow: hidden;
+
+    &.multirow {
+      max-height: 4 * $row-height;
+
+      @include transition(max-height 500ms ease-in-out);
+    }
   }
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     .posts__flex-container {
       width: $section-width-mobile;
-      @include flex-justify(center);
+      max-width: $section-max-width-tablet;
     }
     .posts__title-row {
       width: $section-width-mobile;
+      max-width: $section-max-width-tablet;
       @include flex-justify(space-between);
     }
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     .posts__flex-container {
       max-height: 780px;
-      width: 410px;
+      width: 370px;
       max-width: $section-width-mobile;
     }
-    .posts__title-row {
-      width: 410px;
-      max-width: $section-width-mobile;
-    }
-  }
-
-  @media only screen and (max-width: $screen-width-s - 1) {
     .posts__title-row {
       width: 370px;
     }
@@ -108,21 +109,15 @@ $section-max-width: 1195px;
 /* One post */
 
 .post__card {
-  @include flex(0 1 auto);
   @include transition(background-color 100ms ease-in-out);
   cursor: pointer;
   background-color: $color-light-blue;
-  width: 370px;
-  max-width: 90vw;
+  width: calc(33.3% - 30px);
   min-height: 370px;
   max-height: 370px;
   margin-bottom: 40px;
   border-radius: 10px;
   overflow: hidden;
-
-  &:not(:first-child) {
-    margin-left: 40px;
-  }
 
   .post__card-image {
     min-height: 180px;
@@ -170,41 +165,20 @@ $section-max-width: 1195px;
     background-color: white;
   }
 
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    width: calc(50% - 15px);
+  }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    width: 100%;
     margin-bottom: 40px;
     &:not(:first-child) {
       margin-left: 0;
-    }
-
-    @media only screen and (min-width: $screen-width-s) {
-      margin-right: 40px;
     }
   }
 
   &.post__filter-hide {
     display: none;
   }
-}
-
-/* Multirow posts */
-.posts__flex-container.multirow {
-  max-height: 4*$row-height;
-  width: 96%;
-  max-width: $section-max-width + 40px;
-  .post__card {
-    margin-left: 0;
-    margin-right: 40px;
-    margin-bottom: 40px;
-  }
-
-  @media only screen and (max-width: $screen-width-m - 1) {
-    width: 370px;
-    max-width: 95%;
-    .post__card {
-      margin-right: 0;
-    }
-  }
-
-  @include transition(max-height 500ms ease-in-out);
 }
