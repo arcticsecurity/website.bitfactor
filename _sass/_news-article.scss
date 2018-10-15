@@ -39,7 +39,7 @@ main.news-article {
     left: -13vw;
     margin-top: 7px;
 
-    img {
+    i {
       margin-right: 12px;
     }
 
@@ -47,17 +47,13 @@ main.news-article {
       color: $color-blue;
     }
 
-    @media only screen and (max-width: $screen-width-xxl - 1) {
-      left: -17vw;
-    }
-
-    @media only screen and (max-width: $screen-width-l - 1) {
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
       left: 0;
       top: -60px;
     }
   }
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     .news-article__flex-container {
       margin-top: 60px;
     }
@@ -75,7 +71,7 @@ main.news-article {
     }
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     .news-article {
       width: 100%;
     }

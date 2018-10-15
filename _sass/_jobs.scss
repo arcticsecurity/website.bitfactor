@@ -28,7 +28,7 @@ $side-padding-mobile: 26px;
     h2 {
       @include display-flex();
       @include flex-align(center);
-      img {
+      i {
         margin-right: 12px;
       }
     }
@@ -53,6 +53,9 @@ $side-padding-mobile: 26px;
       .job__title {
         color: $color-gray-blue;
       }
+    }
+    i {
+      color: $color-gray-blue;
     }
   }
 
@@ -107,7 +110,7 @@ $side-padding-mobile: 26px;
       @include flex-direction(column);
       @include flex-align(flex-start);
 
-      img {
+      i {
         position: absolute;
         right: 0;
         top: 50%;
@@ -161,7 +164,7 @@ $side-padding-mobile: 26px;
 
     @media only screen and (max-width: $screen-width-desktop-min - 1) {
       .jobs__job {
-        img {
+        i {
           @include transform(translateY(-50%));
         }
       }

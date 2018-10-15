@@ -1,8 +1,22 @@
 ---
+header_image_path: /images/site/logo_text2_blue.svg
 navigation:
   show_in_navigation: true
   nav_order: '5'
   nav_title: About Us
+tab_slider: true
 ---
-
+<div class="about-us__header">
+  <div class="editable about-us__header-text">
+    <h1>Together we are stronger</h1>
+    <p class="large">Building the next generation of cyber defense together</p>
+  </div>
+  <img class="about-us__header-image" src="{{page.header_image_path}}" alt="About us header image" />
+</div>
+<div class="about-us__text editable large">
+  <h3>Our mission</h3>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+</div>
+{% include tab-slider.html class='about-us__tab-slider' tag='about_us' %}
 {% include jobs-no-background.html limit=100 %}

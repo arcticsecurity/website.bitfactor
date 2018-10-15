@@ -80,14 +80,14 @@
     right: 50px;
     bottom: 88px;
 
-    .fa-linkedin {
+    i {
       @include transition(color 100ms ease-in-out);
       margin-left: 15px;
-      @include font-size(24px);
+      @include font-size(32px);
     }
 
     &:hover {
-      .fa-linkedin {
+      i {
         color: $color-linkedin-blue;
       }
     }
@@ -96,7 +96,7 @@
       position: relative;
       right: 0;
       bottom: 0;
-      .fa-linkedin {
+      i {
         margin-left: 0;
       }
     }

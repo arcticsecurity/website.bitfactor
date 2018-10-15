@@ -28,7 +28,7 @@ $section-max-width-tablet: 780px;
     color: $color-dark-blue;
     margin-bottom: 0;
 
-    img {
+    i {
       margin-right: 12px;
     }
   }
@@ -38,7 +38,7 @@ $section-max-width-tablet: 780px;
     @include flex-align(center);
     color: $color-arctic-blue;
 
-    img {
+    i {
       margin-left: 12px;
     }
 

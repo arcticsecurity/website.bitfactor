@@ -18,12 +18,12 @@
   {% unless include.no_title %}
   <div class="posts__title-row">
     <h2 class="posts__title">
-      <img class="site-icon" src="/images/icons/blog.svg" />{{title}}
+      <i class="icon-blog"></i>{{title}}
     </h2>
       {% unless include.no_blog_link %}
       <a class="hide-on-mobile" href="/blog">
         <span class="posts__discover-more caption-light">
-          Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
+          Discover more<i class="icon-arrow_right"></i>
         </span>
       </a>
       {% endunless %}
@@ -73,12 +73,13 @@
       </div>
     </a>
   {% endfor %}
+  <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
   </div>
 
   {% unless include.no_blog_link %}
   <a class="show-on-mobile" href="/blog">
     <span class="posts__discover-more caption-light">
-      Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
+      Discover more<i class="icon-arrow_right"></i>
     </span>
   </a>
   {% endunless %}

@@ -47,7 +47,6 @@
 
       i {
         margin-right: 12px;
-        @include font-size(28px);
         color: $color-arctic-blue;
       }
 
@@ -111,13 +110,13 @@
       margin-left: 20px;
     }
 
-    .blog__share-li:hover {
+    .blog__share-li:hover i {
       color: $color-linkedin-blue;
     }
-    .blog__share-tw:hover {
+    .blog__share-tw:hover i {
       color: $color-twitter-blue;
     }
-    .blog__share-fb:hover {
+    .blog__share-fb:hover i {
       color: $color-facebook-blue;
     }
   }
@@ -129,21 +128,18 @@
     margin-top: 10px;
   }
 
-  @media only screen and (min-width: $screen-width-l) {
+  @media only screen and (min-width: $screen-width-desktop-min) {
     .blog__share-title, .blog__share-social-medias {
       &.hide-on-mobile {
         display: block;
       }
     }
-  }
-
-  @media only screen and (max-width: $screen-width-xl - 1) {
     .blog__article {
       max-width: 60%;
     }
   }
 
-  @media only screen and (max-width: $screen-width-l - 1) {
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
     margin-top: 0;
 
     .blog__article {
@@ -173,7 +169,7 @@
     }
   }
 
-  @media only screen and (max-width: $screen-width-m - 1) {
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
     .blog__article {
       max-width: 90%;
     }

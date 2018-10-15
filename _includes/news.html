@@ -1,12 +1,12 @@
 <section class="news__wrapper{% if include.multirow %} multirow{% endif %}">
   <div class="news__title-row">
     <h2 class="news__title">
-      <img class="site-icon" src="/images/icons/news.svg" />News
+      <i class="icon-news"></i>News
     </h2>
     {% unless !include.hide_discover_more %}
     <a href="/news" class="hide-on-mobile">
       <span class="news__discover-more caption-light">
-        Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
+        Discover more<i class="icon-arrow_right"></i>
       </span>
     </a>
     {% endunless %}
@@ -36,11 +36,12 @@
       </div>
     </a>
   {% endfor %}
+  <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
   </div>
   {% unless !include.hide_discover_more %}
   <a href="/news" class="show-on-mobile">
     <span class="news__discover-more caption-light">
-      Discover more<img class="site-icon" src="/images/icons/arrow_right_filled.svg" />
+      Discover more<i class="icon-arrow_right"></i>
     </span>
   </a>
   {% endunless %}

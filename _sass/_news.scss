@@ -4,7 +4,7 @@ $section-width: 96%;
 $section-width-mobile: 95%;
 $section-max-width: 1195px;
 $section-max-width-tablet: 780px;
-$row-height: 410px;
+$row-height: 370px;
 .news__wrapper {
   width: 100%;
   @include display-flex();
@@ -27,7 +27,7 @@ $row-height: 410px;
     @include flex-align(center);
     margin-bottom: 0;
 
-    img {
+    i {
       margin-right: 12px;
       width: 32px;
       height: 32px;
@@ -39,7 +39,7 @@ $row-height: 410px;
     @include flex-align(center);
     color: $color-arctic-blue;
 
-    img {
+    i {
       margin-left: 12px;
       width: 32px;
       height: 32px;
@@ -73,17 +73,17 @@ $row-height: 410px;
     max-width: $section-max-width;
     width: $section-width;
     @include display-flex();
-    @include flex-justify(flex-start);
+    @include flex-justify(space-between);
     @include flex-wrap(wrap);
     max-height: 370px;
     overflow: hidden;
+    margin-bottom: 50px;
   }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
     .news__flex-container {
       max-width: $section-max-width-tablet;
       width: $section-width-mobile;
-      @include flex-justify(center);
     }
     .news__title-row {
       max-width: $section-max-width-tablet;
@@ -127,10 +127,6 @@ $row-height: 410px;
   position: relative;
 
   @include transition(background-color 100ms ease-in-out);
-
-  &:not(:first-child) {
-    margin-left: 40px;
-  }
 
   .news-article__card-date {
     @include font-size(14px);
@@ -209,41 +205,9 @@ $row-height: 410px;
 /* Multirow */
 
 .news__wrapper.multirow {
-  .news__title-row {
-    max-width: $section-max-width + 40px;
-    width: 95%;
-
-    @media only screen and (max-width: $screen-width-tablet-min - 1) {
-      max-width: 370px;
-    }
-  }
 
   .news__flex-container {
-    max-width: $section-max-width + 40px;
     max-height: 2 * $row-height;
-    width: 95%;
-    .news-article__card {
-      margin-left: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-
-      display: block;
-    }
-
-    @media only screen and (max-width: $screen-width-tablet-min - 1) {
-      width: 370px;
-      max-width: 95%;
-      .news-article__card {
-        margin-right: 0;
-      }
-    }
-
     @include transition(max-height 500ms ease-in-out);
-  }
-
-  .news-article__card {
-    margin-bottom: 40px;
-    margin-left: 0;
-    margin-right: 40px;
   }
 }

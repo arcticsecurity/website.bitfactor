@@ -6,7 +6,7 @@
 	<main id="main-content" class="blog">
     <div class="blog__flex-container">
       <aside class="blog__contact">
-        <a href="/blog" class="blog__articles-link"><i class="arcsec-circle_remove"></i> All articles</a>
+        <a href="/blog" class="blog__articles-link"><i class="icon-arrow_left"></i> All articles</a>
         {% for writer in page.writer.employees %}
           {% for employee in site.employees %}
             {% if employee.path contains writer %}
@@ -25,19 +25,19 @@
             class="blog__share-li"
             target="_blank"
             rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
+            <i class="icon-social_linkedin_filled"></i>
           </a>
           <a href="https://twitter.com/share?url={{ shareUrl }}&amp;via=arcticsecurityoy"
             class="blog__share-tw"
             target="_blank"
             rel="noopener noreferrer">
-            <i class="fab fa-twitter"></i>
+            <i class="icon-social_twitter_filled"></i>
           </a>
           <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ shareUrl }}"
             class="blog__share-fb"
             target="_blank"
             rel="noopener noreferrer">
-            <i class="fab fa-facebook"></i>
+            <i class="icon-social_facebook_filled"></i>
           </a>
         </div>
       </aside>
@@ -57,19 +57,19 @@
               class="blog__share-li"
               target="_blank"
               rel="noopener noreferrer">
-              <i class="fab fa-linkedin"></i>
+              <i class="icon-social_linkedin_filled"></i>
             </a>
             <a href="https://twitter.com/share?url={{ shareUrl }}&amp;via=arcticsecurityoy"
               class="blog__share-tw"
               target="_blank"
               rel="noopener noreferrer">
-              <i class="fab fa-twitter"></i>
+              <i class="icon-social_twitter_filled"></i>
             </a>
             <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ shareUrl }}"
               class="blog__share-fb"
               target="_blank"
               rel="noopener noreferrer">
-              <i class="fab fa-facebook"></i>
+              <i class="icon-social_facebook_filled"></i>
             </a>
           </div>
         </div>

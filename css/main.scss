@@ -8,6 +8,8 @@
 @import "general";
 @import "cloudcannon";
 
+@import "icons";
+
 /* Components */
 @import "navigation"; // include
 @import "footer"; // include
@@ -20,3 +22,5 @@
 @import "news-page"; // news & events page
 @import "news-article"; // news article
 @import "events-and-careers"; // frontpage events and careers
+@import "about-us"; // about-us page
+@import "tab-slider";

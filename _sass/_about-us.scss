@@ -1,0 +1,104 @@
+.about-us__header {
+  max-width: 1192px;
+  margin-top: 80px;
+  width: 100%;
+  @include display-flex();
+  @include flex-justify(space-between);
+  position: relative;
+
+  .about-us__header-text {
+    @include display-flex();
+    @include flex-direction(column);
+
+    p {
+      color: $color-gray-blue;
+    }
+  }
+
+  .about-us__header-image {
+    min-width: 781px;
+    margin-left: 70px;
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    max-width: 692px;
+    margin-top: 32px;
+    @include flex-direction(column-reverse);
+
+    .about-us__header-image {
+      min-width: 100%;
+      margin-left: 0;
+      height: 100%;
+    }
+
+    h1, p {
+      max-width: 331px;
+    }
+
+    .about-us__header-text {
+      @include flex-direction(row);
+      @include flex-align(center);
+      @include flex-justify(space-between);
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    max-width: 331px;
+    .about-us__header-text {
+      @include flex-direction(column);
+    }
+  }
+}
+
+.about-us__text {
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include flex-justify(space-between);
+  max-width: 1026px;
+  width: 100%;
+  margin-top: 70px;
+
+  h3 {
+    width: 100%;
+  }
+
+  p {
+    color: $color-gray-blue;
+    width: 450px;
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    max-width: 692px;
+    p {
+      width: 331px;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    margin-top: 30px;
+    max-width: 331px;
+  }
+}
+
+.about-us__tab-slider.tab-slider {
+  margin-bottom: 200px;
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    margin-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: $screen-width-desktop-min - 1) {
+  .jobs__wrapper.no-background .jobs__flex-container {
+    max-width: 100%;
+    width: 100%;
+
+    .jobs__list, .jobs__list * {
+      max-width: 331px;
+      margin-right: 0;
+    }
+    .jobs__content {
+      max-width: 331px;
+    }
+  }
+}
