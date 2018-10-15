@@ -89,16 +89,38 @@
 }
 
 @media only screen and (max-width: $screen-width-desktop-min - 1) {
-  .jobs__wrapper.no-background .jobs__flex-container {
-    max-width: 100%;
-    width: 100%;
-
-    .jobs__list, .jobs__list * {
-      max-width: 331px;
-      margin-right: 0;
+  .jobs__wrapper.no-background {
+    .jobs {
+      max-width: 692px;
     }
-    .jobs__content {
+    .jobs__flex-container {
+      max-width: 692px;
+      width: 100%;
+      margin-left: 0;
+      @include flex-justify(space-between);
+
+      .jobs__list, .jobs__list * {
+        max-width: 331px;
+        margin-right: 0;
+      }
+      .jobs__content {
+        max-width: 331px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-width-tablet-min - 1) {
+  .jobs__wrapper.no-background {
+    .jobs {
       max-width: 331px;
+    }
+    .jobs__flex-container {
+      max-width: 331px;
+    }
+    .jobs__list {
+      margin-left: 0;
     }
   }
 }
