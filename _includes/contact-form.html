@@ -1,4 +1,4 @@
-<div class="contact-form__wrapper">
+<div class="contact-form__wrapper {{include.class}}">
   <h2 class="editable">Contact Us</h2>
   <p class="editable">Fill in the below form for sales enquiries, schedule a product demo, 
     partnership opportunities and other enquiries. You can also mail us at 
@@ -30,15 +30,14 @@
     </div>
 
     <div class="contact-form__checkbox-group">
-      <div class="contact-form__input checkbox">
-        <input type="checkbox" name="newsletter_subscription" id="newsletter_subscription" />
-        <label for="newsletter_subscription" class="caption-light">Subscribe to Arctic Security Newsletter</label>
-      </div>
-
-      <div class="contact-form__input checkbox">
-        <input type="checkbox" name="accept_privacy_policy" id="accept_privacy_policy" />
-        <label for="accept_privacy_policy" class="caption-light">I Accept the Arctic Security privacy policy</label>
-      </div>
+      <span class="contact-form__fake-checkbox caption-light" data-for="newsletter_subscription">
+        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> Subscribe to Arctic Security newsletter
+      </span>
+      <span class="contact-form__fake-checkbox caption-light" data-for="accept_privacy_policy">
+        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> I accept the Arctic Security privacy policy
+      </span>
+      <input type="checkbox" hidden name="newsletter_subscription" id="newsletter_subscription" />
+      <input type="checkbox" hidden name="accept_privacy_policy" id="accept_privacy_policy" />
     </div>
 
     <div class="contact-form__submit-button" id="contact-form__submit-button" class="caption-light">Submit</div>

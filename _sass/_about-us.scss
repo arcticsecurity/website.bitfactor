@@ -94,6 +94,10 @@
   }
 }
 
+.contact-form__wrapper.about-us__form-margin {
+  margin-bottom: 350px;
+}
+
 @media only screen and (max-width: $screen-width-desktop-min - 1) {
   .jobs__wrapper.no-background {
     .jobs {

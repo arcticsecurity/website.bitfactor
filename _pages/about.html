@@ -30,4 +30,4 @@ contact_form: true
 {% capture include_members %}{% for person in page.team_members.employees %}{{ person }},{% endfor %}{% endcapture %}
 {% include team.html image=page.team_image_path members=include_members %}
 {% include contact-info.html %}
-{% include contact-form.html %}
+{% include contact-form.html class='about-us__form-margin' %}

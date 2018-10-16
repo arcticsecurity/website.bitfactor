@@ -5,6 +5,11 @@
   max-width: 1192px;
   margin-top: 50px;
 
+  h2 {
+    @include display-flex();
+    @include flex-align(center);
+  }
+
   .team__image {
     width: 100%;
     height: auto;

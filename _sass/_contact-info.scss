@@ -5,6 +5,11 @@
   width: 100%;
   margin-top: 150px;
 
+  h2 {
+    @include display-flex();
+    @include flex-align(center);
+  }
+
   .contact-info__flex-container {
     @include display-flex();
     @include flex-justify(space-between);
