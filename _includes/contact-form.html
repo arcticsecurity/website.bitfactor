@@ -24,24 +24,24 @@
       <label for="email" id="email_label" class="caption-light">Email</label>
     </div>
 
-    <div class="contact-form__input">
+    <div class="contact-form__input textarea">
       <textarea name="message" id="message"></textarea>
       <label for="message" id="message_label" class="caption-light">Message</label>
     </div>
 
-    <div class="contact-form__input">
-      <input type="checkbox" name="newsletter_subscription" id="newsletter_subscription" />
-      <label for="newsletter_subscription" class="caption-light">Subscribe to Arctic Security Newsletter</label>
+    <div class="contact-form__checkbox-group">
+      <div class="contact-form__input checkbox">
+        <input type="checkbox" name="newsletter_subscription" id="newsletter_subscription" />
+        <label for="newsletter_subscription" class="caption-light">Subscribe to Arctic Security Newsletter</label>
+      </div>
+
+      <div class="contact-form__input checkbox">
+        <input type="checkbox" name="accept_privacy_policy" id="accept_privacy_policy" />
+        <label for="accept_privacy_policy" class="caption-light">I Accept the Arctic Security privacy policy</label>
+      </div>
     </div>
 
-    <div class="contact-form__input">
-      <input type="checkbox" name="accept_privacy_policy" id="accept_privacy_policy" />
-      <label for="accept_privacy_policy" class="caption-light">I Accept the Arctic Security privacy policy</label>
-    </div>
-
-    <div class="contact-form__input">
-      <div class="contact-form__submit-button" id="contact-form__submit-button" class="caption-light">Submit</div>
-    </div>
+    <div class="contact-form__submit-button" id="contact-form__submit-button" class="caption-light">Submit</div>
   
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />

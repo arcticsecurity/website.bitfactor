@@ -3,8 +3,110 @@
   @include flex-direction(column);
   @include flex-align(center);
   max-width: 553px;
+  margin-top: 120px;
 
   *:not(h2) {
     color: $color-gray-blue;
+  }
+
+  .contact-form {
+    max-width: 465px;
+    margin-top: 50px;
+    width: 100%;
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(center);
+    padding: 50px;
+    border: 1px solid $color-border-gray;
+    border-radius: 10px;
+  }
+
+  .contact-form__input {
+    width: 100%;
+    @include display-flex();
+    @include flex-direction(column);
+
+    &.checkbox {
+      @include flex-direction(row);
+    }
+
+    input[type=text] {
+      width: 100%;
+      font-family: $font-general;
+      color: $color-dark-blue;
+      line-height: 2.5;
+      border: none;
+      border-bottom: 1px solid $color-border-gray;
+      @include font-size(16px);
+      padding: 0;
+      @include transition(border 100ms ease-in-out);
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    label {
+      line-height: 1.8;
+      margin-top: 3px;
+    }
+
+    &.textarea {
+      margin-top: 30px;
+
+      textarea {
+        border: 1px solid $color-border-gray;
+        border-radius: 10px;
+        line-height: 1.63;
+        resize: none;
+        padding: 7px 12px;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+
+  .contact-form__checkbox-group {
+    margin-top: 30px;
+
+    label {
+      line-height: 1;
+    }
+
+    .contact-form__input {
+      @include display-flex();
+    }
+  }
+
+  .contact-form__submit-button {
+    color: white;
+    @include font-size(16px);
+    background-color: $color-seafoam-blue;
+    text-align: center;
+    padding: 8px 47px;
+    border-radius: 35px;
+    @include transition(100ms ease-in-out);
+    cursor: pointer;
+    margin-top: 50px;
+
+    &:hover {
+      background-color: $color-green;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    margin-top: 60px;
+    max-width: 331px;
+
+    .contact-form {
+      padding: 25px;
+      margin-top: 20px;
+      max-width: 331px;
+    }
+
+    .contact-form__submit-button {
+      margin-top: 20px;
+    }
   }
 }
