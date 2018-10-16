@@ -88,6 +88,12 @@
   }
 }
 
+.jobs__wrapper.no-background {
+  .jobs {
+    max-width: 1192px;
+  }
+}
+
 @media only screen and (max-width: $screen-width-desktop-min - 1) {
   .jobs__wrapper.no-background {
     .jobs {

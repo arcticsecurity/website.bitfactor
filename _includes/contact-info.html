@@ -1,0 +1,25 @@
+<div class="contact-info__wrapper">
+  <h2><i class="icon-info" style="margin-right: 12px;"></i>Contact Info</h2>
+  <div class="contact-info__flex-container">
+    <div class="contact-info highlight">
+        <p class="contact-info__name">{{site.data.company.name}}</p>
+        <p class="contact-info__desc-1 text-highlight">{{site.data.company.email}}</p>
+        <p class="contact-info__desc-2">{{site.data.company.phone}}</p>
+        <p class="contact-info__desc-3">Business ID: {{site.data.company.business_id}}</p>
+      </div>
+      <div class="contact-info highlight">
+        <p class="contact-info__name">{{site.data.company.title}}</p>
+        <p class="contact-info__desc-1 text-highlight">{{site.data.company.address}}</p>
+        <p class="contact-info__desc-2 text-highlight">{{site.data.company.postal_code}} {{site.data.company.city}}</p>
+        <p class="contact-info__desc-3 text-highlight">{{site.data.company.country}}</p>
+      </div>
+      {% for office in site.data.company.other_offices %}
+        <div class="contact-info">
+          <p class="contact-info__name">{{office.name}}</p>
+          <p class="contact-info__desc-1">{{office.address}}</p>
+          <p class="contact-info__desc-2">{{office.postal_code}} {{office.city}}</p>
+          <p class="contact-info__desc-3">{{office.country}}</p>
+        </div>
+      {% endfor %}
+  </div>
+</div>
