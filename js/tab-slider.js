@@ -32,33 +32,25 @@ $sliderArrow.on('click', function() {
   var $activeContent = $(".slider-content.active")
   var activeContent = $activeContent.data('content')
   var nextActiveContent = activeContent + direction
-  var moreContentInDirection = activeContent + direction + direction
 
   var $nextActiveTab = null
-  var moreTabs = false
 
   // get next active content
   $sliderContent.each(function() {
     var $element = $(this)
     if ($element.data('content') == nextActiveContent) $nextActiveTab = $element
-    if ($element.data('content') == moreContentInDirection) moreTabs = true
   })
 
-  if (!moreTabs) {
-    $(this).addClass(arrowHide)
-  }
+  if (!$nextActiveTab && activeContent !== $sliderContent.first().data('content')) $nextActiveTab = $sliderContent.first()
+  else if (!$nextActiveTab) $nextActiveTab = $sliderContent.last()
 
   if ($nextActiveTab) {
     $nextActiveTab
       .removeClass(contentDisappear)
-      .removeClass('left')
-      .removeClass('right')
       .addClass(activeClass)
-      .addClass($(this).data('direction'))
       .addClass(contentAppear)
     $activeContent.removeClass(activeClass)
       .removeClass(contentAppear)
-      .addClass($(this).data('direction'))
       .addClass(contentDisappear)
 
 
