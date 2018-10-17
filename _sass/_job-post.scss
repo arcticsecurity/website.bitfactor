@@ -1,16 +1,17 @@
-main.news-article {
+main.job-post {
   max-width: 97.5vw;
   width: 97.5vw;
 
-  .news-article__flex-container {
+  .job-post__flex-container {
     @include display-flex();
     @include flex-justify(center);
     max-width: 90%;
     margin: 0 auto;
     margin-top: 110px;
+    margin-bottom: 50px;
   }  
 
-  .news-article {
+  .job-post {
     max-width: 584px;
     width: 100%;
     position: relative;
@@ -18,16 +19,16 @@ main.news-article {
     @include flex-justify(center);
   }
 
-  .news-article__text {
+  .job-post__text {
   }
 
-  .news-article__date {
+  .job-post__date {
     width: 100%;
     color: $color-gray-blue;
     @include font-size(14px);
   }
 
-  .news-article__back-button {
+  .job-post__back-button {
     @include font-size(14px);
     @include display-flex();
     @include flex-align(center);
@@ -54,25 +55,25 @@ main.news-article {
   }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
-    .news-article__flex-container {
+    .job-post__flex-container {
       margin-top: 60px;
     }
 
-    .news-article {
+    .job-post {
       max-width: 500px;
     }
 
-    .news-article__title {
+    .job-post__title {
       text-align: center;
     }
 
-    .news-article__date {
+    .job-post__date {
       text-align: center;
     }
   }
 
   @media only screen and (max-width: $screen-width-tablet-min - 1) {
-    .news-article {
+    .job-post {
       max-width: 331px;
     }
   }

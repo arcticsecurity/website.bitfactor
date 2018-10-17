@@ -34,6 +34,7 @@
   }
   .blog__contact {
     min-width: 25%;
+    position: relative;
     @include display-flex();
     @include flex-direction(column);
     @include flex-align(center);
@@ -157,10 +158,14 @@
     }
 
     .blog__contact {
-      min-width: 100%;
+      max-width: 80%;
+      width: 100%;
+      margin-top: 100px;
       .blog__articles-link {
-        margin-bottom: 20px;
-        align-self: flex-start;
+        margin-bottom: 0;
+        top: -70px;
+        left: 0;
+        position: absolute;
       }
     }
 
@@ -172,6 +177,11 @@
   @media only screen and (max-width: $screen-width-tablet-min - 1) {
     .blog__article {
       max-width: 90%;
+    }
+
+    .blog__contact {
+      max-width: 90%;
+      width: 100%;
     }
   }
 }

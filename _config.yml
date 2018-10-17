@@ -62,6 +62,11 @@ defaults:
       type: news
     values:
       layout: news-article
+  - scope:
+      path: "_jobs"
+      type: jobs
+    values:
+      layout: job
 
 news_category:
   - press_release

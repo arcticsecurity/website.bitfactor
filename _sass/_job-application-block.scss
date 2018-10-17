@@ -1,0 +1,50 @@
+.job-application-block {
+  @include display-flex();
+  @include flex-justify(center);
+  @include flex-direction('column');
+  width: 100%;
+  max-width: 452px;
+  border: 1px solid $color-border-gray;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 140px;
+  p {
+    color: $color-gray-blue;
+  }
+
+  p, h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+}
+
+.job-application-block__button {
+  color: white;
+  @include font-size(16px);
+  background-color: $color-seafoam-blue;
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 35px;
+  @include transition(100ms ease-in-out);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-green;
+  }
+}
+
+.job-application-block__link-wrap {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: $screen-width-desktop-min - 1) {
+  .job-application-block {
+    max-width: 331px;
+    padding: 30px;
+    margin-bottom: 70px;
+  }
+}

@@ -3,20 +3,21 @@
 {% include head.html %}
 <body>
 	{% include navbar.html %}
-	<main id="main-content" class="news-article">
-    <div class="news-article__flex-container">
-      <article class="news-article">
-        <div class="news-article__text editable">
-          <p class="news-article__date caption-light">
+	<main id="main-content" class="job-post">
+    <div class="job-post__flex-container">
+      <article class="job-post">
+        <div class="job-post__text editable">
+          <p class="job-post__date caption-light">
             <span class="uppercase">{{ page.date | date: "%B" }} </span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}
           </p>
-          <h1 class="news-article__title">{{page.news_article_title}}</h1>
+          <h1 class="job-post__title">{{page.job_title}}</h1>
           {{ content }}
         </div>
-        <a class="news-article__back-button" href="/news"><i class="icon-arrow_left"></i>Back</a>
+        <a class="job-post__back-button" href="/about"><i class="icon-arrow_left"></i>Back</a>
       </article>
     </div>
-    {% include news.html limit=3 hide_discover_more=true %}
+    {% include job-application-block.html %}
+    {% include jobs-no-background.html limit=100 %}
 	</main>
 	{% include footer.html %}
 	{% include scripts.html %}
