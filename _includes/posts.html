@@ -29,11 +29,7 @@
       {% endunless %}
   </div>
   {% endunless %}
-  {% if include.multirow %}
-  <div class="posts__flex-container multirow">
-  {% else %}
-  <div class="posts__flex-container">
-  {% endif %}
+  <div class="posts__flex-container{% if include.multirow %} multirow{% endif %}{% if include.show_all %} show-all{% endif %}">
 
   {% assign blogposts = "" | split: ',' %}
   {% for post in site.posts %}

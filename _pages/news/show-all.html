@@ -2,9 +2,7 @@
 layout: news
 news_filter: true
 navigation:
-  show_in_navigation: true
-  nav_order: '4'
-  nav_title: News & Events
+  show_in_navigation: false
 ---
 <div class="news-header">
   <div class="news-page__title">
@@ -26,9 +24,4 @@ navigation:
     </div>
   </div>
 </div>
-{% include news.html hide_discover_more=true multirow=true limit=30 %}
-<div class="news-page__loadmore-wrapper">
-  <span class="news-page__loadmore" id="news-page__loadmore">Load More<i class="icon-arrow_down"></i></span>
-  <a href="/news/show-all" class="news-page__loadmore" id="show-all" style="visibility: hidden; position: absolute;">Show all<i class="icon-arrow_down"></i></a>
-</div>
-{% include events-no-background.html %}
+{% include news.html hide_discover_more=true show_all=true limit=1000 %}

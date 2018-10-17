@@ -204,10 +204,11 @@ $row-height: 370px;
 
 /* Multirow */
 
-.news__wrapper.multirow {
+.news__wrapper.multirow .news__flex-container {
+  max-height: 2 * $row-height;
+  @include transition(max-height 500ms ease-in-out);
+}
 
-  .news__flex-container {
-    max-height: 2 * $row-height;
-    @include transition(max-height 500ms ease-in-out);
-  }
+.news__wrapper.show-all .news__flex-container {
+  max-height: initial;
 }

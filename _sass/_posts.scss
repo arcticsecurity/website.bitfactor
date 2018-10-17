@@ -77,6 +77,10 @@ $section-max-width-tablet: 780px;
 
       @include transition(max-height 500ms ease-in-out);
     }
+
+    &.show-all {
+      max-height: initial;
+    }
   }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {

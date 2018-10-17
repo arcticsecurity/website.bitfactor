@@ -31,5 +31,5 @@ function filterBlogCards() {
     $('.post__card').removeClass(filterHide)
   }
   
-  $('#blog-page__loadmore').css('opacity', 1)
+  $('#blog-page__loadmore').css('visibility', 'visible')
 }
