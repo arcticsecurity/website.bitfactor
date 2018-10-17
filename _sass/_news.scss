@@ -4,7 +4,7 @@ $section-width: 96%;
 $section-width-mobile: 95%;
 $section-max-width: 1195px;
 $section-max-width-tablet: 780px;
-$row-height: 370px;
+$row-height: 410px;
 .news__wrapper {
   width: 100%;
   @include display-flex();
@@ -125,6 +125,7 @@ $row-height: 370px;
   max-width: 90vw;
   overflow: hidden;
   position: relative;
+  margin-bottom: 40px;
 
   @include transition(background-color 100ms ease-in-out);
 
@@ -168,7 +169,6 @@ $row-height: 370px;
   @media only screen and (max-width: $screen-width-tablet-min - 1) {
     width: 100%;
     min-height: 0;
-    margin-bottom: 40px;
     &:not(:first-child) {
       margin-left: 0;
     }
