@@ -15,6 +15,7 @@ writer:
   employees:
     - tiina-testaaja
 og_image_path: /images/site/logo_text2_blue.svg
+event_link_url: https://google.com
 twitter_image_path:
 _comments:
   date: Invalid date
