@@ -1,6 +1,8 @@
 ---
 layout: default
+filter_category:
+  - guides
 ---
-{% include posts.html limit=3 %}
+{% include posts.html limit=3 title='Guides' filter_category=page.filter_category %}
 {% include news.html %}
 {% include events-and-careers.html %}

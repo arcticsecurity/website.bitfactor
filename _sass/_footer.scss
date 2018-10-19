@@ -14,7 +14,7 @@
 
   bottom: -$footer-height-mobile;
   min-height: $footer-height-mobile;
-  @media only screen and (min-width: $screen-width-desktop-min) {
+  @media only screen and (min-width: $screen-width-tablet-min) {
     min-height: $footer-height;
     bottom: -$footer-height;
   }
@@ -75,14 +75,25 @@
     }
   }
 
-  .footer__linkedin-link {
+  .footer__meta-wrapper {
     position: absolute;
     right: 50px;
-    bottom: 88px;
+    bottom: 36px;
 
+    @include display-flex();
+    @include flex-direction(column);
+
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      max-width: 210px;
+    }
+  }
+
+  .footer__social-link {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
     i {
       @include transition(color 100ms ease-in-out);
-      margin-left: 15px;
       @include font-size(32px);
     }
 
@@ -90,31 +101,43 @@
       i {
         color: $color-linkedin-blue;
       }
-    }
 
-    @media only screen and (max-width: $screen-width-tablet-min - 1) {
-      position: relative;
-      right: 0;
-      bottom: 0;
-      i {
-        margin-left: 0;
+      &.twitter {
+        i {
+          color: $color-twitter-blue;
+        }
       }
+    }
+    
+    &.link-image {
+      height: 45px;
+      width: auto;
+
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .footer__social-links {
+    @include display-flex();
+    @include flex-justify(flex-end);
+    margin-bottom: 15px;
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      margin-bottom: 10px;
     }
   }
 
   .footer__copyright {
     color: $color-light-gray;
-    position: absolute;
-    right: 50px;
-    bottom: 36px;
+    text-align: right;
+    line-height: 1.44;
 
     @media only screen and (max-width: $screen-width-tablet-min - 1) {
-      position: relative;
-      max-width: 50%;
-      text-align: center;
-      right: 0;
-      bottom: 0;
       @include font-size(14px);
+      text-align: center;
     }
   }
 
@@ -136,8 +159,14 @@
       margin-top: 25px;
     }
 
-    .footer__copyright {
-      margin-top: 25px;
+    .footer__meta-wrapper {
+      max-width: 293px;
+      right: 50%;
+      @include transform(translateX(50%));
+    }
+
+    .footer__social-links {
+      @include flex-justify(center);
     }
   }
 }

@@ -122,12 +122,13 @@ $section-max-width-tablet: 780px;
   margin-bottom: 40px;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid $color-border-blue;
 
   .post__card-image {
     min-height: 180px;
     @include display-flex();
     @include flex-justify(center);
-    background-color: $color-blue;
+    background-color: white;
 
     img {
       min-height: 100%;

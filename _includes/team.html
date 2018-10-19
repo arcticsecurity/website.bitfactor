@@ -1,8 +1,6 @@
-<!-- include team.html image=page.team_image_path members=include_members -->
 {% assign members = include.members | split: ',' %}
 <section class="team__wrapper">
-  <h2><i class="icon-team" style="margin-right: 12px;"></i>Team</h2>
-  <img src="{{include.image}}" alt="team_image" class="team__image" />
+  <h3>Our management team</h3>
   <div class="team__members">
   {% for member in members %}
     {% capture filename %}{{ member }}.md{% endcapture %}
@@ -12,7 +10,6 @@
           <img class="team__member-image" src="{{employee.person_image_path}}" alt="{{employee.first_name}} {{employee.last_name}}" />
           <h3>{{employee.first_name}} {{employee.last_name}}</h3>
           <p class="caption uppercase">{{employee.position}}</p>
-          <p>{{employee.description}}</p>
         </div>
       {% endif %}
     {% endfor %}

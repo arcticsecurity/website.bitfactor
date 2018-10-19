@@ -5,6 +5,8 @@ navigation:
   show_in_navigation: true
   nav_order: '4'
   nav_title: News & Events
+filter_category:
+  - events
 ---
 <div class="news-header">
   <div class="news-page__title">
@@ -32,3 +34,4 @@ navigation:
   <a href="/news/show-all" class="news-page__loadmore" id="show-all" style="visibility: hidden; position: absolute;">Show all<i class="icon-arrow_down"></i></a>
 </div>
 {% include events-no-background.html %}
+{% include posts.html limit=3 title="Past Events" show_date=true no_blog_link=true filter_category=page.filter_category %}

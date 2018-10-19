@@ -50,6 +50,13 @@
   }
 }
 
+.about-us__jobs {
+  margin-top: 150px;
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    margin-top: 75px;
+  }
+}
+
 .about-us__text {
   @include display-flex();
   @include flex-direction(row);

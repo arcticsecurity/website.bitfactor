@@ -5,7 +5,6 @@ blog_description:
 date:
 tags:
 blog_category:
-  - articles
 writer:
   employees:
 og_image_path: '/images/site/logo_text2_blue.svg'

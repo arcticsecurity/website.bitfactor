@@ -10,10 +10,6 @@
   {% assign limit=3 %}
 {% endif %}
 
-{% if include.filter_category %}
-  {% assign includeCategory = include.filter_category | first %}
-{% endif %}
-
 <section class="posts__wrapper">
   {% unless include.no_title %}
   <div class="posts__title-row">
@@ -34,15 +30,21 @@
   {% assign blogposts = "" | split: ',' %}
   {% for post in site.posts %}
     {% if post.url != page.url %}
-        {% if includeCategory %}
+
+        {% if include.filter_category %}
+
+          {% for filterCategory in include.filter_category %}
             {% for category in post.blog_category %}
-                {% if category == includeCategory %}
-                    {% assign blogposts = blogposts | push: post %}
-                {% endif %}
+              {% if category == filterCategory %}
+                {% assign blogposts = blogposts | push: post %}
+              {% endif %}
             {% endfor %}
+          {% endfor %}
+
         {% else %}
-            {% assign blogposts = blogposts | push: post %}
+          {% assign blogposts = blogposts | push: post %}
         {% endif %}
+
     {% endif %}
   {% endfor %}
 
@@ -54,7 +56,11 @@
       </div>
       <div class="post__card-content">
         <p class="post__card-date caption-light">
-          <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+          {% unless include.show_date %}
+            <span class="uppercase">{{post.blog_category}}</span>
+          {% else %}
+            <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+          {% endunless %}
         </p>
         <h3 class="post__card-title">{{ post.blog_title }}</h3>
         <p class="post__card-writers">

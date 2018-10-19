@@ -74,8 +74,8 @@ news_category:
 
 blog_category:
   - events
-  - articles
-  - resources
+  - guides
+  - use cases
 
 # https://github.com/jekyll/jekyll-sitemap
 

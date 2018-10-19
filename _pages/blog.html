@@ -5,6 +5,9 @@ navigation:
   nav_order: '3'
   nav_title: Blog
 blog_filter: true
+filter_category:
+  - guides
+  - use cases
 ---
 <div class="blog-header">
   <div class="blog-page__title">
@@ -15,12 +18,12 @@ blog_filter: true
     <span class="uppercase blog-filter__label caption-light">Filter:</span>
     <div class="blog-page__filter-buttons">
     {% for category in site.blog_category %}
-      <span data-category="{{category}}" class="uppercase blog-filter__button caption-light">{{category}}</span>
+      {% unless category=="events" %} <span data-category="{{category}}" class="uppercase blog-filter__button caption-light">{{category}}</span> {% endunless %}
     {% endfor %}
     </div>
   </div>
 </div>
-{% include posts.html multirow=true limit=30 no_title=true no_blog_link=true %}
+{% include posts.html multirow=true limit=30 no_title=true no_blog_link=true events=false filter_category=page.filter_category %}
 <div class="blog-page__loadmore-wrapper">
   <span class="blog-page__loadmore" id="blog-page__loadmore">Load More<i class="icon-arrow_down"></i></span>
   <a href="/blog/show-all" class="blog-page__loadmore" id="show-all" style="visibility: hidden; position: absolute;">Show all<i class="icon-arrow_down"></i></a>
