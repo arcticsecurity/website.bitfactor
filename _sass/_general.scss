@@ -117,7 +117,6 @@ body {
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 1px;
-  color: $color-dark-blue;
 }
 
 .caption-light {
@@ -128,7 +127,6 @@ body {
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 1px;
-  color: $color-dark-blue;
 }
 
 p>img {
@@ -160,11 +158,14 @@ blockquote {
     line-height: 1.46;
   }
 }
-
 a {
   text-decoration: none;
+  color: $color-light-gray;
+}
+p a {
   outline: none;
-  color: $color-dark-gray;
+  color: $color-arctic-blue;
+  text-decoration: underline;
 
   @include transition(color 100ms ease-in-out);
 

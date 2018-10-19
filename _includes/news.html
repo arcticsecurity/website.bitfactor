@@ -23,7 +23,7 @@
     <a class="news-article__card" href="{{ news_article.url }}" data-category="{{news_article.news_category}}">
       <div class="news-article__card-content">
         <p class="news-article__card-date caption-light">
-            <span class="news-article__category caption">
+            <span class="news-article__category">
               {% capture category %}{{news_article.news_category}}{% endcapture %}
               {% if category == 'press_release' %}PRESS RELEASE{% else %}NEWS{% endif %}
             &nbsp;&nbsp;&nbsp;</span>

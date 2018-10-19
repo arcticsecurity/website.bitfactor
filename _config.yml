@@ -31,6 +31,9 @@ collections:
   jobs:
     output: true
     permalink: /about/careers/:slug/
+  partners:
+    output: true
+    permalink: /about/partners/:slug/
   pages:
     output: true
     permalink: /:path/

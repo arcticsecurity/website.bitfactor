@@ -1,0 +1,25 @@
+<div class="partners__wrapper {{include.class}}">
+    <section class="partners">
+      <div class="partners__flex-container">
+        <div class="partners__content">
+          <h2 class="editable"><i class="icon-partners"></i>Partners</h2>
+          <p class="editable">Our partners that can integrate their services to our products.</p>
+        </div>
+        <div class="partners__list">
+          {% if include.limit %}
+            {% assign limit = include.limit%}
+          {% else %}
+            {% assign limit = 3 %}
+          {% endif %}
+          {% for partner in site.partners | limit: limit %}
+            <a class="partners__partner" href="/">
+              <h3 class="partner__name">{{partner.partner_name}}</h3>
+              <p class="partner__description caption-light">{{partner.partner_description}}</p>
+              <i class="icon-arrow_right_naked"></i>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+  

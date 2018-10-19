@@ -129,7 +129,7 @@ $row-height: 410px;
 
   @include transition(background-color 100ms ease-in-out);
 
-  .news-article__card-date {
+  .news-article__card-date.caption {
     @include font-size(14px);
     color: mix($color-dark-blue, $color-light-blue, 40);
     margin-bottom: 15px;
@@ -154,6 +154,7 @@ $row-height: 410px;
   .news-article__card-title {
     line-height: 1.44;
     @include transition(color 100ms ease-in-out);
+    color: $color-dark-blue;
   }
 
   .news-article__card-description {

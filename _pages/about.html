@@ -31,8 +31,9 @@ contact_form: true
     <p class="editable">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
   </div>
 </div>
-{% include jobs-no-background.html limit=100 class='about-us__jobs' %}
 {% capture include_members %}{% for person in page.team_members.employees %}{{ person }},{% endfor %}{% endcapture %}
 {% include team.html image=page.team_image_path members=include_members %}
+{% include jobs-no-background.html limit=100 class='about-us__jobs' %}
+{% include partners.html %}
 {% include contact-info.html %}
 {% include contact-form.html class='about-us__form-margin' %}

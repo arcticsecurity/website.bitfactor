@@ -79,6 +79,7 @@
     position: absolute;
     right: 50px;
     bottom: 36px;
+    width: 100%;
 
     @include display-flex();
     @include flex-direction(column);
