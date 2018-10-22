@@ -61,6 +61,7 @@ defaults:
       type: posts
     values:
       layout: blog
+      mailing_list_form: true
   - scope:
       path: "_products"
       type: products
@@ -71,6 +72,7 @@ defaults:
       type: news
     values:
       layout: news-article
+      mailing_list_form: true
   - scope:
       path: "_jobs"
       type: jobs

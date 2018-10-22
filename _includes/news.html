@@ -18,7 +18,14 @@
   {% assign limit = 3 %}
   {% endif %}
 
-  {% assign sortedNews = (site.news | sort: 'date') | reverse %}
+  {% assign news = "" | split: ',' %}
+  {% for news_article in site.news %}
+    {% if news_article.url != page.url %}
+      {% assign news = news | push: news_article %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign sortedNews = (news | sort: 'date') | reverse %}
   {% for news_article in sortedNews | limit: limit %}
     <a class="news-article__card" href="{{ news_article.url }}" data-category="{{news_article.news_category}}">
       <div class="news-article__card-content">
