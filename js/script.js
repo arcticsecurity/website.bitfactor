@@ -70,6 +70,10 @@ $('.frontpage-expander__show-less').on('click', function() {
   $(this).addClass(hideClass)
 })
 
+$(window).on('resize', function() {
+  $('.frontpage-expander').css('height', 'auto')
+})
+
 function autoHeightAnimate(element, time, oldHeight, newHeight) {
   element.height(oldHeight)
   element.stop().animate({ height: newHeight }, time)
