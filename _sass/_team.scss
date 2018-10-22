@@ -47,6 +47,13 @@
     }
   }
 
+  .team__member-linkedin {
+    margin-top: 15px;
+    &:hover i {
+      color: $color-linkedin-blue;
+    }
+  }
+
   .team__member-image {
     max-width: 90px;
     max-height: 90px;
