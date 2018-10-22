@@ -5,6 +5,7 @@ telephone: '+358122354333'
 email: roope.testaa@bitfactor.fi
 person_image_path: /roope_testaa.jpg
 position: Software Developer
+linkedin_url: https://www.linkedin.com/in/roopetapaninen/
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
