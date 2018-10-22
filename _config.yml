@@ -50,6 +50,11 @@ defaults:
     values:
       layout: "default"
   - scope:
+      path: "index.html"
+      type: pages
+    values:
+      layout: "default"
+  - scope:
       path: "_posts"
       type: posts
     values:
