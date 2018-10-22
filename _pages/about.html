@@ -1,6 +1,5 @@
 ---
 header_image_path: /images/site/logo_text2_blue.svg
-team_image_path: /images/site/logo_text2_blue.svg
 team_members:
   employees:
     - roope-testaa
@@ -32,7 +31,7 @@ contact_form: true
   </div>
 </div>
 {% capture include_members %}{% for person in page.team_members.employees %}{{ person }},{% endfor %}{% endcapture %}
-{% include team.html image=page.team_image_path members=include_members %}
+{% include team.html members=include_members %}
 {% include jobs-no-background.html limit=100 class='about-us__jobs' %}
 {% include partners.html %}
 {% include contact-info.html %}
