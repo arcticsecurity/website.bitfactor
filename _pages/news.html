@@ -1,6 +1,5 @@
 ---
 layout: news
-news_filter: true
 navigation:
   show_in_navigation: true
   nav_order: '4'
@@ -21,20 +20,6 @@ og_description:
   <div class="news-page__title">
     <h1 class="editable">Stay in the Loop</h1>
     <p class="large editable">Hear our latest news and meet us at current events</p>
-  </div>
-  <div class="news-filter">
-    <span class="uppercase news-filter__label caption-light">Filter:</span>
-    <div class="news-filter__buttons">
-    {% for category in site.news_category %}
-      <span data-category="{{category}}" class="uppercase news-filter__button caption-light">
-      {% if category == 'press_release' %}
-      press release
-      {% else %}
-      news
-      {% endif %}
-      </span>
-    {% endfor %}
-    </div>
   </div>
 </div>
 {% include news.html hide_discover_more=true multirow=true limit=30 %}
