@@ -1,9 +1,17 @@
 ---
-news_article_title:
-news_article_description:
-meta_title:
-meta_description:
-date:
+news_article_title: Arctic Security and Rugged Tooling Announce Partnership
+news_article_description: >-
+  Arctic Security, a Finland based cyber security company, and Rugged Tooling, a
+  company focusing on securing large scale communication networks, announce
+  partnership to create integrated cyber security solutions that help
+  organizations to reduce the time to detect and react to cyber threats.
+meta_title: Arctic Security and Rugged Tooling Announce Partnership
+meta_description: >-
+  Arctic Security, a Finland based cyber security company, and Rugged Tooling, a
+  company focusing on securing large scale communication networks, announce
+  partnership to create integrated cyber security solutions that help
+  organizations to reduce the time to detect and react to cyber threats.
+date: 2018-09-18 00:00:00 +0300
 tags:
 news_category:
   - press_release
@@ -14,12 +22,8 @@ twitter_image_path:
 og_title:
 og_description:
 _comments:
-  date: >-
-    Mark the date the news post is added. Will show on a list of blog posts
-    above as the date
-  tags: >-
-    Tags of content of the news post for example "Google Analytics", "GitHub"
-    etc
+  date: Invalid date
+  tags:
   writer: 'Select the writers, max 3'
 ---
 
