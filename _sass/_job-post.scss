@@ -1,6 +1,7 @@
 main.job-post {
   max-width: 97.5vw;
   width: 97.5vw;
+  padding-bottom: 100px;
 
   .job-post__flex-container {
     @include display-flex();
@@ -55,6 +56,7 @@ main.job-post {
   }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    padding-bottom: 50px;
     .job-post__flex-container {
       margin-top: 60px;
     }
