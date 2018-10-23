@@ -1,26 +1,34 @@
-$font-general: 'IBM Plex Sans Condensed', sans-serif;
-$font-title: 'IBM Plex Sans Condensed', sans-serif;
+$font-condensed: 'IBM Plex Sans Condensed', sans-serif;
 $font-serif: 'IBM Plex Serif', serif;
-$font-nav: 'IBM Plex Sans', sans-serif;
+$font-general: 'IBM Plex Sans', sans-serif;
 
-$color-dark-blue: rgb(0, 200, 255);
-$color-burger-blue: rgb(40, 40, 80);
-$color-blue: mix($color-dark-blue, white, 40);
-$color-light-blue: mix($color-dark-blue, white, 10);
-$color-linkedin-blue: #0073a4;
+$color-dark-blue: rgb(40, 40, 80);
+$color-arctic-blue: rgb(0, 200, 255);
+$color-burger-blue: $color-dark-blue;
+$color-blue: mix($color-arctic-blue, white, 40);
+$color-light-blue: mix($color-arctic-blue, white, 10);
+$color-gray-blue: mix($color-dark-blue, white, 60);
+$color-text-gray: mix($color-dark-blue, white, 80);
+$color-text-light-gray: mix($color-dark-blue, white, 40);
+$color-light-green: mix(rgb(93, 216, 193), white, 20);
+$color-green: rgb(61, 155, 138);
+$color-seafoam-blue:rgb(93, 216, 193);
 
 $color-dark-gray: rgb(34, 34, 34);
 $color-light-gray: mix($color-dark-gray, white, 40);
 $color-gray: mix($color-dark-gray, white, 60);
 $color-border-gray: mix(rgb(216, 216, 216), white, 60);
+$color-border-blue: mix($color-dark-blue, white, 20);
+
+$color-linkedin-blue: #0073a4;
+$color-twitter-blue: #00aced;
+$color-facebook-blue: #3d5b99;
 
 $footer-height: 180px;
-$footer-height-mobile: 260px;
+$footer-height-mobile: 265px;
 
-$screen-width-xl: 1280px;
-$screen-width-l: 1024px;
-$screen-width-m: 768px;
-$screen-width-s: 576px;
+$screen-width-tablet-min: 768px;
+$screen-width-desktop-min: 1440px;
 
 $font-weight-bold: 600;
 $font-weight-normal: normal;

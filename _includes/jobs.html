@@ -1,0 +1,36 @@
+<div class="jobs__wrapper">
+  <section class="jobs">
+    <div class="jobs__flex-container">
+      <div class="jobs__content">
+        <h2 class="editable"><i class="icon-careers"></i>Careers</h2>
+        <p class="editable">
+          Want to join us and work for the exciting field of cyber? Check out our open positions or send us your open application at <a href="mailto:careers@arcticsecurity.com">careers@arcticsecurity.com</a>.
+        </p>
+        <a class="jobs__see-more editable" href="/about/#jobs">See all open positions</a>
+      </div>
+      <div class="jobs__list">
+        {% if include.limit %}
+          {% assign limit = include.limit%}
+        {% else %}
+          {% assign limit = 3 %}
+        {% endif %}
+
+        {% assign jobs = "" | split: ',' %}
+        {% for job in site.jobs %}
+          {% if job.url != page.url %}
+            {% assign jobs = jobs | push: job %}
+          {% endif %}
+        {% endfor %}
+
+        {% assign sortedJobs = (jobs | sort: 'date') | reverse %}
+        {% for job in sortedJobs | limit: limit %}
+          <a class="jobs__job" href="{{job.url}}">
+            <h3 class="job__title">{{job.job_title}}</h3>
+            <p class="job__team caption-light">{{job.team}}</p>
+            <i class="icon-arrow_right_naked"></i>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

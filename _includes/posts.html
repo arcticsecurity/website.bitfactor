@@ -1,7 +1,88 @@
-<div class="posts__wrapper">
+{% if include.title %}
+  {% assign title=include.title %}
+{% else %}
+  {% assign title="From Our Blog" %}
+{% endif %}
+
+{% if include.limit %}
+  {% assign limit=include.limit %}
+{% else %}
+  {% assign limit=3 %}
+{% endif %}
+
+<section class="posts__wrapper">
+  {% unless include.no_title %}
+  <div class="posts__title-row">
+    <h2 class="posts__title">
+      <i class="icon-blog"></i>{{title}}
+    </h2>
+      {% unless include.no_blog_link %}
+      <a class="hide-on-mobile" href="/blog">
+        <span class="posts__discover-more caption-light">
+          Discover more<i class="icon-arrow_right"></i>
+        </span>
+      </a>
+      {% endunless %}
+  </div>
+  {% endunless %}
+  <div class="posts__flex-container{% if include.multirow %} multirow{% endif %}{% if include.show_all %} show-all{% endif %}">
+
+  {% assign blogposts = "" | split: ',' %}
   {% for post in site.posts %}
-    <div class="post__wrapper">
-      POST
-    </div>
+    {% if post.url != page.url %}
+
+        {% if include.filter_category %}
+
+          {% for filterCategory in include.filter_category %}
+            {% for category in post.blog_category %}
+              {% if category == filterCategory %}
+                {% assign blogposts = blogposts | push: post %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+
+        {% else %}
+          {% assign blogposts = blogposts | push: post %}
+        {% endif %}
+
+    {% endif %}
   {% endfor %}
-</div>
+
+  {% assign sortedPosts = (blogposts | sort: 'date') | reverse %}
+  {% for post in sortedPosts | limit: limit %}
+    <a class="post__card" href="{{ post.url }}" data-category="{{post.blog_category}}">
+      <div class="post__card-image">
+        <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
+      </div>
+      <div class="post__card-content">
+        <p class="post__card-date caption-light">
+          {% unless include.show_date %}
+            <span class="uppercase">{{post.blog_category}}</span>
+          {% else %}
+            <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+          {% endunless %}
+        </p>
+        <h3 class="post__card-title">{{ post.blog_title }}</h3>
+        <p class="post__card-writers">
+          {% for employee in site.employees %}
+            {% for writer in post.writer.employees | limit:3 %}
+              {% if employee.path contains writer %}
+              <span class="post__writer caption uppercase">{{employee.first_name}} {{employee.last_name}}</span><br>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </p>
+      </div>
+    </a>
+  {% endfor %}
+  <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
+  </div>
+
+  {% unless include.no_blog_link %}
+  <a class="show-on-mobile" href="/blog">
+    <span class="posts__discover-more caption-light">
+      Discover more<i class="icon-arrow_right"></i>
+    </span>
+  </a>
+  {% endunless %}
+</section>

@@ -1,0 +1,28 @@
+---
+layout: blog-page
+navigation:
+  show_in_navigation: false
+blog_filter: true
+title:
+description:
+meta_title:
+meta_description:
+og_image_path: '/images/site/logo_text2_blue.svg'
+twitter_image_path:
+og_title:
+og_description:
+---
+<div class="blog-header">
+  <div class="blog-page__title">
+    <h1 class="editable" style="margin-bottom: 0;">All blog posts</h1>
+  </div>
+  <div class="blog-page__filter">
+    <span class="uppercase blog-filter__label caption-light">Filter:</span>
+    <div class="blog-page__filter-buttons">
+    {% for category in site.blog_category %}
+      <span data-category="{{category}}" class="uppercase blog-filter__button caption-light">{{category}}</span>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+{% include posts.html show_all=true limit=1000 no_title=true no_blog_link=true %}

@@ -17,9 +17,20 @@
       {% endif %}
     {% endfor %}
     </div>
-  </div>
-  <a title="Find us on LinkedIn" href="{{ site.data.company.linkedin_url }}" class="footer__linkedin-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-  <div class="footer__copyright">
-    &copy; {{site.data.company.title}}, {{site.data.company.address}}, {{site.data.company.postal_code}} {{site.data.company.city}} {{site.data.company.country}}
+    <div class="footer__meta-wrapper">
+      <div class="footer__social-links">
+        <a title="EU Necessary Information" href="/eu-necessary-information" class="footer__social-link link-image" target="_blank" rel="noopener noreferrer">
+          <img src="/images/site/logo_leverage.png" alt="logo_leverage" />
+        </a>
+        <a title="EU Necessary Information" href="/eu-necessary-information" class="footer__social-link link-image" target="_blank" rel="noopener noreferrer">
+          <img src="/images/site/logo_eu.png" alt="logo_eu" />
+        </a>
+        <a title="Find us on Twitter" href="{{ site.data.company.twitter_url }}" class="footer__social-link twitter" target="_blank" rel="noopener noreferrer"><i class="icon-social_twitter_filled"></i></a>
+        <a title="Find us on LinkedIn" href="{{ site.data.company.linkedin_url }}" class="footer__social-link" target="_blank" rel="noopener noreferrer"><i class="icon-social_linkedin_filled"></i></a>
+      </div>
+      <div class="footer__copyright">
+        &copy; {{site.data.company.title}}, {{site.data.company.address}}, {{site.data.company.postal_code}} {{site.data.company.city}} {{site.data.company.country}}
+      </div>
+    </div>
   </div>
 </footer>

@@ -1,0 +1,32 @@
+$section-max-width-tablet: 780px;
+
+.events-and-careers {
+  @include display-flex();
+  @include flex-direction(column);
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    @include flex-direction(row);
+    @include flex-justify(space-between);
+    max-width: 97.5vw;
+    width: $section-max-width-tablet;
+
+    .events, .events__wrapper, .jobs, .jobs__wrapper {
+      max-width: 370px;
+    }
+
+    .events__flex-container, .events__flex-container *:not(i) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    .jobs__flex-container, .jobs__flex-container *:not(i) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    @include flex-direction(column);
+    @include flex-align(center);
+  }
+}

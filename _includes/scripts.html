@@ -5,3 +5,19 @@
 {% assign randomNumber=site.time | date: "%m%y%M%H%d%S" | plus:9562 %}
 <script type="text/javascript" src="/js/script.js?{{randomNumber}}"></script>
 <script type="text/javascript" src="/js/navburger.js?{{randomNumber}}"></script>
+
+{% if page.blog_filter %}
+<script type="text/javascript" src="/js/blog-filter.js?{{randomNumber}}"></script>
+{% endif %}
+{% if page.news_filter %}
+<script type="text/javascript" src="/js/news-filter.js?{{randomNumber}}"></script>
+{% endif %}
+{% if page.tab_slider %}
+<script type="text/javascript" src="/js/tab-slider.js?{{randomNumber}}"></script>
+{% endif %}
+{% if page.contact_form %}
+<script type="text/javascript" src="/js/contact-form.js?{{randomNumber}}"></script>
+{% endif %}
+{% if page.mailing_list_form %}
+<script type="text/javascript" src="/js/mailing-list.js?{{randomNumber}}"></script>
+{% endif %}

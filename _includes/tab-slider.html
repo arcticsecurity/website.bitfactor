@@ -1,0 +1,25 @@
+{% if include.tag == 'about_us' %}
+{% assign source=site.data.about_us_tabs_content %}
+{% endif %}
+
+<div id="tab-slider" class="tab-slider {{include.class}}">
+  <div class="slider-tabs hide-on-mobile" id="tab-slider-tabs">
+  {% for tab in source.tabs %}
+    <span class="slider-tab{% if forloop.first %} active{% endif %}" data-content="{{forloop.index}}">{{tab.name}}</span>
+  {% endfor %}
+  </div>
+  <div class="slider-content-wrapper">
+    {% for tab in source.tabs %}
+      <div data-content="{{forloop.index}}" class="slider-content {% if forloop.first %} active{% endif %}">
+        <h3>{{tab.title}}</h3>
+        <p>{{tab.content}}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <span data-direction="right" class="tab-slider__arrow right">
+    <i class="site-icon icon-arrow_right"></i>
+  </span>
+  <span data-direction="left" class="tab-slider__arrow left">
+    <i class="site-icon icon-arrow_left"></i>
+  </span>
+</div>

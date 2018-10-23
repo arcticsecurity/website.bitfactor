@@ -1,0 +1,114 @@
+$form-error-color: rgb(255, 89, 109);
+
+.mailing-list-form__wrapper {
+  @include display-flex();
+  width: 100%;
+  max-width: 737px;
+  margin-bottom: 100px;
+
+  *:not(h2) {
+    color: $color-gray-blue;
+  }
+
+  p.caption-light {
+    color: $color-light-gray;
+    font-family: $font-general;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .mailing-list-form {
+    @include display-flex();
+    @include flex-justify(space-between);
+    @include flex-wrap(wrap);
+    width: 100%;
+    padding: 33px;
+    border: 1px solid $color-border-gray;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  input[type=text] {
+    width: 100%;
+    font-family: $font-general;
+    color: $color-dark-blue;
+    line-height: 2.5;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid $color-border-gray;
+    @include font-size(16px);
+    padding: 0;
+    @include transition(border 100ms ease-in-out);
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: $color-light-gray;
+      @include font-size(14px);
+      text-align: center;
+    }
+  }
+
+  .mailing-list-form__submit-button {
+    color: white;
+    @include font-size(16px);
+    background-color: $color-seafoam-blue;
+    text-align: center;
+    padding: 8px 47px;
+    border-radius: 35px;
+    @include transition(100ms ease-in-out);
+    cursor: pointer;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $color-green;
+    }
+  }
+
+  .mailing-list-form__text {
+    max-width: 355px;
+    width: 100%;
+  }
+
+  .mailing-list-form__input {
+    width: 100%;
+    max-width: 250px;
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-justify(center);
+    margin-bottom: 20px;
+
+    &.mailing-list-form__error {
+      input[type=text] {
+        border-color: $form-error-color;
+        color: $form-error-color;
+        &::placeholder {
+          color: $form-error-color;
+        }
+      }
+    }
+  }
+
+  .mailing-list-form__sent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    width: 80%;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    max-width: 331px;
+
+    .mailing-list-form {
+      @include flex-direction(column);
+      @include flex-align(center);
+    }
+
+    .mailing-list-form__text {
+      text-align: center;
+    }
+  }
+}

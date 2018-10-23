@@ -9,7 +9,7 @@
 
   border-bottom: 1px solid $color-border-gray;
 
-  @media only screen and (min-width: $screen-width-l) {
+  @media only screen and (min-width: $screen-width-desktop-min) {
     min-height: 80px;
     padding: 14px 30px;
   }
@@ -18,9 +18,9 @@
 .navigation__pages {
   display: none;
 
-  @media only screen and (min-width: $screen-width-l) {
+  @media only screen and (min-width: $screen-width-desktop-min) {
     position: relative;
-    font-family: $font-nav;
+    font-family: $font-general;
     @include display-flex();
     @include flex-justify(flex-start);
     @include font-size(18px);
@@ -76,7 +76,7 @@
   left: 50%;
   @include transform(translateX(-50%));
 
-  @media only screen and (min-width: $screen-width-l) {
+  @media only screen and (min-width: $screen-width-desktop-min) {
     @include transform(translateX(0));
     min-width: 198px;
     left: 30px;
@@ -91,12 +91,12 @@
   @include display-flex();
   @include flex-justify(flex-start);
 
-  @media only screen and (min-width: $screen-width-l) {
+  @media only screen and (min-width: $screen-width-desktop-min) {
     @include flex-justify(center);
   }
 
   #navigation-burger {
-    @media only screen and (min-width: $screen-width-l) {
+    @media only screen and (min-width: $screen-width-desktop-min) {
       display: none;
     }
 
@@ -158,7 +158,7 @@
   }
 
   &.menu-open {
-    @media only screen and (max-width: $screen-width-l - 1) {
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
       #navigation-burger {
         span {
           &:nth-child(1) {

@@ -5,25 +5,72 @@
   {% if page._noindex == true %}
   <meta name="robots" content="noindex">
   {% endif %}
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="description" content="{% if page.page_description %}{{ page.page_description }}{% else %}{{ site.description }}{% endif %}">
+  <title>{{site.title}}{% if page.meta_title %} | {{page.meta_title}}
+    {% elsif page.job_title %} | {{page.job_title}}
+    {% elsif page.news_article_title %} | {{page.news_article_title}}
+    {% elsif page.blog_title %} | {{page.blog_title}}
+    {% elsif page.title %} | {{page.title}}{% endif %}
+  </title>
+  {% assign title="" %}
+  {% if page.meta_title %}
+    {% assign title=page.meta_title %}
+  {% elsif page.job_title %}
+    {% assign title=page.job_title %}
+  {% elsif page.news_article_title %}
+    {% assign title=page.news_article_title %}
+  {% elsif page.blog_title %}
+    {% assign title=page.blog_title %}
+  {% elsif page.title%}
+    {% assign title=page.title %}
+  {% else %}
+    {% assign title=site.title %}
+  {% endif %}
+
+  {% assign og_title="" %}
+  {% if page.og_title %}
+    {% assign og_title=page.og_title %}
+  {% else %}
+    {% assign og_title=title %}
+  {% endif %}
+
+  {% assign description="" %}
+  {% if page.meta_description %}
+    {% assign description=page.meta_description %}
+  {% elsif page.job_description %}
+    {% assign description=page.job_description %}
+  {% elsif page.news_article_description %}
+    {% assign description=page.news_article_description %}
+  {% elsif page.blog_description %}
+    {% assign description=page.blog_description %}
+  {% elsif page.description %}
+    {% assign description=page.description %}
+  {% else %}
+    {% assign description=site.description %}
+  {% endif %}
+
+  {% assign og_description="" %}
+  {% if page.og_description %}
+    {% assign og_description=page.og_description %}
+  {% else %}
+    {% assign og_description=description %}
+  {% endif %}
+
+  <meta name="title" content="{{title}}">
+  <meta name="description" content="{{description}}">
   <link rel="manifest" href="/manifest.json">
 
-  <!--OG data-->
-  <!--<meta property="fb:app_id"        content="425043977693965" />-->
   {% assign shareUrl = page.url | prepend: site.url %}
   {% assign siteUrl = site.url %}
   {% unless page.og_image_path %}
-      {% assign ogImage = '/images/site/logo_text2_blue.svg' | prepend: site.url %}
+      {% assign ogImage = site.og_image_path | prepend: site.url %}
   {% else %}
       {% assign ogImage = page.og_image_path | prepend: site.url %}
   {% endunless %}
   <meta property="og:url"           content="{{ shareUrl }}" />
   <meta property="og:type"          content="website" />
   <meta property="og:site_name"     content="arcticsecurity.com"/>
-  <meta property="og:title"         content="{% if page.blog_title %}{{ page.blog_title }}{% else %}{{ page.title }}{% endif %}" />
-  <meta property="og:description"   content="{% if page.page_description %}{{ page.page_description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:title"         content="{{og_title}}" />
+  <meta property="og:description"   content="{{og_description}}" />
   <meta property="og:image"         content="{{ ogImage }}" />
   <meta property="og:image:width"   content="1200" />
   <meta property="og:image:height"  content="1200" />
@@ -39,10 +86,8 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-title" content="Arctic Security">
-  <meta name="application-name" content="Arctic Security">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta name="apple-mobile-web-app-title" content="{{site.title}}">
+  <meta name="application-name" content="{{site.title}}">
  
   {% assign randomNumber=site.time | date: "%m%y%M%H%d%S" | plus:9562 %}
   <link rel="stylesheet" href="/css/main.css?{{randomNumber}}">

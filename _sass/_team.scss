@@ -1,0 +1,85 @@
+.team__wrapper {
+  @include display-flex();
+  @include flex-direction(column);
+  width: 100%;
+  max-width: 1192px;
+  margin-top: 50px;
+
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .team__image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .team__members {
+    @include display-flex();
+    @include flex-justify(space-between);
+    @include flex-direction(row);
+    @include flex-align(flex-start);
+    @include flex-wrap(wrap);
+  }
+
+  .team__member {
+    margin-top: 30px;
+    width: calc(25% - 10px);
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(center);
+
+    h3, p {
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 35px;
+      text-align: center;
+    }
+    p.caption {
+      margin-top: 15px;
+      color: $color-gray-blue;
+      text-align: center;
+    }
+  }
+
+  .team__member-linkedin {
+    margin-top: 15px;
+    &:hover i {
+      color: $color-linkedin-blue;
+    }
+  }
+
+  .team__member-image {
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    max-width: 692px;
+    .team__image {
+      margin-top: 0;
+    }
+
+    .team__member {
+      h3 {
+        margin-top: 20px;
+      }
+      p.caption {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    max-width: 331px;
+    .team__member {
+     width: calc(50% - 10px);
+    }
+  }
+}

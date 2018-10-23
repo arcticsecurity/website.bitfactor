@@ -1,10 +1,26 @@
 name: Arctic Security Oy
 title: Arctic Security
 email: contact@arcticsecurity.com
+job_application_email: careers@arcticsecurity.com
 phone: +358 20 743 0010
 business_id: 2846252-2
 linkedin_url: https://www.linkedin.com/company/arctic-security-ltd/
+twitter_url: https://twitter.com/@ArcticSecurity
 address: Elektroniikkatie 8
 postal_code: 90590
 city: Oulu
 country: Finland
+highlight: true
+other_offices:
+  - name: Helsinki
+    address: Yrjönkatu 11 D 22
+    postal_code: 00120
+    city: Helsinki
+    country: Finland
+    highlight: false
+  - name: Singapore
+    address: UIC Building
+    postal_code: 5 Shenton Way #10-01
+    city:
+    country: Singapore 068808
+    highlight: false

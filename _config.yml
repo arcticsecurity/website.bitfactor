@@ -1,9 +1,11 @@
 
 title: Arctic Security
 email: contact@arcticsecurity.com
-description: Leveling the playing field
+description: Don't be alone in cyber
 baseurl: ""
 url: "https://arcticsecurity.com"
+og_image_path: '/images/site/logo_text2_blue.svg'
+twitter_image_path:
 
 timezone: "Europe/Helsinki"
 strict_front_matter: true
@@ -27,15 +29,22 @@ collections:
     output: true
     permalink: /news/:year/:month/:day/:slug/
   events:
+    output: false
+  jobs:
     output: true
-    permalink: /events/:year/:month/:day/:slug/
+    permalink: /about/careers/:slug/
+  partners:
+    output: false
   pages:
     output: true
     permalink: /:path/
+  employees:
+    output: false
 
 defaults:
   - scope:
       path: ""
+      type: pages
     values:
       layout: "default"
   - scope:
@@ -44,10 +53,17 @@ defaults:
     values:
       layout: "default"
   - scope:
+      path: "_pages/frontpage.html"
+      type: pages
+    values:
+      layout: "default"
+      permalink: "/"
+  - scope:
       path: "_posts"
       type: posts
     values:
       layout: blog
+      mailing_list_form: true
   - scope:
       path: "_products"
       type: products
@@ -58,12 +74,27 @@ defaults:
       type: news
     values:
       layout: news-article
+      mailing_list_form: true
   - scope:
-      path: "_events"
-      type: events
+      path: "_jobs"
+      type: jobs
     values:
-      layout: event
-  
+      layout: job
+
+
+news_category:
+  - press_release
+  - news
+
+blog_category:
+  - events
+  - guides
+  - use cases
+
+frontpage_content_type:
+  - header
+  - expander
+
 # https://github.com/jekyll/jekyll-sitemap
 
 plugins:
@@ -75,7 +106,9 @@ _comments:
   show_in_navigation: Is the page displayed in navigation?
   nav_order: Order of the page in navigation
   nav_title: Title shown in navigation
-  og_image_path: "This image is displayed when link is shared in social media."
-  twitter_image_path: >-
-    (Optional to show different image in twitter share.)
-    This image is displayed when link is shared in twitter.
+  og_image_path: <br>Displayed when link is shared in social media.
+  twitter_image_path: <br>(Optional) Display different image in twitter share.
+  meta_title: Title used for site metas (in head of the website)
+  meta_description: Description used for site metas (in head of the website)
+  og_title: Displayed when link is shared in social media.
+  og_description: Displayed when link is shared in social media.

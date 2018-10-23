@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   position: absolute;
-  font-family: $font-nav;
+  font-family: $font-general;
   color: $color-gray;
 
   a {
@@ -14,7 +14,7 @@
 
   bottom: -$footer-height-mobile;
   min-height: $footer-height-mobile;
-  @media only screen and (min-width: $screen-width-l) {
+  @media only screen and (min-width: $screen-width-tablet-min) {
     min-height: $footer-height;
     bottom: -$footer-height;
   }
@@ -27,6 +27,10 @@
     @include flex-align(center);
     width: 100%;
     min-height: $footer-height;
+
+    @media only screen and (max-width: $screen-width-tablet-min - 1) {
+      @include flex-justify(center);
+    }
   }
 
   .footer__logo {
@@ -45,7 +49,7 @@
     font-style: normal;
     
     margin-left: 20px;
-    @media only screen and (min-width: $screen-width-m) {
+    @media only screen and (min-width: $screen-width-tablet-min) {
       margin-left: 27px;
     }
 
@@ -63,45 +67,108 @@
     font-weight: $font-weight-normal;
     line-height: 1.69;
     font-style: normal;
-    font-family: $font-nav;
+    font-family: $font-general;
     margin-left: 57px;
 
-    @media only screen and (min-width: $screen-width-s) {
+    @media only screen and (min-width: $screen-width-tablet-min) {
       @include display-flex();
     }
   }
 
-  .footer__linkedin-link {
+  .footer__meta-wrapper {
     position: absolute;
     right: 50px;
-    bottom: 88px;
+    bottom: 36px;
+    width: 100%;
+    max-width: 50%;
 
-    .fa-linkedin {
+    @include display-flex();
+    @include flex-direction(column);
+
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      max-width: 210px;
+    }
+  }
+
+  .footer__social-link {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    i {
       @include transition(color 100ms ease-in-out);
-      margin-left: 15px;
-      @include font-size(24px);
+      @include font-size(32px);
     }
 
     &:hover {
-      .fa-linkedin {
+      i {
         color: $color-linkedin-blue;
       }
-    }
 
-    @media only screen and (max-width: $screen-width-s - 1) {
-      bottom: 36px;
+      &.twitter {
+        i {
+          color: $color-twitter-blue;
+        }
+      }
+    }
+    
+    &.link-image {
+      height: 45px;
+      width: auto;
+
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .footer__social-links {
+    @include display-flex();
+    @include flex-justify(flex-end);
+    margin-bottom: 15px;
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      margin-bottom: 10px;
     }
   }
 
   .footer__copyright {
     color: $color-light-gray;
-    position: absolute;
-    right: 50px;
-    bottom: 36px;
+    text-align: right;
+    line-height: 1.44;
 
-    @media only screen and (max-width: $screen-width-s - 1) {
-      right: 110px;
-      max-width: calc(100% - 160px);
+    @media only screen and (max-width: $screen-width-tablet-min - 1) {
+      @include font-size(14px);
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(center);
+
+    .footer__address {
+      @include font-size(14px);
+    }
+
+    .footer__content-wrapper {
+      min-height: 0;
+      margin-top: 30px;
+    }
+
+    .footer__linkedin-link {
+      margin-top: 25px;
+    }
+
+    .footer__meta-wrapper {
+      max-width: 293px;
+      right: 50%;
+      @include transform(translateX(50%));
+    }
+
+    .footer__social-links {
+      @include flex-justify(center);
     }
   }
 }

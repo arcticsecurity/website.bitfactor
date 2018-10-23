@@ -1,0 +1,196 @@
+$form-error-color: rgb(255, 89, 109);
+
+.contact-form__wrapper {
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
+  max-width: 553px;
+  margin-top: 120px;
+
+  &>p {
+    text-align: center;
+  }
+
+  *:not(h2) {
+    color: $color-gray-blue;
+  }
+
+  .contact-form {
+    max-width: 465px;
+    margin-top: 50px;
+    width: 100%;
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(center);
+    padding: 50px;
+    border: 1px solid $color-border-gray;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .contact-form__input {
+    width: 100%;
+    @include display-flex();
+    @include flex-direction(column);
+
+    input[type=text] {
+      width: 100%;
+      font-family: $font-general;
+      color: $color-dark-blue;
+      line-height: 2.5;
+      border: none;
+      border-bottom: 1px solid $color-border-gray;
+      @include font-size(16px);
+      padding: 0;
+      @include transition(border 100ms ease-in-out);
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    label {
+      line-height: 1.8;
+      margin-top: 3px;
+    }
+
+    &.textarea {
+      margin-top: 30px;
+
+      textarea {
+        color: $color-dark-blue;
+        @include font-size(16px);
+        border: 1px solid $color-border-gray;
+        border-radius: 10px;
+        line-height: 1.63;
+        resize: none;
+        padding: 7px 12px;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    &.contact-form__error {
+      label {
+        color: $form-error-color;
+      }
+      input[type=text] {
+        border-color: $form-error-color;
+        color: $form-error-color;
+      }
+      textarea {
+        border-color: $form-error-color;
+      }
+    }
+  }
+
+  .contact-form__checkbox-group {
+    margin-top: 30px;
+
+    label {
+      line-height: 1;
+    }
+
+    .contact-form__input {
+      @include display-flex();
+    }
+  }
+
+  .contact-form__submit-button {
+    color: white;
+    @include font-size(16px);
+    background-color: $color-seafoam-blue;
+    text-align: center;
+    padding: 8px 47px;
+    border-radius: 35px;
+    @include transition(100ms ease-in-out);
+    cursor: pointer;
+    margin-top: 50px;
+
+    &:hover {
+      background-color: $color-green;
+    }
+  }
+
+  .contact-form__checkbox-group {
+    @include display-flex();
+    @include flex-direction(column);
+    width: 100%;
+
+    .contact-form__fake-checkbox {
+      width: 100%;
+      @include display-flex();
+      @include flex-align(center);
+      padding: 5px 0;
+      cursor: pointer;
+
+      i {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        @include font-size(24px);
+        color: inherit;
+      }
+
+      &.contact-form__error {
+        color: $form-error-color;
+      }
+
+      i.icon-checkbox_selected {
+        display: none;
+      }
+      i.icon-checkbox_empty {
+        display: block;
+      }
+
+      &.contact-form__checked {
+        i.icon-checkbox_selected {
+          display: block;
+        }
+        i.icon-checkbox_empty {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .contact-form__error-message {
+    color: $form-error-color;
+    margin-top: 5px;
+    @include font-size(14px);
+    display: none;
+  }
+
+  .contact-form__sent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    @include animation(opacityShow 1s ease-in-out);
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    &>p {
+      text-align: left;
+    }
+    margin-top: 60px;
+    max-width: 331px;
+
+    .contact-form {
+      padding: 25px;
+      margin-top: 20px;
+      max-width: 331px;
+    }
+
+    .contact-form__submit-button {
+      margin-top: 20px;
+    }
+
+    .contact-form__checkbox-group {
+      .contact-form__fake-checkbox {
+        padding: 12px 0;
+      }
+    }
+  }
+}

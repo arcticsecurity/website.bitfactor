@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,600');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700');
 
 html {
   box-sizing: border-box;
-  font-family: $font-general;
-  font-weight: normal;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -19,36 +18,154 @@ body {
 
   &.default {
     min-height: calc(100vh - #{$footer-height-mobile});
-    @media only screen and (min-width: $screen-width-l) {
+    @media only screen and (min-width: $screen-width-tablet-min) {
       min-height: calc(100vh - #{$footer-height});
     }
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: $font-serif;
-  margin-bottom: 20px;
-  margin-top: 0;
-  line-height: 1.3;
-  font-weight: $font-weight-bold;
-}
-
 h1 {
+  font-family: $font-condensed;
   @include font-size(56px);
-}
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  color: $color-dark-blue;
 
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    @include font-size(42px);
+    line-height: 1.14;
+  }
+}
 h2 {
-
-}
-
-h3 {
+  font-family: $font-condensed;
   @include font-size(32px);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $color-dark-blue;
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    @include font-size(24px);
+  }
+}
+h3 {
+  font-family: $font-serif;
+  @include font-size(24px);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: $color-dark-blue;
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    @include font-size(18px);
+    line-height: 1.67;
+  }
 }
 
+body {
+  font-family: $font-general;
+  @include font-size(18px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: $color-gray-blue;
+  .blog {
+    font-family: $font-serif;
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      @include font-size(16px);
+      line-height: 1.63;
+    }
+  }
+  .small {
+    @include font-size(16px);
+    line-height: 1.63;
+  }
+  .large {
+    @include font-size(22px);
+    line-height: 1.45;
+
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      @include font-size(18px);
+    }
+  }
+  .news-title {
+    font-family: $font-serif;
+    font-weight: $font-weight-bold;
+  }
+  .news-description {
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      @include font-size(16px);
+      line-height: 1.63;
+    }
+  }
+}
+
+.caption {
+  font-family: $font-condensed;
+  @include font-size(14px);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.caption-light {
+  font-family: $font-condensed;
+  @include font-size(14px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+p>img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+blockquote {
+  position: relative;
+  margin: 30px 0;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: calc(100% - 12px);
+    width: 6px;
+    background-color: $color-arctic-blue;
+    border-radius: 3px;
+  }
+
+  p {
+    color: $color-dark-blue;
+    @include font-size(24px);
+    font-style: italic;
+    margin-left: 36px;
+    line-height: 1.46;
+  }
+}
 a {
   text-decoration: none;
+  color: $color-light-gray;
+}
+p a {
   outline: none;
-  color: $color-dark-gray;
+  color: $color-arctic-blue;
+  text-decoration: underline;
 
   @include transition(color 100ms ease-in-out);
 
@@ -56,4 +173,15 @@ a {
   &:hover {
     color: $color-light-gray;
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+#main-content {
+  width: 97.5vw;
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
 }

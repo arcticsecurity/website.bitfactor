@@ -1,0 +1,34 @@
+<div class="events__wrapper news-events-page">
+  <section class="events" id="events">
+    <div class="events__flex-container">
+      <div class="events__content">
+        <h2 class="editable"><i class="icon-events"></i>Events</h2>
+        <p class="editable">Welcome to meet our team and learn more about us in the following events!</p>
+      </div>
+      <div class="events__list">
+        {% assign sortedEvents = (site.events | sort: 'date') | reverse %}
+        {% for event in sortedEvents | limit: 3 %}
+          <div class="events__event">
+            {% if event.event_link_url %}
+              <a href="{{event.event_link_url}}" target="_blank" rel="noopener noreferrer">
+            {% endif %}
+            <h3 class="event__title">
+                {{event.event_title}}
+            </h3>
+            {% if event.event_link_url %}
+              </a>
+            {% endif %}
+            <div class="event__date caption-light">
+              {% if event.end_date %}
+              <p>{{event.date | date: "%-d"}} - {{ event.end_date | date: "%-d %B, %Y"}}</p>
+              {% else %}
+              <p>{{ event.date | date: "%-d %B, %Y"}}</p>
+              {% endif %}
+              <p>{{event.event_description}}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

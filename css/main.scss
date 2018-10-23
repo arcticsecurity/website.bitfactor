@@ -8,9 +8,27 @@
 @import "general";
 @import "cloudcannon";
 
-/* Icons */
-@import "../icons/css/arcsec-icons.css";
+@import "icons";
 
 /* Components */
-@import "navigation";
-@import "footer";
+@import "navigation"; // include
+@import "footer"; // include
+@import "posts"; // include
+@import "news"; // include
+@import "jobs"; // include
+@import "events"; // include
+@import "blog-post"; // blog article
+@import "blog"; // blog page
+@import "news-page"; // news & events page
+@import "news-article"; // news article
+@import "events-and-careers"; // frontpage events and careers
+@import "about-us"; // about-us page
+@import "tab-slider";
+@import "team";
+@import "contact-info";
+@import "contact-form";
+@import "job-post";
+@import "job-application-block";
+@import "partners";
+@import "frontpage-content";
+@import "mailing-list-form";

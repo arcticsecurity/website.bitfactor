@@ -1,0 +1,219 @@
+$side-padding-mobile: 26px;
+
+.jobs__wrapper {
+  @include display-flex();
+  @include flex-justify(center);
+  width: 100%;
+  max-width: 97.5vw;
+  margin-bottom: 50px;
+
+  .jobs {
+    background-color: $color-light-green;
+    border-radius: 10px;
+    @include display-flex();
+    padding: 50px 75px;
+  }
+
+  .jobs__flex-container {
+    @include display-flex();
+    max-width: 1195px;
+  }
+
+  .jobs__content {
+    height: 100%;
+    width: 370px;
+    min-width: 370px;
+    margin-right: 40px;
+
+    h2 {
+      @include display-flex();
+      @include flex-align(center);
+      i {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .jobs__job {
+    @include display-flex();
+    @include flex-align(center);
+    position: relative;
+
+    &:not(:last-child):after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-bottom: 1px solid $color-border-blue;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      .job__title {
+        color: $color-gray-blue;
+      }
+    }
+    i {
+      color: $color-gray-blue;
+    }
+  }
+
+  .job__title {
+    min-width: 370px;
+    max-width: 370px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    @include transition(color 100ms ease-in-out);
+  }
+
+  .job__team {
+    min-width: 370px;
+    max-width: 370px;
+    color: $color-gray-blue;
+    @include font-size(16px);
+  }
+
+  .jobs__see-more {
+    font-weight: $font-weight-bold;
+    color: $color-green;
+    @include font-size(16px);
+    &:hover {
+      color: mix($color-green, white, 60);
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    .jobs {
+      padding: 0 $side-padding-mobile 40px $side-padding-mobile;
+    }
+
+    .jobs__flex-container {
+      @include flex-direction(column);
+    }
+
+    .jobs__content {
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .job__title {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    .job__team {
+      max-width: 100%;
+    }
+    .jobs__job {
+      @include flex-direction(column);
+      @include flex-align(flex-start);
+
+      i {
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+    }
+
+    .job__title {
+      margin-bottom: 0;
+      line-height: 1.67;
+      margin-top: 25px;
+      min-width: 100%;
+    }
+
+    .jobs__list {
+      flex-grow: 2;
+    }
+
+    .job__team {
+      margin-top: 0;
+      line-height: 1.63;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    .jobs__flex-container {
+      width: 410px - $side-padding-mobile - $side-padding-mobile;
+    }
+  }
+
+  &.no-background {
+    .jobs {
+      padding: 0;
+      background: white;
+    
+      max-width: 1235px;
+      width: 95%;
+    }
+
+    .jobs__content {
+      color: $color-gray-blue;
+    }
+
+    .jobs__job {
+      .job__title {
+        line-height: 1.25;
+      }
+      .job__date p {
+        line-height: 1.56;
+        &:first-child {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      .jobs__job {
+        i {
+          @include transform(translateY(-50%));
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      .jobs__flex-container {
+        @include flex-direction(row);
+        width: 95%;
+        @include flex-justify(center);
+      }
+
+      .jobs__list {
+        max-width: 370px;
+      }
+    }
+
+    @media only screen and (max-width: $screen-width-tablet-min - 1) {
+      .jobs {
+        @include flex-justify(center);
+      }
+
+      .jobs__content {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px solid $color-border-blue;
+          top: 0;
+          left: 0;
+        }
+        max-width: 370px;
+      }
+
+      .jobs__flex-container {
+        @include flex-direction(column);
+        @include flex-align(center);
+        margin-left: 40px;
+      }
+
+      .jobs__list {
+        margin-left: -40px;
+      }
+    }
+  }
+}
