@@ -3,7 +3,7 @@ first_name:
 last_name:
 telephone:
 email:
-person_image_path:
+person_image_path: /images/content/person_image.svg
 position:
 description:
 _comments:

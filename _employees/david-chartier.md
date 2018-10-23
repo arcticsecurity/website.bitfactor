@@ -3,7 +3,7 @@ first_name: David
 last_name: Chartier
 telephone:
 email:
-person_image_path:
+person_image_path: /images/content/person_image.svg
 position: CEO
 description:
 _comments:
