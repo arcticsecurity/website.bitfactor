@@ -1,5 +1,6 @@
 ---
-partner_name:
-partner_description:
-partner_url:
+partner_name: Rugged Tooling
+partner_description: Technical integration
+partner_url: 'https://ruggedtooling.com/'
 ---
+
