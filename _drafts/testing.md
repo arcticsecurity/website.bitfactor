@@ -7,6 +7,7 @@ meta_description:
 date: 2018-10-23 00:00:00 +0300
 tags:
 blog_category:
+  - events
 writer:
   employees:
     - david-chartier
