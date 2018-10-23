@@ -27,6 +27,7 @@
     @include flex-direction(row);
     @include flex-wrap(wrap);
     @include flex-justify(space-between);
+    @include flex-align(flex-start);
 
     &:nth-child(odd) .frontpage-expander__header-wrapper {
       @include flex-direction(row-reverse);
