@@ -1,10 +1,10 @@
 ---
-first_name:
-last_name:
+first_name: David
+last_name: Chartier
 telephone:
 email:
 person_image_path:
-position:
+position: CEO
 description:
 _comments:
   person_image_path: >-
@@ -15,3 +15,4 @@ _comments:
     Specialist"
   description: Used in "About us" -page in the team section to describe the employee.
 ---
+
