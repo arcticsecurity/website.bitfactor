@@ -2,6 +2,8 @@
 blog_title:
 blog_image_path: '/images/site/logo_text2_blue.svg'
 blog_description:
+meta_title:
+meta_description:
 date:
 tags:
 blog_category:

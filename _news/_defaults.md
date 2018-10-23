@@ -1,6 +1,8 @@
 ---
 news_article_title:
 news_article_description:
+meta_title:
+meta_description:
 date:
 tags:
 news_category:

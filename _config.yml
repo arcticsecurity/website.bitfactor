@@ -108,3 +108,5 @@ _comments:
   nav_title: Title shown in navigation
   og_image_path: <br>Displayed when link is shared in social media.
   twitter_image_path: <br>(Optional) Display different image in twitter share.
+  meta_title: Title used for site metas (in head of the website)
+  meta_description: Description used for site metas (in head of the website)

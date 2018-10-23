@@ -1,6 +1,8 @@
 ---
 job_title:
 job_description:
+meta_title:
+meta_description:
 date:
 tags:
 team:

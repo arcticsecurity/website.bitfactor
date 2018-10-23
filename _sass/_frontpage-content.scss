@@ -1,6 +1,7 @@
 .frontpage-content {
   width: 95%;
   max-width: 1192px;
+  margin-top: 100px;
   @include display-flex();
   @include flex-align(center);
   @include flex-direction(column);
@@ -92,6 +93,7 @@
   }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    margin-top: 50px;
     max-width: 780px;
     .frontpage-expander {
       margin-top: 30px;
@@ -119,6 +121,7 @@
   }
 
   @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    margin-top: 0;
     max-width: 370px;
 
     .frontpage-header__wrapper {

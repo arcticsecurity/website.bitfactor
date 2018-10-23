@@ -6,14 +6,17 @@
   <meta name="robots" content="noindex">
   {% endif %}
   <title>{{site.title}}
-    {% if page.job_title %} | {{page.job_title}}
+    {% if page.meta_title %} | {{page.meta_title}}
+    {% elsif page.job_title %} | {{page.job_title}}
     {% elsif page.news_article_title %} | {{page.news_article_title}}
     {% elsif page.blog_title %} | {{page.blog_title}}
     {% elsif page.title %} | {{page.title}}{% endif %}
   </title>
 
   {% assign title="" %}
-  {% if page.job_title %}
+  {% if page.meta_title %}
+    {% assign title=page.meta_title %}
+  {% elsif page.job_title %}
     {% assign title=page.job_title %}
   {% elsif page.news_article_title %}
     {% assign title=page.news_article_title %}
@@ -26,7 +29,9 @@
   {% endif %}
 
   {% assign description="" %}
-  {% if page.job_description %}
+  {% if page.meta_description %}
+    {% assign description=page.meta_description %}
+  {% elsif page.job_description %}
     {% assign description=page.job_description %}
   {% elsif page.news_article_description %}
     {% assign description=page.news_article_description %}
