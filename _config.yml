@@ -4,6 +4,8 @@ email: contact@arcticsecurity.com
 description: Leveling the playing field
 baseurl: ""
 url: "https://arcticsecurity.com"
+og_image_path: '/images/site/logo_text2_blue.svg'
+twitter_image_path:
 
 timezone: "Europe/Helsinki"
 strict_front_matter: true

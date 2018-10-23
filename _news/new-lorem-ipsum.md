@@ -2,7 +2,7 @@
 news_article_title: New Lorem Ipsum
 news_article_image_path:
 news_article_description: >-
-  "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
   praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
   excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
   officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
@@ -13,7 +13,7 @@ news_article_description: >-
   necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
   non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut
   reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
-  asperiores repellat."
+  asperiores repellat.
 date: 2018-10-05 00:00:00 +0300
 tags:
   - Article
