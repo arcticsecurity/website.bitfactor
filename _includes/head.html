@@ -5,8 +5,7 @@
   {% if page._noindex == true %}
   <meta name="robots" content="noindex">
   {% endif %}
-  <title>{{site.title}}
-    {% if page.meta_title %} | {{page.meta_title}}
+  <title>{{site.title}}{% if page.meta_title %} | {{page.meta_title}}
     {% elsif page.job_title %} | {{page.job_title}}
     {% elsif page.news_article_title %} | {{page.news_article_title}}
     {% elsif page.blog_title %} | {{page.blog_title}}
@@ -88,8 +87,8 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-title" content="Arctic Security">
-  <meta name="application-name" content="Arctic Security">
+  <meta name="apple-mobile-web-app-title" content="{{site.title}}">
+  <meta name="application-name" content="{{site.title}}">
  
   {% assign randomNumber=site.time | date: "%m%y%M%H%d%S" | plus:9562 %}
   <link rel="stylesheet" href="/css/main.css?{{randomNumber}}">
