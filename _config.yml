@@ -4,7 +4,7 @@ email: contact@arcticsecurity.com
 description: Don't be alone in cyber
 baseurl: ""
 url: "https://arcticsecurity.com"
-og_image_path: '/images/site/logo_text2_blue.svg'
+og_image_path: '/images/content/hero.svg'
 twitter_image_path:
 
 timezone: "Europe/Helsinki"
