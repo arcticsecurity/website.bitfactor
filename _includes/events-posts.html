@@ -1,0 +1,55 @@
+{% if include.title %}
+  {% assign title=include.title %}
+{% else %}
+  {% assign title="Past Events" %}
+{% endif %}
+
+{% if include.limit %}
+  {% assign limit=include.limit %}
+{% else %}
+  {% assign limit=3 %}
+{% endif %}
+
+<section class="posts__wrapper">
+  {% unless include.no_title %}
+  <div class="posts__title-row">
+    <h2 class="posts__title">
+      <i class="icon-blog"></i>{{title}}
+    </h2>
+  </div>
+  {% endunless %}
+  <div class="posts__flex-container">
+
+  {% assign eventposts = "" | split: ',' %}
+  {% for post in site.eventposts %}
+    {% if post.url != page.url %}
+      {% assign eventposts = eventposts | push: post %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign sortedPosts = (eventposts | sort: 'date') | reverse %}
+  {% for post in sortedPosts | limit: limit %}
+    <a class="post__card" href="{{ post.url }}">
+      <div class="post__card-image">
+        <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
+      </div>
+      <div class="post__card-content">
+        <p class="post__card-date caption-light">
+          <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+        </p>
+        <h3 class="post__card-title">{{ post.blog_title }}</h3>
+        <p class="post__card-writers">
+          {% for employee in site.employees %}
+            {% for writer in post.writer.employees | limit:3 %}
+              {% if employee.path contains writer %}
+              <span class="post__writer caption uppercase">{{employee.first_name}} {{employee.last_name}}</span><br>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </p>
+      </div>
+    </a>
+  {% endfor %}
+  <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
+  </div>
+</section>

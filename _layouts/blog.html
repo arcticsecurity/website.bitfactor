@@ -6,7 +6,7 @@
 	<main id="main-content" class="blog">
     <div class="blog__flex-container">
       <aside class="blog__contact">
-        <a href="/blog" class="blog__articles-link"><i class="icon-arrow_left"></i> All articles</a>
+        <a href="{% if page.back_link %}{{page.back_link}}{% else %}/blog{% endif %}" class="blog__articles-link"><i class="icon-arrow_left"></i> All articles</a>
         {% for writer in page.writer.employees %}
           {% for employee in site.employees %}
             {% if employee.path contains writer %}
@@ -75,7 +75,7 @@
         </div>
       </article>
     </div>
-    {% include posts.html title="Related" limit=3 no_blog_link=true filter_category=page.blog_category %}
+    {% include events-posts.html title="Related" limit=3 %}
     {% include mailing-list-form.html %}
 	</main>
 	{% include footer.html %}
