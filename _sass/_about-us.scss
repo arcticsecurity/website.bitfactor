@@ -9,6 +9,7 @@
   .about-us__header-text {
     @include display-flex();
     @include flex-direction(column);
+    max-width: 379px;
 
     p {
       color: $color-gray-blue;
@@ -16,19 +17,26 @@
   }
 
   .about-us__header-image {
-    min-width: 781px;
-    margin-left: 70px;
+    max-width: 641px;
+    width: 100%;
+
+    &.image-mobile {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
     max-width: 692px;
     margin-top: 32px;
-    @include flex-direction(column-reverse);
 
     .about-us__header-image {
-      min-width: 100%;
-      margin-left: 0;
-      height: 100%;
+      max-width: 331px;
+      &.image-mobile {
+        display: block;
+      }
+      &.image-desktop {
+        display: none;
+      }
     }
 
     h1, p {
@@ -36,7 +44,7 @@
     }
 
     .about-us__header-text {
-      @include flex-direction(row);
+      @include flex-direction(column);
       @include flex-align(center);
       @include flex-justify(space-between);
     }
@@ -44,8 +52,14 @@
 
   @media only screen and (max-width: $screen-width-tablet-min - 1) {
     max-width: 331px;
+    @include flex-direction(column-reverse);
+    @include flex-align(center);
     .about-us__header-text {
-      @include flex-direction(column);
+      text-align: center;
+    }
+
+    .about-us__header-image {
+      max-width: 240px;
     }
   }
 }

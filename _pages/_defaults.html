@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: empty
 navigation:
-  show_in_navigation: true
-  nav_order: '0'
-  nav_title: Title
+  show_in_navigation: false
 title:
 description:
 meta_title:
@@ -13,5 +11,22 @@ twitter_image_path:
 og_title:
 og_description:
 ---
-
-<div class="editable">content</div>
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+	{% include navbar.html %}
+	<main id="main-content" class="blog">
+    <div class="blog__flex-container">
+        <aside class="blog__contact"></aside>
+      <article class="blog__article">
+        <div class="blog__article-text editable">
+          Editable content
+        </div>
+      </article>
+    </div>
+	</main>
+	{% include footer.html %}
+	{% include scripts.html %}
+</body>
+</html>
