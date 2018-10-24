@@ -143,7 +143,7 @@
       right: 0;
       bottom: 0;
       margin: 0;
-      @include transform(translateY(100%));
+      @include transform(translateY(120%));
       @include font-size(14px);
       
       a {
@@ -159,6 +159,11 @@
     @media only screen and (max-width: $screen-width-tablet-min - 1) {
       @include font-size(14px);
       text-align: center;
+
+      p.privacy-policy-link {
+        right: 50%;
+        @include transform(translateY(120%) translateX(50%));
+      }
     }
   }
 
