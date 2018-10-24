@@ -136,6 +136,25 @@
     color: $color-light-gray;
     text-align: right;
     line-height: 1.44;
+    position: relative;
+
+    p.privacy-policy-link {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      @include transform(translateY(100%));
+      @include font-size(14px);
+      
+      a {
+        color: $color-light-gray;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-gray-blue;
+        }
+      }
+    }
 
     @media only screen and (max-width: $screen-width-tablet-min - 1) {
       @include font-size(14px);
