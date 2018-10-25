@@ -20,5 +20,5 @@ _comments:
   tags: 'Tags of content of the blog post for example "Google Analytics", "GitHub" etc'
   writer: "Select the writers, max 3"
   downloadable_content: 'Include downloadable content in blog post.'
-  downloadable_content_name: 'Name used in activecampaign to send the correct email with downloadable content.'
+  downloadable_content_name: 'Name used in activecampaign to send the correct email with downloadable content.<br>(name of the list in active campaign)'
 ---

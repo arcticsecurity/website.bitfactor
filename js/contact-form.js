@@ -115,6 +115,8 @@
 
     var data = $(this).serialize()
 
+    console.log(data)
+
     // TODO
     // var url = 'https://hooks.zapier.com/hooks/catch/3955008/e3mahc/
     //?first_name=roope&last_name=tapaninen&company_name=bitfactor&email=roope.tapaninen@bitfactor.fi&message=message&newsletter_subscription=true&accept_privacy_policy=true'
