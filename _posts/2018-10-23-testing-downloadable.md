@@ -1,20 +1,21 @@
 ---
-blog_title:
+blog_title: Testing Downloadable Content
 blog_image_path: /images/content/hero.svg
-blog_description:
+blog_description: Testing Downloadable Content. This is the description of the blog post.
 meta_title:
 meta_description:
-date:
+date: 2018-10-23 00:00:00 +0300
 tags:
-blog_category:
+blog_category: guides
 writer:
   employees:
+  - david-chartier
 og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
 og_description:
-downloadable_content: false
-downloadable_content_name:
+downloadable_content: true
+downloadable_content_name: DownloadableContentTest
 _comments:
   date: "Mark the date the blog post is added. Will show on a list of blog posts above as the date"
   tags: 'Tags of content of the blog post for example "Google Analytics", "GitHub" etc'

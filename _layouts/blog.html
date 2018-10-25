@@ -48,6 +48,9 @@
         <div class="blog__article-text editable">
           <h1 class="blog__article-title">{{page.blog_title}}</h1>
           {{ content }}
+          {% if page.downloadable_content %}
+          {% include downloadable-content.html title='Download resource:' downloadable_content=page.downloadable_content_name %}
+          {% endif %}
         </div>
         <div class="blog__share-mobile">
           <div class="blog__share-title uppercase show-on-mobile">SHARE THIS POST</div>
@@ -75,7 +78,11 @@
         </div>
       </article>
     </div>
+    {% if page.type == 'event' %}
     {% include events-posts.html title="Related" limit=3 %}
+    {% else %}
+    {% include posts.html title="Related" limit=3 no_blog_link=true filter_category=page.blog_category %}
+    {% endif %}
     {% include mailing-list-form.html %}
 	</main>
 	{% include footer.html %}

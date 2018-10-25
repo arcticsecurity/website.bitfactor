@@ -126,6 +126,7 @@ $section-max-width-tablet: 780px;
 
   .post__card-image {
     min-height: 180px;
+    max-height: 180px;
     @include display-flex();
     @include flex-justify(center);
     background-color: white;
