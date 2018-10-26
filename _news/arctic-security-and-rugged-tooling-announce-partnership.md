@@ -17,7 +17,7 @@ news_category:
   - press_release
 writer:
   employees:
-og_image_path: /images/site/logo_text2_blue.svg
+og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
 og_description:

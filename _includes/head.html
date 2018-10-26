@@ -91,4 +91,5 @@
  
   {% assign randomNumber=site.time | date: "%m%y%M%H%d%S" | plus:9562 %}
   <link rel="stylesheet" href="/css/main.css?{{randomNumber}}">
+  {% include google-scripts.html share_url=shareUrl %}
 </head>

@@ -6,6 +6,7 @@ baseurl: ""
 url: "https://arcticsecurity.com"
 og_image_path: '/images/content/hero.svg'
 twitter_image_path:
+google_logo_path: '/images/site/arctic_security_logo.png'
 
 timezone: "Europe/Helsinki"
 strict_front_matter: true
