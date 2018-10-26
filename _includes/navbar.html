@@ -1,5 +1,6 @@
 {% assign pages = site.pages | sort:'navigation.nav_order' %}
 {% assign currentpage = page.url | downcase %}
+{% assign summarypages = site.summarypages | sort:'navigation.nav_order' %}
 
 <nav class="navigation">
   <a class="navigation__home-link" href="/">
@@ -17,6 +18,11 @@
         <a class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</a>
       {% endif %}
     {% endfor %}
+    </div>
+    <div class="summary__pages">
+      {% for navitem in summarypages %}
+        <a class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</a>
+      {% endfor %}
     </div>
   </div>
 </nav>

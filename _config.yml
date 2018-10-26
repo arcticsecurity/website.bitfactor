@@ -42,12 +42,20 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  summarypages:
+    output: true
+    permalink: /summary/:slug/
   employees:
     output: false
 
 defaults:
   - scope:
       path: ""
+      type: pages
+    values:
+      layout: "default"
+  - scope:
+      path: "_summarypages"
       type: pages
     values:
       layout: "default"
