@@ -22,7 +22,7 @@ sass:
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:day/:slug/
+    permalink: /guides/:year/:month/:day/:slug/
   eventposts:
     output: true
     permalink: /news/events/:year/:month/:day/:slug/
