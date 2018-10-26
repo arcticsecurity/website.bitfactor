@@ -1,32 +1,32 @@
 {% if page.news_article_title %}
-    <script type="application/ld+json">
-      {
-      "@context": "http://schema.org",
-      "@type": "NewsArticle",
-      "mainEntityOfPage":
-      
-      { "@type": "WebPage", "@id": "{{include.share_url}}" }
-      ,
-      "headline": "{{page.news_article_title}}",
-      "image": [
-      "{{site.url}}{{page.og_image_path}}"],
-      "datePublished": "{{page.date | date_to_xmlschema}}",
-      "dateModified": "{{page.date | date_to_xmlschema}}",
-      "author":
-      { "@type": "Organization", "name": "{{site.data.company.title}}" }
-      ,
-      "publisher": {
-      "@type": "Organization",
-      "name": "{{site.data.company.title}}",
-      "logo":
-      
-      { "@type": "ImageObject", "url": "{{site.url}}{{site.google_logo_path}}" }
-      },
-      "description": "{{page.news_article_description}}"
-      }
-    </script>
-  {% endif %}
-  {% if page.blog_title %}
+  <script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage":
+    
+    { "@type": "WebPage", "@id": "{{include.share_url}}" }
+    ,
+    "headline": "{{page.news_article_title}}",
+    "image": [
+    "{{site.url}}{{page.og_image_path}}"],
+    "datePublished": "{{page.date | date_to_xmlschema}}",
+    "dateModified": "{{page.date | date_to_xmlschema}}",
+    "author":
+    { "@type": "Organization", "name": "{{site.data.company.title}}" }
+    ,
+    "publisher": {
+    "@type": "Organization",
+    "name": "{{site.data.company.title}}",
+    "logo":
+    
+    { "@type": "ImageObject", "url": "{{site.url}}{{site.google_logo_path}}" }
+    },
+    "description": "{{page.news_article_description}}"
+    }
+  </script>
+{% endif %}
+{% if page.blog_title %}
 
   {% assign employeeName = "" %}
 
@@ -66,4 +66,16 @@
       "description": "{{page.blog_description}}"
       }
     </script>
-  {% endif %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "{{site.url}}",
+  "logo": "{{site.url}}{{site.google_logo_path}}"
+  "contactPoint": [
+  
+  {"@type": "ContactPoint", "telephone": "{{site.data.company.phone}}", "contactType": "sales" }
+  ]
+}
+</script>
