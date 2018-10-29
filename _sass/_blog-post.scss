@@ -31,6 +31,11 @@
   .blog__article {
     max-width: 50%;
     overflow: hidden;
+
+    .contact-form__wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .blog__contact {
     min-width: 25%;
