@@ -17,6 +17,13 @@ form_title:
 form_description:
 form_thankyou_title:
 form_thankyou_description:
+form_translations:
+  first_name: First name
+  last_name: Last name
+  company_name: Company name
+  email: Email
+  error_message: Please fill missing fields
+contact_info_title: Contact Info
 ---
 <div class="summary-content">
   <div class="summary-header__wrapper">
@@ -72,22 +79,22 @@ form_thankyou_description:
   <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
       <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="2" />
-      <label for="first_name" id="first_name_label" class="caption-light editable">First name</label>
+      <label for="first_name" id="first_name_label" class="caption-light editable">{{page.form_translations.first_name}}</label>
     </div>
     
     <div class="contact-form__input">
       <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="2" />
-      <label for="last_name" id="last_name_label" class="caption-light editable">Last name</label>
+      <label for="last_name" id="last_name_label" class="caption-light editable">{{page.form_translations.last_name}}</label>
     </div>
 
     <div class="contact-form__input">
       <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="3" />
-      <label for="company_name" id="company_name_label" class="caption-light editable">Company name</label>
+      <label for="company_name" id="company_name_label" class="caption-light editable">{{page.form_translations.company_name}}</label>
     </div>
 
     <div class="contact-form__input">
       <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
-      <label for="email" id="email_label" class="caption-light editable">Email</label>
+      <label for="email" id="email_label" class="caption-light editable">{{page.form_translations.email}}</label>
     </div>
 
     <div class="contact-form__checkbox-group">
@@ -102,7 +109,7 @@ form_thankyou_description:
     </div>
 
     <span class="contact-form__submit-button caption-light editable" id="contact-form__submit-button">Submit</span>
-    <span class="contact-form__error-message caption-light editable" id="contact-form__error-message">Please fill missing fields</span>
+    <span class="contact-form__error-message caption-light" id="contact-form__error-message">{{page.form_translations.error_message}}</span>
   
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />
@@ -110,4 +117,4 @@ form_thankyou_description:
     <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;"><h2>{{thankyou_title}}</h2><p>{{thankyou_description}}</p></div>
   </form>
 </div>
-{% include contact-info.html class='summary-margin-bottom' %}
+{% include contact-info.html class='summary-margin-bottom' title=page.contact_info_title %}

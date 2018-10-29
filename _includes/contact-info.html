@@ -1,5 +1,9 @@
+{% assign title='Contact Info' %}
+{% if include.title %}
+{% assign title = include.title %}
+{% endif %}
 <div class="contact-info__wrapper {{include.class}}">
-  <h2 class="editable"><i class="icon-info" style="margin-right: 12px;"></i>Contact Info</h2>
+  <h2><i class="icon-info" style="margin-right: 12px;"></i>{{title}}</h2>
   <div class="contact-info__flex-container">
     <div class="contact-info highlight">
         <p class="contact-info__name">{{site.data.company.name}}</p>
