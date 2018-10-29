@@ -1,5 +1,12 @@
 $form-error-color: rgb(255, 89, 109);
 
+.cms-editor-active {
+  .mailing-list-form__sent {
+    visibility: visible;
+    position: relative;
+  }
+}
+
 .mailing-list-form__wrapper {
   @include display-flex();
   width: 100%;
