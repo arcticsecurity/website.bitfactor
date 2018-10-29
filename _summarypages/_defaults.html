@@ -55,5 +55,59 @@ form_thankyou_description:
     </div>
   </div>
 </div>
-{% include contact-form.html thankyou_title=page.form_thankyou_title thankyou_description=page.form_thankyou_description form_title=page.form_title form_description=page.form_description %}
+
+{% assign thankyou_title="Sent." %}
+{% if page.thankyou_title %}
+  {% assign thankyou_title=page.thankyou_title %}
+{% endif %}
+
+{% assign thankyou_description="Thank you for contacting us." %}
+{% if page.thankyou_description %}
+  {% assign thankyou_description=page.thankyou_description %}
+{% endif %}
+
+<div class="contact-form__wrapper {{include.class}}">
+  <h2 class="editable">Title</h2>
+  <p class="editable">Description</p>
+  <form id="contact-form" class="contact-form">
+    <div class="contact-form__input">
+      <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="2" />
+      <label for="first_name" id="first_name_label" class="caption-light editable">First name</label>
+    </div>
+    
+    <div class="contact-form__input">
+      <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="2" />
+      <label for="last_name" id="last_name_label" class="caption-light editable">Last name</label>
+    </div>
+
+    <div class="contact-form__input">
+      <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="3" />
+      <label for="company_name" id="company_name_label" class="caption-light editable">Company name</label>
+    </div>
+
+    <div class="contact-form__input">
+      <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
+      <label for="email" id="email_label" class="caption-light editable">Email</label>
+    </div>
+
+    <div class="contact-form__checkbox-group">
+      <span class="contact-form__fake-checkbox caption-light editable" data-for="newsletter_subscription">
+        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> Subscribe to Arctic Security newsletter
+      </span>
+      <span class="contact-form__fake-checkbox caption-light editable" data-for="accept_privacy_policy">
+        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> I accept the Arctic Security privacy policy
+      </span>
+      <input type="checkbox" value="true" hidden name="newsletter_subscription" id="newsletter_subscription" />
+      <input type="checkbox" value="true" data-required="true" hidden name="accept_privacy_policy" id="accept_privacy_policy" />
+    </div>
+
+    <span class="contact-form__submit-button caption-light editable" id="contact-form__submit-button">Submit</span>
+    <span class="contact-form__error-message caption-light editable" id="contact-form__error-message">Please fill missing fields</span>
+  
+    <div class="contact-form__input">
+      <input type="submit" hidden id="contact-form__hidden-submit" />
+    </div>
+    <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;"><h2>{{thankyou_title}}</h2><p>{{thankyou_description}}</p></div>
+  </form>
+</div>
 {% include contact-info.html class='summary-margin-bottom' %}
