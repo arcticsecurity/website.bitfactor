@@ -16,6 +16,10 @@ og_title:
 og_description:
 downloadable_content: true
 downloadable_content_name: DownloadableContentTest
+form_title: ASD
+form_description: Foo
+form_thankyou_title: Foobar
+form_thankyou_description: Foooobaaaar
 _comments:
   date: "Mark the date the blog post is added. Will show on a list of blog posts above as the date"
   tags: 'Tags of content of the blog post for example "Google Analytics", "GitHub" etc'

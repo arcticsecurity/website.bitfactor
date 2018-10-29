@@ -68,11 +68,11 @@
   
     var data = $(this).serialize()
   
-    // TODO
-    setTimeout(function() {
-      //var url = https://hooks.zapier.com/hooks/catch/3955008/e3m9l0/
-      formSent()
-    }, 2000)
+    var url = 'https://hooks.zapier.com/hooks/catch/3955008/e3m9l0/'
+    
+    if ($('.' + errorClass).length < 1) {
+      $.get(url, data, formSent).fail(formSent)
+    }
   })
   
   function formSent() {

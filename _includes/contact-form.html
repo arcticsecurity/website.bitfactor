@@ -62,6 +62,10 @@ contact@arcticsecurity.com or call us at +358 20 743 0010" %}
 
     <span class="contact-form__submit-button caption-light" id="contact-form__submit-button">Submit</span>
     <span class="contact-form__error-message caption-light" id="contact-form__error-message">Please fill missing fields</span>
+
+    {% if include.downloadable_content %}
+    <input hidden name='tag_name' value="{{include.downloadable_content}}" id="tag_name" />
+    {% endif %}
   
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />
