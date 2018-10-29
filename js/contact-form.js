@@ -115,15 +115,18 @@
 
     var data = $(this).serialize()
 
-    if ($('#tag_name').length > 0) { // use downloadable content hook
-      var url = 'https://hooks.zapier.com/hooks/catch/3955008/e6izel/'
-      if ($('.' + errorClass).length < 1) {
+    if ($('.' + errorClass).length < 1) {
+      if ($('#tag_name').length > 0) { // use downloadable content hook
+        var downloadableContentUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e6izel/'
+        $.get(downloadableContentUrl, data, formSent).fail(formSent)
+      } else {
+        var url = 'https://hooks.zapier.com/hooks/catch/3955008/e3mahc/'
         $.get(url, data, formSent).fail(formSent)
       }
-    } else {
-      var url = 'https://hooks.zapier.com/hooks/catch/3955008/e3mahc/'
-      if ($('.' + errorClass).length < 1) {
-        $.get(url, data, formSent).fail(formSent)
+
+      if ($('#newsletter_subscription').prop('checked')) {
+        var newsletterUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e3m9l0/'
+        $.get(newsletterUrl, data, formSent).fail(formSent)
       }
     }
   })
