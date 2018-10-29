@@ -126,7 +126,7 @@
 
       if ($('#newsletter_subscription').prop('checked')) {
         var newsletterUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e3m9l0/'
-        $.get(newsletterUrl, data, formSent).fail(formSent)
+        $.get(newsletterUrl, data)
       }
     }
   })
