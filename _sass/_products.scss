@@ -18,7 +18,7 @@
   border-radius: 10px;
   overflow: hidden;
 
-  @include animation(appear 1000ms ease-out);
+  @include animation(appear 500ms ease-out);
 }
 
 .product-content {
@@ -116,7 +116,7 @@
 @include keyframes(appear) {
   0% {
     opacity: 0;
-    @include transform(translateY(30%));
+    @include transform(translateY(20%));
   }
   100% {
     opacity: 1;
