@@ -16,9 +16,11 @@ $form-error-color: rgb(255, 89, 109);
   }
 
   a {
+    text-decoration: underline;
+    color: $color-arctic-blue;
     @include transition(color 100ms ease-in-out);
     &:hover {
-      color: $color-light-gray;
+      color: $color-blue;
     }
   }
 
