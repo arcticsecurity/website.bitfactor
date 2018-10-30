@@ -1,0 +1,125 @@
+.products-page__wrapper {
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
+  max-width: 1345px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product {
+  @include display-flex();
+  @include flex-justify(space-between);
+  @include flex-align(center);
+  width: 100%;
+  padding: 70px 80px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include animation(appear 1000ms ease-out);
+}
+
+.product-content {
+  max-width: 300px;
+  min-width: 250px;
+  margin-right: 40px;
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(flex-start);
+
+  .product-icon {
+    width: 48px;
+  }
+
+  h2 {
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: $screen-width-tablet-min) {
+      @include font-size(32px);
+    }    
+  }
+
+  p {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .product-link {
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+    margin-top: 30px;
+    @include font-size(18px);
+    @include transition(color 100ms ease-in-out, border-color 100ms ease-in-out);
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.product-image {
+  max-width: 674px;
+  img {
+    min-width: 674px;
+    max-width: 674px;
+  }
+}
+
+@media only screen and (max-width: $screen-width-desktop-min - 1) {
+  .products-page__wrapper {
+    max-width: 692px;
+  }
+
+  .product-content {
+    @include font-size(16px);
+  }
+}
+
+@media only screen and (max-width: $screen-width-tablet-min - 1) {
+  .products-page__wrapper {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 331px;
+  }
+
+  .product {
+    margin-bottom: 20px;
+    padding: 25px 15px;
+    @include flex-direction(column-reverse);
+    @include flex-align(center);
+  }
+  .product-content {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    @include flex-align(center);
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .product-image {
+    max-width: 100%;
+    img {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@include keyframes(appear) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(30%));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
