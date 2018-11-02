@@ -2,87 +2,87 @@
   width: 100vw;
 }
 
-.product__header-wrapper {
-  position: relative;
+.product__header-nav {
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
-  .product__header-nav {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  .product__header-link {
+    display: block;
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(50%));
+    z-index: 10;
+    cursor: pointer;
+    @include display-flex();
+    @include flex-align(center);
+    color: white;
+    @include transition(color 100ms ease-in-out);
+    @include font-size(14px);
 
-    .product__header-link {
-      display: block;
-      position: absolute;
-      top: 50%;
-      @include transform(translateY(50%));
-      z-index: 10;
-      cursor: pointer;
-      @include display-flex();
-      @include flex-align(center);
-      color: white;
-      @include transition(color 100ms ease-in-out);
-      @include font-size(14px);
-
-      &:hover {
-        color: rgba(255,255,255,0.6);
-      }
-
-      &.left {
-        left: 40px;
-      }
-      &.right {
-        right: 40px;
-        
-        img {
-          @include transform(rotate(180deg));
-        }
-      }
+    &:hover {
+      color: rgba(255,255,255,0.6);
     }
 
-    .product__nav-items {
-      min-height: 60px;
-      width: 100%;
-      @include display-flex();
-      @include flex-justify(center);
-      @include flex-align(center);
-      position: absolute;
-      top: 0;
-
-      .product__nav-item {
-        @include font-size(16px);
-        color: rgba(255,255,255,0.4);
-        position: relative;
-        padding: 5px 20px;
-        @include transition(color 100ms ease-in-out);
-
-        &:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border-bottom: 2px solid rgba($color-arctic-blue, 0);
-          @include transition(border-color 100ms ease-in-out);
-        }
-
-        &.current, &:hover {
-          color: white;
-          &:after {
-            border-color: $color-arctic-blue;
-          }
-        }
-      }
-
-      @media only screen and (max-width: $screen-width-desktop-min - 1) {
-        &.hide-on-mobile {
-          display: none;
-        }
+    &.left {
+      left: 40px;
+    }
+    &.right {
+      right: 40px;
+      
+      img {
+        @include transform(rotate(180deg));
       }
     }
   }
+
+  .product__nav-items {
+    min-height: 60px;
+    width: 100%;
+    @include display-flex();
+    @include flex-justify(center);
+    @include flex-align(center);
+    position: absolute;
+    top: 0;
+
+    .product__nav-item {
+      @include font-size(16px);
+      color: rgba(255,255,255,0.4);
+      position: relative;
+      padding: 5px 20px;
+      @include transition(color 100ms ease-in-out);
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid rgba($color-arctic-blue, 0);
+        @include transition(border-color 100ms ease-in-out);
+      }
+
+      &.current, &:hover {
+        color: white;
+        &:after {
+          border-color: $color-arctic-blue;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      &.hide-on-mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.product__header-wrapper {
+  position: relative;
+  width: 100%;
 
   .product__header {
     padding-top: 130px;
@@ -186,18 +186,18 @@
 }
 
 @media only screen and (max-width: $screen-width-desktop-min - 1) {
-  .product__header-wrapper {
-
-    .product__header-nav {
-      .product__header-link {
-        &.left {
-          left: 30px;
-        }
-        &.right {
-          right: 30px;
-        }
+  .product__header-nav {
+    .product__header-link {
+      &.left {
+        left: 30px;
+      }
+      &.right {
+        right: 30px;
       }
     }
+  }
+
+  .product__header-wrapper {
     .product__header {
       padding-top: 60px;
       @include flex-direction(column);
@@ -267,18 +267,18 @@
 }
 
 @media only screen and (max-width: $screen-width-tablet-min - 1) {
-  .product__header-wrapper {
-    .product__header-nav {
-      .product__header-link {
-        &.left {
-          left: 15px;
-        }
-        &.right {
-          right: 15px;
-        }
+  .product__header-nav {
+    .product__header-link {
+      &.left {
+        left: 15px;
+      }
+      &.right {
+        right: 15px;
       }
     }
+  }
 
+  .product__header-wrapper {
     .product__header-content {
       max-width: 331px;
     }

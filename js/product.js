@@ -25,20 +25,16 @@
   })
 
   $(window).on("scroll", function() {
-    let fromTop = window.scrollY
+    var navHeight = 60
+    let fromTop = window.scrollY + navHeight
   
     $('.product__nav-item').each(function() {
       var $section = $(this.hash)
   
-      if (
-        $section.offset().top <= fromTop &&
-        $section.offset().top + $section.height() > fromTop
-      ) {
+      if ($section.offset().top <= fromTop &&
+        $section.offset().top + $section.height() > fromTop)
         $(this).addClass("current")
-      } else {
-        $(this).removeClass("current")
-      }
-
+      else $(this).removeClass("current")
     })
   })
 }())
