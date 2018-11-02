@@ -121,10 +121,10 @@ og_description:
     </div>
   </div>
 </div>
-<!-- 
+
 <div class="product__testimonials product-nav-item" id="testimonials" data-nav="Testimonials">
   {% for testimonial in page.testimonials %}
-    <div class="testimonial">
+    <div class="testimonial{% if forloop.first %} active{% endif %}">
       <div class="testimonial__content">
         <h2>{{testimonial.title}}</h2>
         <p>{{testimonial.description}}</p>
@@ -139,6 +139,6 @@ og_description:
   <span class="testimonial__slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right"/></span>
 </div>
 
-<div class="product__testimonials product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">
+<div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">
   
-</div> -->
+</div>

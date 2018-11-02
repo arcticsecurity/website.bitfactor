@@ -38,3 +38,23 @@
     })
   })
 }())
+
+(function() {
+  var activeSlideClass = 'active'
+  var activeSlide = '.' + activeSlideClass
+  var slideClass = 'testimonial'
+  var $mobileSlides = $('.' + slideClass)
+  var $arrowLeft = $('.testimonial__slider-arrow.left')
+  var $arrowRight = $('.testimonial__slider-arrow.right')
+
+  $arrowLeft.on('click', function() {
+    var $activeSlide = $mobileSlides.filter(activeSlide).removeClass(activeSlideClass)
+    if ($activeSlide.prev().hasClass(slideClass)) $activeSlide.prev().addClass(activeSlideClass)
+    else $mobileSlides.last().addClass(activeSlideClass)
+  })
+  $arrowRight.on('click', function() {
+    var $activeSlide = $mobileSlides.filter(activeSlide).removeClass(activeSlideClass)
+    if ($activeSlide.next().hasClass(slideClass)) $activeSlide.next().addClass(activeSlideClass)
+    else $mobileSlides.first().addClass(activeSlideClass)
+  })
+}())
