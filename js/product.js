@@ -16,4 +16,29 @@
     if ($activeSlide.next().hasClass(mobileSlideClass)) $activeSlide.next().addClass(activeSlideClass)
     else $mobileSlides.first().addClass(activeSlideClass)
   })
+
+
+  var navItems = $('.product-nav-item')
+  var desktopNav = $('#product-desktop-nav')
+  navItems.each(function() {
+    desktopNav.append('<a class="product__nav-item" href="#' + $(this).attr('id') + '">' + $(this).data('nav') + '</a>')
+  })
+
+  $(window).on("scroll", function() {
+    let fromTop = window.scrollY
+  
+    $('.product__nav-item').each(function() {
+      var $section = $(this.hash)
+  
+      if (
+        $section.offset().top <= fromTop &&
+        $section.offset().top + $section.height() > fromTop
+      ) {
+        $(this).addClass("current")
+      } else {
+        $(this).removeClass("current")
+      }
+
+    })
+  })
 }())
