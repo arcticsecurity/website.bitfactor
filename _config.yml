@@ -4,8 +4,9 @@ email: contact@arcticsecurity.com
 description: Don't be alone in cyber
 baseurl: ""
 url: "https://arcticsecurity.com"
-og_image_path: '/images/site/logo_text2_blue.svg'
+og_image_path: '/images/content/hero.svg'
 twitter_image_path:
+google_logo_path: '/images/site/arctic_security_logo.png'
 
 timezone: "Europe/Helsinki"
 strict_front_matter: true
@@ -21,7 +22,7 @@ sass:
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:day/:slug/
+    permalink: /guides/:year/:month/:day/:slug/
   eventposts:
     output: true
     permalink: /news/events/:year/:month/:day/:slug/
@@ -41,12 +42,20 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  summarypages:
+    output: true
+    permalink: /summary/:slug/
   employees:
     output: false
 
 defaults:
   - scope:
       path: ""
+      type: pages
+    values:
+      layout: "default"
+  - scope:
+      path: "_summarypages"
       type: pages
     values:
       layout: "default"

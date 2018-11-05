@@ -18,6 +18,12 @@
 {% if page.contact_form %}
 <script type="text/javascript" src="/js/contact-form.js?{{randomNumber}}"></script>
 {% endif %}
+{% if page.downloadable_content %}
+<script type="text/javascript" src="/js/contact-form.js?{{randomNumber}}"></script>
+{% endif %}
 {% if page.mailing_list_form %}
 <script type="text/javascript" src="/js/mailing-list.js?{{randomNumber}}"></script>
+{% endif %}
+{% if page.layout == 'product' %}
+<script type="text/javascript" src="/js/product.js?{{randomNumber}}"></script>
 {% endif %}

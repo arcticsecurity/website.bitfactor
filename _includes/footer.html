@@ -6,7 +6,7 @@
     <address class="footer__address">
       <div class="footer__address-name">{{ site.data.company.name }}</div>
       <a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
-      <a href="tel:{{ site.data.company.phone | remove: ' ' }}">{{ site.data.company.phone }}</a href="tel:{{ site.data.company.phone | remove: ' ' }}">
+      <a href="tel:{{ site.data.company.phone | remove: ' ' }}">{{ site.data.company.phone }}</a>
       <div>Business ID: {{ site.data.company.business_id }}</div>
       <a class="cloudcannon-edit-link" href="cloudcannon:collections/_data/company.yml">Edit company information</a>
     </address>
@@ -18,19 +18,21 @@
     {% endfor %}
     </div>
     <div class="footer__meta-wrapper">
-      <div class="footer__social-links">
+      <div class="footer__social-links" itemscope itemtype="http://schema.org/Organization">
         <a title="EU Necessary Information" href="/eu-necessary-information" class="footer__social-link link-image" target="_blank" rel="noopener noreferrer">
           <img src="/images/site/logo_leverage.png" alt="logo_leverage" />
         </a>
         <a title="EU Necessary Information" href="/eu-necessary-information" class="footer__social-link link-image" target="_blank" rel="noopener noreferrer">
           <img src="/images/site/logo_eu.png" alt="logo_eu" />
         </a>
-        <a title="Find us on Twitter" href="{{ site.data.company.twitter_url }}" class="footer__social-link twitter" target="_blank" rel="noopener noreferrer"><i class="icon-social_twitter_filled"></i></a>
-        <a title="Find us on LinkedIn" href="{{ site.data.company.linkedin_url }}" class="footer__social-link" target="_blank" rel="noopener noreferrer"><i class="icon-social_linkedin_filled"></i></a>
+        <a title="Find us on Twitter" itemprop="sameAs" href="{{ site.data.company.twitter_url }}" class="footer__social-link twitter" target="_blank" rel="noopener noreferrer"><i class="icon-social_twitter_filled"></i></a>
+        <a title="Find us on LinkedIn" itemprop="sameAs" href="{{ site.data.company.linkedin_url }}" class="footer__social-link" target="_blank" rel="noopener noreferrer"><i class="icon-social_linkedin_filled"></i></a>
       </div>
       <div class="footer__copyright">
         &copy; {{site.data.company.title}}, {{site.data.company.address}}, {{site.data.company.postal_code}} {{site.data.company.city}} {{site.data.company.country}}
-        <p class="editable privacy-policy-link">Privacy policy</p>
+        <p class="editable privacy-policy-link">
+          <a href="/privacy-policy/">Privacy policy</a>
+        </p>
       </div>
     </div>
   </div>

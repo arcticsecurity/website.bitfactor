@@ -23,6 +23,10 @@ $section-max-width-tablet: 780px;
       max-width: 100%;
       min-width: 100%;
     }
+
+    .events__content, .jobs__content {
+      height: initial;
+    }
   }
 
   @media only screen and (max-width: $screen-width-tablet-min - 1) {

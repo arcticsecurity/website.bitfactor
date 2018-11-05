@@ -1,0 +1,15 @@
+<div class="products-page__wrapper">
+{% for product in site.products %}
+  <div class="product" style="background-color: {{product.product_color}};">
+    <div class="product-content">
+      <img class="product-icon" alt="product icon" src="/images/site/logo_white.svg">
+      <h2 class="uppercase">{{product.name}}</h2>
+      <p>{{product.description}}</p>
+      <a href="{{product.url}}" class="product-link">Discover the <span class="uppercase">{{product.name}}</span></a>
+    </div>
+    <div class="product-image">
+      <img alt="{{product.name}}" src="{{product.product_image_path}}" />
+    </div>
+  </div>
+{% endfor %}
+</div>
