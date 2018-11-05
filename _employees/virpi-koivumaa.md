@@ -1,6 +1,6 @@
 ---
-first_name:
-last_name:
+first_name: Virpi
+last_name: Koivumaa
 telephone:
 email:
 person_image_path: /images/content/person_image.svg
@@ -15,3 +15,4 @@ _comments:
     Specialist"
   description: Used in "About us" -page in the team section to describe the employee.
 ---
+
