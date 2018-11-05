@@ -4,7 +4,7 @@ last_name: Koivumaa
 telephone:
 email:
 person_image_path: /images/content/person_image.svg
-position:
+position: COO
 description:
 _comments:
   person_image_path: >-
