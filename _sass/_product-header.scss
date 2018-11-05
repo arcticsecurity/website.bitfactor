@@ -182,6 +182,13 @@
   }
 
   &.sticky-image {
+    .product-image {
+      @include animation(appear2 500ms ease-out);
+    }
+  
+    .product__header-content {
+      @include animation(appear2 500ms ease-out);
+    }
     .product-image.sticky {
       img {
         position: sticky;
@@ -397,6 +404,17 @@
   0% {
     opacity: 0;
     @include transform(translateY(20%));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
+
+@include keyframes(appear2) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(2%));
   }
   100% {
     opacity: 1;
