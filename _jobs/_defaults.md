@@ -1,9 +1,9 @@
 ---
 job_title:
 job_description:
+job_sorting: 0
 meta_title:
 meta_description:
-date:
 tags:
 team:
 writer:

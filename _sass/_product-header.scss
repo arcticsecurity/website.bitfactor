@@ -180,6 +180,88 @@
       @include flex-justify(center);
     }
   }
+
+  &.sticky-image {
+    .product-image.sticky {
+      img {
+        position: sticky;
+        top: 100px;
+      }
+      @media only screen and (max-width: $screen-width-desktop-min - 1) {
+        display: none;
+      }
+    }
+    .product-image:not(.sticky) {
+      display: none;
+      @media only screen and (max-width: $screen-width-desktop-min - 1) {
+        display: block;
+        max-width: 543px;
+        width: 543px;
+        margin-top: 40px;
+      }
+      @media only screen and (max-width: $screen-width-tablet-min - 1) {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .product__info.mobile-slider {
+      min-height: 600px;
+      .mobile-slider-arrow {
+        @include transform(translateY(0));
+      }
+    }
+
+    .timeline-num {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      background-color: $color-arctic-blue;
+      border-radius: 20px;
+      color: white;
+      font-family: $font-condensed;
+      @include font-size(14px);
+      @include display-flex();
+      @include flex-align(center);
+      @include flex-justify(center);
+      z-index: 1;
+      left: 50%;
+      @include transform(translateX(-50%) translateY(-40px));
+    }
+
+    @media only screen and (min-width: $screen-width-desktop-min) {
+      .product__header-content {
+        margin-right: 25px;
+      }
+
+      .product__info-section.timeline {
+        h2 {
+          margin-top: 0;
+        }
+
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 200px;
+        &:not(:last-of-type):after {
+          position: absolute;
+          content: ' ';
+          width: 2px;
+          top: 0;
+          left: -35px;
+          height: 100%;
+          background-color: $color-arctic-blue;
+          @include transform(translateY(8px));
+        }
+
+        .timeline-num {
+          left: -35px;
+          @include transform(translateX(-50%) translateY(8px));
+        }
+      }
+    }
+  }
 }
 .mobile-slider-arrow {
   display: none;

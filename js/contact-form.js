@@ -119,6 +119,9 @@
       if ($('#tag_name').length > 0) { // use downloadable content hook
         var downloadableContentUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e6izel/'
         $.get(downloadableContentUrl, data, formSent).fail(formSent)
+      } else if ($('#schedule_a_demo').length > 0) {
+        var scheduleaDemoUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e6izel/'
+        $.get(scheduleaDemoUrl, data, formSent).fail(formSent)
       } else {
         var url = 'https://hooks.zapier.com/hooks/catch/3955008/e3mahc/'
         $.get(url, data, formSent).fail(formSent)

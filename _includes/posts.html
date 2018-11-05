@@ -25,58 +25,97 @@
       {% endunless %}
   </div>
   {% endunless %}
-  <div class="posts__flex-container{% if include.multirow %} multirow{% endif %}{% if include.show_all %} show-all{% endif %}">
+  {% unless include.posts %}
+    <div class="posts__flex-container{% if include.multirow %} multirow{% endif %}{% if include.show_all %} show-all{% endif %}">
 
-  {% assign blogposts = "" | split: ',' %}
-  {% for post in site.posts %}
-    {% if post.url != page.url %}
+      {% assign blogposts = "" | split: ',' %}
+      {% for post in site.posts %}
+        {% if post.url != page.url %}
 
-        {% if include.filter_category %}
+            {% if include.filter_category %}
 
-          {% for filterCategory in include.filter_category %}
-            {% for category in post.blog_category %}
-              {% if category == filterCategory %}
-                {% assign blogposts = blogposts | push: post %}
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
+              {% for filterCategory in include.filter_category %}
+                {% for category in post.blog_category %}
+                  {% if category == filterCategory %}
+                    {% assign blogposts = blogposts | push: post %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
 
-        {% else %}
-          {% assign blogposts = blogposts | push: post %}
+            {% else %}
+              {% assign blogposts = blogposts | push: post %}
+            {% endif %}
+
         {% endif %}
+      {% endfor %}
 
-    {% endif %}
-  {% endfor %}
-
-  {% assign sortedPosts = (blogposts | sort: 'date') | reverse %}
-  {% for post in sortedPosts | limit: limit %}
-    <a class="post__card" href="{{ post.url }}" data-category="{{post.blog_category}}">
-      <div class="post__card-image">
-        <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
-      </div>
-      <div class="post__card-content">
-        <p class="post__card-date caption-light">
-          {% unless include.show_date %}
-            <span class="uppercase">{{post.blog_category}}</span>
-          {% else %}
-            <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
-          {% endunless %}
-        </p>
-        <h3 class="post__card-title">{{ post.blog_title }}</h3>
-        <p class="post__card-writers">
-          {% for employee in site.employees %}
-            {% for writer in post.writer.employees | limit:3 %}
-              {% if employee.path contains writer %}
-              <span class="post__writer caption uppercase">{{employee.first_name}} {{employee.last_name}}</span><br>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-        </p>
-      </div>
-    </a>
-  {% endfor %}
-  <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
-  </div>
+      {% assign sortedPosts = (blogposts | sort: 'date') | reverse %}
+      {% for post in sortedPosts | limit: limit %}
+        <a class="post__card" href="{{ post.url }}" data-category="{{post.blog_category}}">
+          <div class="post__card-image">
+            <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
+          </div>
+          <div class="post__card-content">
+            <p class="post__card-date caption-light">
+              {% unless include.show_date %}
+                <span class="uppercase">{{post.blog_category}}</span>
+              {% else %}
+                <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+              {% endunless %}
+            </p>
+            <h3 class="post__card-title">{{ post.blog_title }}</h3>
+            <p class="post__card-writers">
+              {% for employee in site.employees %}
+                {% for writer in post.writer.employees | limit:3 %}
+                  {% if employee.path contains writer %}
+                  <span class="post__writer caption uppercase">{{employee.first_name}} {{employee.last_name}}</span><br>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </p>
+          </div>
+        </a>
+      {% endfor %}
+      <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
+    </div>
+  {% else %}
+    <div class="posts__flex-container">
+      {% assign includeposts = include.posts | split: ',' %}
+      {% for includepost in includeposts %}
+        {% for post in site.posts %}
+          {% if post.url != page.url %}
+          {% if post.path contains includepost %}
+            <a class="post__card" href="{{ post.url }}" data-category="{{post.blog_category}}">
+              <div class="post__card-image">
+                <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
+              </div>
+              <div class="post__card-content">
+                <p class="post__card-date caption-light">
+                  {% unless include.show_date %}
+                    <span class="uppercase">{{ post.blog_category }}</span>
+                  {% else %}
+                    <span class="uppercase">{{ post.date | date: "%B" }} </span>{% assign day = post.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ post.date | date: "%Y" }}
+                  {% endunless %}
+                </p>
+                <h3 class="post__card-title">{{ post.blog_title }}</h3>
+                <p class="post__card-writers">
+                  {% for employee in site.employees %}
+                    {% for writer in post.writer.employees | limit:3 %}
+                      {% if employee.path contains writer %}
+                      <span class="post__writer caption uppercase">{{employee.first_name}} {{employee.last_name}}</span><br>
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                </p>
+              </div>
+            </a>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <a href="#" style="opacity: 0; width: 370px; pointer-events: none; cursor: normal;"></a>
+    </div>
+  {% endunless %}
 
   {% unless include.no_blog_link %}
   <a class="show-on-mobile" href="/blog">

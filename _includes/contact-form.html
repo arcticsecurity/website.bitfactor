@@ -55,7 +55,7 @@ contact@arcticsecurity.com or call us at +358 20 743 0010" %}
         <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> Subscribe to Arctic Security newsletter
       </span>
       <span class="contact-form__fake-checkbox caption-light" data-for="accept_privacy_policy">
-        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> I accept the Arctic Security&nbsp;<a target="_blank" rel="noopener noreferrer" href="/privacy-policy/">privacy policy</a>
+        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i><span> I accept the Arctic Security&nbsp;<a target="_blank" rel="noopener noreferrer" href="/privacy-policy/">privacy policy</a></span>
       </span>
       <input type="checkbox" value="true" hidden name="newsletter_subscription" id="newsletter_subscription" />
       <input type="checkbox" value="true" data-required="true" hidden name="accept_privacy_policy" id="accept_privacy_policy" />
@@ -66,6 +66,9 @@ contact@arcticsecurity.com or call us at +358 20 743 0010" %}
 
     {% if include.downloadable_content %}
     <input hidden name='tag_name' value="{{include.downloadable_content}}" id="tag_name" />
+    {% endif %}
+    {% if include.schedule_a_demo %}
+    <input hidden type="text" name='schedule_a_demo' value="{{include.schedule_a_demo}}" id="schedule_a_demo" />
     {% endif %}
   
     <div class="contact-form__input">

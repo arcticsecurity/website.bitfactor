@@ -1,0 +1,17 @@
+.product-nav-item {
+  width: 100%;
+  @include display-flex;
+  @include flex-direction(column);
+  @include flex-align(center);
+  &>* {
+    width: 100%;
+  }
+}
+@import "product-header";
+@import "product-key-features";
+@import "product-testimonials";
+
+.products-page__wrapper.product-page {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}

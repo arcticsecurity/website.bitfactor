@@ -22,7 +22,7 @@
           {% endif %}
         {% endfor %}
 
-        {% assign sortedJobs = (jobs | sort: 'date') | reverse %}
+        {% assign sortedJobs = (jobs | sort: 'job_sorting') %}
         {% for job in sortedJobs | limit: limit %}
           <a class="jobs__job" href="{{job.url}}">
             <h3 class="job__title">{{job.job_title}}</h3>
