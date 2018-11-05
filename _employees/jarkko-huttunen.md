@@ -1,10 +1,10 @@
 ---
-first_name:
-last_name:
+first_name: Jarkko
+last_name: Huttunen
 telephone:
 email:
 person_image_path: /images/content/person_image.svg
-position:
+position: Head of Solutions
 description:
 _comments:
   person_image_path: >-
@@ -15,3 +15,4 @@ _comments:
     Specialist"
   description: Used in "About us" -page in the team section to describe the employee.
 ---
+
