@@ -1,0 +1,118 @@
+.solutions-page__wrapper {
+  width: 100%;
+  max-width: 1192px;
+
+  @include display-flex();
+  @include flex-direction(column);
+  @include flex-align(center);
+
+  .solutions-page__header {
+    width: 100%;
+    margin-top: 100px;
+
+    &>* {
+      max-width: 380px;
+    }
+  }
+
+  .solutions__wrapper {
+    width: 100%;
+    @include display-flex();
+    @include flex-justify(space-between);
+    @include flex-wrap(wrap);
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .solution-card__wrapper {
+    width: 100%;
+    max-width: 577px;
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex-align(center);
+    margin-bottom: 40px;
+
+    img {
+      max-width: 420px;
+      width: 100%;
+      margin-bottom: 45px;
+    }
+
+    .solution-card {
+      background-color: $color-light-blue;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 10px;
+      @include transition(background-color 100ms ease-in-out);
+
+      li {
+        color: $color-gray;
+      }
+
+      &>h3 {
+        margin-top: 0;
+        padding-right: 20%;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          @include transform(translateY(-50%));
+
+          content: "\e906";
+          font-family: 'icomoon' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          @include font-size(32px);
+          width: 32px;
+          height: 32px;
+        
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        
+          @include transition(color 100ms ease-in-out);
+        }
+      }
+
+      &:hover {
+        background-color: $color-blue;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    max-width: 692px;
+
+    .solutions-page__header {
+      margin-top: 30px;
+    }
+
+    .solutions__wrapper {
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+
+    .solution-card__wrapper {
+      max-width: 331px;
+
+      img {
+        max-width: 293px;
+        margin-bottom: 30px;
+      }
+  
+      .solution-card {
+        padding: 25px 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-width-tablet-min - 1) {
+    max-width: 331px;
+  }
+}
