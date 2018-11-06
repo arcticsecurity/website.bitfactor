@@ -6,7 +6,7 @@ email:
 person_image_path: /images/david.png
 position: CEO
 description:
-linkedin_url:
+linkedin_url: 'https://www.linkedin.com/in/david-chartier-b3839/'
 _comments:
   person_image_path: >-
     Select or upload person image if one exists (MAX: 300x300px and MUST BE
