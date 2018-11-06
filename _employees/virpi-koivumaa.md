@@ -3,7 +3,7 @@ first_name: Virpi
 last_name: Koivumaa
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
+person_image_path: /images/content/virpi.png
 position: COO
 description:
 linkedin_url:
