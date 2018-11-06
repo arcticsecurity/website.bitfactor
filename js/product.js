@@ -38,8 +38,12 @@
     })
 
     var $header = $('.product__header-wrapper')
-
-    console.log($header.height(), fromTop)
+    
+    if ($header.height() < window.scrollY) {
+      $('body').addClass('invert-nav-colors')
+    } else {
+      $('body').removeClass('invert-nav-colors')
+    }
   })
 
   function testimonialSlides () {
