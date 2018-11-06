@@ -47,6 +47,9 @@ collections:
     permalink: /summary/:slug/
   employees:
     output: false
+  solutions:
+    output: true
+    permalink: /solutions/:slug/
 
 defaults:
   - scope:
@@ -87,6 +90,11 @@ defaults:
       type: products
     values:
       layout: product
+  - scope:
+      path: "_solutions"
+      type: solutions
+    values:
+      layout: solution
   - scope:
       path: "_news"
       type: news

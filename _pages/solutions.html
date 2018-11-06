@@ -1,0 +1,39 @@
+---
+layout: default
+navigation:
+  show_in_navigation: true
+  nav_order: '1'
+  nav_title: Solutions
+mailing_list_form: true
+title:
+description:
+meta_title:
+meta_description:
+og_image_path: /images/content/hero.svg
+twitter_image_path:
+og_title:
+og_description:
+---
+<div class="solutions-page__wrapper">
+  <div class="solutions-page__header">
+    <h1 class="editable">Don’t be alone in cyber.</h1>
+    <p class="large editable">We want to help you get organized in cyber defense</p>
+  </div>
+  <div class="solutions__wrapper">
+    {% assign solutions=site.solutions | sort: 'card_order' %}
+    {% for solution in solutions %}
+      <div class="solution-card__wrapper">
+        <img src="{{solution.card_image_path}}" alt="{{solution.card_title}}" />
+        <a href="{{solution.url}}" class="solution-card">
+          <h3>{{solution.card_title}}</h3>
+          <ul>
+            {% for user in solution.solution_users %}
+              <li>{{user}}</li>
+            {% endfor %}
+          </ul>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  {% include mailing-list-form.html %}
+</div>
