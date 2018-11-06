@@ -11,7 +11,7 @@
           <h3>{{employee.first_name}} {{employee.last_name}}</h3>
           <p class="caption uppercase">{{employee.position}}</p>
           {% if employee.linkedin_url %}
-            <a href="{{employee.linkedin_url}}" class="team__member-linkedin"><i class="icon-social_linkedin_filled"></i></a>
+            <a href="{{employee.linkedin_url}}" target="_blank" rel="noopener noreferrer" class="team__member-linkedin"><i class="icon-social_linkedin_filled"></i></a>
           {% endif %}
         </div>
       {% endif %}
