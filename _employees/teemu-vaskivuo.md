@@ -3,9 +3,10 @@ first_name: Teemu
 last_name: Vaskivuo
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
+person_image_path: /images/content/teemu.png
 position: Head of R&D
 description:
+linkedin_url:
 _comments:
   person_image_path: >-
     Select or upload person image if one exists (MAX: 300x300px and MUST BE
