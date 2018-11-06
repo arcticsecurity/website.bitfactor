@@ -3,7 +3,7 @@ first_name: Jarkko
 last_name: Huttunen
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
+person_image_path: /images/content/jarkko.png
 position: Head of Solutions
 description:
 linkedin_url:
