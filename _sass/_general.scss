@@ -186,3 +186,18 @@ p a {
   @include flex-direction(column);
   @include flex-align(center);
 }
+
+.appear-animation {
+  @include animation(appear 500ms ease-out);
+}
+
+@include keyframes(appear) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(100px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
