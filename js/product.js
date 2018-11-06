@@ -36,6 +36,10 @@
         $(this).addClass("current")
       else $(this).removeClass("current")
     })
+
+    var $header = $('.product__header-wrapper')
+
+    console.log($header.height(), fromTop)
   })
 
   function testimonialSlides () {
