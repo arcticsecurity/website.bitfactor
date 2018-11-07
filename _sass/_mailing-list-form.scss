@@ -78,17 +78,22 @@ $form-error-color: rgb(255, 89, 109);
   }
 
   .mailing-list-form__text {
-    max-width: 355px;
+    max-width: 285px;
     width: 100%;
   }
 
   .mailing-list-form__input {
     width: 100%;
-    max-width: 250px;
+    max-width: 320px;
     @include display-flex();
     @include flex-direction(column);
     @include flex-justify(center);
+    @include flex-align(center);
     margin-bottom: 20px;
+
+    input[type=text] {
+      margin-bottom: 20px;
+    }
 
     &.mailing-list-form__error {
       input[type=text] {
