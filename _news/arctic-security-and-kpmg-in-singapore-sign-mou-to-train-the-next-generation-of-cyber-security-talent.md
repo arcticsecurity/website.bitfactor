@@ -3,7 +3,7 @@ news_article_title:
 news_article_description:
 meta_title:
 meta_description:
-date:
+date: 2018-09-18 00:00:00 +0300
 tags:
 news_category:
   - press_release
