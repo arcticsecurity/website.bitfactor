@@ -1,8 +1,8 @@
 ---
-event_title:
+event_title: 'FIRST CTI Symposium, London, UK'
 event_description:
-date:
-end_date:
+date: 2019-03-18 00:00:00 +0200
+end_date: 2019-03-20 00:00:00 +0200
 tags:
 event_link_url:
 writer:
@@ -11,11 +11,8 @@ _comments:
   event_link_url: >-
     Add an url to make the event a link to somewhere (blogpost, external
     website)
-  date: >-
-    Mark the date the event post is added. Will show on a list of blog posts
-    above as the date
-  tags: >-
-    Tags of content of the event post for example "Google Analytics", "GitHub"
-    etc
+  date: Invalid date
+  tags:
   writer: 'Select the writers, max 3'
 ---
+
