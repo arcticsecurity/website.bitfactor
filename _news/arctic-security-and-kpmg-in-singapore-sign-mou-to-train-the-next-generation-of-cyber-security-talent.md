@@ -33,4 +33,4 @@ According to data from KPMG’s CEO Outlook 2018, almost half of CEOs polled in 
 
 > Eddie Toh, Partner, Cyber security, KPMG in Singapore said, “We welcome this collaboration with Arctic Security. Using real-time data and scenarios for training conducted in our Cyber Lab will lend a sense of realism to the training and benefit professionals who are looking to strengthen their overall enterprise cyber defence strategy.”
 
-For more information on KPMG Singapore please visit&nbsp;[kpmg.com.sg](kpmg.com.sg){: target="_blank"}
+[Learn more about KPMG Singapore.](https://home.kpmg.com/sg/en/home.html){: target="_blank"}&nbsp;
