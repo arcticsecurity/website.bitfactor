@@ -1,7 +1,7 @@
 ---
 job_title: UI / UX Lead
 job_description:
-job_sorting: '1'
+job_sorting: '2'
 meta_title:
 meta_description:
 tags:
