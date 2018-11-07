@@ -1,7 +1,7 @@
 ---
 job_title: Senior Database Engineer
 job_description: Database engineer who understands how databases work
-job_sorting: '0'
+job_sorting: '3'
 tags:
 team: R&D TEAM
 writer:
