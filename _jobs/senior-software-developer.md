@@ -1,11 +1,11 @@
 ---
 job_title: Senior Software Developer
 job_description:
-job_sorting: '0'
+job_sorting: '4'
 meta_title:
 meta_description:
 tags:
-team:
+team: R&D Team
 writer:
   employees:
 og_image_path: /images/site/logo_text2_blue.svg
