@@ -5,6 +5,7 @@ $section-width: 96%;
 $section-width-mobile: 95%;
 $section-max-width: 1195px;
 $section-max-width-tablet: 780px;
+
 .posts__wrapper {
   width: 100%;
   @include display-flex();
@@ -108,6 +109,10 @@ $section-max-width-tablet: 780px;
       margin-right: 0;
     }
   }
+}
+
+.product-nav-item .posts__wrapper {
+  width: 100vw;
 }
 
 /* One post */

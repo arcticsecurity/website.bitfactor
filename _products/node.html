@@ -5,6 +5,7 @@ description: Arctic Node lets you know what you need to fix.
 product_image_path: /images/content/macbook.png
 product_color: '#00738d'
 product_highlight_color: '#0092b3'
+display_testimonials: false
 testimonials:
   - title: Arctic Security NODE Testimonial
     description: >-
@@ -43,7 +44,7 @@ og_description:
   <a class="product__header-link right editable" href="/products/hub">Discover the HUB<img style="margin-left: 10px;" src="/images/site/arrow_left_filled.svg" alt="arrow right" /></a>
   <div class="product__nav-items hide-on-mobile" id="product-desktop-nav" style="background-color: {{page.product_highlight_color}};"></div>
 </div>
-<div class="product__header-wrapper product-nav-item" id="node-use-process" data-nav="NODE Use Process" style="background-color: {{page.product_color}};">
+<div class="product__header-wrapper product-nav-item" id="node-use-process" data-nav="Benefits" style="background-color: {{page.product_color}};">
   <div class="product__header">
     <div class="product__header-content appear-animation">
       <img class="product-icon" alt="product icon" src="/images/site/logo_white.svg" />
@@ -91,7 +92,7 @@ og_description:
   </div>
 </div>
 
-<div class="product__key-features product-nav-item" id="key-features" data-nav="Key Featues">
+<div class="product__key-features product-nav-item" id="key-features" data-nav="Key Features">
   <h2 class="editable key-features__title"><i class="icon-product"></i>Key Features</h2>
   <div class="key-features__section">
     <div class="key-features__section-image">
@@ -101,7 +102,7 @@ og_description:
       <h3>Integrated with threat intelligence feeds and platforms</h3>
       <p>Arctic Node can collect threat intelligence directly from a cyber security center or other central operator using Arctic Hub. In addition, there are several integrations to both commercial and open source threat feeds available out-of-the-box in Arctic Node. You are in control to choose which of them you want to activate in your use. Or, you can even choose to integrate Arctic Node with your existing threat intelligence platform.</p>
       <p>Currently, the following integrations are available in Arctic Node out-of-the-box:</p>
-      <div class="key-features__link-list"><a href="#">Threat feed provider 1</a> <a href="#">Threat feed provider 2</a> <a href="#">Threat feed provider 3</a> <a href="#">Threat feed provider 4</a></div>
+      <div class="key-features__link-list"><a target="_blank" href="https://abuse.ch/">Abuse.ch</a> <a target="_blank" href="http://danger.rulez.sk/index.php/bruteforceblocker/">Brute Force Blocker by Daniel Gerzo</a> <a target="_blank" href="https://www.malwaredomainlist.com/">Malware Domain List</a> <a target="_blank" href="http://www.zone-h.org/?hz=1">Zone-h</a></div>
     </div>
   </div>
   <div class="key-features__section">
@@ -125,6 +126,17 @@ og_description:
       <p>To improve the speed of fixing the critical issues in your network you can choose to automate the information flows even further by integrating Arctic Node with your incident response platforms and ticketing systems.</p>
     </div>
   </div>
+  <div class="key-features__section">
+    <div class="key-features__section-image">
+      <img src="/images/content/integrate.svg" alt="siem" class="editable" />
+    </div>
+    <div class="key-features__section-content editable">
+      <h3>Integrated with incident response platforms and ticketing</h3>
+      <p>To improve the speed of fixing the critical issues in your network you can choose to automate the information flows even further by integrating Arctic Node with your incident response platforms and ticketing systems.</p>
+    </div>
+  </div>
+
+{% if page.display_testimonials %}
 </div>
 <div class="product-nav-item" data-nav="Testimonials" id="testimonials">
   <div class="product__testimonials">
@@ -143,6 +155,7 @@ og_description:
     <span class="testimonial__slider-arrow left"><img src="/images/site/arrow_left_filled.svg" alt="arrow left" /></span>
     <span class="testimonial__slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right" /></span>
   </div>
+  {% endif %}
   {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
   {% include posts.html posts=includeposts title=page.use_cases_title %}
 </div>

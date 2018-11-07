@@ -24,3 +24,16 @@ twitter_image_path:
 og_title:
 og_description:
 ---
+
+<div class="news-article__flex-container">
+  <article class="news-article">
+    <div class="news-article__text editable">
+      <p class="news-article__date caption-light">
+        <span class="uppercase">{{ page.date | date: "%B" }} </span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}
+      </p>
+      <h1 class="news-article__title">{{page.news_article_title}}</h1>
+      {{ content }}
+    </div>
+    <a class="news-article__back-button" href="/news"><i class="icon-arrow_left"></i>Back</a>
+  </article>
+</div>
