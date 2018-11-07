@@ -1,11 +1,11 @@
 ---
 job_title: Solutions Specialist or Architect
 job_description:
-job_sorting: '0'
+job_sorting: '2'
 meta_title:
 meta_description:
 tags:
-team:
+team: Solutions Team
 writer:
   employees:
 og_image_path: /images/site/logo_text2_blue.svg
