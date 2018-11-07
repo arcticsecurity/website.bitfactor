@@ -103,6 +103,8 @@
   })
 
   $('#contact-form').on('submit', function(e) {
+    grecaptcha.execute();
+    
     e.preventDefault()
 
     $('#contact-form input[data-validate-type="email"]').each(function() {
@@ -116,7 +118,6 @@
     var data = $(this).serialize()
 
     if (grecaptcha) {
-      console.log(grecaptcha)
       var recaptchaResponse = grecaptcha.getResponse();
       if (!recaptchaResponse) { // reCAPTCHA not clicked yet
         return false
