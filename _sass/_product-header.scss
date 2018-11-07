@@ -190,6 +190,12 @@ body.invert-nav-colors {
     }
   }
 
+  @media only screen and (min-width: $screen-width-desktop-min) {
+    .product__header-content {
+      margin-right: 25px;
+    }
+  }
+
   &.sticky-image {
     .product-image.sticky {
       img {
