@@ -34,4 +34,4 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
-Text here...
+Text here…
