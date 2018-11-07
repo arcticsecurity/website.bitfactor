@@ -4,7 +4,7 @@ blog_image_path: /images/content/hero.svg
 blog_description:
 meta_title:
 meta_description:
-date:
+date: 2018-10-23 00:00:00 +0300
 tags:
 writer:
   employees:
