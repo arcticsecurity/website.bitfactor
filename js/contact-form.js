@@ -115,6 +115,13 @@
 
     var data = $(this).serialize()
 
+    if (grecaptcha) {
+      var recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+        return false
+      }
+    }
+
     if ($('.' + errorClass).length < 1) {
       if ($('#tag_name').length > 0) { // use downloadable content hook
         var downloadableContentUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e6izel/'
