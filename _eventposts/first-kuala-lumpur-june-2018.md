@@ -8,6 +8,7 @@ date: 2018-10-23 00:00:00 +0300
 tags:
 writer:
   employees:
+    - helena-saraiva
 og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
@@ -15,12 +16,9 @@ og_description:
 back_link: /news
 type: event
 _comments:
-  date: >-
-    Mark the date the blog post is added. Will show on a list of blog posts
-    above as the date
-  tags: >-
-    Tags of content of the blog post for example "Google Analytics", "GitHub"
-    etc
+  date: Invalid date
+  tags:
   writer: 'Select the writers, max 3'
   type: dont touch!
 ---
+
