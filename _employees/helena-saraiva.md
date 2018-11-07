@@ -3,7 +3,7 @@ first_name: Helena
 last_name: Saraiva
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
+person_image_path: /images/content/Helena.jpg
 position: International Channel Manager
 description:
 linkedin_url:

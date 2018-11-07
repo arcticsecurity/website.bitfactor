@@ -1,5 +1,5 @@
 ---
-blog_title: GovWare 2018
+blog_title: MozCyber 2018
 blog_image_path: /images/content/hero.svg
 blog_description:
 meta_title:
@@ -22,6 +22,4 @@ _comments:
   type: dont touch!
 ---
 
-Text and pictures about the event...
-
-&nbsp;
+Text and pictures about the event…

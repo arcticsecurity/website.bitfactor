@@ -1,5 +1,5 @@
 ---
-blog_title:
+blog_title: FIRST Kuala Lumpur
 blog_image_path: /images/content/hero.svg
 blog_description:
 meta_title:
