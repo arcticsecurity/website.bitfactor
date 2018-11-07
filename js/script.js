@@ -78,3 +78,10 @@ function autoHeightAnimate(element, time, oldHeight, newHeight) {
   element.height(oldHeight)
   element.stop().animate({ height: newHeight }, time)
 }
+
+(function() {
+  if (window.location.hash) {
+    console.log(window.location.hash)
+    $(window.location.hash).find('.frontpage-expander__show-more').click()
+  }
+}())
