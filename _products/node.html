@@ -5,6 +5,7 @@ description: Arctic Node lets you know what you need to fix.
 product_image_path: /images/content/macbook.png
 product_color: '#00738d'
 product_highlight_color: '#0092b3'
+display_testimonials: false
 testimonials:
   - title: Arctic Security NODE Testimonial
     description: >-
@@ -134,6 +135,8 @@ og_description:
       <p>To improve the speed of fixing the critical issues in your network you can choose to automate the information flows even further by integrating Arctic Node with your incident response platforms and ticketing systems.</p>
     </div>
   </div>
+
+{% if page.display_testimonials %}
 </div>
 <div class="product-nav-item" data-nav="Testimonials" id="testimonials">
   <div class="product__testimonials">
@@ -152,6 +155,7 @@ og_description:
     <span class="testimonial__slider-arrow left"><img src="/images/site/arrow_left_filled.svg" alt="arrow left" /></span>
     <span class="testimonial__slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right" /></span>
   </div>
+  {% endif %}
   {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
   {% include posts.html posts=includeposts title=page.use_cases_title %}
 </div>

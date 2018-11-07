@@ -5,6 +5,7 @@ description: Arctic Hub automates your cyber threat intelligence cycle.
 product_image_path: /images/content/macbook.png
 product_color: '#005ca9'
 product_highlight_color: '#0077c6'
+display_testimonials: false
 testimonials:
   - title: Arctic Security HUB Testimonial
     description: >-
@@ -159,6 +160,7 @@ og_description:
       <p>Arctic Hub shows you who of your customers have accessed the threat intelligence packages you have sent to them and when they have done that. This helps you understand how effective your threat intelligence sharing is and if your customers find it useful.</p>
     </div>
   </div>
+  {% if page.display_testimonials %}
 </div>
 <div class="product-nav-item" data-nav="Testimonials" id="testimonials">
   <div class="product__testimonials">
@@ -177,6 +179,7 @@ og_description:
     <span class="testimonial__slider-arrow left"><img src="/images/site/arrow_left_filled.svg" alt="arrow left" /></span>
     <span class="testimonial__slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right" /></span>
   </div>
+  {% endif %}
   {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
   {% include posts.html posts=includeposts title=page.use_cases_title %}
 </div>
