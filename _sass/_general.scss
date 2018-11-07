@@ -200,3 +200,6 @@ p a {
     @include transform(translateY(0));
   }
 }
+.grecaptcha-badge {
+  display: none;
+}
