@@ -1,5 +1,5 @@
 ---
-blog_title: testing
+blog_title:
 blog_image_path: /images/content/hero.svg
 blog_description:
 meta_title:
@@ -8,7 +8,7 @@ date: 2018-10-23 00:00:00 +0300
 tags:
 writer:
   employees:
-    - david-chartier
+    - helena-saraiva
 og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
@@ -22,6 +22,3 @@ _comments:
   type: dont touch!
 ---
 
-I write the text here.
-
-![](/images/content/arctic-with-csa.jpeg)

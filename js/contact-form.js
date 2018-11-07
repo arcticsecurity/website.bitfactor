@@ -103,6 +103,8 @@
   })
 
   $('#contact-form').on('submit', function(e) {
+    grecaptcha.execute();
+    
     e.preventDefault()
 
     $('#contact-form input[data-validate-type="email"]').each(function() {
@@ -114,6 +116,13 @@
     })
 
     var data = $(this).serialize()
+
+    if (grecaptcha) {
+      var recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+        return false
+      }
+    }
 
     if ($('.' + errorClass).length < 1) {
       if ($('#tag_name').length > 0) { // use downloadable content hook
