@@ -81,7 +81,6 @@ function autoHeightAnimate(element, time, oldHeight, newHeight) {
 
 (function() {
   if (window.location.hash) {
-    console.log(window.location.hash)
     $(window.location.hash).find('.frontpage-expander__show-more').click()
   }
 }())
