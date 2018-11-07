@@ -4,11 +4,11 @@ blog_image_path: /images/content/hero.svg
 blog_description:
 meta_title:
 meta_description:
-date: 2018-10-23 00:00:00 +0300
+date: 2018-11-07 00:00:00 +0200
 tags:
 writer:
   employees:
-    - david-chartier
+    - helena-saraiva
 og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
@@ -22,6 +22,6 @@ _comments:
   type: dont touch!
 ---
 
-I write the text here.
+Text and pictures about the event...
 
-![](/images/content/arctic-with-csa.jpeg)
+&nbsp;
