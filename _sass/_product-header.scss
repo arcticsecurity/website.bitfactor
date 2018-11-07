@@ -73,7 +73,7 @@
       }
     }
 
-    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+    @media only screen and (max-width: $screen-width-desktop-nav-min) {
       &.hide-on-mobile {
         display: none;
       }
@@ -82,7 +82,7 @@
 }
 
 body.invert-nav-colors {
-  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+  @media only screen and (max-width: $screen-width-desktop-nav-min) {
     .product__header-link {
       color: $color-dark-gray;
       &:hover {
