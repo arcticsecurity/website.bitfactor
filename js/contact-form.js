@@ -116,6 +116,7 @@
     var data = $(this).serialize()
 
     if (grecaptcha) {
+      console.log(grecaptcha)
       var recaptchaResponse = grecaptcha.getResponse();
       if (!recaptchaResponse) { // reCAPTCHA not clicked yet
         return false
