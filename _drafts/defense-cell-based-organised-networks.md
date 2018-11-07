@@ -9,6 +9,7 @@ tags:
 blog_category:
 writer:
   employees:
+    - juha-haaga
 og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
@@ -20,12 +21,8 @@ form_description:
 form_thankyou_title:
 form_thankyou_description:
 _comments:
-  date: >-
-    Mark the date the blog post is added. Will show on a list of blog posts
-    above as the date
-  tags: >-
-    Tags of content of the blog post for example "Google Analytics", "GitHub"
-    etc
+  date: Invalid date
+  tags:
   writer: 'Select the writers, max 3'
   downloadable_content: Include downloadable content in blog post.
   downloadable_content_name: >-
@@ -36,3 +33,5 @@ _comments:
   form_thankyou_title: Fill if using downloadable content
   form_thankyou_description: Fill if using downloadable content
 ---
+
+Text here...
