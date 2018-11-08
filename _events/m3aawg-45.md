@@ -1,7 +1,6 @@
 ---
 event_title: 'M3AAWG 45, San Francisco, US'
-event_description: Add an url to make the event a link to somewhere (blogpost, external
-    website)
+event_description:
 date: 2019-02-18 00:00:00 +0200
 end_date: 2019-02-21 00:00:00 +0200
 location:
