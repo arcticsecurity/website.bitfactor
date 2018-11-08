@@ -36,14 +36,6 @@
         $(this).addClass("current")
       else $(this).removeClass("current")
     })
-
-    var $header = $('.product__header-wrapper')
-    
-    if ($header.height() < window.scrollY) {
-      $('body').addClass('invert-nav-colors')
-    } else {
-      $('body').removeClass('invert-nav-colors')
-    }
   })
 
   function testimonialSlides () {

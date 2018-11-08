@@ -10,9 +10,11 @@ card_order: '1'
 layout: solution
 name: Solutions for threat intelligence sharing organizations
 description: Solution description
+products_title: Our product for threat intelligence organisations
 related_products:
   products:
     - node
+contact_form: true
 contact_form_title: Need help with xyz?
 contact_form_description: Fill in the below form for talk with our solutions specialist. You can also mail us at contact@arcticsecurity.com or call us at +358 20 743 0010
 contact_form_thankyou_title: Sent.
@@ -25,15 +27,31 @@ og_title:
 og_description:
 ---
 
-<div class="news-article__flex-container">
-  <article class="news-article">
-    <div class="news-article__text editable">
-      <p class="news-article__date caption-light">
-        <span class="uppercase">{{ page.date | date: "%B" }} </span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}
+<div class="solution__flex-container">
+  <article class="solution">
+    <div class="solution__text editable">
+      <div class="solution__header editable">
+        <h1>How can you increase the cyber resiliency</h1>
+        <h3>Solutions  for threat intelligence sharing organizations</h3>
+        <div class="solution__content-summary editable">
+          <h2>Content Summary</h2>
+          <ul>
+            <li>Learn about the concept of cyber resiliency<img src="/images/site/check.svg" alt="check"/></li>
+            <li>Learn how to increase cyber resiliency<img src="/images/site/check.svg" alt="check"/></li>
+            <li>Learn about automated threat intelligence<img src="/images/site/check.svg" alt="check"/></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+          We have a unique opportunity for a person with a vision to help us build our next generation products for national cyber security. You will take the UI/UX Lead role in a team of a few engineers, working together with the substance experts to find out ways to make our technology usable and visual in the best possible way. You must be a hands-on team player with strong emphasis on usability and end-user experience. We do not expect you to have prior knowledge of cyber security.
       </p>
-      <h1 class="news-article__title">{{page.news_article_title}}</h1>
-      {{ content }}
+      <p>
+          We do not offer an easy way out - our use cases are complex, and you must be able to understand the viewpoints of different stakeholders and make decisions based on them. We have a lot of data to visualize, but our solutions need to be practical for everyday operations in a demanding customer base consisting of national cyber security centers, defense, and critical infrastructure enterprises. Our user interfaces are browser-based and designed by using JS/React.
+      </p>
     </div>
-    <a class="news-article__back-button" href="/news"><i class="icon-arrow_left"></i>Back</a>
+    <a class="solution__back-button" href="/solutions"><i class="icon-arrow_left"></i>See all solutions</a>
   </article>
 </div>
+{% capture includeproducts %}{% for product in page.related_products.products %}{{ product }},{% endfor %}{% endcapture %}
+{% include products-list.html products=includeproducts class="solutions__products" title=page.products_title %}
+{% include contact-form.html class="solutions__contact-form" form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}

@@ -1,17 +1,43 @@
-<div class="products-page__wrapper {{include.class}}">
-{% for product in site.products %}
-  {% unless page.url == product.url %}
-  <div class="product" style="background-color: {{product.product_color}};">
-    <div class="product-content">
-      <img class="product-icon" alt="product icon" src="/images/site/logo_white.svg">
-      <h2 class="uppercase">{{product.name}}</h2>
-      <p>{{product.description}}</p>
-      <a href="{{product.url}}" class="product-link">Discover the <span class="uppercase">{{product.name}}</span></a>
-    </div>
-    <div class="product-image">
-      <img alt="{{product.name}}" src="{{product.product_image_path}}" />
-    </div>
+{% if include.products %}
+  <div class="products-page__wrapper {{include.class}}">
+  {% if include.title %}<h2><i class="icon-product" style="margin-right: 12px;"></i>{{include.title}}</h2>{% endif %}
+  {% assign includeproducts = include.products | split: ',' %}
+  {% for includeproduct in includeproducts %}
+    {% for product in site.products %}
+      {% if product.url != page.url %}
+      {% if product.path contains includeproduct %}
+        <div class="product" style="background-color: {{product.product_color}};">
+          <div class="product-content">
+            <img class="product-icon" alt="product icon" src="/images/site/logo_white.svg">
+            <h2 class="uppercase">{{product.name}}</h2>
+            <p>{{product.description}}</p>
+            <a href="{{product.url}}" class="product-link">Discover the <span class="uppercase">{{product.name}}</span></a>
+          </div>
+          <div class="product-image">
+            <img alt="{{product.name}}" src="{{product.product_image_path}}" />
+          </div>
+        </div>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
   </div>
-  {% endunless %}
-{% endfor %}
-</div>
+{% else %}
+  <div class="products-page__wrapper {{include.class}}">
+  {% for product in site.products %}
+    {% unless page.url == product.url %}
+    <div class="product" style="background-color: {{product.product_color}};">
+      <div class="product-content">
+        <img class="product-icon" alt="product icon" src="/images/site/logo_white.svg">
+        <h2 class="uppercase">{{product.name}}</h2>
+        <p>{{product.description}}</p>
+        <a href="{{product.url}}" class="product-link">Discover the <span class="uppercase">{{product.name}}</span></a>
+      </div>
+      <div class="product-image">
+        <img alt="{{product.name}}" src="{{product.product_image_path}}" />
+      </div>
+    </div>
+    {% endunless %}
+  {% endfor %}
+  </div>
+{% endif %}
