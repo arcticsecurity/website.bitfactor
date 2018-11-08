@@ -14,7 +14,7 @@
             {% assign limit = 3 %}
           {% endif %}
           {% for partner in site.partners | limit: limit %}
-            <a class="partners__partner" href="{{partner.partner_url}}">
+            <a class="partners__partner" target="_blank" rel="noopener noreferrer" href="{{partner.partner_url}}">
               <h3 class="partner__name">{{partner.partner_name}}</h3>
               <p class="partner__description caption-light">{{partner.partner_description}}</p>
               <i class="icon-arrow_right_naked"></i>
