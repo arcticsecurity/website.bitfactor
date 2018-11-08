@@ -21,6 +21,7 @@
     </div>
   </div>
   <div class="summary__pages">
+      <span class="navigation__page">EN</span>
     {% for navitem in summarypages %}
       <span class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</span>
     {% endfor %}
