@@ -7,6 +7,16 @@
   margin-top: 50px;
   margin-bottom: 50px;
 
+  &>h2 {
+    width: 100%;
+    margin-left: 75px;
+    @include display-flex();
+    @include flex-align(center);
+    @media only screen and (max-width: $screen-width-desktop-min - 1) {
+      margin-left: 0;
+    }
+  }
+
   .product {
     @include display-flex();
     @include flex-justify(space-between);

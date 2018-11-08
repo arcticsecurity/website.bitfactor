@@ -1,16 +1,20 @@
 ---
-card_title: Solution card title
+card_title: Solutions for threat intelligence sharing organizations
 card_image_path: /images/content/2.svg
 solution_users:
-  - User 1
-  - User 2
-card_order: '0'
+  - National Cyber Security Centers
+  - Information Sharing and Analysis Organizations (ISAO)
+  - Computer Emergency Response Teams (CERT)
+  - Information Sharing and Analysis Centers (ISAC)
+card_order: '1'
 layout: solution
-name: Solution
+name: Solutions for threat intelligence sharing organizations
 description: Solution description
+products_title: Our product for threat intelligence organisations
 related_products:
   products:
     - node
+contact_form: true
 contact_form_title: Need help with xyz?
 contact_form_description: Fill in the below form for talk with our solutions specialist. You can also mail us at contact@arcticsecurity.com or call us at +358 20 743 0010
 contact_form_thankyou_title: Sent.
@@ -22,3 +26,29 @@ twitter_image_path:
 og_title:
 og_description:
 ---
+
+<div class="solution__flex-container">
+  <article class="solution">
+    <div class="solution__text editable">
+      <div class="solution__header editable">
+        <h1>How can you increase the cyber resiliency</h1>
+        <h3>Solutions  for threat intelligence sharing organizations</h3>
+        <div class="solution__content-summary editable">
+          <h2>Content Summary</h2>
+          <ul>
+            <li>Learn about the concept of cyber resiliency<img src="/images/site/check.svg" alt="check"/></li>
+            <li>Learn how to increase cyber resiliency<img src="/images/site/check.svg" alt="check"/></li>
+            <li>Learn about automated threat intelligence<img src="/images/site/check.svg" alt="check"/></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+          Lorem ipsum
+      </p>
+    </div>
+    <a class="solution__back-button" href="/solutions"><i class="icon-arrow_left"></i>See all solutions</a>
+  </article>
+</div>
+{% capture includeproducts %}{% for product in page.related_products.products %}{{ product }},{% endfor %}{% endcapture %}
+{% include products-list.html products=includeproducts class="solutions__products" title=page.products_title %}
+{% include contact-form.html class="solutions__contact-form" form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}

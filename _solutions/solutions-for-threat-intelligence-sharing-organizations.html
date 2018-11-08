@@ -10,9 +10,11 @@ card_order: '1'
 layout: solution
 name: Solutions for threat intelligence sharing organizations
 description: Solution description
+products_title: Our product for threat intelligence organisations
 related_products:
   products:
     - node
+contact_form: true
 contact_form_title: Need help with xyz?
 contact_form_description: Fill in the below form for talk with our solutions specialist. You can also mail us at contact@arcticsecurity.com or call us at +358 20 743 0010
 contact_form_thankyou_title: Sent.
@@ -25,15 +27,32 @@ og_title:
 og_description:
 ---
 
-<div class="news-article__flex-container">
-  <article class="news-article">
-    <div class="news-article__text editable">
-      <p class="news-article__date caption-light">
-        <span class="uppercase">{{ page.date | date: "%B" }} </span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}
-      </p>
-      <h1 class="news-article__title">{{page.news_article_title}}</h1>
-      {{ content }}
+<div class="solution__flex-container">
+  <article class="solution">
+    <div class="solution__text editable">
+      <div class="solution__header">
+        <h1>How can you improve your cyber security</h1>
+        <h3>Solutions for threat intelligence sharing organizations</h3>
+        <div class="solution__content-summary">
+          <h2>Content Summary</h2>
+          <ul>
+            <li>Learn about the concept of cyber resiliency<img alt="check" src="/images/site/check.svg" /></li>
+            <li>Learn how to increase cyber resiliency<img alt="check" src="/images/site/check.svg" /></li>
+            <li>Learn about automated threat intelligence<img alt="check" src="/images/site/check.svg" /></li>
+          </ul>
+        </div>
+      </div>
+      <p>National cyber security centers, CSIRTs and ISACs have many different functions, but each one of them shares the interest of improved security and resiliency for their stakeholders, whether they are citizens, the government, critical infrastructure providers or organizations with a shared interest in cyber security in a particular domain. &nbsp;</p>
+      <p>Becoming more resilient in cyber security can be compared to the arrangement of the national health care and how it can meet the needs of the citizens today. Having professional and effective emergency wards and hospitals is not enough. Preventive care and getting citizens resistant to the common types of illnesses is necessary to reduce the number of people becoming ill and seeking treatment. Vaccines and the ability to fight infections before it overwhelms a person was one of the scientific breakthroughs of the 20th century, and we can apply these important principles to cyber security at a national scale.</p>
+      <p>How can you improve your cyber security? One effective method is to collect and disseminate information about compromises, revealing the compromises as early as possible so that a remedy may be applied. Cyber security authorities, CSIRT teams, and ISACs have access to a wealth of actionable and reliable information about different types of cyber threats. The best use for this information is to make it available for the stakeholders so that they can begin to learn from it. Noticing the incidents helps companies and organizations develop processes and strategies for dealing with them. This way they are more prepared to manage the severe cases that will almost inevitably occur at some point. We help you automate intelligence sharing and use the limited resources for the work that requires a human touch.</p>
+      <p>Starting to use automation for threat intelligence processing and dissemination places some requirements for the content: it must be reliable, uniform and consistent. We ensure that you have access to all the relevant and reliable data sources and that you are ready to receive the information when sources of information about new concerns appear. We provide transparency and ownership into all the data that you gather. Moreover, we turn the data that you collect into threat information by harmonizing the data and making sure that it is consistent across all the data providers.</p>
+      <p>Automating the dissemination of the gathered information is an effective method for improving the baseline resiliency. It is the only practical way to reach as many recipients as possible and to do it in an acceptable time. The work that you invest in it also helps you understand who the critical stakeholders are that you need to notify. Identifying the critical national infrastructure providers and their crucial contact persons is essential for being prepared for emergencies. We help you make further use of that knowledge and enable you to build on it to notify those who have become compromised or are vulnerable to the known threats. We can also help the recipients to integrate that intelligence into their operations.</p>
+      <p>Feedback on your work enables you to understand how much effect your organization has and where you should focus your efforts on activating your stakeholders. We provide concrete access metrics so that you know when and which parts of the information you provide have been received. If a particular group of your stakeholders never react to the service that you provide, it is important to know about it and plan your outreach efforts accordingly. Going further, we can help your stakeholders to provide automated feedback on sightings and observations, which enables you to validate your threat intelligence and assess the breadth and impact of cyber threats.</p>
+      <p>Combining the collected threat intelligence, the collected feedback and your expert knowledge of the national infrastructure also provides a powerful way to generate situational awareness of what is going on and who it is affecting. You learn how the malicious activities are affecting different industry sectors and where the known vulnerabilities are located. It also helps you report about the progress of the work over time, in terms of your reach and effect and the resiliency of your stakeholders.</p>
     </div>
-    <a class="news-article__back-button" href="/news"><i class="icon-arrow_left"></i>Back</a>
+    <a class="solution__back-button" href="/solutions"><i class="icon-arrow_left"></i>See all solutions</a>
   </article>
 </div>
+{% capture includeproducts %}{% for product in page.related_products.products %}{{ product }},{% endfor %}{% endcapture %}
+{% include products-list.html products=includeproducts class="solutions__products" title=page.products_title %}
+{% include contact-form.html class="solutions__contact-form" form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
