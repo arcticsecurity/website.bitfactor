@@ -19,13 +19,17 @@
               {% if event.event_link_url %}
                 </a>
               {% endif %}
-
-            {% if event.end_date %}
-
-              <div class="event__date caption-light">{{event.date | date: "%-d"}} - {{ event.end_date | date: "%-d %B, %Y"}}<i></i></div>
-            {% else %}
-              <div class="event__date caption-light">{{ event.date | date: "%-d %B, %Y"}}<i></i></div>
-            {% endif %}
+            
+            <div class="event__date caption-light">
+              <div class="event__date-wrapper">
+                <p class="event__location">{{event.location}}</p>
+                {% if event.end_date %}
+                  <p>{{event.date | date: "%-d"}} - {{ event.end_date | date: "%-d %B, %Y"}}</p>
+                {% else %}
+                  <p>{{ event.date | date: "%-d %B, %Y"}}</p>
+                {% endif %}
+              </div>
+            </div>
           </div>
         {% endfor %}
       </div>
