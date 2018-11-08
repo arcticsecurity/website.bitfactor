@@ -3,6 +3,7 @@ event_title:
 event_description:
 date:
 end_date:
+location:
 tags:
 event_link_url:
 writer:
