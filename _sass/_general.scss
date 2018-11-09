@@ -181,6 +181,7 @@ p a {
 
 #main-content {
   width: 97.5vw;
+  margin-top: 80px;
   @include display-flex();
   @include flex-direction(column);
   @include flex-align(center);

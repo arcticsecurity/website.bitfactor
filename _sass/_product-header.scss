@@ -6,7 +6,7 @@
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 80px;
   z-index: 100;
 
   .product__header-link {
@@ -190,7 +190,7 @@
       img {
         position: -webkit-sticky;
         position: sticky;
-        top: 100px;
+        top: 180px;
       }
       @media only screen and (max-width: $screen-width-desktop-min - 1) {
         display: none;

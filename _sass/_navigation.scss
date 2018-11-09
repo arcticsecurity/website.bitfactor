@@ -1,8 +1,12 @@
 .navigation {
-  position: relative;
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
   user-select: none;
   width: 100%;
   min-height: 52px;
+  z-index: 200;
   @include display-flex();
   @include flex-justify(center);
   @include flex-align(center);
