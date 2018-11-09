@@ -137,3 +137,4 @@ _comments:
   meta_description: Description used for site metas (in head of the website)
   og_title: Displayed when link is shared in social media.
   og_description: Displayed when link is shared in social media.
+  layout: Do not touch.
