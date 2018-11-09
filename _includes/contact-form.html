@@ -5,7 +5,7 @@
 
 {% assign description="Fill in the below form for sales enquiries, schedule a product demo, 
 partnership opportunities and other enquiries. You can also mail us at 
-contact@arcticsecurity.com or call us at +358 20 743 0010" %}
+[contact@arcticsecurity.com](mailto:contact@arcticsecurity.com) or call us at +358 20 743 0010" %}
 {% if include.form_description %}
   {% assign description=include.form_description %}
 {% endif %}
@@ -23,7 +23,7 @@ contact@arcticsecurity.com or call us at +358 20 743 0010" %}
 <div class="contact-form__wrapper {{include.class}}">
   <h2>{{title}}</h2>
   {{description | markdownify}}
-  <form id="contact-form" class="contact-form">
+ <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
       <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" />
       <label for="first_name" id="first_name_label" class="caption-light">First name</label>
