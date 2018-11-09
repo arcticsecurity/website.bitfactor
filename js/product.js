@@ -25,7 +25,6 @@
   })
 
   $(window).on("scroll", function() {
-    var navHeight = 180
     let fromTop = window.scrollY + navHeight
   
     $('.product__nav-item').each(function() {
@@ -73,7 +72,7 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]')
     if (target.length) {
       event.preventDefault()
       $('html, body').animate({
-        scrollTop: target.offset().top
+        scrollTop: target.offset().top - 100
       }, 1000)
     }
   }
