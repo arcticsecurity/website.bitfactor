@@ -25,7 +25,7 @@
   })
 
   $(window).on("scroll", function() {
-    let fromTop = window.scrollY
+    let fromTop = window.scrollY + 180
   
     $('.product__nav-item').each(function() {
       var $section = $(this.hash)
