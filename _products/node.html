@@ -26,9 +26,7 @@ use_cases:
 use_cases_title: Use cases for Arctic NODE
 contact_form: true
 contact_form_title: Schedule a Demo
-contact_form_description: >-
-  Fill in the below form for a product demo with our solutions specialist. You
-  can also mail us at contact@arcticsecurity.com or call us at +358 20 743 0010
+contact_form_description_markdown:
 contact_form_thankyou_title: Sent.
 contact_form_thankyou_description: Thank you for contacting us.
 meta_title:
@@ -191,7 +189,7 @@ og_description:
 </div>
 
 <div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">
-  {% include contact-form.html class="product-contact-form" form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
+  {% include contact-form.html class="product-contact-form" form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
 </div>
 
 {% include products-list.html class="product-page" %}

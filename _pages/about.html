@@ -14,7 +14,7 @@ navigation:
 tab_slider: false
 contact_form: true
 contact_form_title:
-contact_form_description:
+contact_form_description_markdown:
 contact_form_thankyou_title:
 contact_form_thankyou_description:
 title:
@@ -54,4 +54,4 @@ og_description:
 {% include jobs-no-background.html limit=100 class='about-us__jobs' %}
 {% include partners.html %}
 {% include contact-info.html %}
-{% include contact-form.html class='about-us__form-margin' form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
+{% include contact-form.html class='about-us__form-margin' form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}

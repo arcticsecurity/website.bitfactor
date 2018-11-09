@@ -16,7 +16,7 @@ og_description:
 downloadable_content: false
 downloadable_content_name:
 form_title:
-form_description:
+form_description_markdown:
 form_thankyou_title:
 form_thankyou_description:
 _comments:

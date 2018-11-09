@@ -22,7 +22,7 @@ contact@arcticsecurity.com or call us at +358 20 743 0010" %}
 
 <div class="contact-form__wrapper {{include.class}}">
   <h2>{{title}}</h2>
-  <p>{{description}}</p>
+  <p>{{description | markdownify}}</p>
   <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
       <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" />
