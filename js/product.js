@@ -25,7 +25,7 @@
   })
 
   $(window).on("scroll", function() {
-    var navHeight = 60
+    var navHeight = 180
     let fromTop = window.scrollY + navHeight
   
     $('.product__nav-item').each(function() {

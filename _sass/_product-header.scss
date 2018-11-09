@@ -6,8 +6,12 @@
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;
+  top: 52px;
   z-index: 100;
+
+  @media only screen and (min-width: $screen-width-desktop-nav-min) {
+    top: 80px;
+  }
 
   .product__header-link {
     display: block;
