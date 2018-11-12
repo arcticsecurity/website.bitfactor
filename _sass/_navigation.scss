@@ -86,6 +86,9 @@
     left: 30px;
     top: 14px;
   }
+  @media only screen and (max-width: 550px) {
+    left: 40%;
+  }
 }
 
 .navigation__wrapper {
@@ -234,9 +237,26 @@
 
   >.navigation__page {
     cursor: pointer;
-    padding: 5px;
-    top: 50%;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 100px;
     background-color: white;
+
+    &.current {
+      font-weight: $font-weight-bold;
+      color: $color-dark-gray;
+      background: $color-blue;
+      &:hover {
+        color: $color-dark-gray;
+        background: $color-blue;
+      }
+    }
+
+    &:hover {
+      color: $color-dark-gray;
+      background: $color-light-blue;
+      cursor: pointer;
+    }
   }
 }
 
