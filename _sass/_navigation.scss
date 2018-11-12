@@ -229,27 +229,14 @@
 
 
 .summary__pages {
-  position: relative;
+  @include display-flex();
+  @include flex-align(center);
 
   >.navigation__page {
     cursor: pointer;
-    position: absolute;
     padding: 5px;
     top: 50%;
-    @include transform(translateY(-50%) translateX(-50px));
-
-    display: none;
     background-color: white;
-
-    &:first-child {
-      z-index: 10;
-      display: block;
-    }
-
-    &.current {
-      display: block;
-      z-index: 20;
-    }
   }
 }
 
