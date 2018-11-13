@@ -222,6 +222,10 @@
             height: 100%;
             border-bottom: 1px solid $color-border-gray;
           }
+
+          &.current {
+            font-weight: bold;
+          }
         }
 
         @include animation(menuOpen .3s ease-in-out)
