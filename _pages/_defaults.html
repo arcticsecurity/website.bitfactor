@@ -27,10 +27,10 @@ contact_form_thankyou_description:
       <article class="blog__article">
         <div class="blog__article-text editable">
           Editable content
-          {% if page.contact_form %}
-            {% include contact-form.html form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description %}
-          {% endif %}
         </div>
+        {% if page.contact_form %}
+          {% include contact-form.html form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description %}
+        {% endif %}
       </article>
     </div>
 	</main>
