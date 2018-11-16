@@ -100,7 +100,7 @@ og_description:
         {% for content in page.slider_content %}
         <div data-slider-image="{{forloop.index}}" class="product__info-section {% if forloop.first %} mobile-slider-visible{% endif %}{% if content.timeline_num %} timeline{% endif %}">
           <div class="product__info-text">
-            <span class="timeline-num">{{content.timeline_num}}</span>
+              {% if content.timeline_num %}<span class="timeline-num">{{content.timeline_num}}</span>{% endif %}
             <h2>{{content.title}}</h2>
             <p>{{content.description}}</p>
           </div>
