@@ -38,7 +38,7 @@
     desktopNav.append('<a class="product__nav-item" href="#' + $(this).attr('id') + '">' + $(this).data('nav') + '</a>')
   })
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll resize", function() {
     let fromTop = window.scrollY + 180
   
     $('.product__nav-item').each(function() {
