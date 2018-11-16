@@ -365,7 +365,7 @@
       opacity: 0;
     }
     &.current:not(:first-of-type) {
-      @include animation(appearInPlace 1000ms ease-in-out);
+      @include animation(appearInPlace 500ms ease-in-out);
     }
   }
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
