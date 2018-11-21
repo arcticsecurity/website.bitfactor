@@ -1,6 +1,6 @@
 ---
 card_title: Solutions for enterprises
-card_image_path: /images/content/2.svg
+card_image_path: /images/content/enterprise.svg
 solution_users:
   - Security Operations Center (SOC)
   - 'Information Security (CISO, Security Manager etc.)'
@@ -14,9 +14,10 @@ related_products:
     - node
 contact_form: true
 contact_form_title: Need help with solutions for enterprises?
-contact_form_description: >-
+contact_form_description_markdown: >-
   Fill in the below form for talk with our solutions specialist. You can also
-  mail us at contact@arcticsecurity.com or call us at +358 20 743 0010
+  mail us at [contact@arcticsecurity.com](mailto:contact@arcticsecurity.com) or
+  call us at +358 20 743 0010
 contact_form_thankyou_title: Sent.
 contact_form_thankyou_description: Thank you for contacting us.
 meta_title:
@@ -57,4 +58,4 @@ og_description:
 </div>
 {% capture includeproducts %}{% for product in page.related_products.products %}{{ product }},{% endfor %}{% endcapture %}
 {% include products-list.html products=includeproducts class="solutions__products" title=page.products_title %}
-{% include contact-form.html class="solutions__contact-form" form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
+{% include contact-form.html class="solutions__contact-form" form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}

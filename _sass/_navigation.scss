@@ -1,8 +1,12 @@
 .navigation {
-  position: relative;
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
   user-select: none;
   width: 100%;
   min-height: 52px;
+  z-index: 200;
   @include display-flex();
   @include flex-justify(center);
   @include flex-align(center);
@@ -81,6 +85,9 @@
     min-width: 198px;
     left: 30px;
     top: 14px;
+  }
+  @media only screen and (max-width: 550px) {
+    left: 40%;
   }
 }
 
@@ -215,6 +222,10 @@
             height: 100%;
             border-bottom: 1px solid $color-border-gray;
           }
+
+          &.current {
+            font-weight: bold;
+          }
         }
 
         @include animation(menuOpen .3s ease-in-out)
@@ -225,26 +236,30 @@
 
 
 .summary__pages {
-  position: relative;
+  @include display-flex();
+  @include flex-align(center);
 
   >.navigation__page {
     cursor: pointer;
-    position: absolute;
-    padding: 5px;
-    top: 50%;
-    @include transform(translateY(-50%) translateX(-50px));
-
-    display: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 100px;
     background-color: white;
 
-    &:first-child {
-      z-index: 10;
-      display: block;
+    &.current {
+      font-weight: $font-weight-bold;
+      color: $color-dark-gray;
+      background: $color-blue;
+      &:hover {
+        color: $color-dark-gray;
+        background: $color-blue;
+      }
     }
 
-    &.current {
-      display: block;
-      z-index: 20;
+    &:hover {
+      color: $color-dark-gray;
+      background: $color-light-blue;
+      cursor: pointer;
     }
   }
 }

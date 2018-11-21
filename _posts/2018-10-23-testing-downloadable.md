@@ -17,7 +17,7 @@ og_description:
 downloadable_content: true
 downloadable_content_name: DownloadableContentTest
 form_title: ASD
-form_description: Foo
+form_description_markdown: Foo
 form_thankyou_title: Foobar
 form_thankyou_description: Foooobaaaar
 _comments:

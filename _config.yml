@@ -131,9 +131,10 @@ _comments:
   show_in_navigation: Is the page displayed in navigation?
   nav_order: Order of the page in navigation
   nav_title: Title shown in navigation
-  og_image_path: <br>Displayed when link is shared in social media.
+  og_image_path: <br>Displayed when link is shared in social media. Recommended size 1200x1200 or larger, but smaller images may work aswell.
   twitter_image_path: <br>(Optional) Display different image in twitter share.
   meta_title: Title used for site metas (in head of the website)
   meta_description: Description used for site metas (in head of the website)
   og_title: Displayed when link is shared in social media.
   og_description: Displayed when link is shared in social media.
+  layout: Do not touch.

@@ -21,14 +21,8 @@
     </div>
   </div>
   <div class="summary__pages">
-      <span class="navigation__page">EN</span>
     {% for navitem in summarypages %}
-      <span class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</span>
+      <a class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title }}</a>
     {% endfor %}
-    <div class="summary__pages-dropdown">
-      {% for navitem in summarypages %}
-        <a class="navigation__page{% if currentpage contains navitem.url %} current{% endif%}" href="{{ navitem.url }}">{{ navitem.navigation.nav_title_long }}</a>
-      {% endfor %}
-    </div>
   </div>
 </nav>

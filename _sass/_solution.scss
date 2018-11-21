@@ -163,6 +163,10 @@ main.solution {
   }
 }
 
+.cms-editor-active main.solution .solution__content-summary ul li {
+  opacity: 1;
+}
+
 @include keyframes(summary-appear) {
   0% {
     opacity: 0;

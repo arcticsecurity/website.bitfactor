@@ -53,7 +53,7 @@
           <h1 class="blog__article-title">{{page.blog_title}}</h1>
           {{ content }}
           {% if page.downloadable_content %}
-            {% include contact-form.html form_title=page.form_title form_description=page.form_description thankyou_title=page.form_thankyou_title thankyou_description=page.form_thankyou_description downloadable_content=page.downloadable_content_name %}
+            {% include contact-form.html form_title=page.form_title form_description=page.form_description_markdown thankyou_title=page.form_thankyou_title thankyou_description=page.form_thankyou_description downloadable_content=page.downloadable_content_name %}
           {% endif %}
         </div>
         <div class="blog__share-mobile">

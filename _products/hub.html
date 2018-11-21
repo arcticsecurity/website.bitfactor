@@ -2,7 +2,7 @@
 layout: product
 name: Hub
 description: Arctic Hub automates your cyber threat intelligence cycle.
-product_image_path: /images/content/macbook.png
+product_image_path: /images/content/hero.png
 product_color: '#005ca9'
 product_highlight_color: '#0077c6'
 display_testimonials: false
@@ -25,11 +25,46 @@ use_cases:
   posts:
     - 2018-10-23-testing-downloadable
 use_cases_title: Use cases for Arctic Hub
+slider_content:
+  - title: Threat Intelligence Cycle
+    description: Arctic Hub enables you to automate your cyber threat intelligence cycle where raw threat data is turned into actionable threat intelligence. This ensures you get the threat information collected, harmonized and disseminated in a timely and effective manner. Read further to learn 7 steps for a modern cyber threat intelligence cycle and how Arctic Hub can help you implement them.
+    timeline_num:
+    image_path: /images/content/hero.png
+  - title: Collection
+    description: Cyber threat intelligence cycle starts with collecting threat data from a variety of threat indicator sources. In Arctic Hub you can configure all of these feeds and their properties.
+    timeline_num: 1
+    image_path: /images/content/1-collection.png
+  - title: Processing
+    description: Once you have collected the threat data you should harmonize the attributes into a unified language to create rules for the automation. When you call the same things by the same name and keep disparate things separate you turn the collected threat indicator data into threat information. Arctic Hub does all of this automatically for you.
+    timeline_num: 2
+    image_path: /images/content/2-processing.png
+  - title: Exploitation
+    description: Exploitation means a phase in the cyber threat intelligence cycle where data is enriched with additional information. In Arctic Hub, the threat data is matched against your customer configuration that enables later sharing the unique customer specific threat intelligence packages. Also, customer information as well as network and geolocation related attributes are augmented to the original data set in this phase. To get Arctic Hub do all of this for you automatically you first need to configure your customers by defining their internet presence.
+    timeline_num: 3
+    image_path: /images/content/3-exploitation.png
+  - title: Analysis
+    description: In the analysis phase the data is broken into smaller parts to gain a better understanding of it. In Arctic Hub, threat information is matched against custom labeling rules in this phase. Moreover, custom tags are added in the data.
+    timeline_num: 4
+    image_path: /images/content/4-analysis.png
+  - title: Production
+    description: After analysis the threat intelligence packages are produced to be shared for the correct customers. Arctic Hub can do all of this automatically for you once you have configured the sharing parameters. You can select what kind of packages you want to create and which packages to share to which customers. Also, for each package you can choose if you want to share that via an email report or a direct API access.
+    timeline_num: 5
+    image_path: /images/content/5-production.png
+  - title: Dissemination
+    description: One of the most important phases in the threat intelligence cycle is to share the threat intelligence to the correct recipients. Once all the previous steps have been configured correctly in Arctic Hub no other actions are needed from you for the dissemination. Arctic Hub shares all the customer specific threat intelligence packages automatically for you.
+    timeline_num: 6
+    image_path: /images/content/6-dissemination.png
+  - title: Feedback
+    description: Feedback helps you understand how the shared threat intelligence affects your stakeholders. With Arctic Hub you can see who of your customers access the information and when they are doing that.
+    timeline_num: 7
+    image_path: /images/content/7-feedback.png
 contact_form: true
 contact_form_title: Schedule a Demo
-contact_form_description: >-
-  Fill in the below form for a product demo with our solutions specialist. You
-  can also mail us at contact@arcticsecurity.com or call us at +358 20 743 0010
+contact_form_description_markdown: >-
+  Fill in the below form for sales enquiries, schedule a product demo,
+  partnership opportunities and other enquiries. You can also mail us at
+  [contact@arcticsecurity.com](mailto:contact@arcticsecurity.com) or call us at
+  +358 20 743 0010
 contact_form_thankyou_title: Sent.
 contact_form_thankyou_description: Thank you for contacting us.
 meta_title:
@@ -54,65 +89,29 @@ og_description:
         Automate your cyber threat intelligence cycle
       </p>
       <a href="/" class="product-video-button editable">Watch video</a>
-      <div class="product-image">
-        <img alt="{{page.name}}" src="{{page.product_image_path}}" />
-      </div>
       <div class="product__info mobile-slider">
-        <div class="product__info-section editable mobile-slider-visible">
+          <div class="product-image">
+            {% for content in page.slider_content %}
+              <img alt="{{content.title}}" src="{{content.image_path}}" class="product__slider-content__image{% if forloop.first %} mobile-slider-visible{% endif %}" data-slider-image="{{forloop.index}}" />
+            {% endfor %}
+            <span class="mobile-slider-arrow left"><img src="/images/site/arrow_left_filled.svg" alt="arrow left" /></span>
+            <span class="mobile-slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right" /></span>
+          </div>
+        {% for content in page.slider_content %}
+        <div data-slider-image="{{forloop.index}}" class="product__info-section {% if forloop.first %} mobile-slider-visible{% endif %}{% if content.timeline_num %} timeline{% endif %}">
           <div class="product__info-text">
-            <h2>Threat Intelligence Cycle</h2>
-            <p>Arctic Hub enables you to automate your cyber threat intelligence cycle where raw threat data is turned into actionable threat intelligence. This ensures you get the threat information collected, harmonized and disseminated in a timely and effective manner. Read further to learn 7 steps for a modern cyber threat intelligence cycle and how Arctic Hub can help you implement them.</p>
+              {% if content.timeline_num %}<span class="timeline-num">{{content.timeline_num}}</span>{% endif %}
+            <h2>{{content.title}}</h2>
+            <p>{{content.description}}</p>
           </div>
         </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text"><span class="timeline-num">1</span>
-            <h2>Collection</h2>
-            <p>Cyber threat intelligence cycle starts with collecting threat data from a variety of threat indicator sources. In Arctic Hub you can configure all of these feeds and their properties.</p>
-          </div>
-        </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text"><span class="timeline-num">2</span>
-            <h2>Processing</h2>
-            <p>Once you have collected the threat data you should harmonize the attributes into a unified language to create rules for the automation. When you call the same things by the same name and keep disparate things separate you turn the collected threat indicator data into threat information. Arctic Hub does all of this automatically for you.</p>
-          </div>
-        </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text"><span class="timeline-num">3</span>
-            <h2>Exploitation</h2>
-            <p>Exploitation means a phase in the cyber threat intelligence cycle where data is enriched with additional information. In Arctic Hub, the threat data is matched against your customer configuration that enables later sharing the unique customer specific threat intelligence packages. Also, customer information as well as network and geolocation related attributes are augmented to the original data set in this phase. To get Arctic Hub do all of this for you automatically you first need to configure your customers by defining their internet presence.</p>
-          </div>
-        </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text"><span class="timeline-num">4</span>
-            <h2>Analysis</h2>
-            <p>In the analysis phase the data is broken into smaller parts to gain a better understanding of it. In Arctic Hub, threat information is matched against custom labeling rules in this phase. Moreover, custom tags are added in the data.</p>
-          </div>
-        </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text"><span class="timeline-num">5</span>
-            <h2>Production</h2>
-            <p>After analysis the threat intelligence packages are produced to be shared for the correct customers. Arctic Hub can do all of this automatically for you once you have configured the sharing parameters. You can select what kind of packages you want to create and which packages to share to which customers. Also, for each package you can choose if you want to share that via an email report or a direct API access.</p>
-          </div>
-        </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text"><span class="timeline-num">6</span>
-            <h2>Dissemination</h2>
-            <p>One of the most important phases in the threat intelligence cycle is to share the threat intelligence to the correct recipients. Once all the previous steps have been configured correctly in Arctic Hub no other actions are needed from you for the dissemination. Arctic Hub shares all the customer specific threat intelligence packages automatically for you.</p>
-          </div>
-        </div>
-        <div class="product__info-section timeline editable">
-          <div class="product__info-text">
-            <span class="timeline-num">7</span>
-            <h2>Feedback</h2>
-            <p>Feedback helps you understand how the shared threat intelligence affects your stakeholders. With Arctic Hub you can see who of your customers access the information and when they are doing that.</p>
-          </div>
-        </div>
-        <span class="mobile-slider-arrow left"><img src="/images/site/arrow_left_filled.svg" alt="arrow left" /></span>
-        <span class="mobile-slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right" /></span>
+        {% endfor %}
       </div>
     </div>
     <div class="product-image sticky appear-animation">
-      <img alt="{{page.name}}" src="{{page.product_image_path}}" />
+      {% for content in page.slider_content %}
+        <img alt="{{content.title}}" src="{{content.image_path}}" class="product__slider-content__image{% if forloop.first %} current{% endif %}" data-slider-image="{{forloop.index}}" />
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -126,6 +125,15 @@ og_description:
     <div class="key-features__section-content editable">
       <h3>Automate intelligence sharing to your customers</h3>
       <p>Arctic Hub maps automatically the threat data to your customers based on their internet presence. You can also specify in a very detailed level on which kind of threat intelligence packages you want to send to each customer. Thus, your customers will get only the threat intelligence data that is valid for them. You can choose to send these via email reports or direct API access. This way your customers get the right information fast and can fix their issues quickly.</p>
+    </div>
+  </div>
+  <div class="key-features__section">
+    <div class="key-features__section-image">
+      <img src="/images/content/dashboard.svg" alt="dashboard" class="editable" />
+    </div>
+    <div class="key-features__section-content editable">
+      <h3>Harmonize the data&nbsp;</h3>
+      <p>Arctic Hub harmonizes the incoming data for you automatically. Thus, you can choose to use various different sources for your threat intelligence. Arctic Hub makes sure the data is harmonized in a way that it can be further analyzed, processed and mapped to the right customers.</p>
     </div>
   </div>
   <div class="key-features__section">
@@ -193,7 +201,7 @@ og_description:
 </div>
 
 <div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">
-  {% include contact-form.html class="product-contact-form" form_title=page.contact_form_title form_description=page.contact_form_description thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
+  {% include contact-form.html class="product-contact-form" form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
 </div>
 
 {% include products-list.html class="product-page" %}

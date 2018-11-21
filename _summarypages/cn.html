@@ -80,17 +80,17 @@ contact_info_title: Contact Info
   <p class="editable">Description</p>
   <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
-      <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="2" />
+      <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" />
       <label for="first_name" id="first_name_label" class="caption-light editable">{{page.form_translations.first_name}}</label>
     </div>
     
     <div class="contact-form__input">
-      <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="2" />
+      <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="20" />
       <label for="last_name" id="last_name_label" class="caption-light editable">{{page.form_translations.last_name}}</label>
     </div>
 
     <div class="contact-form__input">
-      <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="20" data-validate-min-length="3" />
+      <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="20" />
       <label for="company_name" id="company_name_label" class="caption-light editable">{{page.form_translations.company_name}}</label>
     </div>
 
@@ -109,6 +109,7 @@ contact_info_title: Contact Info
       <input type="checkbox" value="true" hidden name="newsletter_subscription" id="newsletter_subscription" />
       <input type="checkbox" value="true" data-required="true" hidden name="accept_privacy_policy" id="accept_privacy_policy" />
     </div>
+    <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
 
     <span class="contact-form__submit-button caption-light editable" id="contact-form__submit-button">Submit</span>
     <span class="contact-form__error-message caption-light" id="contact-form__error-message">{{page.form_translations.error_message}}</span>

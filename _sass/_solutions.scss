@@ -33,7 +33,7 @@
     margin-bottom: 40px;
 
     img {
-      max-width: 420px;
+      max-height: 260px;
       width: 100%;
       margin-bottom: 45px;
     }
@@ -102,7 +102,7 @@
       max-width: 331px;
 
       img {
-        max-width: 293px;
+        max-height: 160px;
         margin-bottom: 30px;
       }
   
@@ -114,6 +114,11 @@
 
   @media only screen and (max-width: $screen-width-tablet-min - 1) {
     max-width: 331px;
+    .solution-card__wrapper {
+      img {
+        max-height: 2000px;
+      }
+    }
   }
 }
 
