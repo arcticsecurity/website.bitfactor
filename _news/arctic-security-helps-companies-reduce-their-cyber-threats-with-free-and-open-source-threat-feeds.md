@@ -3,8 +3,15 @@ news_article_title: >-
   Arctic Security helps companies reduce their cyber threats with free and open
   source threat feeds
 news_article_description: >-
-  Arctic Security helps companies reduce their cyber threats with free and open
-  source threat feeds
+  Arctic Security, a Finland based cyber security company, helps companies
+  reduce their cyber threats by utilizing a range of free and open source threat
+  feeds. The threat feeds collect and distribute up-to-date information about
+  cyber threats. Companies that use this data get a better visibility to the
+  cyber threats around them and know which issues they need to fix in their
+  network. This way they can remarkably increase the level of their cyber
+  security. The problem is, however, that today only a few companies are doing
+  this extensively and systematically, by using multiple independent sources for
+  their threat intelligence.
 meta_title:
 meta_description:
 date: 2018-11-22 00:00:00 +0200
