@@ -3,7 +3,7 @@ first_name: Nicky
 last_name: Fang
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
+person_image_path: /images/content/nickyfang.jpeg
 position: Solutions Architect
 description:
 linkedin_url:
