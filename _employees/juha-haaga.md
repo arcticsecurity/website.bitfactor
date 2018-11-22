@@ -3,7 +3,7 @@ first_name: Juha
 last_name: Haaga
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
+person_image_path: /images/content/juha-haaga---portrait.jpg
 position: Solutions Architect
 description:
 linkedin_url:
