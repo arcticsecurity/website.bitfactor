@@ -1,7 +1,7 @@
 ---
 blog_title: How to effectively organize cyber security with different investment choices
 blog_image_path: /images/content/invest.png
-blog_description:
+blog_description: asd
 meta_title:
 meta_description:
 date: 2018-11-22 00:00:00 +0200
