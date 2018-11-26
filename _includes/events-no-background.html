@@ -7,7 +7,7 @@
       </div>
       <div class="events__list">
         {% assign sortedEvents = (site.events | sort: 'date') | reverse %}
-        {% for event in sortedEvents | limit: 3 %}
+        {% for event in sortedEvents | limit: 100 %}
           <div class="events__event">
             {% if event.event_link_url %}
               <a href="{{event.event_link_url}}" target="_blank" rel="noopener noreferrer">
