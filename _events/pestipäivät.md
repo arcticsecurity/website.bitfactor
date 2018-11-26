@@ -1,22 +1,19 @@
 ---
-event_title:
+event_title: Pesti Career Day
 event_description:
-date:
-end_date:
-location:
+date: 2019-01-31 00:00:00 +0200
+end_date: 2018-12-31 00:00:00 +0200
+location: 'Oulu, Finland'
 tags:
-event_link_url:
+event_link_url: 'https://www.pestipaivat.fi/en/frontpage/'
 writer:
   employees:
 _comments:
   event_link_url: >-
     Add an url to make the event a link to somewhere (blogpost, external
     website)
-  date: >-
-    Mark the date the event post is added. Will show on a list of blog posts
-    above as the date
-  tags: >-
-    Tags of content of the event post for example "Google Analytics", "GitHub"
-    etc
+  date: Invalid date
+  tags:
   writer: 'Select the writers, max 3'
 ---
+
