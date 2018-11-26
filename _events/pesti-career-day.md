@@ -2,7 +2,7 @@
 event_title: Pesti Career Day
 event_description:
 date: 2019-01-31 00:00:00 +0200
-end_date: 2018-12-31 00:00:00 +0200
+end_date: Invalid date
 location: 'Oulu, Finland'
 tags:
 event_link_url: 'https://www.pestipaivat.fi/en/frontpage/'
