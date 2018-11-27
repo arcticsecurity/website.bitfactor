@@ -16,9 +16,9 @@ contact_form: true
 form_thankyou_title:
 form_thankyou_description:
 form_translations:
-  first_name: First name
-  last_name: Last name
-  company_name: Company name
+  first_name: Prénom
+  last_name: Nom
+  company_name: Entreprise
   email: Email
   error_message: Please fill missing fields
 contact_info_title: Contact Info
@@ -71,12 +71,13 @@ contact_info_title: Contact Info
   </div>
     <div class="summary__text-paragraph">
       <div class="editable">
-        <p><img alt="expander content image" src="/images/content/6.svg" /></p>
-        <h3>Les noeuds de la cellule de défense reçoivent et utilisent les renseignements</h3>
-        <p>Le rôle des noeuds au sein de la cellule de défense consiste à collecter les renseignements sur les cybermenaces critiques auprès de leur concentrateur et à agir en conséquence. Par exemple, les entreprises fournissant des infrastructures critiques peuvent se protéger contre les cybermenaces qui leur sont signalées par un centre national de cybersécurité.</p>
-        <p>Arctic Node collecte les renseignements sur les menaces et les intègre dans les outils de</p>
-        <p>cybersécurité tels que les capteurs de sécurité réseau ou les systèmes de gestion des événements et des renseignements liés à la sécurité.</p>
-      </div>
+      <h2>
+        <i class="icon-product" style="margin-right: 10px;"></i>Notre mission
+      </h2>
+      <p>
+        Notre mission est de vous aider à vous organiser en matière de cyberdéfense. Nous voulons mettre en relation les centres de cybersécurité gouvernementaux et commerciaux et autres responsables en la matière avec les entreprises et organisations afin que tous partagent leurs renseignements sur les menaces critiques.
+      </p>
+    </div>
     </div>
   </div>
 </div>
@@ -101,7 +102,14 @@ contact_info_title: Contact Info
   <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
       <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" />
-      <label for="first_name" id="first_name_label" class="caption-light editable">First name</label>
+      <label for="first_name" id="first_name_label" class="caption-light editable">
+      <h2>
+        <i class="icon-team" style="margin-right: 10px;"></i>Notre équipe
+      </h2>
+      <p>
+        Notre équipe dévouée est composée d'experts internationaux ayant des connaissances étendues et des années d'expérience professionnelle dans l'industrie du renseignement sur les cybermenaces. Notre organisation est dirigée par son PDG David Chartier, professionnel de longue date en cybersécurité et ancien PDG de Codenomicon. Notre siège social est situé à Oulu, en Finlande. Nous avons également des bureaux à San Francisco, Singapour et Helsinki. Notre principal investisseur est&nbsp; <a target="_blank" href="https://www.capman.com/investment-strategies/growth-equity/portfolio/arctic/">CapMan</a>.&nbsp;
+      </p>
+    </label>
     </div>
     
     <div class="contact-form__input">
@@ -116,7 +124,14 @@ contact_info_title: Contact Info
 
     <div class="contact-form__input">
       <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
-      <label for="email" id="email_label" class="caption-light editable">Email</label>
+      <label for="email" id="email_label" class="caption-light editable">
+      <h2>
+        <i class="icon-product" style="margin-right: 10px;"></i>Nos produits
+      </h2>
+      <p>
+        Nos produits Arctic Hub et Arctic Node automatisent le partage des renseignements sur les menaces au sein d'une cellule de défense.
+      </p>
+    </label>
     </div>
 
     <div class="contact-form__checkbox-group">
@@ -129,7 +144,12 @@ contact_info_title: Contact Info
     </div>
     <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
 
-    <span class="contact-form__submit-button caption-light editable" id="contact-form__submit-button">Envoyer</span>
+    <span class="contact-form__submit-button caption-light editable" id="contact-form__submit-button">
+    <p><img alt="expander content image" src="/images/content/5.svg" /></p>
+    <h3>Le concentrateur de la cellule de défense partage les renseignements</h3>
+    <p>Le coeur d'une cellule de défense est constitué d'un concentrateur qui collecte et partage les renseignements essentiels sur les menaces. Il peut généralement s'agir d'une équipe nationale d'intervention en cas d'urgence informatique ou d'un centre de cybersécurité. Ou, dans les grandes organisations et entreprises, le siège social ou toute autre unité centrale peut choisir de faire office de concentrateur et de fournir les renseignements aux autres unités.</p>
+    <p>Arctic Hub automatise le partage des renseignements sur les menaces entre une organisation centrale et ses parties prenantes.</p>
+  </span>
     <span class="contact-form__error-message caption-light" id="contact-form__error-message">{{page.form_translations.error_message}}</span>
   
     <div class="contact-form__input">
