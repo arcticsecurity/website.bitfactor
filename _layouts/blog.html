@@ -45,9 +45,9 @@
         <div class="blog__article-meta">
           <span class="uppercase">
             {% if page.blog_category %}
-            <span class="blog__article-category" style="padding-right: 30px;">{{ page.blog_category }}</span>
+            <span class="blog__article-category">{{ page.blog_category }}</span>
             {% endif %}
-            <span>{{ page.date | date: "%B" }} &nbsp;</span></span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}
+            {% unless page.blog_category %}<span style="padding-left: 30px;">{{ page.date | date: "%B" }} &nbsp;</span></span>{% assign day = page.date | date: "%-d" %}{% case day %}{% when '1' or '21' or '31' %}{{ day }}st{% when '2' or '22' %}{{ day }}nd{% when '3' or '23' %}{{ day }}rd{% else %}{{ day }}th{% endcase %}, {{ page.date | date: "%Y" }}{% endunless %}
         </div>
         <div class="blog__article-text editable">
           <h1 class="blog__article-title">{{page.blog_title}}</h1>
