@@ -1,12 +1,12 @@
 ---
-event_title: 'FIRST Regional Symposium'
+event_title: FIRST Regional Symposium
 event_description:
 date: 2019-01-21 00:00:00 +0200
 end_date_display: true
 end_date: 2019-01-23 00:00:00 +0200
 location: 'Tallinn, Estonia'
 tags:
-event_link_url:
+event_link_url: 'https://www.first.org/events/symposium/tallinn2019/'
 writer:
   employees:
 _comments:
