@@ -1,6 +1,7 @@
 ---
 blog_title: Situational awareness and KPIs
 blog_image_path: /images/content/securing-1.png
+blog_image_cover: false
 blog_description:
 meta_title: Situational awareness and KPIs
 meta_description:

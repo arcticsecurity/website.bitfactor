@@ -1,6 +1,7 @@
 ---
 blog_title: How to effectively organize cyber security with different investment choices
 blog_image_path: /images/content/invest.png
+blog_image_cover: false
 blog_description:
 meta_title:
 meta_description:

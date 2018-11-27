@@ -1,6 +1,7 @@
 ---
 blog_title: Stakeholder notifications
 blog_image_path: /images/content/cert3.png
+blog_image_cover: false
 blog_description: >-
   Cyber security authorities, CSIRT teams, and ISACs have access to a wealth of
   actionable and reliable information about different types of cyber threats.
