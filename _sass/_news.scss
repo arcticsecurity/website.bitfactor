@@ -10,7 +10,6 @@ $row-height: 410px;
   @include display-flex();
   @include flex-direction(column);
   @include flex-align(center);
-  padding-bottom: 100px;
   max-width: 97.5vw;
 
   .news__title-row {
