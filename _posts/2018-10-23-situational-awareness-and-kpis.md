@@ -36,7 +36,9 @@ _comments:
 
 Arctic Hub shows you real-time information on the threats your customers have faced. You can also see how the threat data has been divided by different factors such as type of customers, geographical area, type of malware or observation time. This gives you situational awareness of your defense cell. Better situational awareness helps you set up KPIs to follow up how your cyber security has improved over time.
 
-![](/images/content/securing.png)
+&nbsp;
+
+![](/images/content/securing-1.svg)
 
 Arctic Hub and Node offer the following functionalities for the situational awareness and key metrics:
 
