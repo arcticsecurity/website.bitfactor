@@ -65,9 +65,10 @@
 }
 
 .about-us__jobs {
-  margin-top: 150px;
+  padding-top: 150px;
+  margin-top: 0;
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
-    margin-top: 75px;
+    padding-top: 75px;
   }
 }
 
