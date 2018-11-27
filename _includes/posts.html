@@ -52,8 +52,7 @@
       {% assign sortedPosts = (blogposts | sort: 'date') | reverse %}
       {% for post in sortedPosts | limit: limit %}
         <a class="post__card" href="{{ post.url }}" data-category="{{post.blog_category}}">
-          <div class="post__card-image">
-            <img src="{{ post.blog_image_path }}" alt="{{ post.blog_title }}" />
+          <div class="post__card-image{% if post.blog_image_cover %} image-cover{% endif %}" style="background-image: url({{post.blog_image_path | prepend: site.url}});">
           </div>
           <div class="post__card-content">
             <p class="post__card-date caption-light">
