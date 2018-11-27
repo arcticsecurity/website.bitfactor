@@ -2,6 +2,7 @@
 event_title:
 event_description:
 date:
+end_date_display: false
 end_date:
 location:
 tags:
