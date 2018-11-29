@@ -19,7 +19,8 @@ og_description:
     {% assign solutions=site.solutions | sort: 'card_order' %}
     {% for solution in solutions %}
       <div class="solution-card__wrapper">
-        <img src="{{solution.card_image_path}}" alt="{{solution.card_title}}" />
+        <div class="solution-card__image" style="background-image: url({{solution.card_image_path}});">
+        </div>
         <a href="{{solution.url}}" class="solution-card">
           <h3>{{solution.card_title}}</h3>
           <ul>
