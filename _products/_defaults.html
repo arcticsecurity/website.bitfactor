@@ -5,7 +5,9 @@ description: Product description
 product_image_path: /images/content/macbook.png
 product_color: '#00738d'
 product_highlight_color: '#0092b3'
-display_testimonials: true
+display_testimonials: false
+display_use_cases: false
+hide_discover_more: false
 testimonials:
   - title: Arctic Security NODE Testimonial
     description: Rem totam et consequatur iusto. Et quia culpa blanditiis laborum quia. Veniam dolores dolore nulla impedit vel quasi ab aut. Quod autem aliquid ipsa fuga suscipit in quisquam. Repudiandae harum qui quis.
@@ -143,8 +145,10 @@ og_description:
     <span class="testimonial__slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right"/></span>
   </div>
   {% endif %}
-  {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
-  {% include posts.html posts=includeposts title=page.use_cases_title %}
+  {% if page.display_use_cases %}
+    {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
+    {% include posts.html posts=includeposts title=page.use_cases_title no_blog_link=page.hide_discover_more %}
+  {% endif %}
 </div>
 
 <div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">

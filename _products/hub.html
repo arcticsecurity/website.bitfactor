@@ -6,6 +6,8 @@ product_image_path: /images/content/hero.png
 product_color: '#005ca9'
 product_highlight_color: '#0077c6'
 display_testimonials: false
+display_use_cases: true
+hide_discover_more: true
 testimonials:
   - title: Arctic Security HUB Testimonial
     description: >-
@@ -240,8 +242,10 @@ og_description:
     <span class="testimonial__slider-arrow right"><img src="/images/site/arrow_left_filled.svg" alt="arrow right" /></span>
   </div>
   {% endif %}
-  {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
-  {% include posts.html posts=includeposts title=page.use_cases_title %}
+  {% if page.display_use_cases %}
+    {% capture includeposts %}{% for post in page.use_cases.posts %}{{ post }},{% endfor %}{% endcapture %}
+    {% include posts.html posts=includeposts title=page.use_cases_title no_blog_link=page.hide_discover_more %}
+  {% endif %}
 </div>
 
 <div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">
