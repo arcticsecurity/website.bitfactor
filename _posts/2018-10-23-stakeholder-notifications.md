@@ -1,6 +1,6 @@
 ---
 blog_title: Stakeholder notifications
-blog_image_path: /images/content/cert3.png
+blog_image_path: /images/content/cert3-2.png
 blog_image_cover: false
 blog_description: >-
   Cyber security authorities, CSIRT teams, and ISACs have access to a wealth of
@@ -16,7 +16,7 @@ blog_category:
   - use cases
 writer:
   employees:
-og_image_path: /images/content/cert3-1.png
+og_image_path: /images/content/cert3-2-1.png
 twitter_image_path:
 og_title: Stakeholder notifications
 og_description:
@@ -42,7 +42,9 @@ _comments:
 
 Cyber security authorities, CSIRT teams, and ISACs have access to a wealth of actionable and reliable information about different types of cyber threats. The best use for this information is to make it available for the stakeholders so that they learn from it. Noticing the incidents helps companies and organizations develop processes and strategies for dealing with them. This way they are more prepared to manage the severe cases that will almost inevitably occur at some point. We help you automate intelligence sharing and free your experts to the work that requires a human touch.
 
-![](/images/content/cert3.svg)
+&nbsp;
+
+![](/images/content/cert3-2.png)
 
 In Arctic Hub, the threat data is matched against your customer configuration. This enables the sharing of the unique customer specific threat intelligence packages. Also, customer information as well as network and geolocation related attributes are augmented to the original data set. Arctic Hub does all of this for you automatically after you configure your customers by defining their internet presence.
 
