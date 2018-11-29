@@ -41,7 +41,7 @@
       position: relative;
       pointer-events: initial;
       @include display-flex();
-      padding: 12px 0;
+      line-height: 2.625;
 
       a {
         color: $color-gray-blue;
