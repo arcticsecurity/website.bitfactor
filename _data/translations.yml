@@ -1,0 +1,24 @@
+jp:
+  form_thankyou_title:
+  form_thankyou_description:
+  first_name: First name
+  last_name: Last name
+  company_name: Company name
+  email: Email
+  error_message: Please fill missing fields
+cn:
+  form_thankyou_title:
+  form_thankyou_description:
+  first_name: 姓⽒
+  last_name: 公司
+  company_name: 电⼦邮箱
+  email: 消息
+  error_message: Please fill missing fields
+fr:
+  form_thankyou_title:
+  form_thankyou_description:
+  first_name: Prénom
+  last_name: Nom
+  company_name: Entreprise
+  email: E-mail
+  error_message: Please fill missing fields

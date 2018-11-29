@@ -1,5 +1,6 @@
 ---
 layout: default
+translations_language: cn
 navigation:
   show_in_navigation: true
   nav_title: CN
@@ -15,12 +16,6 @@ og_description:
 contact_form: true
 form_thankyou_title:
 form_thankyou_description:
-form_translations:
-  first_name: First name
-  last_name: Last name
-  company_name: Company name
-  email: Email
-  error_message: Please fill missing fields
 contact_info_title: Contact Info
 ---
 
@@ -80,13 +75,13 @@ contact_info_title: Contact Info
 </div>
 
 {% assign thankyou_title="Sent." %}
-{% if page.thankyou_title %}
-  {% assign thankyou_title=page.thankyou_title %}
+{% if site.data.translations[page.translations_language].thankyou_title %}
+  {% assign thankyou_title=site.data.translations[page.translations_language].thankyou_title %}
 {% endif %}
 
 {% assign thankyou_description="Thank you for contacting us." %}
-{% if page.thankyou_description %}
-  {% assign thankyou_description=page.thankyou_description %}
+{% if site.data.translations[page.translations_language].thankyou_description %}
+  {% assign thankyou_description=site.data.translations[page.translations_language].thankyou_description %}
 {% endif %}
 
 <div class="contact-form__wrapper {{include.class}}">
@@ -99,22 +94,22 @@ contact_info_title: Contact Info
   <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
       <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" />
-      <label for="first_name" id="first_name_label" class="caption-light editable">First name</label>
+      <label for="first_name" id="first_name_label" class="caption-light editable">{{site.data.translations[page.translations_language].first_name}}</label>
     </div>
     
     <div class="contact-form__input">
       <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="20" />
-      <label for="last_name" id="last_name_label" class="caption-light editable">Last name</label>
+      <label for="last_name" id="last_name_label" class="caption-light editable">{{site.data.translations[page.translations_language].last_name}}</label>
     </div>
 
     <div class="contact-form__input">
       <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="20" />
-      <label for="company_name" id="company_name_label" class="caption-light editable">Company name</label>
+      <label for="company_name" id="company_name_label" class="caption-light editable">{{site.data.translations[page.translations_language].company_name}}</label>
     </div>
 
     <div class="contact-form__input">
       <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
-      <label for="email" id="email_label" class="caption-light editable">Email</label>
+      <label for="email" id="email_label" class="caption-light editable">{{site.data.translations[page.translations_language].email}}</label>
     </div>
 
     <div class="contact-form__checkbox-group">
@@ -130,7 +125,7 @@ contact_info_title: Contact Info
     <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
 
     <span class="contact-form__submit-button caption-light editable" id="contact-form__submit-button">发送</span>
-    <span class="contact-form__error-message caption-light" id="contact-form__error-message">{{page.form_translations.error_message}}</span>
+    <span class="contact-form__error-message caption-light" id="contact-form__error-message">{{site.data.translations[page.translations_language].error_message}}</span>
   
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />
