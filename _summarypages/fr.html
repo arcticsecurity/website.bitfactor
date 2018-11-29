@@ -1,5 +1,6 @@
 ---
 layout: default
+translations_language: fr
 navigation:
   show_in_navigation: true
   nav_title: FR
@@ -107,7 +108,7 @@ contact_info_title: Contact Info
 
     <div class="contact-form__input">
       <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
-      <label for="email" id="email_label" class="caption-light editable">Email</label>
+      <label for="email" id="email_label" class="caption-light editable">{{site.data.translations[page.translations_language].email}}</label>
     </div>
 
     <div class="contact-form__checkbox-group">
