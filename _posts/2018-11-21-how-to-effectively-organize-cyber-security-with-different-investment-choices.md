@@ -1,18 +1,26 @@
 ---
 blog_title: How to effectively organize cyber security with different investment choices
-blog_image_path: /images/content/invest.png
+blog_image_path: /images/content/invest-2.png
 blog_image_cover: false
-blog_description:
+blog_description: >-
+  As cyber defenders, we need to recognize the simple fact that threat
+  adversaries are highly organized and collaborative in nature, whether
+  organically or not. Various threat actors who are specialists in their own
+  field of expertise banded together, whatever their motivation might be, have
+  proven to be potent and highly successful. The proliferations of underground
+  marketplaces further proof the point. But the most of the messaging by
+  security vendors is about equipping organizations to defend in their silos.
+  They talk very little about the collaborative nature of the threat landscape.
 meta_title:
 meta_description:
-date: 2018-11-22 00:00:00 +0300
+date: 2018-11-21 23:00:00 +0200
 tags:
 blog_category:
   - guides
 writer:
   employees:
     - nicky-fang
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/invest-2-1.png
 twitter_image_path:
 og_title:
 og_description:
@@ -45,7 +53,9 @@ Let's be candid when it comes to cyber security, it is never a core business for
 * Return on investment
 * Business impact of implementing vs not implementing
 
-![](/images/content/invest.png)
+&nbsp;
+
+![](/images/content/invest-2.png)
 
 A simple answer is 'relative'. Any security investments should be relative to the size and scale of the business of an organization. Cyber threat intelligence (CTI) is no different as well. Gone are the days where threat intelligence is offered as an add-on like a happy meal. According to the latest SANS 2018 CTI survey, most respondents agreed CTI is becoming more useful overall, especially to security operations teams. This has led to an increased deployment rate of standalone CTI platforms.
 
