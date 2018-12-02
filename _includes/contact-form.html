@@ -68,6 +68,9 @@ partnership opportunities and other enquiries. You can also mail us at
     {% if include.downloadable_content %}
     <input hidden name='tag_name' value="{{include.downloadable_content}}" id="tag_name" />
     {% endif %}
+    {% if include.tag_name %}
+    <input hidden name='tag_name' value="{{include.tag_name}}" id="tag_name" />
+    {% endif %}
     {% if include.schedule_a_demo %}
     <input hidden name='schedule_a_demo' value="{{include.schedule_a_demo}}" id="schedule_a_demo" />
     {% endif %}
