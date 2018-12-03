@@ -1,5 +1,6 @@
 ---
-partner_name:
-partner_description:
-partner_url:
+partner_name: Sensor Fleet
+partner_description: Security sensors
+partner_url: 'https://sensorfleet.com'
 ---
+
