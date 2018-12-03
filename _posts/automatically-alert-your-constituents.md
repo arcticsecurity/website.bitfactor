@@ -1,7 +1,7 @@
 ---
 blog_title: AUTOMATICALLY ALERT YOUR CONSTITUENTS
 blog_image_path: /images/content/cert3-2.png
-blog_image_cover: false
+blog_image_cover: true
 blog_description: >-
   Cyber security authorities, CSIRT teams and ISACs can tap into a wealth of
   actionable and reliable abuse information. This information can alert your
@@ -20,7 +20,7 @@ twitter_image_path:
 og_title: Automatically alert your constituents
 og_description:
 downloadable_content: true
-downloadable_content_name: Stakeholder notifications
+downloadable_content_name: Automatically alert your constituents
 form_title: Download the use case as pdf document
 form_description_markdown: Download the use case as pdf document to share with your colleagues.
 form_thankyou_title: Thank you for downloading our use case.
@@ -52,5 +52,3 @@ You can select what kind of threat intelligence packages you want to create and 
 No further action is required from you if your constituents or their infrastructure don't change. Arctic Hub shares the constituent-specific threat intelligence packages automatically. We have an installed base with Arctic Hubs processing millions of events this way every day.
 
 ![](/images/content/6-dissemination.png)
-
-&nbsp;
