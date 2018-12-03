@@ -155,6 +155,7 @@ $section-max-width-tablet: 780px;
 
   .post__card-title {
     color: $color-dark-blue;
+    @include font-size(18px);
     line-height: 1.25;
     margin-top: 0;
     margin-bottom: 15px;
