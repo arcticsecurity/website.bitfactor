@@ -1,5 +1,5 @@
 ---
-blog_title: AUTOMATICALLY ALERT YOUR CONSTITUENTS
+blog_title: Automatically alert your constituents
 blog_image_path: /images/content/cert3-2.png
 blog_image_cover: true
 blog_description: >-
