@@ -8,12 +8,7 @@
           </p>
         </div>
         <div class="partners__list">
-          {% if include.limit %}
-            {% assign limit = include.limit%}
-          {% else %}
-            {% assign limit = 3 %}
-          {% endif %}
-          {% for partner in site.partners | limit: limit %}
+          {% for partner in site.partners %}
             <a class="partners__partner" target="_blank" rel="noopener noreferrer" href="{{partner.partner_url}}">
               <h3 class="partner__name">{{partner.partner_name}}</h3>
               <p class="partner__description caption-light">{{partner.partner_description}}</p>
