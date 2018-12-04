@@ -25,7 +25,7 @@ form_title: Download the use case as pdf document
 form_description_markdown: Download the use case as pdf document to share with your colleagues.
 form_thankyou_title: Thank you for downloading our use case.
 form_thankyou_description:
-form_file_path: true
+form_file_path:
 form_file_link_label:
 _comments:
   date: Invalid date
