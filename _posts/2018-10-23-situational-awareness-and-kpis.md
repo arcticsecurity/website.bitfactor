@@ -24,11 +24,13 @@ og_title:
 og_description:
 downloadable_content: true
 downloadable_content_name: Situational awareness and KPIs
-form_title: Download the use case as pdf document
-form_description_markdown: Click here to download the use case as pdf document to share within your team.
-form_thankyou_title: Thank you for downloading our use case.
-form_thankyou_description:
-form_file_path:
+form_title: Download the use case
+form_description_markdown: Click here to download the use case as pdf document to share with your team.
+form_thankyou_title: Thank you for your interest.
+form_thankyou_description: >-
+  You can download the use case by clicking the link below. We will also send a
+  download link to your email.
+form_file_path: /images/content/arctic-security-solutions-kpis.pdf
 form_file_link_label:
 _comments:
   date: Invalid date
