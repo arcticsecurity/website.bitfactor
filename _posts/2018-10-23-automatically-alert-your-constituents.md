@@ -24,8 +24,11 @@ downloadable_content_name: Automatically alert your constituents
 form_title: Download the use case as pdf document
 form_description_markdown: Download the use case as pdf document to share with your colleagues.
 form_thankyou_title: Thank you for downloading our use case.
-form_thankyou_description:
-form_file_path:
+form_thankyou_description: >-
+  You can click below to download the use case. We will also send a download
+  link to your email.
+form_file_path: >-
+  /images/content/arctic-security-use-case-automatically-alert-your-constituents.pdf
 form_file_link_label:
 _comments:
   date: Invalid date
