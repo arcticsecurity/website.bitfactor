@@ -13,6 +13,7 @@ meta_title: Situational awareness and KPIs
 meta_description:
 date: 2018-10-23 00:00:00 +0300
 tags:
+  - Situational awareness and KPIs
 blog_category:
   - use cases
 writer:
@@ -45,7 +46,7 @@ Arctic Hub shows you real-time information on the threats your customers have fa
 
 ![](/images/content/securing-2.png)
 
-&nbsp;
+ 
 
 Arctic Hub and Node offer the following functionalities for the situational awareness and key metrics:
 
@@ -66,5 +67,3 @@ New aggregates or modifications to the existing ones can be easily explored and 
 Arctic Hub is not only focusing providing key metrics from the processed data, it will also provide metrics from the shared information. Arctic Hub receives automated feedback from Arctic Node, allowing organizations to get a real-time understanding about how their customers utilize the shared threat intelligence.
 
 ![](/images/content/exploitation-3.png)
-
-&nbsp;
