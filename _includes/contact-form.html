@@ -78,6 +78,15 @@ partnership opportunities and other enquiries. You can also mail us at
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />
     </div>
-    <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;"><h2>{{thankyou_title}}</h2><p>{{thankyou_description}}</p></div>
+    <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;">
+      <h2>{{thankyou_title}}</h2>
+      <p>{{thankyou_description}}</p>
+      {% if page.form_file_link_label %}
+      {% assign link_label=page.form_file_link_label %}
+      {% else %}
+      {% assign link_label='Download here' %}
+      {% endif %}
+      {% if include.form_file_path %}<a href={{include.form_file_path}}>{{link_label}}</a>{% endif %}
+    </div>
   </form>
 </div>

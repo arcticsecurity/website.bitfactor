@@ -30,6 +30,8 @@ form_title:
 form_description_markdown:
 form_thankyou_title:
 form_thankyou_description:
+form_file_path:
+form_file_link_label:
 _comments:
   date: Invalid date
   tags:
