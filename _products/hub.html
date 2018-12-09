@@ -8,6 +8,7 @@ product_highlight_color: '#0077c6'
 display_testimonials: false
 display_use_cases: true
 hide_discover_more: true
+hide_schedule_demo: true
 testimonials:
   - title: Arctic Security HUB Testimonial
     description: >-
@@ -251,8 +252,8 @@ og_description: >-
   {% endif %}
 </div>
 
-<div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo">
+{% unless page.hide_schedule_demo %}<div class="product-nav-item" id="schedule-a-demo" data-nav="Schedule a Demo"> {% endunless %}
   {% include contact-form.html class="product-contact-form" form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description schedule_a_demo=page.name %}
-</div>
+{% unless page.hide_schedule_demo %}</div> {% endunless %}
 
 {% include products-list.html class="product-page" %}
