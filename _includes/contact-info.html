@@ -7,7 +7,7 @@
   <div class="contact-info__flex-container">
     <div class="contact-info highlight">
         <p class="contact-info__name">{{site.data.company.name}}</p>
-        <p class="contact-info__desc-1 text-highlight">{{site.data.company.email}}</p>
+        <p class="contact-info__desc-1 text-highlight"><a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a></p>
         <p class="contact-info__desc-2">{{site.data.company.phone}}</p>
         <p class="contact-info__desc-3">Business ID: {{site.data.company.business_id}}</p>
       </div>
