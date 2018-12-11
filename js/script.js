@@ -89,4 +89,36 @@ function autoHeightAnimate(element, time, oldHeight, newHeight) {
       $(this).addClass('show')
     }.bind(this), 1200*i)
   })
+
+  checkLoadMores()
+  $(window).on('resize', checkLoadMores)
 }())
+
+function checkLoadMores() {
+  var rowHeight = 390
+  var columnWidth = 350
+  function checkNewsLoadMore() {
+    var height = $('.news__flex-container').height()
+    var width = $('.news__flex-container').width()
+    var rows = Math.floor(height/rowHeight) || 1
+    var columns = Math.floor(width/columnWidth) || 1
+    var itemsShown = rows * columns
+    var $cards = $('.news-article__card')
+    if ($cards.length <= itemsShown) $('#news-page__loadmore').hide()
+    else $('#news-page__loadmore').show()
+  }
+
+  function checkPostsLoadMore() {
+    var height = $('.posts__flex-container').height()
+    var width = $('.posts__flex-container').width()
+    var rows = Math.floor(height/rowHeight) || 1
+    var columns = Math.floor(width/columnWidth) || 1
+    var itemsShown = rows * columns
+    var $cards = $('.post__card')
+    if ($cards.length <= itemsShown) $('#blog-page__loadmore').hide()
+    else $('#blog-page__loadmore').show()
+  }
+
+  checkNewsLoadMore()
+  checkPostsLoadMore()
+}
