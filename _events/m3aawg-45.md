@@ -6,7 +6,7 @@ end_date_display: true
 end_date: 2019-02-21 00:00:00 +0200
 location: 'San Francisco, US'
 tags:
-event_link_url:
+event_link_url: 'https://www.m3aawg.org/upcoming-meetings'
 writer:
   employees:
 _comments:
