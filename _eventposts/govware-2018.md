@@ -1,6 +1,6 @@
 ---
 blog_title: GovWare 2018
-blog_image_path: /images/content/hero.svg
+blog_image_path: /images/content/arctic-with-csa.jpeg
 blog_image_cover: false
 blog_description:
 meta_title:
@@ -10,7 +10,7 @@ tags:
 writer:
   employees:
     - david-chartier
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/arctic-with-csa.jpeg
 twitter_image_path:
 og_title:
 og_description:
@@ -23,9 +23,9 @@ _comments:
   type: dont touch!
 ---
 
-Govware in Singapore is one of the most important cyber security conferences in the APAC region, it is held in conjunction with the Singapore Cyber week. It is a very large event with local, regional and international players in the cyber security field - over 9200 attending from 91 countries.&nbsp;
+GovWare in Singapore is one of the most important cyber security conferences in the APAC region, it is held in conjunction with the Singapore Cyber Week. It is a very large event with local, regional and international players in the cyber security field - over 9200 attending from 91 countries.&nbsp;
 
-The organizer, Cyber Security Agency of Singapore (CSA), asked us during their visit to Finland if we could help them create a Finnish pavilion for this year’s event. We took the challenge and started assembling the Finnish pavilion together with Rugged Tooling, Bittium and BaseN. &nbsp;
+The organizer, Cyber Security Agency of Singapore (CSA), asked us during their earlier visit to Finland if we could help them create a Finnish pavilion for this year’s event. We took the challenge and started assembling the Finnish pavilion together with Rugged Tooling, Bittium and BaseN. &nbsp;
 
 The goal was to promote Finland’s expertise in cyber security. The Finnish pavilion was very busy with lots of visitors asking many questions about the type of problems we solve and how the technology works. We spent a lot of time showing our newly released Arctic Hub and it was well received.&nbsp;
 
@@ -34,3 +34,5 @@ During the conference we also launched our new partnership with Rugged Tooling. 
 Notable visitors included Finland’s ambassador to Singapore Ms. Paula Parviainen along with EU ambassador to Singapore Ms Barbara Plinkert and her delegation. Both thought the pavilion was a great idea and were interested in helping expand it for the next year's event.&nbsp; We also had a very successful beer evening at the pavilion with lots of interest from government and enterprise people while enjoying some cold drinks.
 
 ![](/images/content/arctic-with-csa.jpeg)
+
+Here we had an honor to get Mr Ng Hoo Ming, Deputy Chief Executive (Operations), Cyber Security Agency of Singapore visit us.
