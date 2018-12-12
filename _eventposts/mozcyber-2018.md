@@ -23,4 +23,6 @@ _comments:
   type: dont touch!
 ---
 
-Text and pictures about the event…
+&nbsp;
+
+Here the Minister of Transportation of Mozambique, Dr. Carlos Mesquita, is visiting the Arctic Security stand at '1a confer&ecirc;ncia nacional de seguran&ccedil;a cibern&eacute;tica', which is taking place at 'Centro internacional de confer&ecirc;ncias / Joaquim Chissano'.
