@@ -121,7 +121,7 @@
 
     .frontpage-expander__content {
       width: 331px;
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -132,7 +132,7 @@
     .frontpage-header__wrapper {
       @include flex-direction(column-reverse);
       max-width: 310px;
-      text-align: center;
+      text-align: left;
     }
 
     .frontpage-header__image {
