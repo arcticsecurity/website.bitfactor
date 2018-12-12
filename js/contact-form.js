@@ -49,29 +49,36 @@
     var minLength = parseInt($input.attr('data-validate-min-length'))
     if (minLength && $input.val().length < minLength) {
       showError($input)
+      return true
     } else {
       removeError($input)
+      return false
     }
   }
 
   function validateEmail($input) {
     if (!emailRegExp.test($input.val())) {
       showError($input)
+      return true
     } else {
       removeError($input)
+      return false
     }
   }
 
   $validatedCheckbox = $('#contact-form input[type="checkbox"][data-required="true"]')
 
   function validateCheckboxes() {
+    var hasErrors = []
     $validatedCheckbox.each(function() {
       if (!$(this).prop('checked')) {
         showErrorCheckbox($('.contact-form__fake-checkbox[data-for="' + $(this)[0].id + '"]'))
+        hasErrors.push('error')
       } else {
         removeErrorCheckbox($('.contact-form__fake-checkbox[data-for="' + $(this)[0].id + '"]'))
       }
     })
+    return hasErrors.length > 0
   }
 
   /* display/hide errors */
@@ -105,12 +112,17 @@
   $('#contact-form').on('submit', function(e) {
     e.preventDefault()
 
+    var errorInputs = []
+
     $('#contact-form input[data-validate-type="email"]').each(function() {
-      validateEmail($(this))
+      var hasErrors = validateEmail($(this))
+      if (hasErrors) errorInputs.push(hasErrors)
     })
-    validateCheckboxes()
+    var checkboxErrors = validateCheckboxes()
+    if (checkboxErrors) errorInputs.push(checkboxErrors)
     $validatedInputs.each(function() {
-      validateMinLength($(this))
+      var hasErrors = validateMinLength($(this))
+      if (hasErrors) errorInputs.push(hasErrors)
     })
 
     var data = $(this).serialize()
@@ -122,7 +134,7 @@
       }
     }
 
-    if ($('.' + errorClass).length < 1) {
+    if ($('.' + errorClass).length < 1 && errorInputs.length < 1) {
       if ($('#tag_name').length > 0) { // use downloadable content hook
         var downloadableContentUrl = 'https://hooks.zapier.com/hooks/catch/3955008/e6izel/'
         $.get(downloadableContentUrl, data, formSent).fail(formSent)

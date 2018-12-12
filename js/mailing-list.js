@@ -30,16 +30,20 @@
     var minLength = parseInt($input.attr('data-validate-min-length'))
     if (minLength && $input.val().length < minLength) {
       showError($input)
+      return true
     } else {
       removeError($input)
+      return false
     }
   }
   
   function validateEmail($input) {
     if (!emailRegExp.test($input.val())) {
       showError($input)
+      return true
     } else {
       removeError($input)
+      return false
     }
   }
   
@@ -58,19 +62,31 @@
   
   $('#mailing-list-form').on('submit', function(e) {
     e.preventDefault()
+
+    var errorInputs = []
   
     $('#mailing-list-form input[data-validate-type="email"]').each(function() {
-      validateEmail($(this))
+      var hasError = validateEmail($(this))
+      if (hasError) errorInputs.push(hasError)
     })
     $validatedInputs.each(function() {
-      validateMinLength($(this))
+      var hasError = validateMinLength($(this))
+      if (hasError) errorInputs.push(hasError)
     })
+
+    if (grecaptcha) {
+      var recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) { // reCAPTCHA not clicked yet
+        return false
+      }
+    }
   
     var data = $(this).serialize()
   
     var url = 'https://hooks.zapier.com/hooks/catch/3955008/e3m9l0/'
     
-    if ($('.' + errorClass).length < 1) {
+    if ($('.' + errorClass).length < 1 && errorInputs.length < 1) {
+      console.log('no error')
       $.get(url, data, formSent).fail(formSent)
     }
   })
