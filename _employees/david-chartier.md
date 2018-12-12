@@ -3,7 +3,7 @@ first_name: David
 last_name: Chartier
 telephone:
 email:
-person_image_path: /images/david.png
+person_image_path: /images/content/david-1.png
 position: CEO
 description:
 linkedin_url: 'https://www.linkedin.com/in/david-chartier-b3839/'
