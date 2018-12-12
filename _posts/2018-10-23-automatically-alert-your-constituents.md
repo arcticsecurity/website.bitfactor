@@ -22,7 +22,9 @@ og_description:
 downloadable_content: true
 downloadable_content_name: Automatically alert your constituents
 form_title: Download the use case
-form_description_markdown: Download the use case as pdf document to share with your colleagues.
+form_description_markdown: >-
+  Fill in the below form to download the use case as pdf document to share with
+  your colleagues.
 form_thankyou_title: Thank you for your interest.
 form_thankyou_description: >-
   You can click below to download the use case. We will also send a download

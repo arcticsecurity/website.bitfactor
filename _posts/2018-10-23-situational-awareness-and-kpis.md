@@ -26,8 +26,8 @@ downloadable_content: true
 downloadable_content_name: Situational awareness and KPIs
 form_title: Download the use case
 form_description_markdown: >-
-  Click here to download the use case as pdf document to share with your
-  colleagues.
+  Fill in the below form to download the use case as pdf document to share with
+  your colleagues.
 form_thankyou_title: Thank you for your interest.
 form_thankyou_description: >-
   You can download the use case by clicking the link below. We will also send a
