@@ -1,7 +1,7 @@
 ---
 blog_title: FIRST Kuala Lumpur
-blog_image_path: /images/content/hero.svg
-blog_image_cover: false
+blog_image_path: /images/content/first-kuala-lumpur.jpeg
+blog_image_cover: true
 blog_description:
 meta_title:
 meta_description:
@@ -10,7 +10,7 @@ tags:
 writer:
   employees:
     - helena-saraiva
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/first-kuala-lumpur.jpeg
 twitter_image_path:
 og_title:
 og_description:
