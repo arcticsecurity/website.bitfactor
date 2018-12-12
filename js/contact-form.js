@@ -157,4 +157,13 @@
     $('#contact-form').children().css('visibility', 'hidden')
     $('#contact-form__thankyou-text').css('visibility', 'visible')
   }
+
+  $(window).on('click', function(e) {
+    $validatedInputs.each(function() {
+      removeError($(this))
+    })
+  })
+  $('#contact-form').on('click', function(e) {
+    e.stopPropagation()
+  })
 })()

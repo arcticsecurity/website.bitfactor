@@ -23,7 +23,7 @@
   $validatedInputs.on('blur', function() {
     $input = $(this)
     validateMinLength($input)
-    if ($input.attr('data-validate-type') == "email" ) validateEmail($input)
+    if ($input.attr('data-validate-type') == "email" ) validateEmail($input, true)
   })
   
   function validateMinLength($input) {
@@ -37,8 +37,11 @@
     }
   }
   
-  function validateEmail($input) {
-    if (!emailRegExp.test($input.val())) {
+  function validateEmail($input, checkIfEmpty) {
+    if (checkIfEmpty && $input.val().length < 1) {
+      removeError($input)
+      return false
+    } else if (!emailRegExp.test($input.val())) {
       showError($input)
       return true
     } else {
@@ -94,5 +97,14 @@
   function formSent() {
     $('#mailing-list-form').children().css({'visibility': 'hidden'})
     $('#mailing-list-form__thankyou-text').css('visibility', 'visible')
-  }  
+  }
+
+  $(window).on('click', function(e) {
+    $validatedInputs.each(function() {
+      removeError($(this))
+    })
+  })
+  $('#mailing-list-form').on('click', function(e) {
+    e.stopPropagation()
+  })
 })()
