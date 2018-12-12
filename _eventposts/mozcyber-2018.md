@@ -1,6 +1,6 @@
 ---
 blog_title: MozCyber 2018
-blog_image_path: /images/content/hero.svg
+blog_image_path: /images/content/arctic-security-at-mozcyber-2018.jpg
 blog_image_cover: false
 blog_description:
 meta_title:
@@ -10,7 +10,7 @@ tags:
 writer:
   employees:
     - helena-saraiva
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/arctic-security-at-mozcyber-2018.jpg
 twitter_image_path:
 og_title:
 og_description:
@@ -24,5 +24,7 @@ _comments:
 ---
 
 &nbsp;
+
+![](/images/content/arctic-security-at-mozcyber-2018.jpg)
 
 Here the Minister of Transportation of Mozambique, Dr. Carlos Mesquita, is visiting the Arctic Security stand at '1a confer&ecirc;ncia nacional de seguran&ccedil;a cibern&eacute;tica', which is taking place at 'Centro internacional de confer&ecirc;ncias / Joaquim Chissano'.
