@@ -1,6 +1,6 @@
 ---
 blog_title: GovWare 2018
-blog_image_path: /images/content/hero.svg
+blog_image_path: /images/content/arctic-with-csa.jpeg
 blog_image_cover: false
 blog_description:
 meta_title:
@@ -10,7 +10,7 @@ tags:
 writer:
   employees:
     - david-chartier
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/arctic-with-csa.jpeg
 twitter_image_path:
 og_title:
 og_description:
