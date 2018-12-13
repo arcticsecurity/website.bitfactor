@@ -11,8 +11,16 @@ blog_description: >-
   marketplaces further proof the point. But the most of the messaging by
   security vendors is about equipping organizations to defend in their silos.
   They talk very little about the collaborative nature of the threat landscape.
-meta_title:
-meta_description:
+meta_title: How to effectively organize cyber security with different investment choices
+meta_description: >-
+  As cyber defenders, we need to recognize the simple fact that threat
+  adversaries are highly organized and collaborative in nature, whether
+  organically or not. Various threat actors who are specialists in their own
+  field of expertise banded together, whatever their motivation might be, have
+  proven to be potent and highly successful. The proliferations of underground
+  marketplaces further proof the point. But the most of the messaging by
+  security vendors is about equipping organizations to defend in their silos.
+  They talk very little about the collaborative nature of the threat landscape.
 date: 2018-11-21 23:00:00 +0200
 tags:
 blog_category:
@@ -20,10 +28,18 @@ blog_category:
 writer:
   employees:
     - nicky-fang
-og_image_path: /images/content/invest-2-1.png
+og_image_path: /images/content/Arctic Security securing.png
 twitter_image_path:
-og_title:
-og_description:
+og_title: How to effectively organize cyber security with different investment choices
+og_description: >-
+  As cyber defenders, we need to recognize the simple fact that threat
+  adversaries are highly organized and collaborative in nature, whether
+  organically or not. Various threat actors who are specialists in their own
+  field of expertise banded together, whatever their motivation might be, have
+  proven to be potent and highly successful. The proliferations of underground
+  marketplaces further proof the point. But the most of the messaging by
+  security vendors is about equipping organizations to defend in their silos.
+  They talk very little about the collaborative nature of the threat landscape.
 downloadable_content: false
 downloadable_content_name:
 form_title:
@@ -55,7 +71,7 @@ Let's be candid when it comes to cyber security, it is never a core business for
 * Return on investment
 * Business impact of implementing vs not implementing
 
-&nbsp;
+ 
 
 ![](/images/content/invest-2.png)
 

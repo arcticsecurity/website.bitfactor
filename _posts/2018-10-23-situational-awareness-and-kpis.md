@@ -10,7 +10,13 @@ blog_description: >-
   Better situational awareness helps you set up KPIs to follow up how your cyber
   security has improved over time.
 meta_title: Situational awareness and KPIs
-meta_description:
+meta_description: >-
+  Arctic Hub shows you real-time information on the threats your customers have
+  faced. You can also see how the threat data has been divided by different
+  factors such as type of customers, geographical area, type of malware or
+  observation time. This gives you situational awareness of your defense cell.
+  Better situational awareness helps you set up KPIs to follow up how your cyber
+  security has improved over time.
 date: 2018-10-23 00:00:00 +0300
 tags:
   - Situational awareness and KPIs
@@ -18,10 +24,16 @@ blog_category:
   - use cases
 writer:
   employees:
-og_image_path: /images/content/securing-2-1.png
+og_image_path: /images/content/Arctic Security happy customer.png
 twitter_image_path:
-og_title:
-og_description:
+og_title: Situational awareness and KPIs
+og_description: >-
+  Arctic Hub shows you real-time information on the threats your customers have
+  faced. You can also see how the threat data has been divided by different
+  factors such as type of customers, geographical area, type of malware or
+  observation time. This gives you situational awareness of your defense cell.
+  Better situational awareness helps you set up KPIs to follow up how your cyber
+  security has improved over time.
 downloadable_content: true
 downloadable_content_name: Situational awareness and KPIs
 form_title: Download the use case
