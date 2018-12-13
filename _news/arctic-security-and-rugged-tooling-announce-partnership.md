@@ -17,7 +17,7 @@ news_category:
   - press_release
 writer:
   employees:
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/Arctic Security happy customer.png
 twitter_image_path:
 og_title:
 og_description:
@@ -33,6 +33,6 @@ The new partnership leverages the expertise of both companies. Rugged Tooling pr
 
 > "Our mission at Arctic Security is to get companies and authorities organized into a defense cell based network that spreads information on cyber threat intelligence in a timely and automated manner. Integrating sensors like PreScope in Arctic Node is the next logical step as now we can not only provide companies with the information on the threats they are facing but also offer them tools to get alerted on malicious internet traffic.", says David Chartier, CEO at Arctic Security.
 
-> Petri Ylläsjärvi, CEO of Rugged Tooling added: “Our intelligent PreScope&reg; sensors make detection of threats and related data flows fast and easy. Their wide integration possibilities and adaptive filtering make them a perfect solution for feeding advanced Threat Intelligence platforms, such as the Arctic Node. Our joint offering will enable organizations to detect security risks in their entire network with a very attractive total cost of ownership model.”
+> Petri Ylläsjärvi, CEO of Rugged Tooling added: “Our intelligent PreScope® sensors make detection of threats and related data flows fast and easy. Their wide integration possibilities and adaptive filtering make them a perfect solution for feeding advanced Threat Intelligence platforms, such as the Arctic Node. Our joint offering will enable organizations to detect security risks in their entire network with a very attractive total cost of ownership model.”
 
 More information on [Rugged Tooling](https://ruggedtooling.com/){: target="_blank"}
