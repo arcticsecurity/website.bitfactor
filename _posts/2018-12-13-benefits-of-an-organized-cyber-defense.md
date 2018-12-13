@@ -7,8 +7,12 @@ blog_description: >-
   alone against the organized adversaries. How can the defenders also organize
   in a way that removes the advantages that the organized adversaries can pile
   up against them?
-meta_title:
-meta_description:
+meta_title: Benefits of an Organized Cyber Defense
+meta_description: >-
+  As defenders, we are at a considerable disadvantage when we try to defend
+  alone against the organized adversaries. How can the defenders also organize
+  in a way that removes the advantages that the organized adversaries can pile
+  up against them?
 date: 2018-12-13 00:00:00 +0200
 tags:
 blog_category:
@@ -16,10 +20,14 @@ blog_category:
 writer:
   employees:
     - juha-haaga
-og_image_path: /images/content/cert2.png
+og_image_path: /images/content/Arctic Security cyber defense.png
 twitter_image_path:
-og_title:
-og_description:
+og_title: Benefits of an Organized Cyber Defense
+og_description: >-
+  As defenders, we are at a considerable disadvantage when we try to defend
+  alone against the organized adversaries. How can the defenders also organize
+  in a way that removes the advantages that the organized adversaries can pile
+  up against them?
 downloadable_content: false
 downloadable_content_name:
 form_title:
