@@ -11,6 +11,7 @@ blog_category:
   - guides
 writer:
   employees:
+    - juha-haaga
 og_image_path: /images/content/cert2.png
 twitter_image_path:
 og_title:
@@ -47,7 +48,7 @@ In this article, I will introduce the concept of cyber defense cells. Defense ce
 
 It is important to note that none of the activities of a defense cell mentioned in this article are new to the domain. These are all currently being practiced in many different ways and in many different contexts. What is new is to define this abstraction that lets us see the activities from a different perspective. Looking at organizing cyber defense at this higher level helps us to identify the driving motivations of the organizations who identify themselves with these roles. This is important because understanding their motivations further helps us to develop better strategies, processes, and tools to support the necessary activities for such defense cells.<br><br>Defense cells can be formed organically around existing Hubs that have a motivation to improve the cyber security of their stakeholders, or Hubs that seek to further improve their cyber security through the efforts of others around them. National CSIRT teams, domain-specific CSIRTs, and ISAC/ISAO organizations are typical examples of Hubs, while critical infrastructure enterprises, government, and academia are typical examples of nodes.<br><br>These Hub and Node roles are not strict, and some organizations may well be a blend of both archetypes. An example of this could be an enterprise that understands the value of the shared defense and sees themselves taking a leading role in their industry to achieve that. In this scenario they are both Nodes that consume threat intelligence to protect their own organization. At the same time they both act as a Hub that relays information between other members of the defense cell. Once an organization understands their role in the defense cell, it becomes clearer which activities contribute to the collective defense and what they can expect from their peers.<br>&nbsp;
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2NYtWrVfwAG/gL+NbCogwAAAABJRU5ErkJggg==){: .cms-image-placeholder}
+![](/images/content/cert2.png)
 
 ### Key task of defense cell is to share threat intelligence
 
