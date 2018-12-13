@@ -30,10 +30,19 @@ news_category:
   - press_release
 writer:
   employees:
-og_image_path: /images/content/enterprise.png
+og_image_path: /images/content/Arctic Node.png
 twitter_image_path:
-og_title:
-og_description:
+og_title: >-
+  Arctic Security Launches Arctic Node To Help Enterprises Increase Their Cyber
+  Security
+og_description: >-
+  Arctic Security, a Finland based cyber security company, launches Arctic Node
+  software product that helps enterprises use threat intelligence to increase
+  their cyber security. Arctic Node completes the product family that also
+  includes Arctic Hub software that is targeted for threat intelligence sharing
+  organizations. With Arctic Node enterprises can easily collect the relevant
+  threat intelligence from their preferred sources, such as from a national or
+  commercial cyber security center.
 _comments:
   date: Invalid date
   tags:
