@@ -7,18 +7,26 @@ blog_description: >-
   actionable and reliable abuse information. This information can alert your
   constituents on compromised or vulnerable systems and help them to remediate
   them in an efficient manner.
-meta_title:
-meta_description:
+meta_title: Automatically alert your constituents
+meta_description: >-
+  Cyber security authorities, CSIRT teams and ISACs can tap into a wealth of
+  actionable and reliable abuse information. This information can alert your
+  constituents on compromised or vulnerable systems and help them to remediate
+  them in an efficient manner.
 date: 2018-10-23 00:00:00 +0300
 tags:
 blog_category:
   - use cases
 writer:
   employees:
-og_image_path: /images/content/cert3-2-1.png
+og_image_path: /images/content/Arctic Security CTI sharing.png
 twitter_image_path:
 og_title: Automatically alert your constituents
-og_description:
+og_description: >-
+  Cyber security authorities, CSIRT teams and ISACs can tap into a wealth of
+  actionable and reliable abuse information. This information can alert your
+  constituents on compromised or vulnerable systems and help them to remediate
+  them in an efficient manner.
 downloadable_content: true
 downloadable_content_name: Automatically alert your constituents
 form_title: Download the use case
