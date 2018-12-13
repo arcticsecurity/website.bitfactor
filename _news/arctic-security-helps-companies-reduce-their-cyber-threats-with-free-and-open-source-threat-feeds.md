@@ -20,7 +20,7 @@ news_category:
   - press_release
 writer:
   employees:
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/Arctic Security defense cell.png
 twitter_image_path:
 og_title:
 og_description:
