@@ -1,1 +1,4 @@
-https://www.arcticsecurity.com https://arcticsecurity.com
+/about-us.html /about/
+/abusesa.html /products/
+/arctic-hub.html /products/
+/open-positions.html /about/
