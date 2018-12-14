@@ -62,7 +62,7 @@ It is important to note that none of the activities of a defense cell mentioned 
 
 These Hub and Node roles are not strict, and some organizations may well be a blend of both archetypes. An example of this could be an enterprise that understands the value of the shared defense and sees themselves taking a leading role in their industry to achieve that. In this scenario they are both Nodes that consume threat intelligence to protect their own organization. At the same time they both act as a Hub that relays information between other members of the defense cell.&nbsp;
 
-![](/images/content/cert2.png)
+![](/images/content/Arctic Security cyber defense.png)
 
 ### &nbsp;
 
