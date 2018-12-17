@@ -1,9 +1,9 @@
 ---
 event_title: 2019 FIRST Conference
 event_description:
-date: 2019-06-19 00:00:00 +0300
-end_date_display: false
-end_date:
+date: 2019-06-16 00:00:00 +0300
+end_date_display: true
+end_date: 2018-12-21 00:00:00 +0200
 location: 'Edinburgh, UK'
 tags:
 event_link_url: 'https://www.first.org/conference/2019/'
