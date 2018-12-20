@@ -1,21 +1,39 @@
 ---
-blog_title:
-blog_image_path: /images/content/hero.svg
+blog_title: >-
+  Arctic Security and Rugged Tooling join to provide cyber threat detection for
+  enterprises
+blog_image_path: /images/content/sensors.png
 blog_image_cover: false
-blog_description:
-meta_title:
-meta_description:
+blog_description: >-
+  Arctic Security and Rugged Tooling are developing together a solution that
+  brings the cyber threat detection at the new level in enterprises. The
+  co-developed solution includes Arctic Node threat intelligence product that
+  has been integrated with Rugged Tooling cyber security sensor.
+meta_title: >-
+  Arctic Security and Rugged Tooling join to provide cyber threat detection for
+  enterprises
+meta_description: >-
+  Arctic Security and Rugged Tooling are developing together a solution that
+  brings the cyber threat detection at the new level in enterprises. The
+  co-developed solution includes Arctic Node threat intelligence product that
+  has been integrated with Rugged Tooling cyber security sensor.
 date: 2018-10-23 00:00:00 +0300
 tags:
 blog_category:
   - guides
 writer:
   employees:
-og_image_path: /images/content/hero.svg
+og_image_path: /images/content/arctic-security-for-enterprises.png
 twitter_image_path:
-og_title:
-og_description:
-downloadable_content: false
+og_title: >-
+  Arctic Security and Rugged Tooling join to provide cyber threat detection for
+  enterprises
+og_description: >-
+  Arctic Security and Rugged Tooling are developing together a solution that
+  brings the cyber threat detection at the new level in enterprises. The
+  co-developed solution includes Arctic Node threat intelligence product that
+  has been integrated with Rugged Tooling cyber security sensor.
+downloadable_content: true
 downloadable_content_name:
 form_title:
 form_description_markdown:
@@ -24,12 +42,8 @@ form_thankyou_description:
 form_file_path:
 form_file_link_label:
 _comments:
-  date: >-
-    Mark the date the blog post is added. Will show on a list of blog posts
-    above as the date
-  tags: >-
-    Tags of content of the blog post for example "Google Analytics", "GitHub"
-    etc
+  date: Invalid date
+  tags:
   writer: 'Select the writers, max 3'
   downloadable_content: Include downloadable content in blog post.
   downloadable_content_name: >-
@@ -40,3 +54,11 @@ _comments:
   form_thankyou_title: Fill if using downloadable content
   form_thankyou_description: Fill if using downloadable content
 ---
+
+Number of cyber threats grows as cyber criminals seek to gain financial benefits, for example from cryptocurrency mining malware. More and more malware sites are built each day. The threats cannot be prevented only with the help of user vigilance as certain malware bypasses user interaction completely.
+
+Arctic Security and Rugged Tooling are developing together a solution that brings the cyber threat detection at the new level in enterprises. The co-developed solution includes Arctic Node threat intelligence product that has been integrated with Rugged Tooling cyber security sensor.
+
+These two products work seamlessly together out-of-the-box and help monitor the internet traffic by detecting and alerting the user if traffic is pointing to any malware URL or criminal command and control server.
+
+Fill in the below form to download a whitepaper describing the new sensor solution in practice.&nbsp;
