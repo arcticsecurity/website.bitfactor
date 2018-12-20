@@ -66,4 +66,4 @@ Arctic Security and Rugged Tooling are developing together a solution that bring
 
 These two products work seamlessly together out-of-the-box and help monitor the internet traffic by detecting and alerting the user if traffic is pointing to any malware URL or criminal command and control server.
 
-Fill in the below form to download a whitepaper describing the new sensor solution in practice.&nbsp;
+Fill in the below form to download a whitepaper describing the new sensor solution in practice.
