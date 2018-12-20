@@ -34,13 +34,18 @@ og_description: >-
   co-developed solution includes Arctic Node threat intelligence product that
   has been integrated with Rugged Tooling cyber security sensor.
 downloadable_content: true
-downloadable_content_name:
-form_title:
-form_description_markdown:
-form_thankyou_title:
-form_thankyou_description:
-form_file_path:
-form_file_link_label:
+downloadable_content_name: Arctic Security and Rugged Tooling whitepaper
+form_title: Download whitepaper
+form_description_markdown: >-
+  Please fill in the below form to download the whitepaper that explains you
+  with real-life examples how the new sensor solution works in practice.
+form_thankyou_title: Thank you for your interest
+form_thankyou_description: >-
+  You can click below to download the use case. We will also send a download
+  link to your email.
+form_file_path: >-
+  /images/content/arctic-rugged-cyber-threat-detection-for-enterprises-whitepaper.pdf
+form_file_link_label: Download here
 _comments:
   date: Invalid date
   tags:
