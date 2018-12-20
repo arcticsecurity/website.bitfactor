@@ -20,7 +20,7 @@ meta_description: >-
 date: 2018-10-23 00:00:00 +0300
 tags:
 blog_category:
-  - guides
+  - use cases
 writer:
   employees:
 og_image_path: /images/content/arctic-security-for-enterprises.png
