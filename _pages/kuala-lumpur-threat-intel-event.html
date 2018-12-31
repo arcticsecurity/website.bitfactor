@@ -1,0 +1,51 @@
+---
+layout: empty
+navigation:
+  show_in_navigation: false
+title: 'RMiT Series Threat Intel event in Kuala Lumpur 16 Jan, 2019'
+description: >-
+  How do you put threat intel into your plans to cyber resiliency? Join RMiT
+  Series Threat Intel event in Kuala Lumpur 16 Jan, 2019 to learn.
+meta_title: 'RMiT Series Threat Intel event in Kuala Lumpur 16 Jan, 2019'
+meta_description: >-
+  How do you put threat intel into your plans to cyber resiliency? Join RMiT
+  Series Threat Intel event in Kuala Lumpur 16 Jan, 2019 to learn.
+og_image_path: /images/content/hero.svg
+twitter_image_path:
+og_title: 'RMiT Series Threat Intel event in Kuala Lumpur 16 Jan, 2019'
+og_description: >-
+  How do you put threat intel into your plans to cyber resiliency? Join RMiT
+  Series Threat Intel event in Kuala Lumpur 16 Jan, 2019 to learn.
+contact_form: false
+contact_form_title:
+contact_form_description_markdown:
+contact_form_thankyou_title:
+contact_form_thankyou_description:
+contact_form_tag_name:
+_comments:
+  contact_form_tag_name: Tag to filter contacts from this form in activecampaign
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+	{% include navbar.html %}
+	<main id="main-content" class="blog">
+    <div class="blog__flex-container">
+        <aside class="blog__contact"></aside>
+      <article class="blog__article">
+        <div class="blog__article-text editable">
+          <p>In this event you can hear the latest tips on how to improve your cyber security with Arctic Hub threat intelligence product. We take a holistic approach to address global cyber threat issues through automation.&nbsp;</p>
+          <p>The event is organized by SecureCraft and DNet. It will take place in Kuala Lumpur on 16th of Jan, 2019. For more information and registrations please email to our Sales Director Trevor Goh at <a href="mailto:trevor@arcticsecurity.com">trevor@arcticsecurity.com</a>.&nbsp;</p>
+        </div>
+        {% if page.contact_form %}
+          {% include contact-form.html form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description tag_name=page.contact_form_tag_name %}
+        {% endif %}
+      </article>
+    </div>
+	</main>
+	{% include footer.html %}
+	{% include scripts.html %}
+</body>
+</html>
