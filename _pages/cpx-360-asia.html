@@ -25,6 +25,7 @@ contact_form_tag_name:
 _comments:
   contact_form_tag_name: Tag to filter contacts from this form in activecampaign
 ---
+
 <!DOCTYPE html>
 <html>
 {% include head.html %}
@@ -35,7 +36,10 @@ _comments:
         <aside class="blog__contact"></aside>
       <article class="blog__article">
         <div class="blog__article-text editable">
-          Editable content
+          <h1>CPX 360 Asia</h1>
+          <p>Welcome to hear our Solutions Architect Nicky Fang speaking about 'Organized syndicates - the defender's way' in a break-out session at CPX360 Asia in Bangkok 23 Jan at 13:30 - 14:00.&nbsp; See the full schedule on <a href="https://www.checkpoint.com/cpx/asia/#schedule">the event website</a>.</p>
+          <p>If you want to book a meeting with us during the event please email to our Sales Director Trevor Goh at <a href="mailto:trevor@arcticsecurity.com">trevor@arcticsecurity.com</a></p>
+          <p>&nbsp;</p>
         </div>
         {% if page.contact_form %}
           {% include contact-form.html form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description tag_name=page.contact_form_tag_name %}
