@@ -1,10 +1,10 @@
 ---
-first_name:
-last_name:
+first_name: Freddy
+last_name: Dezeure
 telephone:
 email:
-person_image_path: /images/content/person_image.svg
-position:
+person_image_path: /images/content/freddy-dezeure.jpg
+position: Member of Board of Directors
 description:
 linkedin_url:
 _comments:
@@ -16,3 +16,4 @@ _comments:
     Specialist"
   description: Used in "About us" -page in the team section to describe the employee.
 ---
+
