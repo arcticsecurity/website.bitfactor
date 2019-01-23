@@ -19,6 +19,7 @@ blog_category:
   - guides
 writer:
   employees:
+    - freddy-dezeure
 og_image_path: /images/content/Arctic Security for enterprises.png
 twitter_image_path:
 og_title: How to Gain Better Visibility on Your Infrastructure
@@ -49,11 +50,11 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
-In my Advisory activity I get to meet many organisations big and small, mature and less mature. Most organisations, even the mature ones, have difficulties to gain sufficient visibility in their networks, obtain high quality threat intelligence and recruit/train/retain qualified CTI and SOC practitioners. When I’m meeting their CISOs I often receive the question on the subject of prevention and detection: “Where do we start?”. The answer to that ubiquitous question is invariably: “Get the fundamentals right, first”.&nbsp;
+In my Advisory activity I get to meet many organisations big and small, mature and less mature. Most organisations, even the mature ones, have difficulties to gain sufficient visibility in their networks, obtain high quality threat intelligence and recruit/train/retain qualified CTI and SOC practitioners. When I’m meeting their CISOs I often receive the question on the subject of prevention and detection: “Where do we start?”. The answer to that ubiquitous question is invariably: “Get the fundamentals right, first”. 
 
-Start by improving prevention before investing in detection and hunting. You can best do this by building on best practices in the community. You can use&nbsp; [NIST CSF](https://www.nist.gov/cyberframework){: target="_blank"} to help you define, implement and monitor the whole of your Security Strategy. You can use guidance from the [Centre for Internet Security](https://www.cisecurity.org/controls/){: target="_blank"} or by the [Australian Signals Directorate](https://acsc.gov.au/infosec/mitigationstrategies.htm){: target="_blank"} to help you setting up and maintaining critical controls. And have a look at the [MITRE ATT&CK](https://attack.mitre.org/){: target="_blank"} Framework to capture the latest insights on techniques used by your Adversaries.&nbsp;
+Start by improving prevention before investing in detection and hunting. You can best do this by building on best practices in the community. You can use  [NIST CSF](https://www.nist.gov/cyberframework){: target="_blank"} to help you define, implement and monitor the whole of your Security Strategy. You can use guidance from the [Centre for Internet Security](https://www.cisecurity.org/controls/){: target="_blank"} or by the [Australian Signals Directorate](https://acsc.gov.au/infosec/mitigationstrategies.htm){: target="_blank"} to help you setting up and maintaining critical controls. And have a look at the [MITRE ATT&CK](https://attack.mitre.org/){: target="_blank"} Framework to capture the latest insights on techniques used by your Adversaries. 
 
-In terms of gaining visibility in what happens in your infrastructure I would advise to start by setting up external passive monitoring before investing in SIEMs, sensors and sophisticated log collection and correlation systems. You can learn a lot about your infrastructure by looking at it from the outside. It is an obvious low hanging fruit that is often forgotten.&nbsp;
+In terms of gaining visibility in what happens in your infrastructure I would advise to start by setting up external passive monitoring before investing in SIEMs, sensors and sophisticated log collection and correlation systems. You can learn a lot about your infrastructure by looking at it from the outside. It is an obvious low hanging fruit that is often forgotten. 
 
 Compromised machines in your infrastructure are probably calling out to their command and control servers and if these are known by the community they can be taken down or sink holed and confirmed victims could be alerted. When your webpages are infected by malware this will probably be picked up by the search engines scraping them to fill update their search indices. And the owners of the webpages could be alerted about these compromised pages.
 
