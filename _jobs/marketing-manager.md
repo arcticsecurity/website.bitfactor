@@ -1,6 +1,6 @@
 ---
 job_title: Marketing Manager
-job_description: Experienced marketing person
+job_description: Experienced all around marketing person
 job_sorting: '0'
 meta_title:
 meta_description:
@@ -39,6 +39,6 @@ You will be monitoring and reporting on competitors’ marketing activities, as 
 
 ## We are looking for
 
-Experienced all around marketing person with strong interpersonal skills and high emotional intelligence, including excellent judgment about people. Ability to listen, understand and communicate effectively in a wide variety of contexts.&nbsp;
+Experienced all around marketing person with strong interpersonal skills and high emotional intelligence, including excellent judgment about people. Ability to listen, understand and communicate effectively in a wide variety of contexts. 
 
 Previous experience in creating content for the field, web and growing a social audience is required. Experience from enterprise software and in cyber security domain is a big advantage.
