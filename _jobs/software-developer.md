@@ -1,7 +1,7 @@
 ---
 job_title: Software Developer
 job_description:
-job_sorting: '0'
+job_sorting: '1'
 meta_title:
 meta_description:
 tags:
