@@ -3,14 +3,22 @@ news_article_title: >-
   Arctic Security closes a funding round with prominent Finnish investors to
   accelerate growth
 news_article_description: >-
-  Arctic Security announces a follow-on investment to the company's series A
-  round
+  Arctic Security is proud to announce a follow-on investment to the company’s
+  series A round by notable private entrepreneurs and investors Mikko Kodisoja,
+  Ilkka Paananen and Georg Ehrnrooth. The new investors’ expertise in global
+  growth companies strengthens Arctic Security’s investor base which also
+  includes original investor CapMan Growth. The additional funds will be used to
+  accelerate the company’s international growth in the cyber security market.
 meta_title: >-
   Arctic Security closes a funding round with prominent Finnish investors to
   accelerate growth
 meta_description: >-
-  Arctic Security announces a follow-on investment to the company's series A
-  round
+  Arctic Security is proud to announce a follow-on investment to the company’s
+  series A round by notable private entrepreneurs and investors Mikko Kodisoja,
+  Ilkka Paananen and Georg Ehrnrooth. The new investors’ expertise in global
+  growth companies strengthens Arctic Security’s investor base which also
+  includes original investor CapMan Growth. The additional funds will be used to
+  accelerate the company’s international growth in the cyber security market.
 date: 2019-02-28 10:00:00 +0200
 tags:
 news_category:
