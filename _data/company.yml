@@ -19,8 +19,8 @@ other_offices:
     country: Finland
     highlight: false
   - name: Singapore
-    address: UIC Building
-    postal_code: '5 Shenton Way #10-01'
+    address: 120 Robinson Road
+    postal_code: '#06-01'
     city:
-    country: Singapore 068808
+    country: Singapore 068913
     highlight: false

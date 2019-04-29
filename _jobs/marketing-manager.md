@@ -8,8 +8,8 @@ tags:
 team: Marketing
 writer:
   employees:
-og_image_path: /images/site/logo_text2_blue.svg
-twitter_image_path:
+og_image_path: /images/content/Arctic Security News.png
+twitter_image_path: /images/content/Arctic Security News.png
 og_title:
 og_description:
 _comments:
