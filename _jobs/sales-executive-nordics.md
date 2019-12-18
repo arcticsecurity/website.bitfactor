@@ -5,7 +5,7 @@ job_sorting: '1'
 meta_title:
 meta_description:
 tags:
-team:
+team: Sales Team
 writer:
   employees:
 og_image_path: /images/site/logo_text2_blue.svg
