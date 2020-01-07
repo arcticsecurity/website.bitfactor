@@ -8,7 +8,7 @@ tags:
 team: Sales Team
 writer:
   employees:
-og_image_path: /images/site/logo_text2_blue.svg
+og_image_path: /images/content/Arctic Security happy customer.png
 twitter_image_path:
 og_title:
 og_description:
