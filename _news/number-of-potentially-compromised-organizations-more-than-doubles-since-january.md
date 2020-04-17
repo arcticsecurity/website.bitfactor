@@ -24,7 +24,7 @@ tags:
   - Working from Home
   - Remote Work
 news_category:
-  - press_release
+  - news
 writer:
   employees:
 og_image_path: /images/content/Arctic Security defense cell.png
