@@ -48,15 +48,15 @@ _comments:
 
 At the end of March, Arctic Security, a Finnish company, noticed an uptick in the number of organizations being potentially compromised on a weekly basis in Finland. During a normal week, the number for a small country such as Finland is approximately 200 organizations. For the week starting on Monday 2020-03-16, the number of organizations had suddenly jumped to 800.
 
-![](/images/content/image1.png "Potentially compromised organizations more than doubled in Finland between January and March."){: width="2792" height="1236"}
+![](/images/content/image-2---finland-2020-01---2020-3.png "Potentially compromised organizations more than doubled in Finland between January and March."){: width="2460" height="845"}
 
 ##### **Potentially compromised organizations more than doubled in Finland between January and March.**
 
 &nbsp;
 
-Digging deeper into the issue, Arctic Security quickly discovered that looking at the same data on a monthly basis, the increase had been quite substantial between January and February and yet again between February and March.Trying to understand, whether this rise in affected organizations was not just happening in Finland, we pivoted the same parameters for 8 other European countries: Sweden, Norway, Denmark, Netherlands, Belgium, UK, Austria and Italy.&nbsp;
+Digging deeper into the issue, Arctic Security quickly discovered that looking at the same data on a monthly basis, the increase had been quite substantial between January and February and yet again between February and March. Trying to understand, whether this rise in affected organizations was not just happening in Finland, we pivoted the same parameters for 8 other European countries: Sweden, Norway, Denmark, Netherlands, Belgium, UK, Austria and Italy.&nbsp;
 
-![](/images/content/image2.png "Significant increase in potentially compromised organizations across 9 European countries."){: width="2792" height="1100"}
+![](/images/content/image-1---9-european-countries-2020-01---2020-3.png "Significant increase in potentially compromised organizations across 9 European countries."){: width="2460" height="945"}
 
 ##### **Significant increase in potentially compromised organizations across 9 European countries.**
 
@@ -64,7 +64,7 @@ Digging deeper into the issue, Arctic Security quickly discovered that looking a
 
 Looking at the US., the same trend of potentially compromised organizations was evident across all countries, and the results are worrying.
 
-![](/images/content/image3.png "Between January and March, potentially compromised organizations in the US doubled."){: width="2792" height="1236"}
+![](/images/content/image-3---united-states-2020-01---2020-3.png "Between January and March, potentially compromised organizations in the US doubled."){: width="2460" height="845"}
 
 ##### **Between January and March, potentially compromised organizations in the US doubled.**
 
@@ -76,9 +76,9 @@ Rather than looking at the number of individual IP addresses (devices) that were
 
 So, what does this mean?
 
-Reaching out to informed peers for a potential explanation, we jointly agreed that there seems to be a strong correlation between the numbers and the increase in remote workers. The week the uptick happened in Finland, the government had issued a strong recommendation for people to stay home and work. Likewise, all other countries observed had issued stay-at-home guidance. This means the number of people using a VPN to connect to their companies’ systems have increased by orders of magnitude.One cannot say with certainty what causes organizations to get compromised while most workers are working from home. However, it seems that the connections normally blocked by on-premises security solutions do not work as well, when people are using a VPN to connect into their employers’ networks.When employees are in the office, it seems as though the corporate firewalls function like dams blocking malware-infected machines trying to connect out to the Internet either for command and control or to further compromise other vulnerable machines on the Internet. “However, when you rely on a VPN, it’s like digging a ditch to the side of that dam,” remarked Huttunen.&nbsp;
+Reaching out to informed peers for a potential explanation, we jointly agreed that there seems to be a strong correlation between the numbers and the increase in remote workers. The week the uptick happened in Finland, the government had issued a strong recommendation for people to stay home and work. Likewise, all other countries observed had issued stay-at-home guidance. This means the number of people using a VPN to connect to their companies’ systems have increased by orders of magnitude. One cannot say with certainty what causes organizations to get compromised while most workers are working from home. However, it seems that the connections normally blocked by on-premises security solutions do not work as well, when people are using a VPN to connect into their employers’ networks. When employees are in the office, it seems as though the corporate firewalls function like dams blocking malware-infected machines trying to connect out to the Internet either for command and control or to further compromise other vulnerable machines on the Internet. “However, when you rely on a VPN, it’s like digging a ditch to the side of that dam,” remarked Huttunen.&nbsp;
 
-![](/images/content/image4.png "Number of unique US organizations and compromise topography mirror trend in Europe."){: width="2792" height="1100"}
+![](/images/content/image-4---united-states-2020-01---2020-3.png "Number of unique US organizations and compromise topography mirror trend in Europe."){: width="2460" height="845"}
 
 ##### **Number of unique US organizations and compromise topography mirror trend in Europe.**
 
