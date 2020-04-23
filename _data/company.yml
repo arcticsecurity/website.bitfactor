@@ -13,8 +13,8 @@ country: Finland
 highlight: true
 other_offices:
   - name: Helsinki
-    address: Yrjönkatu 11 D 21
-    postal_code: '00120'
+    address: Lapinlahdenkatu 16
+    postal_code: 00180
     city: Helsinki
     country: Finland
     highlight: false
