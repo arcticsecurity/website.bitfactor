@@ -115,6 +115,7 @@ news_category:
 blog_category:
   - guides
   - use cases
+  - blog
 
 frontpage_content_type:
   - header
