@@ -51,6 +51,8 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
+May 13, 2020
+
 Do you remember the [Heartbleed vulnerability](https://www.darkreading.com/vulnerabilities---threats/heartbleed-and-the-long-tail-of-vulnerabilities/a/d-id/1269653) that ripped apart the security of the Internet in 2014? It caused severe damage by striking at the heart of the very trusted part of the daily Internet usage, that which was supposed to secure the Internet. How about the Misfortune Cookie vulnerability that shook the world in the same year? It exposed a severe security flaw in network routers, making it possible for cybercriminals to hijack devices remotely.
 
 What have we learned from these cyber threats? It is pretty easy to say: not enough.&nbsp;
