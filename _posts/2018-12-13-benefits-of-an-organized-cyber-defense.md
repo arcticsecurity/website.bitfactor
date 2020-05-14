@@ -50,6 +50,8 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
+December 13, 2018
+
 We operate in a world where cybercrime is typically well organized. The stereotype of an individual super hacker who is able to achieve everything by themselves to perform spectacular feats of crime and run away with the loot is a rare exception. The vast majority of cybercrime is actually performed by specialized groups. The groups buy and sell their specialized services to each other, from turnkey exploit kits to large botnets to money mules. They build up extensive criminal supply chains that are necessary for performing the large-scale cybercrime where the money is. Their time is valuable, so they optimize and spend it where they get the best return on investment.
 
 As defenders, we are at a considerable disadvantage when we try to defend alone against the organized adversaries. One reason for this asymmetry is simply the availability of resources. For a small security team of an organization it is hard to match with the breadth of the capabilities that the organized adversaries have. The adversaries also have the advantage of attempting the same approach in parallel to multiple victims to find the one who has a weakness for the particular vulnerability that they can exploit. That unfortunate victim may well be you. How can the defenders also organize in a way that removes the advantages that the organized adversaries can pile up against them?
