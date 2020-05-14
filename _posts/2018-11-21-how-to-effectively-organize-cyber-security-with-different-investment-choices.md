@@ -62,6 +62,8 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
+November 21, 2018
+
 One of the greatest military strategist, Sun Tzu, once said: "Whoever is the first in the field and awaits the coming of the enemy, will be fresh for the fight; whoever is the second in the field and has to hasten to battle will arrive exhausted." And yet, defenders are constantly playing a catch up game against the adversaries despite having the first mover advantage.
 
 As cyber defenders, we need to recognize the simple fact that threat adversaries are highly organized and collaborative in nature, whether organically or not. Various threat actors who are specialists in their own field of expertise banded together, whatever their motivation might be, have proven to be potent and highly successful. The proliferations of underground marketplaces further proof the point. But the most of the messaging by security vendors is about equipping organizations to defend in their silos. They talk very little about the collaborative nature of the threat landscape.
@@ -71,7 +73,7 @@ Let's be candid when it comes to cyber security, it is never a core business for
 * Return on investment
 * Business impact of implementing vs not implementing
 
- 
+&nbsp;
 
 ![](/images/content/invest-2.png)
 
