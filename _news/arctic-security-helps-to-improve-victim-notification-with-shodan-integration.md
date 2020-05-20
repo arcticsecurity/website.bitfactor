@@ -61,7 +61,7 @@ After collecting the data, it is harmonized, augmented, and enriched with data f
 
 Users of Arctic Hub can then find the right recipients affected by the data, and send the processed information directly to them. This is something that is not available in the original data. Recipients can then act on data based on information from both Shodan and Arctic Security.
 
-As shown below, Arctic Security supports a growing number of integrated Shodan queries to identify and automatically notify the owners of vulnerable and misconfigured systems.
+As shown in the list below, Arctic Security supports a growing number of integrated Shodan queries to identify and automatically notify the owners of vulnerable and misconfigured systems.
 
 ![](/images/content/screenshot-2020-05-20-at-18-49-07.png){: width="894" height="984"}
 
