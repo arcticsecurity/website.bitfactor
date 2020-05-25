@@ -57,7 +57,7 @@ Arctic Security creates vetted Shodan queries to find vulnerable and misconfigur
 
 After collecting the data, it is harmonized, augmented, and enriched with data from other sources of Arctic Hub. Final result for this data item is shown below.
 
-![](/images/content/screenshot-2020-05-20-at-18-48-26.png){: width="862" height="1310"}
+![](/images/content/screenshot-2020-05-25-at-11-02-08.png){: width="1652" height="1030"}
 
 Users of Arctic Hub can then find the right recipients affected by the data, and send the processed information directly to them. This is something that is not available in the original data. Recipients can then act on data based on information from both Shodan and Arctic Security.
 
