@@ -62,3 +62,5 @@ After six years, there are still 80 000 computers with Heartbleed vulnerability 
 We at Arctic Security focus on fixing this issue by effectively collecting and sharing information about vulnerable and compromised systems, revealing them as early as possible so that a remedy may be applied. By mapping the network assets, we identify to whom threat data belongs, and that way, we can provide essential cyber threat information to the right recipient. This enables constant awareness of the known threats regarding your organization, and a possibility to fix those issues. By identifying and fixing critical threats, they do not go unaddressed, likely causing considerable problems for organizations in the future.
 
 Stay tuned for our upcoming posts about cybersecurity challenges organizations face today. In our next post, we will go into detail about what we believe is wrong in information security management in way too many organizations.
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;![](/images/content/hero.svg){: width="318" height="239"}
