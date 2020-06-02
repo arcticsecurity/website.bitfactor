@@ -51,6 +51,8 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;![](/images/content/hero.svg){: width="318" height="239"}
+
 June 2, 2020
 
 Do you remember the [Heartbleed vulnerability](https://www.darkreading.com/vulnerabilities---threats/heartbleed-and-the-long-tail-of-vulnerabilities/a/d-id/1269653) that ripped apart the security of the Internet in 2014? It caused severe damage by striking at the heart of the very trusted part of the daily Internet usage, that which was supposed to secure the Internet. How about the Misfortune Cookie vulnerability that shook the world in the same year? It exposed a severe security flaw in network routers, making it possible for cybercriminals to hijack devices remotely.
@@ -58,8 +60,6 @@ Do you remember the [Heartbleed vulnerability](https://www.darkreading.com/vulne
 What have we learned from these cyber threats? It is pretty easy to say: not enough.&nbsp;
 
 After six years, there are still 80 000 computers with Heartbleed vulnerability exposed on the Internet. Numbers for Misfortune Cookie are even worse - 142 000 devices yet remain at risk six years after the attack became public. Organizations and people follow newfound vulnerabilities more actively. However, acting to them quickly and accordingly remains a big issue, since appropriate processes for information security management are missing way too often. The unfortunate reality is that the Internet is full of connected, broken, and compromised devices. This affects almost every organization. We hear news of the latest cyber threats and new vulnerabilities announced daily, although severe risks may also come further down the line. Information about threats and vulnerabilities keeps coming, but the real challenge is to find the information that concerns you and your business. The information that you need comes from multiple sources and in different formats, making it even more complicated to follow the threats that may affect your organization.
-
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;![](/images/content/hero.svg){: width="318" height="239"}
 
 We at Arctic Security focus on fixing this issue by effectively collecting and sharing information about vulnerable and compromised systems, revealing them as early as possible so that a remedy may be applied. By mapping the network assets, we identify to whom threat data belongs, and that way, we can provide essential cyber threat information to the right recipient. This enables constant awareness of the known threats regarding your organization, and a possibility to fix those issues. By identifying and fixing critical threats, they do not go unaddressed, likely causing considerable problems for organizations in the future.
 
