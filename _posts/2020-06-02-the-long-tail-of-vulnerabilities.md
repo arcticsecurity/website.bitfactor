@@ -13,7 +13,7 @@ meta_description: >-
   compromised devices. We hear news of the latest cyber threats and new
   vulnerabilities announced daily, although severe risks may also come further
   down the line. What have we learned from these cyber threats?
-date: 2020-05-13 00:00:00 +0300
+date: 2020-06-02 00:00:00 +0300
 tags:
 blog_category:
   - blog
@@ -51,7 +51,7 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
-May 13, 2020
+June 2, 2020
 
 Do you remember the [Heartbleed vulnerability](https://www.darkreading.com/vulnerabilities---threats/heartbleed-and-the-long-tail-of-vulnerabilities/a/d-id/1269653) that ripped apart the security of the Internet in 2014? It caused severe damage by striking at the heart of the very trusted part of the daily Internet usage, that which was supposed to secure the Internet. How about the Misfortune Cookie vulnerability that shook the world in the same year? It exposed a severe security flaw in network routers, making it possible for cybercriminals to hijack devices remotely.
 
