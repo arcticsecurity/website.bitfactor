@@ -16,7 +16,7 @@ meta_description: >-
 date: 2020-06-17 00:00:00 +0300
 tags:
 blog_category:
-  - guides
+  - blog
 writer:
   employees:
 og_image_path: /images/content/Arctic Security About us.png
