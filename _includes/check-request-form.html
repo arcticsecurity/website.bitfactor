@@ -1,11 +1,9 @@
-{% assign title="Contact Us" %}
+{% assign title="Report request" %}
 {% if include.form_title %}
   {% assign title=include.form_title %}
 {% endif %}
 
-{% assign description="Fill in the below form for sales enquiries, schedule a product demo, 
-partnership opportunities and other enquiries. You can also mail us at 
-[contact@arcticsecurity.com](mailto:contact@arcticsecurity.com) or call us at +358 20 743 0010" %}
+{% assign description="Fill your contact details below." %}
 {% if include.form_description %}
   {% assign description=include.form_description %}
 {% endif %}
@@ -25,17 +23,17 @@ partnership opportunities and other enquiries. You can also mail us at
   {{description | markdownify}}
  <form id="contact-form" class="contact-form">
     <div class="contact-form__input">
-      <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="20" />
+      <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="25" />
       <label for="first_name" id="first_name_label" class="caption-light">First name</label>
     </div>
     
     <div class="contact-form__input">
-      <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="20" />
+      <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="25" />
       <label for="last_name" id="last_name_label" class="caption-light">Last name</label>
     </div>
 
     <div class="contact-form__input">
-      <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="20" />
+      <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="50" />
       <label for="company_name" id="company_name_label" class="caption-light">Company name</label>
     </div>
 
@@ -43,38 +41,7 @@ partnership opportunities and other enquiries. You can also mail us at
       <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
       <label for="email" id="email_label" class="caption-light">Email</label>
     </div>
-    {% unless include.downloadable_content %}
-    <div class="contact-form__input textarea">
-      <textarea name="message" id="message"></textarea>
-      <label for="message" id="message_label" class="caption-light">Message</label>
-    </div>
-    {% endunless %}
 
-    <div class="contact-form__checkbox-group">
-      <span class="contact-form__fake-checkbox caption-light" data-for="newsletter_subscription">
-        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i> Subscribe to Arctic Security newsletter
-      </span>
-      <span class="contact-form__fake-checkbox caption-light" data-for="accept_privacy_policy">
-        <i class="icon-checkbox_empty"></i><i class="icon-checkbox_selected"></i><span> I accept the Arctic Security&nbsp;<a target="_blank" rel="noopener noreferrer" href="/privacy-policy/">privacy policy</a></span>
-      </span>
-      <input type="checkbox" value="true" hidden name="newsletter_subscription" id="newsletter_subscription" />
-      <input type="checkbox" value="true" data-required="true" hidden name="accept_privacy_policy" id="accept_privacy_policy" />
-    </div>
-    <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
-
-    <span class="contact-form__submit-button caption-light" id="contact-form__submit-button">Submit</span>
-    <span class="contact-form__error-message caption-light" id="contact-form__error-message">Please fill missing fields</span>
-
-    {% if include.downloadable_content %}
-    <input hidden name='tag_name' value="{{include.downloadable_content}}" id="tag_name" />
-    {% endif %}
-    {% if include.tag_name %}
-    <input hidden name='tag_name' value="{{include.tag_name}}" id="tag_name" />
-    {% endif %}
-    {% if include.schedule_a_demo %}
-    <input hidden name='schedule_a_demo' value="{{include.schedule_a_demo}}" id="schedule_a_demo" />
-    {% endif %}
-  
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />
     </div>
