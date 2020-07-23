@@ -42,9 +42,15 @@
       <label for="email" id="email_label" class="caption-light">Email</label>
     </div>
 
+    <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
+
+    <span class="contact-form__submit-button caption-light" id="contact-form__submit-button">Submit</span>
+    <span class="contact-form__error-message caption-light" id="contact-form__error-message">Please fill missing fields</span>
+
     <div class="contact-form__input">
       <input type="submit" hidden id="contact-form__hidden-submit" />
     </div>
+    
     <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;">
       <h2>{{thankyou_title}}</h2>
       <p>{{thankyou_description}}</p>
