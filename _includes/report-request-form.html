@@ -41,6 +41,9 @@
       <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
       <label for="email" id="email_label" class="caption-light">Email</label>
     </div>
+    
+    <input type="text" name="message" hidden id="message" value="Secure posture report request"></input>
+    <input hidden name='tag_name' value="{{include.tag_name}}" id="tag_name" />
 
     <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
 
@@ -54,12 +57,6 @@
     <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;">
       <h2>{{thankyou_title}}</h2>
       <p>{{thankyou_description}}</p>
-      {% if page.form_file_link_label %}
-      {% assign link_label=page.form_file_link_label %}
-      {% else %}
-      {% assign link_label='Download here' %}
-      {% endif %}
-      {% if include.form_file_path %}<a href={{include.form_file_path}}>{{link_label}}</a>{% endif %}
     </div>
   </form>
 </div>
