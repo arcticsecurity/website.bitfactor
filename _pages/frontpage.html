@@ -23,6 +23,8 @@ og_title: Don't be alone in cyber
 og_description: >-
   Get cyber threat information from the ones who know to the ones who need to
   know.
+report_form: true
+report_form_title: Get your report
 _comments:
   expander_1_video: >-
     Video "id" that comes after https://www.youtube.com/watch?v= in URL,
@@ -119,8 +121,20 @@ _comments:
       </div>
     </div>
   </div>
+
+  <div class="mailing-list-form__wrapper">
+    <form id="mailing-list-form" class="mailing-list-form">
+      <div class="mailing-list-form__text">
+        <h2 class="editable"><a href="/check/">Get a free report</a> of your security posture now to find out your organization’s situation in detail.</h2>
+        <p class="editable">Currently, there are millions of compromised devices and vulnerable services running on the Internet.
+                            We provide you with a complimentary report that shows up the situation with your connected devices and networks.</p>
+        <p class="editable caption-light"> We follow our <a href="/privacy-policy/">privacy policy</a> and you can opt-out from any marketing at any time after receiving the report.</p>
+      </div>
+        {% if page.report_form %}
+          {% include report-request-form.html form_title=page.report_form_title form_description=page.report_form_description_markdown thankyou_title=page.report_form_thankyou_title thankyou_description=page.report_form_thankyou_description tag_name=page.report_form_tag_name %}
+        {% endif %}
+  </div>
 </div>
-{% include report-text-frontpage.html %}
 {% include posts.html limit=3 title='Guides' filter_category=page.filter_category %}
 {% include news.html %}
 {% include events-and-careers.html %}
