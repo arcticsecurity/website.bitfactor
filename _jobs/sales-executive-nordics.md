@@ -1,4 +1,4 @@
----
+<!-- ---
 job_title: Sales Executive Nordics
 job_description:
 job_sorting: '1'
@@ -33,4 +33,4 @@ Your sales territory covers the Nordics therefore you are able to communicate fl
 
 In Arctic Security, you get to work with meaningful matters and help our international customers to protect themselves from cyber security threats. We can provide you with very appealing products and supportive team to work with. There is no difficult bureaucracy in the company and therefore you can execute your vision freely. We will offer you flexible working hours and the possibility to plan your own work and traveling. In addition, we offer fair bonuses and an option plan to our key employees.
 
-For further information: please contact our recruitment partner Personnel Group,&nbsp; Mika Ahlfors&nbsp; +358 3 3138 0464 or Terhi Nikkil&auml; +358 3 3138 0453. Please send your application including CV and salary requirement via&nbsp;[https://www.personnel.fi/avoimet-tyopaikat/sales-executive-nordics/](https://www.personnel.fi/avoimet-tyopaikat/sales-executive-nordics/){: target="_blank"}&nbsp;, no later than 10.01.2020.
+For further information: please contact our recruitment partner Personnel Group,&nbsp; Mika Ahlfors&nbsp; +358 3 3138 0464 or Terhi Nikkil&auml; +358 3 3138 0453. Please send your application including CV and salary requirement via&nbsp;[https://www.personnel.fi/avoimet-tyopaikat/sales-executive-nordics/](https://www.personnel.fi/avoimet-tyopaikat/sales-executive-nordics/){: target="_blank"}&nbsp;, no later than 10.01.2020. -->
