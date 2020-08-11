@@ -23,6 +23,20 @@ og_title: Don't be alone in cyber
 og_description: >-
   Get cyber threat information from the ones who know to the ones who need to
   know.
+report_form: true
+report_form_title: <a href="/check/">Get a free report</a> of your security posture now to find out your organization’s situation in detail.
+report_form_description_markdown: |-
+  Currently, there are millions of compromised devices and vulnerable services running on the Internet.
+  We provide you with a complimentary report that shows up the situation with your connected devices and networks.
+report_form_footer: >-
+  We follow our <a href="/privacy-policy/">privacy policy</a> and
+  you can opt-out from any marketing at any time after receiving the report.
+report_form_thankyou_title: Thank you
+report_form_thankyou_description: >-
+  We will contact you shortly to inquire any further details needed for the check.
+report_form_tag_name: Security posture report request
+_comments:
+report_form_tag_name: Tag to filter contacts from this form in activecampaign
 _comments:
   expander_1_video: >-
     Video "id" that comes after https://www.youtube.com/watch?v= in URL,
@@ -119,7 +133,11 @@ _comments:
       </div>
     </div>
   </div>
-</div>
+
+{% if page.report_form %}
+  {% include report-request-form.html form_title=page.report_form_title form_description=page.report_form_description_markdown form_footer=page.report_form_footer thankyou_title=page.report_form_thankyou_title thankyou_description=page.report_form_thankyou_description tag_name=page.report_form_tag_name %}
+{% endif %}
+
 {% include posts.html limit=3 title='Guides' filter_category=page.filter_category %}
 {% include news.html %}
 {% include events-and-careers.html %}
