@@ -19,9 +19,11 @@
 {% endif %}
 
 <div class="contact-form__wrapper {{include.class}}">
-  <h2>{{title}}</h2>
-  {{description | markdownify}}
  <form id="contact-form" class="contact-form">
+    <div class="contact-form__text">
+      <h2>{{title}}</h2>
+      {{description | markdownify}}
+    </div>
     <div class="contact-form__input">
       <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="25" />
       <label for="first_name" id="first_name_label" class="caption-light">First name</label>
@@ -57,5 +59,11 @@
       <h2>{{thankyou_title}}</h2>
       <p>{{thankyou_description}}</p>
     </div>
+
+    {% if include.form_footer %}
+    <p class="editable caption-light">
+      {{include.form_footer}}
+    </p>
+    {% endif %}
   </form>
 </div>

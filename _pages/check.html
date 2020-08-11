@@ -12,9 +12,9 @@ og_image_path: /images/content/hero.svg
 twitter_image_path:
 og_title:
 og_description:
-contact_form: true
-contact_form_title: Get your report
-contact_form_description_markdown: |-
+report_form: true
+report_form_title: Get your report
+report_form_description_markdown: |-
   Fill the form and we will start preparing your report:
 
   * Actionable data
@@ -22,13 +22,16 @@ contact_form_description_markdown: |-
   * Compromised systems
   * Vulnerable and exposed services
   * Usable as external security assessment of your organization
-contact_form_thankyou_title: Thank you
-contact_form_thankyou_description: >-
+report_form_footer: >-
+  We follow our <a href="/privacy-policy/">privacy policy</a> and
+  you can opt-out from any marketing at any time after receiving the report.
+report_form_thankyou_title: Thank you
+report_form_thankyou_description: >-
   We will contact you shortly to inquire any further details needed for the
   check.
-contact_form_tag_name: Security posture report request
+report_form_tag_name: Security posture report request
 _comments:
-  contact_form_tag_name: Tag to filter contacts from this form in activecampaign
+  report_form_tag_name: Tag to filter contacts from this form in activecampaign
 ---
 
 <!DOCTYPE html>
@@ -38,19 +41,43 @@ _comments:
 	{% include navbar.html %}
 	<main id="main-content" class="blog">
     <div class="blog__flex-container">
-        <aside class="blog__contact"></aside>
+      <aside class="blog__contact"></aside>
       <article class="blog__article">
         <div class="blog__article-text editable">
-          <h1>Check the security footprint of&nbsp; your organization</h1>
-          <p>Get a report showing your organization's security posture. All you need is a list of your most important domains and optionally Internet facing IP-addresses to assess your exposure.&nbsp;</p>
-          <p>Cyber attacks are not victimless crimes. Each day we receive more than 15 million notifications about Internet connected devices that have been hacked into and are now used to attack others. On an average day in July 2020 there were 150 000 compromised enterprises and organizations potentially unaware of the fact that they are now stepping stones to further attacks. To make matters worse, in the same time frame we received 5 million observations of vulnerable and exposed Internet facing services, leaving even more organisations prone to fall victims to the criminals.&nbsp;&nbsp;</p>
-          <p>We at Arctic Security got fed up with this. We have built products to help our customers to catch these observations and to alert the victims. We are now building a partner network of managed security service providers to offer victim notification service to their customers. We have made our security posture report free for you in order to make the Internet a safer place and to promote the victim notification service.</p>
+          <h1>Check the security footprint of your organization</h1>
+          <p>
+            Get a report showing your organization's security posture.
+            All you need is a list of your most important domains and optionally Internet facing
+            IP-addresses to assess your exposure.
+          </p>
+          <p>
+            Cyber attacks are not victimless crimes.
+            Each day we receive more than 15 million notifications about Internet connected
+            devices that have been hacked into and are now used to attack others.
+            On an average day in July 2020 there were 150 000 compromised enterprises and
+            organizations potentially unaware of the fact that they are now stepping stones to further attacks.
+            To make matters worse, in the same time frame we received 5 million observations of vulnerable
+            and exposed Internet facing services, leaving even more organisations
+            prone to fall victims to the criminals.
+          </p>
+          <p>
+            We at Arctic Security got fed up with this.
+            We have built products to help our customers to catch these observations and to alert the victims.
+            We are now building a partner network of managed security service providers
+            to offer victim notification service to their customers.
+            We have made our security posture report free for you in order to make
+            the Internet a safer place and to promote the victim notification service.
+          <p>
         </div>
-        {% if page.contact_form %}
-          {% include report-request-form.html form_title=page.contact_form_title form_description=page.contact_form_description_markdown thankyou_title=page.contact_form_thankyou_title thankyou_description=page.contact_form_thankyou_description tag_name=page.contact_form_tag_name %}
+        {% if page.report_form %}
+          {% include report-request-form.html form_title=page.report_form_title form_description=page.report_form_description_markdown form_footer=page.report_form_footer thankyou_title=page.report_form_thankyou_title thankyou_description=page.report_form_thankyou_description tag_name=page.report_form_tag_name %}
         {% endif %}
         <div class="blog__article-text editable">
-          <p>We will verify your contact information, report is only available for the organization's own assets. Your report will be free without any commitment to order. We will follow-up with you to help you to learn more about our products and our victim notification service partner network. We follow our&nbsp;<a target="_blank" rel="noopener" href="/privacy-policy/">privacy policy</a>&nbsp;and you can opt-out from any marketing at any time after receiving the report.</p>
+          <p>
+            We will verify your contact information, report is only available for the organization's own assets.
+            Your report will be free without any commitment to order.
+            We will follow-up with you to help you to learn more about our products and our victim notification service partner network.
+          </p>
         </div>
       </article>
     </div>

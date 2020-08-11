@@ -24,6 +24,13 @@ $form-error-color: rgb(255, 89, 109);
     }
   }
 
+  p.caption-light {
+    color: $color-light-gray;
+    font-family: $font-general;
+    max-width: 80%;
+    text-align: center;
+  }
+
   &.product-contact-form {
     margin-top: 60px;
   }
