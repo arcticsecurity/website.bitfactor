@@ -62,6 +62,12 @@ _comments:
     <img src="/images/content/hero.svg" alt="Frontpage header" class="editable frontpage-header__image" />
   </div>
 
+  <div class="frontpage-form" data-tag="content-form" id="reportform">
+        {% if page.report_form %}
+          {% include report-request-form.html form_title=page.report_form_title form_description=page.report_form_description_markdown form_footer=page.report_form_footer thankyou_title=page.report_form_thankyou_title thankyou_description=page.report_form_thankyou_description tag_name=page.report_form_tag_name %}
+        {% endif %}
+  </div>
+
   <div class="frontpage-expander" data-tag="content-1" id="cyber-resilience">
     <div class="frontpage-expander__header-wrapper">
       <iframe src="https://www.youtube.com/embed/{{page.expander_1_video}}?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -133,10 +139,7 @@ _comments:
       </div>
     </div>
   </div>
-
-{% if page.report_form %}
-  {% include report-request-form.html form_title=page.report_form_title form_description=page.report_form_description_markdown form_footer=page.report_form_footer thankyou_title=page.report_form_thankyou_title thankyou_description=page.report_form_thankyou_description tag_name=page.report_form_tag_name %}
-{% endif %}
+</div>
 
 {% include posts.html limit=3 title='Guides' filter_category=page.filter_category %}
 {% include news.html %}

@@ -33,6 +33,7 @@ $form-error-color: rgb(255, 89, 109);
     @include flex-justify(space-between);
     @include flex-wrap(wrap);
     @include flex-align(flex-end);
+    margin-top: 70px;
     width: 100%;
     padding: 33px;
     border: 1px solid $color-border-gray;

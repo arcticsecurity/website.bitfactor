@@ -11,9 +11,19 @@
     @include flex-justify(space-between);
     width: 100%;
   }
-  
+
   .frontpage-header {
     max-width: 370px;
+  }
+
+  .frontpage-form {
+    padding-bottom: 50px;
+    position: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .frontpage-expander {
@@ -150,6 +160,6 @@
     .frontpage-expander__header-wrapper {
       @include flex-direction(column);
     }
-    
+
   }
 }

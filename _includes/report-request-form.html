@@ -18,46 +18,39 @@
   {% assign thankyou_description=include.thankyou_description %}
 {% endif %}
 
-<div class="contact-form__wrapper {{include.class}}">
- <form id="contact-form" class="contact-form">
-    <div class="contact-form__text">
+<div class="mailing-list-form__wrapper {{include.class}}">
+ <form id="mailing-list-form" class="mailing-list-form">
+    <div class="mailing-list-form__text">
       <h2>{{title}}</h2>
       {{description | markdownify}}
     </div>
-    <div class="contact-form__input">
-      <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="25" />
-      <label for="first_name" id="first_name_label" class="caption-light">First name</label>
-    </div>
+    <div class="mailing-list-form__input">
 
-    <div class="contact-form__input">
-      <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="25" />
-      <label for="last_name" id="last_name_label" class="caption-light">Last name</label>
-    </div>
+           <input type="text" name="first_name" id="first_name" data-validate="true" data-validate-max-length="25" />
+           <label for="first_name" id="first_name_label" class="caption-light">First name</label>
 
-    <div class="contact-form__input">
-      <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="50" />
-      <label for="company_name" id="company_name_label" class="caption-light">Company name</label>
-    </div>
+           <input type="text" name="last_name" id="last_name" data-validate="true" data-validate-max-length="25" />
+           <label for="last_name" id="last_name_label" class="caption-light">Last name</label>
 
-    <div class="contact-form__input">
-      <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
-      <label for="email" id="email_label" class="caption-light">Email</label>
-    </div>
+           <input type="text" name="company_name" id="company_name" data-validate="true" data-validate-max-length="50" />
+           <label for="company_name" id="company_name_label" class="caption-light">Company name</label>
 
-    <input type="text" name="message" hidden id="message" value="Secure posture report request"></input>
+           <input type="text" name="email" id="email" data-validate="true" data-validate-max-length="40" data-validate-min-length="8" data-validate-type="email" />
+           <label for="email" id="email_label" class="caption-light">Email</label>
 
-    <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
+           <input type="text" name="message" hidden id="message" value="Secure posture report request"></input>
 
-    <span class="contact-form__submit-button caption-light" id="contact-form__submit-button">Submit</span>
-    <span class="contact-form__error-message caption-light" id="contact-form__error-message">Please fill missing fields</span>
+         <div class="g-recaptcha" data-sitekey="6LeMRHkUAAAAAI1b2V2HekMx-muHN2xB12GuH5hH"></div>
 
-    <div class="contact-form__input">
-      <input type="submit" hidden id="contact-form__hidden-submit" />
-    </div>
+         <span class="mailing-list-form__submit-button caption-light" id="mailing-list-form__submit-button">Submit</span>
+         <span class="mailing-list-form__error-message caption-light" id="mailing-list-form__error-message">Please fill missing fields</span>
 
-    <div class="contact-form__sent" id="contact-form__thankyou-text" style="visibility: hidden;">
-      <h2>{{thankyou_title}}</h2>
-      <p>{{thankyou_description}}</p>
+            <input type="submit" hidden id="mailing-list-form__hidden-submit" />
+
+         <div class="mailing-list-form__sent" id="mailing-list-form__thankyou-text" style="visibility: hidden;">
+           <h2>{{thankyou_title}}</h2>
+           <p>{{thankyou_description}}</p>
+         </div>
     </div>
 
     {% if include.form_footer %}
