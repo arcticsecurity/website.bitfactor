@@ -1,11 +1,6 @@
 $section-max-width-tablet: 780px;
 
 .events-and-careers {
-  
-  .events__flex-container {
-    @include flex-direction(row);
-  }
-  
   @include display-flex();
   @include flex-direction(column);
   
