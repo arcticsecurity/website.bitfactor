@@ -4,11 +4,6 @@ $section-max-width-tablet: 780px;
   @include display-flex();
   @include flex-direction(column);
   
-  .events__flex-container {
-    @include flex-direction(row);
-    @include flex-justify(space-between);
-  }
-
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
     @include flex-direction(row);
     @include flex-justify(space-between);
