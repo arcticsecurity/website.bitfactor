@@ -3,6 +3,38 @@ $section-max-width-tablet: 780px;
 .events-and-careers {
   @include display-flex();
   @include flex-direction(column);
+  
+  .events__event {
+      .event__title {
+        margin-right: 0;
+        min-width: 0;
+      }
+      .event__date {
+        min-width: 0;
+        
+        .event__date-wrapper>p:not(.event__location):not(:first-child) {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    .events {
+      max-width: 95%;
+      width: 780px;
+    }
+
+    .events__content {
+      max-width: calc(50% - 20px);
+    }
+
+    .events__flex-container {
+      @include flex-direction(row);
+      @include flex-justify(space-between);
+    }
+
+    .events__list {
+      max-width: calc(50% - 20px);
+    }
 
   @media only screen and (max-width: $screen-width-desktop-min - 1) {
     @include flex-direction(row);
