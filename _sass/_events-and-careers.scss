@@ -4,7 +4,7 @@ $section-max-width-tablet: 780px;
   @include display-flex();
   @include flex-direction(column);
 
-  @media only screen and (max-width: $screen-width-desktop-min - 1) {
+  @media only screen {
     @include flex-direction(row);
     @include flex-justify(space-between);
     max-width: 97.5vw;
