@@ -16,9 +16,8 @@ $side-padding-mobile: 26px;
   }
 
   .events__flex-container {
-    // @include display-flex();
-    // width: 100%;
-    @include flex-direction(column);
+    @include display-flex();
+    width: 100%;
   }
 
   .events__content {
