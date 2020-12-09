@@ -58,9 +58,11 @@ The recent news on cyber security breaches hopefully have opened the eyes of man
 
 ![Figure 1. Observations in Finland during the year 2020.](/images/content/screenshot-2020-12-08-at-14-46-39-1.png "Figure 1. Observations in Finland during the year 2020."){: width="679" height="483"}
 
+Figure 1. Observations in Finland during the year 2020.
+
 97 000 of the observed devices fall into a category of publicly exposed known vulnerable software or a misconfigured service. Depending on the known vulnerability, a system can be compromised, its data exfiltrated, or made inoperable. The same concerns to misconfigured services. For example, a database left accessible with a simple or even default username and password opens up a straight gateway to organization’s data. In the worst scenarios, vulnerabilities impact financially, damage businesses' reputation, and cause big time legal consequences.
 
-#### Arctic Hub Automates Threat Information Distribution
+## Arctic Hub Automates Threat Information Distribution
 
 The primary remediating action for organizations is to patch vulnerable services, fix unintended configurations, and block inbound access to services that do not need to be exposed to the internet. The number of vulnerable devices in Finland indicates that many companies struggle to find and fix all issues. Managing existing vulnerabilities while taking care of all new ones emerging every day poses a great challenge. Responding timely to threats requires fully automated large-scale data collection, processing, and targeted notification.&nbsp;
 
