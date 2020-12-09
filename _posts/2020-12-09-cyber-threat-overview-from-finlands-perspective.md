@@ -58,7 +58,7 @@ December 9, 2020
 
 The recent news on cyber security breaches hopefully have opened the eyes of many organizations on how to handle and revise their information security practices and processes. The harsh reality is that there are 116 200 observations of suspected compromise or publicly exposed vulnerable services distributed among 3 750 enterprises and organizations in Finland alone. Current observations are taken from the last few weeks. How do we know this? Because we continuously monitor these threats (Figure 1).
 
-&nbsp;&nbsp;![Figure 1. Observations in Finland during the year 2020.](/images/content/screenshot-2020-12-08-at-14-46-39-1.png "Figure 1. Observations in Finland during the year 2020."){: width="679" height="483"}Figure 1. Observations in Finland during the year 2020.
+![](/images/content/finland-current-situation.png){: width="908" height="728"}Figure 1. Observations in Finland during the year 2020.
 
 97 000 of the observed devices fall into a category of publicly exposed known vulnerable software or a misconfigured service. Depending on the known vulnerability, a system can be compromised, its data exfiltrated, or made inoperable. The same concerns to misconfigured services. For example, a database left accessible with a simple or even default username and password opens up a straight gateway to organization’s data. In the worst scenarios, vulnerabilities impact financially, damage businesses' reputation, and cause big time legal consequences.
 
