@@ -1,6 +1,6 @@
 ---
 blog_title: The Current Cyber Security Landscape of Finnish Companies
-blog_image_path: /images/content/2.svg
+blog_image_path: /images/content/fix_modified.png
 blog_image_cover: true
 blog_description: >-
   By the Finnish ETLA study, the number of data breaches has doubled in a couple
@@ -21,7 +21,7 @@ blog_category:
   - blog
 writer:
   employees:
-og_image_path: /images/content/2.svg
+og_image_path: /images/content/fix_modified.png
 twitter_image_path:
 og_title: The Current Cyber Security Landscape of Finnish Companies
 og_description: >-
