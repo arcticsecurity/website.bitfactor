@@ -54,7 +54,7 @@ _comments:
   form_thankyou_description: Fill if using downloadable content
 ---
 
-# The Current Cyber Security Landscape of Finnish Companies
+# &nbsp;
 
 In Finland, the number of data breaches has doubled within the past two years, as announced in a recent [study by ETLA Economic Research Institute of Finland](https://www.etla.fi/julkaisut/kyberuhat-yleistyvat-miten-suomen-yritykset-parjaavat/). Finnish companies reported data breaches three times more than the average number across the European countries in 2019. Most incidents reported in Finland related to scams and phishing attacks, data breaches, malware, and vulnerabilities.
 
