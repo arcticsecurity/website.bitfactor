@@ -104,7 +104,7 @@ In this case, I used evidence from the last 6 months mapped against the publicly
 
 ![](/images/content/image1-1.png){: width="1390" height="532"}
 
-### Expired X.509
+#### Expired X.509
 
 If you have ever done systems administration of any type of Internet facing services, you have battled against time and expiration of X.509 certificates, which prove the identity of your service to its users. You're probably thinking right now that wait, we should be talking about vulnerabilities, about CVEs, right? Remote code execution, the sexy stuff. My favorite retort to that is the following: the Equifax data breach which exposed the PII of 147 million people was largely caused by expired X.509 certificates in critical monitoring systems.&nbsp;
 
@@ -112,7 +112,7 @@ shodan dork: ssl.cert.expired:true&nbsp;
 
 ref: [https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html](https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html)
 
-### SSLv2&nbsp;
+#### SSLv2&nbsp;
 
 The arms race against crypt analysis has accelerated over the past couple of years. This means that cryptographic hashes or ciphers perfectly acceptable five years ago have become obsolete. SSL version 2 is a cryptographic protocol, which hasn’t met the requirement for Internet facing services for even longer. Its use was prohibited by RFC 6167 in 2011.&nbsp;
 
@@ -120,7 +120,7 @@ shodan dork: ssl.version:sslv2&nbsp;
 
 ref: [https://tools.ietf.org/html/rfc6176&nbsp;](https://tools.ietf.org/html/rfc6176)
 
-### Exposed SNMP&nbsp;
+#### Exposed SNMP&nbsp;
 
 Simple Network Management Protocol is very handy for gathering low-level information about networked devices and their status, especially in the switch and router space. As demonstrated by OUSPG PROTOS project in 2002, SNMP, whatever the version, is not and will not be a protocol fit for the Internet. Access to SNMP implementations must be access controlled to those devices, which are under your control, no matter which version of the protocol the device is speaking. Google "c06-snmp test suite" and assess the ramifications yourself, if you need more background on the issue. Moreover, threat actors have abused SNMP for reflected DDoS attacks for years, since sending a single spoofed UDP packet with the source address of the target will yield a huge amplification factor to their DDoS traffic.
 
@@ -130,7 +130,7 @@ shodan dork: port:161 snmp&nbsp;&nbsp;
 
 ref: [https://en.wikipedia.org/wiki/Oulu\_University\_Secure\_Programming\_Group](https://en.wikipedia.org/wiki/Oulu_University_Secure_Programming_Group)&nbsp;
 
-### Exposed Telnet&nbsp;
+#### Exposed Telnet&nbsp;
 
 Before the advent of SSH, telnet was the de facto protocol for remote management or shell access to systems or devices. In 1995, a Finnish engineer called Tatu Ylönen invented SSH, which made the telnet obsolete overnight. 25 years later, however, telnet is still going strong for some reason. There simply is not any Internet facing use case for the service, period.&nbsp;
 
@@ -140,7 +140,7 @@ shodan dork: telnet
 
 ref: [https://en.wikipedia.org/wiki/Telnet](https://en.wikipedia.org/wiki/Telnet)&nbsp;
 
-### Exposed MySQL&nbsp;
+#### Exposed MySQL&nbsp;
 
 Even if MySQL database engine is the de facto component as a backend service for many an Internet facing service, exposing it directly to the Internet without any further access control in front of it is inviting disaster. Recently, there was a major data breach in Finland, which allegedly resulted from the database backend being directly exposed to the Internet without any further access control in front of it. Layered security is not just a fancy buzz word. In many cases the database backend doesn't even need to be reachable over the network at all, but when it does, access to it must be locked down to only those hosts, which actually need it.
 
@@ -148,7 +148,7 @@ shodan dork: product:"MySQL"&nbsp;
 
 ref: [https://vpsie.com/knowledge-base/securing-mysql-database-shared-hosting-environment/](https://vpsie.com/knowledge-base/securing-mysql-database-shared-hosting-environment/)&nbsp;
 
-### CVE-2015-0204 a.k.a. FREAK
+#### CVE-2015-0204 a.k.a. FREAK
 
 Compliance with US cryptographic export controls lies at the heart of this vulnerability. An Internet facing service simply should not support negotiation of an encrypted connection, which is possible to decipher using $100 worth of cloud computing resources. We could even rename this vulnerability, man-in-the-middle made easy.
 
@@ -158,7 +158,7 @@ ref: [https://en.wikipedia.org/wiki/FREAK](https://en.wikipedia.org/wiki/FREAK)
 
 ref: [https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204)
 
-### CVE-2019-10149&nbsp;
+#### CVE-2019-10149&nbsp;
 
 Exim is a popular Mail Transfer Agent, MTA, used in many mostly linux-based servers. It has had a mottled history with information security and in 2019, a serious flaw was discovered in it, which leads to remote code execution. Please note that using this dork especially, one must understand the implication of backporting security fixes and how they are reflected in the version banner.&nbsp;
 
