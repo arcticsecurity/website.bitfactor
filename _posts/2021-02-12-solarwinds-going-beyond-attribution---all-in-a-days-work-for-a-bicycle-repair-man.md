@@ -67,9 +67,9 @@ Even more precisely, the crux of the problem often lies in poor IT processes rel
 
 Simply, because for more than a decade I've been helping people in their mission to reduce incidence of suspected compromise, publicly exposed vulnerable services or open services which may be unintentionally exposed to the Internet - at nation scale and through automation.
 
-## How is this related to Solarwinds, then?
+## How is this related to SolarWinds, then?
 
-Solarwinds is a company, whose mission is to make the IT administration simpler and more secure at scale. This is a great mission and I fault the company not with what they have built or how secure their products are.
+SolarWinds is a company, whose mission is to make the IT administration simpler and more secure at scale. This is a great mission and I fault the company not with what they have built or how secure their products are.
 
 The challenge seems to be the fact how well they have their own people, processes and technology in line with what they enable their customers to achieve through their products.
 
@@ -79,7 +79,7 @@ Yes, as the proof is in the open for everyone to see. Look at their publicly ava
 
 ## Why are you singling them out?
 
-Their case is actual and well known and if a tragedy on such a scale can contribute to the common good, then we should seize the opportunity. On 2021-01-12, we reached out to Solarwinds to confirm that the network assets we used for the evaluation actually belong to them. We even offered them the findings to help them mitigate them. Unfortunately, they did not respond to our requests and we are now publishing our results in this blog post.
+Their case is actual and well known and if a tragedy on such a scale can contribute to the common good, then we should seize the opportunity. On 2021-01-12, we reached out to SolarWinds to confirm that the network assets we used for the evaluation actually belong to them. We even offered them the findings to help them mitigate them. Unfortunately, they did not respond to our requests and we are now publishing our results in this blog post.
 
 Given the constraints I lay out below, they clearly have not done their due diligence and as a result we have this mess, where threat actors must have had a field day in gaining initial access to the company - no zero days needed.
 
@@ -89,7 +89,7 @@ Furthermore, the vulnerabilities I detail below, plague most organizations on th
 
 ## So what's the evidence?
 
-As stated above, I used the 86 vetted queries from Shodan against the publicly available network asset information related to Solarwinds. In essence, I used the same approach as the cyber rating companies do, which means that they rely in large part on publicly available IP network registration information when producing their ratings of you.
+As stated above, I used the 86 vetted queries from Shodan against the publicly available network asset information related to SolarWinds. In essence, I used the same approach as the cyber rating companies do, which means that they rely in large part on publicly available IP network registration information when producing their ratings of you.
 
 To be reproducible, the uncertainties related to the interpretation of the results must at least account for the following four things:
 
