@@ -2,7 +2,7 @@
 blog_title: >-
   SolarWinds: Going beyond attribution - all in a day’s work for a  Bicycle
   Repair Man
-blog_image_path: /images/content/iStock-1170680101.jpg
+blog_image_path: /images/content/iStock-repairman.jpeg
 blog_image_cover: true
 blog_description: >-
   Do you know how Monty Python can also reflect on information security? The
@@ -22,8 +22,8 @@ blog_category:
 writer:
   employees:
     - lari-huttunen
-og_image_path: /images/content/iStock-1170680101.jpg
-twitter_image_path: /images/content/iStock-1170680101.jpg
+og_image_path: /images/content/iStock-repairman.jpeg
+twitter_image_path: /images/content/iStock-repairman.jpeg
 og_title: >-
   SolarWinds: Going beyond attribution - all in a day’s work for a  Bicycle
   Repair Man
