@@ -110,7 +110,7 @@ If you have ever done systems administration of any type of Internet facing serv
 
 shodan dork: ssl.cert.expired:true&nbsp;
 
-ref: https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html
+ref: [https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html](https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html)
 
 ### SSLv2&nbsp;
 
@@ -118,7 +118,7 @@ The arms race against crypt analysis has accelerated over the past couple of yea
 
 shodan dork: ssl.version:sslv2&nbsp;
 
-ref: https://tools.ietf.org/html/rfc6176&nbsp;
+ref: [https://tools.ietf.org/html/rfc6176&nbsp;](https://tools.ietf.org/html/rfc6176)
 
 ### Exposed SNMP&nbsp;
 
@@ -128,7 +128,7 @@ shodan dork: port:161
 
 shodan dork: port:161 snmp&nbsp;&nbsp;
 
-ref: https://en.wikipedia.org/wiki/Oulu\_University\_Secure\_Programming\_Group&nbsp;
+ref: [https://en.wikipedia.org/wiki/Oulu\_University\_Secure\_Programming\_Group](https://en.wikipedia.org/wiki/Oulu_University_Secure_Programming_Group)&nbsp;
 
 ### Exposed Telnet&nbsp;
 
@@ -138,7 +138,7 @@ shodan dork: port:23
 
 shodan dork: telnet
 
-ref: https://en.wikipedia.org/wiki/Telnet&nbsp;
+ref: [https://en.wikipedia.org/wiki/Telnet](https://en.wikipedia.org/wiki/Telnet)&nbsp;
 
 ### Exposed MySQL&nbsp;
 
@@ -146,7 +146,7 @@ Even if MySQL database engine is the de facto component as a backend service for
 
 shodan dork: product:"MySQL"&nbsp;
 
-ref: https://vpsie.com/knowledge-base/securing-mysql-database-shared-hosting-environment/&nbsp;
+ref: [https://vpsie.com/knowledge-base/securing-mysql-database-shared-hosting-environment/](https://vpsie.com/knowledge-base/securing-mysql-database-shared-hosting-environment/)&nbsp;
 
 ### CVE-2015-0204 a.k.a. FREAK
 
@@ -154,9 +154,9 @@ Compliance with US cryptographic export controls lies at the heart of this vulne
 
 shodan dork: vuln:CVE-2015-0204&nbsp;
 
-ref: https://en.wikipedia.org/wiki/FREAK
+ref: [https://en.wikipedia.org/wiki/FREAK](https://en.wikipedia.org/wiki/FREAK)
 
-ref: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204
+ref: [https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0204)
 
 ### CVE-2019-10149&nbsp;
 
@@ -164,7 +164,7 @@ Exim is a popular Mail Transfer Agent, MTA, used in many mostly linux-based serv
 
 shodan dork: vuln:CVE-2019-10149
 
-ref: https://nvd.nist.gov/vuln/detail/CVE-2019-10149
+ref: [https://nvd.nist.gov/vuln/detail/CVE-2019-10149](https://nvd.nist.gov/vuln/detail/CVE-2019-10149)
 
 ## Conclusions
 
