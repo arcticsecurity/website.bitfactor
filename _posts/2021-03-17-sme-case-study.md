@@ -54,15 +54,15 @@ March 17, 2021
 
 Many organizations lack cyber resilience, and particularly small and medium-sized enterprises (SMEs) stand to lose the most when it comes to cyberattacks. This blog post presents a real-life SME case and how we spotted and remediated the security issue before harm was realized.
 
-## **Background**
+# **Background**
 
 There is a massive number of vulnerable and compromised hosts globally. Cybercriminals exploiting them remain one of the significant causes of cybersecurity incidents. Many successful attacks exploit vulnerabilities in poorly configured machines or those in which patches may have been issued, but not applied. Establishing and actively maintaining security in systems should be one of the key factors in every organization. Implementing proper authentication, authorization, and accounting (AAA) management is also critical to secure access to devices and services. Moreover, recovery from a cyber attack of various types should be planned and practiced.
 
-However, investing in security technology alone is not a silver bullet. Well-defined processes and policies combined with trained people are an essential part of organizations’ ICT lifecycle management. Despite the current and increasing threats, many organizations lack cyber resilience. Especially small and medium-sized businesses (SMBs) stand to lose the most when it comes to cyberattacks, yet many do not prioritize it. SMEs may lack knowledge, time, skills, and money, and as a result of these, also motivation, to invest in security. SMEs might hang on to the false assurance that large companies are more of a target for cybercriminals. However, according to the[2019 Verizon Data Breach Investigations Report](https://enterprise.verizon.com/resources/executivebriefs/2019-dbir-executive-brief.pdf), 43% of data breaches hit SMEs.
+However, investing in security technology alone is not a silver bullet. Well-defined processes and policies combined with trained people are an essential part of organizations’ ICT lifecycle management. Despite the current and increasing threats, many organizations lack cyber resilience. Especially small and medium-sized businesses (SMBs) stand to lose the most when it comes to cyberattacks, yet many do not prioritize it. SMEs may lack knowledge, time, skills, and money, and as a result of these, also motivation, to invest in security. SMEs might hang on to the false assurance that large companies are more of a target for cybercriminals. However, according to the&nbsp;[2019 Verizon Data Breach Investigations Report](https://enterprise.verizon.com/resources/executivebriefs/2019-dbir-executive-brief.pdf), 43% of data breaches hit SMEs.
 
 The unfortunate reality is that many organizations don't have appropriate procedures to keep their devices updated. More worrying is that organizations don't have a firm grasp of their machines' existence or state on their networks. We help organizations by letting them know if there are security issues or vulnerable systems in their networks, reported by a third-party, or even announced publicly. This way, organizations know to act accordingly against security issues before they cause serious harm to their business. Failing to patch vulnerable systems in a timely manner, organizations are putting themselves at huge risk. We want to raise this problem through one SME case that happened just recently.
 
-## **Evaluation and Findings**
+# **Evaluation and Findings**
 
 This example case relates to a vulnerable Exim mail server found in the ICT hosting provider’s infrastructure. Exim is a mail transfer agent responsible for receiving, routing, and delivering email messages. The particular vulnerability in Exim allows attackers to execute code remotely, gain root access to it, and take control of unpatched systems. To carry this out, you can find open-source code from GitHub.
 
@@ -74,9 +74,7 @@ How did we find the affected organization then? Our[Arctic HUB](https://arcticse
 
 We picked one of the threat observations to examine it in more detail. Based on the IP address, we were able to identify the affected company. We were able to see the other services beyond the same IP address with a little deeper digging and utilizing the[Shodan](https://www.shodan.io/) search engine. We discovered one of the hosting provider's customers being especially vulnerable to it by going into more detail regarding the flaw's coverage and impact. Based on their website, we were able to see that the affected organization collects and stores location data for over 1000 customers. Exploiting the vulnerability in the hosting provider’s unpatched system may eventually risk compromising the confidential customer data critical to the business. What comes to the data security breaches, privacy, and data protection legislations come into play. In this case, unauthorized access to confidential data would have devastating effects on the reputation and business of both the affected company and the hosting provider. Our automated cyber threat intelligence solutions tap into this problem.
 
-## **Analysis**
-
-&nbsp;
+# **Analysis**
 
 Unpatched systems are easy targets for attackers. Our more in-depth investigation revealed that the service provider's system was compromised through insufficient security procedures and processes. Vulnerabilities don't typically show up in the everyday use of the service or application. Too often, you find them when someone is already exploiting them. This is a good example of a case where a single problem is a stepping stone to bigger issues. With our tools, we notice that threat observations have an impact on both big and small companies.
 
@@ -84,9 +82,7 @@ Our solution is to utilize third-party threat data providers to detect compromis
 
 Due to the existing and increasing number of cybersecurity breaches, it is clear that any&nbsp; business must improve its security infrastructure and processes. As this example case indicates, the unfortunate situation is that many organizations only recognize it after they have a severe security flaw in their systems that potentially harms their reputation and business. In this example, harm was avoided thanks to our HUB product that connected the essential information with the correct recipient early enough.
 
-## **Remediation and Disclosure**
-
-&nbsp;
+# **Remediation and Disclosure**
 
 Once it was evident that the service provider posed a danger to themselves and their customers, we contacted the local, national cybersecurity center (NCSC) with our findings. The NCSC reached out to the hosting provider and gave instructions on how to remediate the issue. The company was able to fix the flaw in its system.
 
